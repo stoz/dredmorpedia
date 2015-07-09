@@ -1,0 +1,437 @@
+﻿<?xml version="1.0"?>
+<itemDB>
+<!-- Wands -->
+
+<item name="Pixie Stick" iconFile="sprites/wand_11.png" >
+	<price amount="3500" />
+	<wand spell="Fairywodger Fungal Healing" mincharge="1" maxcharge="6" />
+	<description text="This thing sure is little..."/>
+	</item>
+
+<item name="Phoenix Wand" iconFile="sprites/wand_12.png" >
+	<price amount="5500" />
+	<wand spell="Obvious Fireball" mincharge="2" maxcharge="4" />
+	<description text="Burns hotly in your hand. There's also a small feather tied to the end."/>
+	</item>
+
+<item name="Foxy Wand" iconFile="sprites/wand_13.png" >
+	<price amount="2000" />
+	<wand spell="Smooth Criminal" mincharge="2" maxcharge="6" />
+	<description text="There's a small fox tail on the end of this wand. It feels sly. Well, as sly as a wand can feel." />
+	</item>
+
+<item name="Rod of Lordly Might" iconFile="sprites/wand_7.png" >
+	<price amount="3500" />
+	<wand spell="Lordly Might" mincharge="2" maxcharge="4" />
+	<description text="That's what she called it, anyway." />
+	</item>
+
+<!-- WEAPONS -->
+	<!-- type: 0 sword; 1 axe; 2 mace; 3 staff; 4 bow; 5 thrown; 6 bolt; -->
+
+<!-- Swords -->
+
+<item name="Holy Blade of Lutefisking" iconFile="sprites/sword_9.png" level="1" type="0" artifact="1">
+	<price amount="100" />
+	<artifact quality="1" />
+	<weapon slashing="1" righteous="2" />
+	<targetHitEffectBuff percentage="40" name="Lutefisking" />
+	<description text="Seems a little fishy. Smells a little fishy. Is this blade...a scale?" />
+	</item>
+
+<item name="Devious" iconFile="sprites/sword_7.png" level="8" type="0" artifact="1">
+	<price amount="4800" />
+	<artifact quality="6" />
+	<weapon slashing="9" piercing="4" />
+	<primarybuff id="2" amount="2" /> <!-- Nimbleness -->
+	<secondarybuff id="9" amount="5" /> <!-- EDR -->
+	<secondarybuff id="16" amount="1" /> <!-- trap sense -->
+	<triggerondodge percentage="25" name="Adventurer Aikido" />
+	<description text="Meant to be partnered with its brother, Vicious." />
+	</item>
+
+<item name="Vicious" iconFile="sprites/sword_2.png" level="8" type="0" artifact="1">
+	<price amount="4800" />
+	<artifact quality="6" />
+	<weapon slashing="4" piercing="9" />
+	<primarybuff id="0" amount="2" /> <!-- Burliness -->
+	<secondarybuff id="4" amount="5" /> <!-- Crit -->
+	<secondarybuff id="2" amount="1" /> <!-- melee -->
+	<targetKillBuff percentage="25" name="Killing Blow" />
+	<description text="Meant to be partnered with its brother, Devious." />
+	</item>
+
+<!--
+<item name="Swallow Sword" iconFile="sprites/swallow_1.png" level="5" type="1" >
+	<price amount="3000" />
+	<weapon slashing="4" piercing="2" />
+	<description text="Like two daggers on the end of a stick. Spin it over your head to lift off!" />
+	</item>
+
+<item name="Windslash" iconFile="sprites/anim_sword/anim_sword.xml" level="1" type="0" >
+	<price amount="100" />
+	<weapon slashing="1" righteous="2" />
+	<description text="TESTING" />
+	</item>
+-->
+<!-- Axes -->
+<item name="Orcish Double Axe" iconFile="sprites/axe_1.png" level="5" type="1" >
+	<price amount="3000" />
+	<weapon slashing="6" />
+	<description text="Improbable, yet effective. Just don't cut yourself." />
+	</item>
+
+<!-- Maces -->
+<item name="Maxwell's Silver Hammer" iconFile="sprites/mace_1.png" level="6" type="2" >
+	<price amount="3500" />
+	<weapon crushing="4" righteous="4" />
+	<targetHitEffectBuff percentage="50" name="Silver Smite" taxa="Demon" />
+	<description text="'Joan was quizzical' is etched on the side of this hammer." />
+	</item>
+
+<item name="Orcish Dire Mace" iconFile="sprites/mace_2.png" level="5" type="2" >
+	<price amount="3000" />
+	<weapon crushing="6" />
+	<description text="Don't beat yourself up: it's a perfectly serviceable weapon." />
+	</item>
+
+<!-- Staves -->
+<item name="Broom of Sweeping" iconFile="sprites/staff_1.png" level="1" type="3" >
+	<price amount="100" />
+	<weapon crushing="1" />
+	<description text="It's a broom." />
+	</item>
+
+<item name="Wizard's Spear" iconFile="sprites/staff_2.png" level="2" type="3" >
+	<price amount="150" />
+	<weapon piercing="1" aethereal="2" />
+	<description text="A wizard's spear has a spike on the end." />
+	</item>
+
+<item name="Crystal Spear" iconFile="sprites/staff_3.png" level="4" type="3" >
+	<price amount="650" />
+	<weapon piercing="2" slashing="2" aethereal="2" />
+	<description text="A spear whose blade has been replaced by a sharp crystal. Primal, but effective." />
+	</item>
+
+<item name="Crystalline Lance" iconFile="sprites/staff_4.png" level="7" type="3" >
+	<price amount="4340" />
+	<weapon piercing="4" slashing="4" aethereal="3" />
+	<description text="Not really a lance, but let's roll with it." />
+	</item>
+
+<item name="Keir's Crystal Shard" iconFile="sprites/staff_5.png" level="10" type="3" >
+	<price amount="10000" />
+	<weapon piercing="6" slashing="6" aethereal="6" />
+	<targetHitEffectBuff name="Sudden Stalagmite" percentage="20" />
+	<description text="Originally wielded by Keir Levantine, this spear has been lost for centuries. It's back now, though, and better than ever...you think." />
+	</item>
+
+<item name="Orcish Wand" iconFile="sprites/staff_6.png" level="5" type="3" >
+	<price amount="3000" />
+	<weapon conflagratory="6" />
+	<description text="The orcs never seemed to figure out what a mage was supposed to do." />
+	</item>
+
+<item name="Orcish Double Spear" iconFile="sprites/staff_7.png" level="5" type="3" >
+	<price amount="3000" />
+	<weapon piercing="6" />
+	<description text="More points equals more damage, right?" />
+	</item>
+
+<!-- Bows -->
+
+<item name="Elvish Longbow" iconFile="sprites/bow_1.png" level="1" type="4" overrideClassName="Longbow" >
+	<price amount="100" />
+	<weapon piercing="3" />
+	<secondarybuff id="12" amount="2" /> <!-- sneak -->
+	<secondarybuff id="4" amount="1" /> <!-- crit -->
+	<description text="Looks like a knock-off." />
+	</item>
+
+<item name="Elven Longbow" iconFile="sprites/bow_5.png" level="3" type="4" overrideClassName="Longbow" >
+	<price amount="400" />
+	<weapon piercing="5" />
+	<secondarybuff id="12" amount="4" /> <!-- sneak -->
+	<secondarybuff id="4" amount="2" /> <!-- crit -->
+	<description text="There's no substitute for the real thing!" />
+	</item>
+
+<item name="Icy Bow" iconFile="sprites/bow_4.png" level="4" type="4" overrideClassName="Longbow" >
+	<price amount="600" />
+	<weapon piercing="4" hyperborean="2"/>
+	<secondarybuff id="4" amount="4" /> <!-- crit -->
+	<description text="Holding this bow makes your hands cold. Makes your enemies cold too." />
+	<crossbowShotBuff percentage="33" name="Small Weak Snowstorm" />
+	</item>
+
+<item name="Bow of the Radiant Dawn" iconFile="sprites/bow_6.png" level="6" type="4" overrideClassName="Longbow" >
+	<price amount="3500" />
+	<weapon piercing="4" righteous="4"/>
+	<secondarybuff id="4" amount="6" /> <!-- crit -->
+	<description text="Glimmers powerfully in your hands. Almost blinding, actually." />
+	<crossbowShotBuff percentage="10" name="Blinding Flash" />
+	</item>
+
+<item name="Simple Bow" iconFile="sprites/bow_2.png" level="6" type="4" overrideClassName="Longbow" >
+	<price amount="3500" />
+	<weapon piercing="4" existential="4"/>
+	<secondarybuff id="4" amount="2" /> <!-- crit -->
+	<description text="Gives off a gentle, calming sensation." />
+	<crossbowShotBuff percentage="10" name="Antimagic Cloud" />
+	<crossbowShotBuff percentage="20" name="Antimagic Field" />
+	</item>
+
+<item name="Bow of the Red Archer" iconFile="sprites/bow_3.png" level="10" type="4" overrideClassName="Longbow" artifact="1" >
+	<price amount="60000" />
+	<weapon piercing="10" conflagratory="2" toxic="2" asphyxiative="2" />
+	<secondarybuff id="4" amount="15" /> <!-- crit -->
+	<artifact quality="12" />
+	<description text="This bow whispers 'blooooood' softly in your ear when you wield it. It seems...thirsty." />
+	<crossbowShotBuff percentage="50" name="Vampirism Attack" />
+	</item>
+
+<!-- Thrown -->
+<item name="Orcish Shuriken" iconFile="sprites/thrown_1.png" level="5" type="5" >
+	<price amount="3000" />
+	<weapon slashing="6" thrown="sprites/thrown_1.png" />
+	<description text="Someone just lashed a bunch of throwing axes together. Typical orcish innovation." />
+	</item>
+
+<!-- ARMOR -->
+<!-- Shields and Tomes -->
+
+<item name="The Seventy Maxims of Maximally Effective Mercenaries" iconFile="sprites/tome_1.png" overrideClassName="Tome" artifact="1" >
+	<price amount="5000" />
+	<armour level="3" type="shield" />
+	<artifact quality="3" />
+	<secondarybuff id="2" amount="3" /> <!-- melee -->
+	<damagebuff crushing="3" />
+	<resistbuff crushing="3" />
+	<description text="Maxim 6: If violence wasn’t your last resort, you failed to resort to enough of it." />
+	</item>
+
+<item name="Little Red Cookbook" iconFile="sprites/tome_2.png" overrideClassName="Tome" artifact="1" >
+	<price amount="112" />
+	<armour level="1" type="shield" />
+	<artifact quality="1" />
+	<damagebuff slashing="1" />
+	<resistbuff slashing="1" />
+	<thrownBuff name="Butcher" percentage="10" />
+	<crossbowShotBuff name="Butcher" percentage="10" />
+	<targetHitEffectBuff percentage="10" name="Butcher" />
+	<description text="Full of meaty recipes." />
+	</item>
+
+<item name="History of the World, Part I" iconFile="sprites/tome_3.png" overrideClassName="Tome" artifact="1" >
+	<price amount="5000" />
+	<armour level="4" type="shield" />
+	<artifact quality="5" />
+	<thrownBuff name="Narcosomatic Induction" percentage="50" />
+	<targetHitEffectBuff percentage="50" name="Narcosomatic Induction" />
+	<description text="Far more boring than the movie version." />
+	</item>
+
+<item name="Manual of Martial Prowess" iconFile="sprites/tome_4.png" overrideClassName="Tome" artifact="1" >
+	<price amount="25000" />
+	<armour level="7" type="shield" />
+	<artifact quality="7" />
+	<targetHitEffectBuff percentage="10" name="Thibault's Trompement" />
+	<targetHitEffectBuff percentage="10" name="Norwegian Axenado" />
+	<targetHitEffectBuff percentage="10" name="Ragnar's Meteor" />
+	<targetHitEffectBuff percentage="10" name="Gray Heron Takes Flight" />
+	<targetKillBuff percentage="25" name="Killing Blow" />
+	<description text="A treatise on the best way to defeat your enemies, see them driven before you, and to hear the lamentation of their women. Parts of it appear to be bloodstained." />
+	</item>
+
+<item name="Book of Shadows" iconFile="sprites/tome_7.png" overrideClassName="Tome" >
+	<price amount="25000" />
+	<armour level="5" type="shield" />
+	<resistbuff righteous="4" necromantic="2" existential="2" />
+	<secondarybuff id="21" amount="1" /> <!-- alchemy -->
+	<targetHitEffectBuff percentage="50" name="Shroud of Darkness" />
+	<targetKillBuff percentage="25" name="Unholy Warcry" />
+	<description text="Previously owned by three scantily clad witches." />
+	</item>
+
+<item name="History of the World, Part II" iconFile="sprites/tome_5.png" overrideClassName="Tome" artifact="1" >
+	<price amount="5000" />
+	<armour level="5" type="shield" />
+	<artifact quality="5" />
+	<thrownBuff name="Doom Hit" percentage="100" />
+	<targetHitEffectBuff percentage="100" name="Doom Hit" />
+	<description text="Someone's torn out half the pages and scrawled all over the others in some infernal language." />
+	</item>
+
+<item name="Landscapes: A Pretentious Pictorial" iconFile="sprites/tome_6.png" overrideClassName="Tome" >
+	<price amount="25000" />
+	<armour level="5" type="shield" />
+	<damagebuff asphyxiative="4" />
+	<resistbuff asphyxiative="4" />
+	<targetHitEffectBuff percentage="25" name="Harsh Vacuum" />
+	<description text="The pictures in here could take your breath away." />
+	</item>
+
+<item name="Crafter's Almanac" iconFile="sprites/tome_8.png" overrideClassName="Tome" >
+	<price amount="25000" />
+	<armour level="8" type="shield" />
+	<secondarybuff id="19" amount="1" /> <!-- smithing -->
+	<secondarybuff id="20" amount="1" /> <!-- tinkering -->
+	<secondarybuff id="21" amount="1" /> <!-- alchemy -->
+	<secondarybuff id="23" amount="1" /> <!-- Wandcrafting -->
+	<description text="Seems to have a little bit on everything." />
+	</item>
+
+<!-- Clothing -->
+
+<item name="Dashing Top Hat" iconFile="sprites/hat_1.png" overrideClassName="Stylish Headwear">
+	<price amount="500" />
+	<armour level="4" type="head" />
+	<primarybuff id="2" amount="5" /> <!-- Nimbleness -->
+	<secondarybuff id="6" amount="4" /> <!-- dodge -->
+	<playerHitEffectBuff percentage="20" name="Love Will Teleport Us Apart" />
+	<description text="And now, CHANGE PLACES!" />
+	</item>
+
+<item name="Maslech, the Eater of Beatings" iconFile="items/helm_fedora.png" overrideClassName="God of Hats">
+	<price amount="250000" />
+	<armour level="20" type="head" />
+	<primarybuff id="0" amount="3" />
+	<primarybuff id="1" amount="2" />
+	<primarybuff id="2" amount="5" />
+	<primarybuff id="3" amount="2" />
+	<primarybuff id="4" amount="4" />
+	<primarybuff id="5" amount="1" />
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="1" amount="4" />
+	<secondarybuff id="4" amount="4" />
+	<secondarybuff id="5" amount="6" />
+	<secondarybuff id="6" amount="8" />
+	<secondarybuff id="7" amount="7" />
+	<secondarybuff id="8" amount="5" />
+	<secondarybuff id="9" amount="3" />
+	<secondarybuff id="10" amount="4" />
+	<secondarybuff id="11" amount="4" />
+	<secondarybuff id="12" amount="10" />
+	<secondarybuff id="13" amount="1" />
+	<secondarybuff id="14" amount="8" />
+	<secondarybuff id="16" amount="5" />
+	<secondarybuff id="17" amount="2" />
+	<secondarybuff id="18" amount="2" />
+	<damagebuff slashing="1" blasting="4" conflagratory="1" hyperborean="3" voltaic="1" toxic="2" necromantic="1" acidic="1" putrefying="1" asphyxiative="2" existential="1" />
+	<resistbuff crushing="1" slashing="1" conflagratory="2" voltaic="4" toxic="2" righteous="1" necromantic="2" acidic="1" putrefying="2" aethereal="1" asphyxiative="1" />
+	<description text="Once possessed by Fax Celestis XVI, the Eater of Beatings has now chosen you as its next hero. It desires the blood of diggles for sustenance. Do you dare defy the Hat God?" />
+	</item>
+
+<!-- Jewelry -->
+
+<item name="Dapper Monocle" iconFile="sprites/eyes_1.png" overrideClassName="Stylish Eyewear">
+	<price amount="500" />
+	<armour level="4" type="neck" />
+	<primarybuff id="2" amount="2" /> <!-- Nimbleness -->
+	<secondarybuff id="16" amount="1" /> <!-- trap sense -->
+	<secondarybuff id="17" amount="1" /> <!-- trap sight -->
+	<secondarybuff id="18" amount="1" /> <!-- sight radius -->
+	<description text="For the stylish gentleman on the go!" />
+	</item>
+
+<!-- EDIBLES -->
+<!-- Foods -->
+<item name="Cherry Pie" iconFile="sprites/pie_1.png" level="3">
+	<price amount="150"/>
+	<food hp="5" effect="PIIIIIIIIIIE" />
+	<description text="Sweet sweet pie. Om nom om."/>
+	</item>
+
+<item name="Rama's Banana" iconFile="sprites/banana_1.png" level="6" overrideClassName="Banana">
+	<description text="BANANANANANANA, BANANANANANANA, BANANAMAAAAAAAN!" />
+	<food hp="3" effect="Crafty Buff" />
+	<price amount="777" />
+	</item>
+
+<!-- Mushrooms -->
+
+<item name="Fieuree Cap Mushroom" iconFile="sprites/mushroom_1.png" >
+	<description text="Traditionally, these mushrooms are smoked by barbarian tribes just before battle. You don't have the luxury of smoking them, but you could try just eating one." />
+	<price amount="250" />
+	<mushroom />
+	<casts spell="DoT Rage" />
+	</item>
+
+<item name="Dunce Cap" iconFile="sprites/mushroom_2.png" >
+	<description text="Named for the mage who bred these into being, these mushrooms were eventually Dunce's downfall." />
+	<price amount="800" />
+	<mushroom />
+	<casts spell="Antimagic Buff" />
+	</item>
+
+<item name="Salty Bawl" iconFile="sprites/mushroom_3.png" >
+	<description text="Mm-mm-mm. You know you like eating salty bawls." />
+	<price amount="800" />
+	<mushroom />
+	<casts spell="Salty Bawl" />
+	</item>
+
+<!-- Potions -->
+<item name="Bylli Crystal" iconFile="sprites/crystal_1.png" level="4" overrideClassName="Crystal">
+	<description text="This crystal resonates cooly." />
+	<potion spell="Celestial Circle"/>
+	<price amount="250" />
+	</item>
+
+<item name="Beelae Crystal" iconFile="sprites/crystal_2.png" level="4" overrideClassName="Crystal">
+	<description text="This crystal resonates warmly." />
+	<potion spell="Abyssal Fire"/>
+	<price amount="250" />
+	</item>
+
+<item name="Birry Crystal" iconFile="sprites/crystal_3.png" level="1" overrideClassName="Crystal">
+	<description text="This crystal resonates harmoniously." />
+	<potion spell="Crystal Healing"/>
+	<price amount="250" />
+	</item>
+
+<item name="Variable Enhancer" iconFile="sprites/potion_1.png" level="6" >
+	<description text="This potion seems especially volatile." />
+	<potion spell="Variable Enhancer"/>
+	<price amount="2500" />
+	</item>
+
+<item name="Rare Candy" iconFile="sprites/candy_1.png" level="8" overrideClassName="Candy" >
+	<description text="If you fed it to a pokemon, it'd level up. Unfortunately for you, you aren't a pokemon, but you can still eat it." />
+	<potion spell="Major Thaumaturgic Charge" />
+	<price amount="2000" />
+	</item>
+
+<item name="Uncommon Candy" iconFile="sprites/candy_2.png" level="6" overrideClassName="Candy">
+	<description text="If you fed it to a pokemon, it'd probably learn something. Unfortunately for you, you aren't a pokemon, but you can still eat it." />
+	<potion spell="Thaumaturgic Charge" />
+	<price amount="1000" />
+	</item>
+
+<item name="Rather Common Candy" iconFile="sprites/candy_3.png" level="2" overrideClassName="Candy">
+	<description text="If you fed it to a pokemon, it'd get a stomachache. Fortunately for you, you aren't a pokemon, but you can still eat it." />
+	<potion spell="Minor Thaumaturgic Charge" />
+	<price amount="500" />
+	</item>
+
+<item name="Tea of O'rlyeh" iconFile="sprites/tea_1.png" level="10" overrideClassName="Tea">
+	<description text="Zalgo knows the tea. Zalgo is the tea. Zalgo is the bag and leaves of the tea. Unsteeped, steeped, hot, iced, all are one in Zalgo. He knows where the Old Ones steeped tea of old, and where They shall steep tea again. He knows where They have held teatime, and where They still hold teatime, and why no one can behold Them as They drink. " />
+	<potion spell="Chthonian Tea" />
+	<price amount="5000" />
+	</item>
+
+<!-- MISCELLANEOUS -->
+<!-- Craft Components -->
+
+<item name="Lutefisk Scales" iconFile="sprites/scales_1.png" alchemical="1" craftoutput="1" >
+	<price amount="5"/>
+	<description text="These things are a little bit sharp."/>
+	</item>
+
+<item name="Ground Root from Beyond the Stars" iconFile="sprites/dust_1.png" alchemical="1" craftoutput="1" >
+	<price amount="5"/>
+	<description text="Gaze upon my dust, ye mighty, and despair!"/>
+	</item>
+
+</itemDB>

@@ -1,0 +1,89 @@
+<!--
+
+Spell Database for Interior Dredmorating. As always, don't look if you don't want spoilers...
+
+-->
+
+<spellDB>
+   <!-- Spells from Items -->
+
+<spell name="Djinn and Tonic" type="self" icon="skills/spells/djinn32.png" >
+   <effect type="summon" monsterType="Djinn"/>
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="90" sfx="small_spell" centerEffect="1" /> 
+   </spell>
+
+<spell name="Trappisterism" type="self" >
+   <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="100" centerEffect="1" sfx="magic_open" />
+   <buff useTimer="1" time="4" stacksize="3" allowstacking="1"  icon="skills/spells/trapale_64.png" smallicon="skills/spells/trapale_32.png">
+		<secondarybuff id="16" amount="1" /> <!-- trap disarm level -->
+		<secondarybuff id="17" amount="1" /> <!-- trap sight -->
+      </buff>
+	<description text="You've got a bit of a trappist buzz going. Time to operate some heavy machinery against the Surgeon General's recommendations."/>
+   </spell>
+
+
+  
+  <spell name="Toy Surprise" type="self" icon="skills/spells/toy_surprise_32.png">
+  <effect type="spawnitemfromlist">
+    <option name="Plastic Ring"/>
+    <option name="Small Crossbow"/>
+    <option name="Lil' Menace Slingshot"/>
+    <option name="X-Ray Specs"/>
+    <option name="Decoder Ring"/>
+    <option name="Aluminum Ring"/>
+    <option name="Plastic Ring"/>
+    <option name="Ring of Ash"/>
+    <option name="Pumice Ring"/>
+    <option name="Plastic Ingot"/>
+    <option name="Plastic Ring"/>
+    <option name="X-Ray Specs"/>
+    <option name="Decoder Ring"/>
+    <option name="Plastic Ring"/>
+    <option name="Voltaic Cell"/>
+    <option name="Shoddy Dwarven IED"/>
+    <option name="Brass Mechanisms"/>
+    <option name="Plastic Ring"/>
+    <option name="Small Crossbow"/>
+    <option name="Lil' Menace Slingshot"/>
+  </effect>
+   </spell>   
+   
+   
+<spell name="Stop That" type="target" icon="skills/spells/stop_that32.png" >
+	<effect type="paralyze" amount="2" turns="2" /> 
+	<description text="The Octagon of Command demands your foes stand still. " />
+   </spell>
+
+
+<spell name="Poodle Bite" type="target" icon="skills/spells/poodle32.png" >
+   <description text="Totem Poodle attack!"/>
+   <effect type="damage" piercing="3"/>
+   <effect type="bleed" />
+   <effect type="trigger" spell="Blast Effect A" />
+   <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
+   </spell>
+
+
+
+
+   <!-- Spells from Rooms -->
+   
+<spell name="Jusenkyo Curse" type="self" icon="skills/spells/jusenkyo32.png" wand="0">
+   <buff useTimer="1" time="64" stacksize="1" self="1"  icon="skills/spells/jusenkyo64.png" smallicon="skills/spells/jusenkyo32.png" >    
+      <polymorph name="Diggle"/>
+      <primarybuff id="0" amount="1"/><!-- Bur -->
+      <primarybuff id="3" amount="1"/><!-- Cad -->
+      <secondarybuff id="2" amount="2"/><!-- melee -->
+      <secondarybuff id="10" amount="2"/><!-- armour -->
+      <secondarybuff id="6" amount="5" /> <!-- dodge -->
+      <damagebuff piercing="3" />
+      <resistbuff transmutative="-2"/>
+      </buff>
+   <description text="You got too close to the cursed springs of Jusenkyo. It turns some into Pandas, others into Pigs. You became a Diggle. Maybe a quick shower will turn you into a red-haired girl." />
+   </spell>   
+
+
+
+
+  
+</spellDB>

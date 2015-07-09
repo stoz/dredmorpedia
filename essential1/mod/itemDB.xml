@@ -1,0 +1,25 @@
+<itemDB>
+
+<power name="Mild Poison" description="fills your enemy's bodies with a virulent poison." spell="Mild Poison"/>
+
+<item name="Venomous Stiletto" iconFile="items/sword_venomous_stiletto.png" level="4" type="0" special="1">
+  <price amount="69"/>
+	<weapon piercing="2" toxic="1"/>
+  <secondarybuff id="9" amount="2"/> <!-- EDR -->
+  <description text="The perfect tool for delivering nasty things into a living (or unliving) body."/>
+</item>
+
+<item name="Wakizashi" iconFile="items/sword_wakizashi.png" level="4" type="0" special="1">
+  <price amount="201"/>
+  <weapon slashing="4" piercing="1"/>
+  <description text="A short little Katana. It's primary use is for killing yourself, which is why Lord Dredmor let you have it."/>
+  </item>
+
+
+<item name="Poison Dart" iconFile="items/thrown_dart_poisoned.png"  level="5" type="5">
+	<price amount="40"/>
+	<weapon piercing="2" thrown="sprites/sfx/thrown_throwing_axe.spr" hit="Poisoned!" />
+	<description text="This should get some venom into their system safely!"/>
+	</item>
+
+</itemDB>

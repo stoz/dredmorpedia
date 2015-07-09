@@ -1,0 +1,53 @@
+<!-- Names:
+
+# - player
+. - unaffected
+@ - affected
+
+
+-->
+
+<templatedb>
+  <template width="1" height="9" name="301" affectsPlayer="0">
+	<row text="@"/>
+	<row text="@"/>
+	<row text="@"/>
+	<row text="@"/>
+	<row text="#"/>
+	<row text="."/>
+	<row text="."/>
+	<row text="."/>
+	<row text="."/>
+  </template>
+
+  <template width="3" height="11" name="302" affectsPlayer="0">
+	<row text=".@."/>
+	<row text="@@@"/>
+	<row text=".@."/>
+	<row text=".@."/>
+	<row text=".@."/>
+	<row text=".#."/>
+	<row text="..."/>
+	<row text="..."/>
+	<row text="..."/>
+	<row text="..."/>
+	<row text="..."/>
+  </template>
+
+  <template width="3" height="13" name="303" affectsPlayer="0">
+	<row text=".@."/>
+	<row text="@@@"/>
+	<row text="@@@"/>
+	<row text="@@@"/>
+	<row text=".@."/>
+	<row text=".@."/>
+	<row text=".#."/>
+	<row text="..."/>
+	<row text="..."/>
+	<row text="..."/>
+	<row text="..."/>
+	<row text="..."/>
+	<row text="..."/>
+  </template>	
+  
+</templatedb>

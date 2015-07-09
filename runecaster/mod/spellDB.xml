@@ -1,0 +1,638 @@
+<spellDB>
+<!-- Runecaster Abilities --> 
+<spell name="1st Circle Rune" type="template" templateID="30" anchored="1" icon="skills/skill_rune1small.png" wand="0">
+<requirements mp="10" savvyBonus="0.225" mincost="5" /> 
+ <effect type="spawnitemfromlist">
+    <option name="Rune of Strength"/>
+    <option name="Rune of Movement"/>
+    <option name="Rune of Life"/>
+    <option name="Rune of Self"/>
+  </effect>
+	<description text="Create a first circle rune." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+<spell name="2nd Circle Rune" type="template" templateID="30" anchored="1" icon="skills/skill_rune2small.png" wand="0">
+<requirements mp="15" savvyBonus="0.2" mincost="10" /> 
+ <effect type="spawnitemfromlist">
+    <option name="Rune of Matter"/>
+    <option name="Rune of Energy"/>
+    <option name="Rune of Fire"/>
+    <option name="Rune of Water"/>
+  </effect>
+	<description text="Create a second circle rune." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+<spell name="Mass 1st Circle Runes" type="template" templateID="09" anchored="1" icon="skills/skill_massrune1small.png" wand="0">
+<requirements mp="20" savvyBonus="0.15" mincost="15" /> 
+ <effect type="spawnitemfromlist">
+    <option name="Rune of Strength"/>
+    <option name="Rune of Movement"/>
+    <option name="Rune of Life"/>
+    <option name="Rune of Self"/>
+  </effect>
+	<description text="Create a multiple first circle runes." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+<spell name="3rd Circle Rune" type="template" templateID="30" anchored="1" icon="skills/skill_rune3small.png" wand="0">
+<requirements mp="25" savvyBonus="0.15" mincost="20" /> 
+ <effect type="spawnitemfromlist">
+    <option name="Rune of Spirit"/>
+    <option name="Rune of Harvest"/>
+    <option name="Rune of Rigidity"/>
+    <option name="Rune of Transformation"/>
+  </effect>
+    <description text="Create a third circle rune." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+<spell name="Mass 2nd Circle Runes" type="template" templateID="09" anchored="1" icon="skills/skill_massrune2small.png" wand="0">
+<requirements mp="40" savvyBonus="0.2" mincost="30" /> 
+ <effect type="spawnitemfromlist">
+    <option name="Rune of Matter"/>
+    <option name="Rune of Energy"/>
+    <option name="Rune of Fire"/>
+    <option name="Rune of Water"/>
+  </effect>
+	<description text="Create multiple second circle runes." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+<spell name="4th Circle Rune" type="template" templateID="30" anchored="1" icon="skills/skill_rune4small.png" wand="0">
+<requirements mp="40" savvyBonus="0.125" mincost="30" /> 
+ <effect type="spawnitemfromlist">
+    <option name="Rune of Heavens"/>
+    <option name="Rune of Purity"/>
+    <option name="Rune of Wisdom"/>
+    <option name="Rune of Destiny"/>
+  </effect>
+    <description text="Create a fourth circle rune." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+<spell name="Mass 3rd Circle Runes" type="template" templateID="09" anchored="1" icon="skills/skill_massrune3small.png" wand="0">
+<requirements mp="60" savvyBonus="0.2" mincost="40" /> 
+ <effect type="spawnitemfromlist">
+    <option name="Rune of Spirit"/>
+    <option name="Rune of Harvest"/>
+    <option name="Rune of Rigidity"/>
+    <option name="Rune of Transformation"/>
+  </effect>
+    <description text="Create multiple third circle runes." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+<spell name="5th Circle Rune" type="template" templateID="30" anchored="1" icon="skills/skill_rune5small.png" wand="0">
+<requirements mp="50" savvyBonus="0.1" mincost="45" /> 
+ <effect type="spawnitemfromlist">
+    <option name="Rune of Ambition"/>
+    <option name="Rune of Gods"/>
+    <option name="Rune of Harmony"/>
+    <option name="Rune of Chaos"/>
+  </effect>
+    <description text="Create a fifth circle rune." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+<!-- Runeword Spell effects -->
+<spell name="External Torus" type="target" icon="skills/spells/infernal_torus32.png">
+   <effect type="trigger" spell="Flamefield 2" amount="0" />
+   <effect type="trigger" spell="Torus Blast 1" amount="0" />
+   <effect type="trigger" spell="Torus Blast 2" amount="0" />
+   <effect type="trigger" spell="Torus Blast 3" amount="0" />
+   <anim sprite="sprites/sfx/fireburst/fireburst" frames="7" framerate="90" sfx="fireball" centerEffect="1"/>
+   <impact sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="100" sfx="flame" centerEffect="1"/>
+   <description text="Burn baby, burn." />
+</spell>
+<spell name="Full Blinding Area Hit" type="template" templateID="11" >
+	<effect type="damage" righteous="2" righteousF="0.32" aethereal="2" aetherealF="0.23" self="0" affectscaster="1" />
+	<effect type="paralyze" amount="2" turns="4" self="0" />
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" />
+   </spell>
+<spell name="Blinding Flash Effect" type="target" icon="skills/spells/blinding_light32.png" wand="1">
+	<effect type="trigger" spell="Full Blinding Area Hit" amount="0" />
+	<anim sprite="sprites/sfx/blinding_flash/blinding_flash" frames="8" sfx="magic_damage" framerate="60" centerEffect="0" />
+   </spell> 
+ <spell name="The Stars Unanchored" type="template" templateID="100" icon="skills/spells/stars_aligned32.png" wand="1">
+   <effect type="damage" aethereal="28" aetherealF="0.65"/>
+   <effect type="paralyze" amount="2" turns="5" self="0" />
+   <effect type="bleed" />
+   <anim sprite="sprites/sfx/celestial_hit/celestial_hit" frames="8" sfx="magic_damage" framerate="80"  centerEffect="1"/>
+   <description text="With the stars aligned just so, terrible celestial energies are unleashed."/>
+   </spell>
+<spell name="Entropic Displacement" type="target" wand="0">
+	<requirements mp="6" savvyBonus="0.1" mincost="3" />
+	<effect type="displace" sfx="teleport" />
+	<anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>
+	</spell>
+<spell name="Chemical Smoke" 
+		type="targetfloor" 
+		mine="1" 
+		mineradius="2"
+		minePermanent="0" 
+		mineTimer="16" 
+		mineUseGlints="1" 
+		mineGlintDensity="6"
+      mineSpriteDrawOrder="1"
+		mineSpritePNGSeries="sprites/sfx/acid_puff/acid_puff"
+		mineSpritePNGFirst="0" mineSpritePNGNum="6" mineSpritePNGRate="120" >
+	<requirements mp="28" savvyBonus="0.28" mincost="9" />
+	<effect type="damage" acidic="2" acidicF="0.15" asphyxiative="2" asphyxiativeF="0.10" putrefying="2" putrefyingF="0.05" affectscaster="1" />
+	<effect type="trigger" spell="Weak Acid Burn" />
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" framerate="100" centerEffect="1" sfx="magic" />
+	<description text="Chemical Smoke. Don't breathe this." />
+   </spell>
+<spell name="Entropymine" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/entropy/entropy" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="6" mineSpritePNGRate="90" 
+      mineTimer="10" 
+      minePermanent="1" >
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="External Torus" percent="15"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Thor's Fulminaric Bolt" percent="15"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Blinding Flash Effect" percent="15"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="The Stars Unanchored" percent="15"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Fleshbore" percent="25"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Arctic Vortex" percent="20"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Generic Fireball" percent="20"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Invive Thaumite Swarm" percent="15"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Eldritch Inhabitation" percent="2"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Tenebrous Rift" percent="2"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Small Snowstorm" percent="20"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Rockburst" percent="15"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Chemical Smoke" percent="20"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Miasmatic Putrefaction" percent="15"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Very Toxic Spore Cloud" percent="5"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Tentacular Doom" percent="10"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Pyrokinesis" percent="15"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="The Recursive Curse" percent="15"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Nerve Staple" percent="15"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Beklam's Diminuating Calculus" percent="20"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Mega Midas" percent="25"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Corpse Blast" percent="20"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Curse of the Golden Ratio" percent="20"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Haematic Refresh" percent="2"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Fairywodger Fungal Healing" percent="5"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Entropic Displacement" percent="25"/>
+	<effect type="trigger" amount="1" affectsCorpses="0" spell="Froda's Jump Discontinuity" percent="5"/>
+</spell>
+<spell name="Runeword Entropy" type="target" >
+	<anim sprite="sprites/sfx/corpus_burst/corpus_burst" frames="7" framerate="90" sfx="bampf"/>
+	<effect type="trigger" spell="Entropymine" />
+   </spell>
+<spell name="Runic Explosion" type="target" icon="skills/spells/fireball32.png" wand="1" >
+	<effect type="damage" blasting="12" blastingf=".2" conflagratory="12" conflagratoryF=".2" affectscaster="1" />
+   <anim sprite="sprites/sfx/fireball/fireball" frames="7" firstframe="0" framerate="90" centerEffect="1" sfx="explosion" />
+	<effect type="trigger" spell="Flamefield 1" amount="0" />
+	<effect type="trigger" spell="Fireball Effect" amount="0" />
+	<description text="It's a giant fireball. It goes BOOM. Then with the burning. Oh god, the burning. What more do you want?" />
+   </spell>
+<spell name="Runeword Destruction" type="targetfloor" >
+	<anim sprite="sprites/destruction/destruction" frames="6" framerate="200" sfx="rune_set"/>
+	<effect type="trigger" spell="Torus Blast 3" amount="0" />
+	<effect type="trigger" spell="Torus Blast 2" amount="0" />
+    <effect type="trigger" spell="Torus Blast 1" amount="0" />
+	<effect type="trigger" spell="Gog's Tactical Pyre" />
+	<effect type="trigger" spell="Runic Explosion" />
+	<effect type="trigger" spell="Big Dig" />
+   </spell>
+<spell name="Rune of Power buff" type="target">
+	<buff useTimer="1" self="0" time="30" stackable="0" stacksize="0" icon="skills/powerbuff64.png" smallicon="skills/powerbuff32.png">
+	<halo name="sprites/power/power" first="0" num="10" frameRate="100" />
+	<secondarybuff id="4" amount="100"/> <!-- crit -->
+	<secondarybuff id="10" amount="20"/> <!-- armour -->
+	<secondarybuff id="2" amount="25"/> <!-- melee power -->
+	</buff>
+	<description text="IMPRESSIVE POWER! PREPARE TO FIGHT! All of your attacks inflict M-M-M-M-M-MASSIVE DAMAGE." />
+   </spell>
+<spell name="Rune of Power" type="self">
+	<buff useTimer="1" time="30" stackable="0" stacksize="0" icon="skills/powerbuff64.png" smallicon="skills/powerbuff32.png">
+	<halo name="sprites/power/power" first="0" num="10" frameRate="100" />
+	<secondarybuff id="4" amount="100"/> <!-- crit -->
+	<secondarybuff id="2" amount="10"/> <!-- melee power -->
+	<secondarybuff id="5" amount="100"/> <!-- haywire -->
+	<secondarybuff id="3" amount="20"/> <!-- magic power -->
+	</buff>
+	<description text="IMPRESSIVE POWER! PREPARE TO FIGHT! All of your attacks inflict M-M-M-M-M-MASSIVE DAMAGE." />
+   </spell>
+<spell name="Runeword Power" type="target" >
+	<anim sprite="sprites/power/power" frames="10" framerate="90" sfx="enchanted"/>
+	<effect type="trigger" spell="Rune of Power" />
+	<effect type="trigger" spell="Rune of Power buff" />
+   </spell>
+<spell name="Unresistable" type="target" >
+	<buff useTimer="1" self="0" time="0" stackable="1" stacksize="1" icon="skills/wizard/spell_white8_64.png" smallicon="skills/wizard/spell_white8_32.png">
+		<halo name="sprites/sfx/radiance_loop/radiance_loop" first="0" num="4" frameRate="100" />
+		<secondarybuff id="11" amount="-100"/> <!-- resist -->
+	</buff>
+	<description text="No one can resist the power of love!" />
+   </spell>
+<spell name="Rune Love" type="target" icon="skills/spells/unconditional_love32.png" >
+	<effect type="charm" turns="24"/>
+	<description text="Magically charms a monster into giving up their evil ways to become your buddy ... for a short time. Then they just stab you in the back again." />
+   </spell>
+<spell name="Runeword Love" type="target" >
+	<anim sprite="sprites/love/love" frames="6" framerate="90" sfx="choir"/>
+   <effect type="trigger" spell="Unresistable" />
+   <effect type="trigger" spell="Rune Love" />
+   </spell>
+<spell name="Prophecyblast" type="template" templateID="12" icon="skills/spells/stars_aligned32.png">
+   <effect type="damage" aethereal="10" aetherealF="0.34"/>
+   <effect type="paralyze" amount="2" turns="2" self="0" />
+   <effect type="bleed" />
+   <anim sprite="sprites/sfx/celestial_hit/celestial_hit" frames="8" sfx="magic_damage" framerate="80"  centerEffect="1"/>
+   <description text="With the stars aligned just so, terrible celestial energies are unleashed upon all around you."/>
+   </spell>
+<spell name="Prophecy1" type="target">
+	<effect type="trigger" amount="2" affectsCorpses="0" spell="Prophecyblast" />
+	<effect type="trigger" amount="4" affectsCorpses="0" spell="Prophecyblast" />
+	<effect type="trigger" amount="6" affectsCorpses="0" spell="Prophecyblast" />
+	<effect type="trigger" amount="8" affectsCorpses="0" spell="Prophecyblast" />
+	<effect type="trigger" amount="10" affectsCorpses="0" spell="Prophecyblast" />
+	<effect type="trigger" amount="12" affectsCorpses="0" spell="Prophecyblast" />
+	<effect type="trigger" amount="14" affectsCorpses="0" spell="Prophecyblast" />
+   </spell>
+<spell name="Rune of Prophecy" type="target">
+	<buff useTimer="1" self="0" time="13" stackable="1" stacksize="9" icon="skills/spells/stars_aligned64.png" smallicon="skills/spells/stars_aligned32.png">
+	<halo name="sprites/prophecy/prophecy" first="0" num="6" frameRate="100" />
+	</buff>
+	<description text="Your target is a conduit of terrible celestial energies." />
+   </spell>
+<spell name="Runeword Prophecy" type="target" >
+	<effect type="trigger" spell="Prophecy1" />
+	<effect type="trigger" spell="Rune of Prophecy" />
+   </spell>
+<spell name="Rune Restoration" type="target" >
+	<effect type="uncurse" amount="1" />
+	<effect type="heal" amount="50" amountF="0.5"/>
+   <effect type="spellpoints" amount="20" amountF="0.5" />
+	<anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="60" centerEffect="1" sfx="choir" />
+	</spell>
+<spell name="Restoremine" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/restoration/restoration" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="3" mineSpritePNGRate="90" 
+      mineTimer="60">
+<effect type="trigger" spell="Rune Restoration" />
+</spell>
+<spell name="Runeword Restoration" type="target" >
+	<anim sprite="sprites/sfx/celestial_hit/celestial_hit" frames="8" framerate="90" sfx="choir"/>
+	<effect type="trigger" spell="Restoremine" />
+   </spell>
+<spell name="Divine Smite" type="target" icon="skills/placeholder32.png">
+	<effect type="damage" burn="1" righteous="12" righteousF=".5" conflagratory="12" conflagratoryF=".5" taxa="Demon"/>
+	<effect type="damage" burn="1" righteous="12" righteousF=".5" conflagratory="12" conflagratoryF=".5" taxa="Undead"/>
+	<effect type="paralyze" amount="2" turns="2"/>
+	<anim sprite="sprites/sfx/divine_hit/divine_hit" frames="8" sfx="magic_damage" framerate="80"/>
+   </spell>  
+<spell name="Divine Strike" type="target">
+   <effect type="damage" righteous="5" righteousF=".2"/>
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="Divine Smite" taxa="Demon"/>
+   <effect type="trigger" amount="1" affectsCorpses="0" spell="Divine Smite" taxa="Undead"/>
+   <anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="90"  centerEffect="0" sfx="righteous" />
+   </spell>
+<spell name="Divine Power Buff" type="target" >
+	<buff useTimer="1" self="0" time="120" stackable="1" stacksize="1" icon="skills/wizard/spell_white8_64.png" smallicon="skills/wizard/spell_white8_32.png">
+		<halo name="sprites/sfx/radiance_loop/radiance_loop" first="0" num="4" frameRate="100" />
+		<secondarybuff id="11" amount="100"/> <!-- resist -->
+		<resistbuff necromantic="10" righteous="10" />
+		<damagebuff righteous="10"/>
+	</buff>
+	<description text="Your summon is imbued with divine powers!" />
+   </spell>
+<spell name="Divine Power" type="target">
+	<buff useTimer="1" time="1" stackable="1" stacksize="2" icon="skills/wizard/spell_white8_64.png" smallicon="skills/wizard/spell_white8_32.png">
+		<halo name="sprites/sfx/radiance_loop/radiance_loop" first="0" num="4" frameRate="100" />
+		<secondarybuff id="11" amount="75"/> <!-- resist -->
+		<resistbuff necromantic="5" righteous="5"/>
+		<sightbuff amount="4"/>
+        <targetHitEffectBuff name="Divine Strike" />
+		<playerHitEffectBuff percentage="50" name="Blinding Flash" />
+	</buff>
+	<description text="You are imbued with divine powers so long as you stand on this glyph." />
+   </spell>
+<spell name="Divinemine" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/light/light" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="3" mineSpritePNGRate="90" 
+      mineTimer="24" 
+      minePermanent="1" >
+	  <effect type="trigger" spell="Divine Smite" taxa="Demon" />
+	  <effect type="trigger" spell="Divine Smite" taxa="Undead" />
+	  <effect type="trigger" spell="Divine Power" />
+</spell>
+<spell name="Runeword Light" type="target" >
+	<anim sprite="sprites/sfx/celestialring/celestialring" frames="8" framerate="90" sfx="radiant"/>
+	<effect type="trigger" spell="Divinemine" />
+	<effect type="trigger" spell="Divine Power Buff" />
+   </spell>
+<spell name="Runeword Death" type="target" >
+	<anim sprite="sprites/death/death" frames="8" framerate="120" sfx="necromantic"/>
+   <effect type="damage" necromantic="350" taxa="Demon" />
+   <effect type="damage" necromantic="350" taxa="Other" />
+   <effect type="damage" necromantic="350" taxa="Animal" />
+   <effect type="damage" necromantic="350" taxa="Vegetable" />
+   <effect type="heal" amount="350" taxa="Undead"/> <!-- you idiot-->
+   <effect type="trigger" amount="5" spell="Curse of the Mind" />
+   <effect type="trigger" amount="7" spell="Curse of Weakness" />
+   <effect type="trigger" amount="2" spell="Lingering Weakness" />
+   <effect type="trigger" amount="3" spell="Soul Price" />
+   <effect type="trigger" amount="1" spell="Necromantic Blinding" />
+   </spell>
+<spell name="Fruitblast" type="template" templateID="99" icon="skills/spells/summon_wall32.png">
+	<anim sprite="sprites/sfx/spores/spores" frames="4" framerate="80" sfx="roots" centerEffect="0"/>
+	<effect type="confuse" amount="10"/>
+<effect type="spawnitemfromlist">
+    <option name="Apple"/>
+    <option name="Plum"/>
+    <option name="Pear"/>
+	<option name="Fairywodger"/>
+	<option name="Night Cap"/>
+  </effect>
+   </spell>
+<spell name="Runeword Blossom" type="target" >
+	<anim sprite="sprites/fruit/fruit" frames="10" framerate="100" sfx="pong"/>
+	<effect type="trigger" spell="Fruitblast" />
+   </spell>
+<spell name="Steel ring" type="template" templateID="09" >
+  <effect bleed="1" type="damage" slashing="8" slashingF=".5" affectscaster="1" />
+  <anim sprite="sprites/sfx/whirlingblades/whirlingblades" frames="3" framerate="90" sfx="blades"/>
+   </spell>
+<spell name="Summon steel" type="targetfloor" >
+   <effect type="summon" monsterType="Steel Statue" />
+   <effect type="trigger" spell="Steel ring" amount="1" affectsCorpses="0" />
+   </spell>
+<spell name="Runeword Steel" type="target" >
+	<anim sprite="sprites/steel/steel" frames="13" framerate="100" sfx="tinkering"/>
+	<effect type="trigger" spell="Summon steel" />
+   </spell>
+<spell name="Maggotsmine" type="template" templateID="11" icon="skills/spells/summon_wall32.png">
+	<anim sprite="sprites/sfx/skathas_roots/skathas_roots" frames="6" framerate="80" sfx="roots" centerEffect="0"/>
+	<effect type="trigger" spell="Invive Thaumite Swarm" />
+   </spell>
+<spell name="Decaymine" 
+		type="targetfloor"
+		icon="skills/spells/conjure_miasma32.png" 
+		mineTimer="28" 
+		mineUseGlints="1" 
+		mineGlintDensity="8"
+      mineSpriteDrawOrder="1"
+		mineSpritePNGSeries="sprites/sfx/skullpuff/skullpuff" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="10" 
+		mineSpritePNGRate="140" 
+		mine="1" 
+		mineradius="2"
+		minePermanent="1" >
+	<effect type="damage" toxic="2" toxicF="0.10" asphyxiative="2" asphyxiativeF="0.10" putrefying="2" putrefyingF="0.10" affectscaster="1" />
+	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="100" centerEffect="1" sfx="putrifying" />
+   </spell>
+<spell name="Runeword Decay" type="target" >
+	<anim sprite="sprites/decay/decay" frames="10" framerate="150" sfx="roots"/>
+	<effect type="trigger" spell="Decaymine" />
+	<effect type="trigger" spell="Maggotsmine" />
+   </spell>
+<spell name="Auricmine" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/aurification/aurification" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="3" mineSpritePNGRate="90" 
+      mineTimer="10" 
+      minePermanent="1" >
+	<effect type="damage" midas="1" transmutative="8" transmutativeF=".2"/>
+	<anim sprite="sprites/sfx/midas_loop/midas_loop" frames="4" framerate="90" sfx="money_get"/>
+	<effect type="trigger" spell="Curse of the Golden Ratio"/>
+</spell>
+<spell name="Runeword Aurification" type="target" >
+	<anim sprite="sprites/sfx/midas_loop/midas_loop" frames="4" framerate="90" sfx="money_get"/>
+	<effect type="trigger" spell="Auricmine" />
+   </spell>
+<spell name="Stop Hitting Yourself" type="target" icon="skills/spells/unconscious_precognition32.png" wand="0">
+	<buff useTimer="1" time="0" stackable="1" stacksize="1" icon="skills/spells/unconscious_precognition64.png" smallicon="skills/spells/unconscious_precognition32.png">
+		<secondarybuff id="4" amount="-200"/> <!-- Crit -->
+		<secondarybuff id="5" amount="-200"/> <!-- Haywire -->
+		<secondarybuff id="6" amount="200"/> <!-- Dodge -->
+		<secondarybuff id="11" amount="200"/> <!-- resist -->
+	</buff>
+	<description text="You no longer hit youself, idiot." />
+   </spell>
+<spell name="Runeword Teleport" type="target" >
+	<anim sprite="sprites/teleportation/teleportation" frames="8" framerate="90" sfx="teleport"/>
+	<effect type="trigger" spell="Xeuclid's Translation" />
+	<effect type="trigger" spell="Stop Hitting Yourself" />
+   </spell>
+<spell name="Firefield" 
+      type="template"
+	  templateID="10"
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/burnA/burnA" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="3" 
+      mineSpritePNGRate="100"  
+      mineTimer="16" 
+      minePermanent="1" >
+	<effect type="damage" conflagratory="3" conflagratoryF="0.2" burn="1" affectscaster="0" />
+   <anim sprite="sprites/sfx/impact_fire/impact_fire" frames="5" framerate="60" centerEffect="1" sfx="conflagratory"/>
+</spell>
+<spell name="Firefield2" 
+      type="template"
+	  templateID="10"
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/burnB/burnB" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="3" 
+      mineSpritePNGRate="100"  
+      mineTimer="16" 
+      minePermanent="1" >
+	<effect type="damage" conflagratory="3" conflagratoryF="0.2" burn="1" affectscaster="1" />
+   <anim sprite="sprites/sfx/impact_fire/impact_fire" frames="5" framerate="60" centerEffect="1" sfx="conflagratory"/>
+</spell>
+<spell name="Runeword Flame" type="target" >
+	<anim sprite="sprites/flames/flames" frames="3" framerate="400" sfx="fireball"/>
+	<effect type="trigger" spell="Firefield" />
+	<effect type="trigger" spell="Firefield2" />
+   </spell>
+<spell name="Chillmine" 
+      type="targetfloor"
+      mine="1" 
+      mineradius="2"
+	  mineUseGlints="1" 
+	  mineGlintDensity="8"
+	  mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/icepuff/icepuff" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="8" 
+      mineSpritePNGRate="100"  
+      mineTimer="16" 
+      minePermanent="1" >
+	<effect type="damage" hyperborean="3" hyperboreanF="0.2" affectscaster="1" />
+</spell>
+<spell name="Slipped" type="targetfloor" >
+	<effect type="damage" crushing="5" hyperboreanF=".2" affectscaster="0" />
+   <effect type="paralyze" amount="1" turns="2" self="0"/>
+   <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="90" centerEffect="1" sfx="evade"/>
+   </spell>
+<spell name="Icemine" 
+      type="targetfloor"
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/icemine/icemine" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="3" mineSpritePNGRate="100" 
+      mineTimer="16" 
+      minePermanent="1" >
+	<effect type="trigger" amount="1" spell="Slipped" percent="33"/>
+</spell>
+<spell name="Runeword Ice" type="target" >
+	<anim sprite="sprites/ice/ice" frames="3" framerate="200" sfx="magic"/>
+	<effect type="trigger" spell="Icemine" />
+	<effect type="trigger" spell="Chillmine" />
+   </spell>
+<spell name="Stormbolt" type="targetfloor" >
+	<effect type="damage" blasting="2" blastingF="0.2" voltaic="8" voltaicF="0.25" affectscaster="1" />
+   <effect type="paralyze" amount="2" turns="2" self="0"/>
+   <anim sprite="sprites/sfx/fulminaric_bolt/fulminaric_bolt" frames="10" framerate="90" centerEffect="0" sfx="lightning_bolt"/>
+   </spell>
+<spell name="Voltmine" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/storms/storms" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="3" mineSpritePNGRate="90" 
+      mineTimer="12" 
+      minePermanent="1" >
+	<effect type="damage" voltaic="8" voltaicF=".25"/>
+	<effect type="paralyze" amount="2" turns="2" self="0"/>
+	<effect type="trigger" amount="1" spell="Stormbolt" percent="33"/>
+</spell>
+<spell name="Runeword Storm" type="targetfloor" >
+   <anim sprite="sprites/sfx/fulminaric_bolt/fulminaric_bolt" frames="10" framerate="90" centerEffect="0" sfx="lightning_bolt"/>
+   <effect type="trigger" spell="Voltmine"/>
+   </spell>
+<spell name="Stonewall" type="template" templateID="10" icon="skills/spells/summon_wall32.png">
+	<anim sprite="sprites/sfx/magic_wall/magic_wall" sync="1" frames="11" framerate="80" sfx="earth" centerEffect="0"/>
+	<effect type="damage" crushing="18" crushingF="0.5" self="0"/>
+	<effect type="knock" amount="4"/>
+	<effect type="create" turns="48" objectSprite="dungeon/summoned_wall.png" self="0"/>
+   </spell>
+<spell name="Runeword Stone" type="target" >
+	<anim sprite="sprites/stone/stone" frames="11" framerate="120" sfx="earth"/>
+	<effect type="trigger" spell="Stonewall" />
+   </spell>
+<spell name="Swiftness Buff" type="target" icon="skills/spells/unconscious_precognition32.png" wand="0">
+	<buff useTimer="1" self="0" time="300" stackable="0" stacksize="2" icon="skills/spells/unconscious_precognition64.png" smallicon="skills/spells/unconscious_precognition32.png">
+		<halo name="sprites/sfx/hero_glow/hero_glow" first="0" num="3" frameRate="100" />
+		<primarybuff id="2" amount="5"/> <!-- Nimbleness -->
+		<secondarybuff id="6" amount="25"/> <!-- Dodge -->
+		<secondarybuff id="9" amount="15"/>  <!-- EDR -->
+	</buff>
+	<description text="Your swiftness is greatly increased so long as you stand on this glyph." />
+   </spell>
+<spell name="Swiftness Power" type="target" icon="skills/spells/unconscious_precognition32.png" wand="0">
+	<buff useTimer="1" time="1" stackable="1" stacksize="2" icon="skills/spells/unconscious_precognition64.png" smallicon="skills/spells/unconscious_precognition32.png">
+		<primarybuff id="2" amount="5"/> <!-- Nimbleness -->
+		<secondarybuff id="6" amount="25"/> <!-- Dodge -->
+		<secondarybuff id="9" amount="5"/>  <!-- EDR -->
+	</buff>
+	<description text="Your swiftness is greatly increased so long as you stand on this glyph." />
+   </spell>
+<spell name="Swiftnessmine" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/swiftness/swiftness" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="3" mineSpritePNGRate="90" 
+      mineTimer="60" 
+      minePermanent="1" >
+<effect type="trigger" spell="Swiftness Power" />
+</spell>
+<spell name="Runeword Swiftness" type="target" >
+	<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="90" sfx="magic_open"/>
+	<effect type="trigger" spell="Swiftnessmine" />
+	<effect type="trigger" spell="Swiftness Buff" />
+   </spell>
+<spell name="Instabilitymine" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/instability/instability" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="3" mineSpritePNGRate="90" 
+      mineTimer="16" 
+      minePermanent="1" >
+	<effect type="damage" aethereal="4" aetherealF=".3"/>
+	<anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="90" sfx="teleport_short"/>
+	<effect type="displace" sfx="teleport_short" />
+</spell>
+<spell name="Runeword Instability" type="target" >
+	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="90" sfx="aetherial"/>
+	<effect type="trigger" spell="Instabilitymine" />
+   </spell>
+<spell name="healthmine" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/health/health" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="3" mineSpritePNGRate="90" 
+      mineTimer="16" 
+      minePermanent="1" >
+	<effect type="heal" amount="2" amountF="0.2"/>
+	<anim sprite="sprites/sfx/fleshy_buff/fleshy_buff" frames="6" framerate="90" sfx="magic"/>
+</spell>
+<spell name="Runeword Health" type="target" >
+	<anim sprite="sprites/sfx/fleshy_buff/fleshy_buff" frames="6" framerate="90" sfx="magic"/>
+	<effect type="trigger" spell="healthmine" />
+   </spell>
+<spell name="Forcemine" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/force/force" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="3" mineSpritePNGRate="90" 
+      mineTimer="12" 
+      minePermanent="1" >
+	<effect type="damage" blasting="4" blastingF=".20"/>
+	<effect type="knock" amount="2" self="0"/>
+	<anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="80" sfx="blast" centerEffect="1"/>
+</spell>
+<spell name="Runeword Force" type="target" >
+	<anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="90" sfx="teleport_short"/>
+	<effect type="trigger" spell="Forcemine" />
+   </spell>
+<!-- Steel statue-->
+<spell name="The Fist of Steel" type="target" >
+   <description text="This is the art of teaching your enemy how to back off. Hits an enemy with a blast that knocks them back."/>
+   <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60"  sfx="blast" centerEffect="0"/>
+   <effect type="damage" blasting="8"/>
+   <effect type="knock" amount="2" self="0"/>
+   </spell>
+<!-- runecrunch cereal -->
+<spell name="Runic Prize" type="self">
+<effect type="spawnitemfromlist">
+    <option name="Rune Word of Force"/>
+    <option name="Rune Word of Health"/>
+    <option name="Rune Word of Swiftness"/>
+    <option name="Rune Word of Instability"/>
+    <option name="Rune Word of Stone"/>
+	<option name="Rune Word of Blossom"/>
+    <option name="Rune Word of Restoration"/>
+	<option name="Rune Word of Power"/>
+  </effect>
+	<description text="You won the prize!" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+ </spell>
+ </spellDB>
+ 

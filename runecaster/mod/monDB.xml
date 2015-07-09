@@ -1,0 +1,47 @@
+
+
+<monDB>
+
+ <monster type="1" subtype="5" name="Steel Statue" level="9" taxa="Construct" special="1">
+  <idleSprite 
+     left="sprites/monster/statue/statue_walk_l.xml" 
+     right="sprites/monster/statue/statue_walk_r.xml" 
+     up="sprites/monster/statue/statue_walk_u.xml" 
+     down="sprites/monster/statue/statue_walk_d.xml" 
+     /> 
+
+  <attackSprite 
+     left="sprites/monster/statue/statue_atk_l.xml" 
+     right="sprites/monster/statue/statue_atk_r.xml" 
+     up="sprites/monster/statue/statue_atk_u.xml" 
+     down="sprites/monster/statue/statue_atk_d.xml" 
+     /> 
+
+  <hitSprite 
+     left="sprites/monster/statue/statue_walk_l.xml" 
+     right="sprites/monster/statue/statue_walk_r.xml" 
+     up="sprites/monster/statue/statue_walk_u.xml" 
+     down="sprites/monster/statue/statue_walk_d.xml" 
+     /> 
+
+  <dieSprite 
+     name="sprites/monster/statue/statue_death.xml"
+     /> 
+
+  <sfx 
+     attack="small_attack" 
+     hit="small_hit" 
+     die="small_die" 
+     spell="small_spell"
+     /> 
+
+  <info latin="(Consecrus Arma)" text="He was born from the magic of a powerful rune. Now he wreaks vegeneance on your enemies." /> 
+  <palette tint="50" />
+  <stats numFig="17" xpValue="0" />
+  <damage crushing="18"/> 
+  <secondarybuff id="10" amount="10"/> <!-- armour -->
+  <secondarybuff id="7" amount="20"/> <!-- block -->
+  <resistances hyperborean="10" putrefying="15" conflagratory="10" toxic="20" piercing="5" asphyxiative="20" />
+  <onhit spell="The Fist of Steel" onechancein="3"/>
+  </monster>
+</monDB>

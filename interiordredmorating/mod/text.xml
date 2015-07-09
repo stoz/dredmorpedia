@@ -1,0 +1,887 @@
+<text>
+  
+  <!-- 
+  
+  The text database contains (almost) every piece of text that appears in the game.  It is used to generate artifact names and descriptions as well as room names,
+  it contains the descriptive text found within the character panel for stats, as well as main user interface.  It contains the various insults that the monsters
+  say to the player.  
+  
+  
+  -->
+
+  
+  
+  <!-- and now here are the actually funny strings you were looking for -->
+
+  <quality text="anachronistic"/>
+  <quality text="angelic"/>
+  <quality text="breath-taking"/>
+  <quality text="bronzed"/>
+  <quality text="dazzling"/>
+  <quality text="dyed"/>
+  <quality text="elegant"/>
+  <quality text="enchanted"/>
+  <quality text="exquisite"/>
+  <quality text="garish"/>
+  <quality text="gargantuan"/>
+  <quality text="glorious"/>
+  <quality text="half-gnawed"/>
+  <quality text="highly-polished"/>
+  <quality text="hot-glued"/>
+  <quality text="kingly"/>
+  <quality text="laminated"/>
+  <quality text="luscious"/>
+  <quality text="magnificent"/>
+  <quality text="modest"/>
+  <quality text="multi-dimensional"/>
+  <quality text="otherworldly"/>  
+  <quality text="perforated"/>
+  <quality text="pitted"/>
+  <quality text="polarized"/>
+  <quality text="pretty"/>
+  <quality text="reliable"/>
+  <quality text="robust"/>
+  <quality text="Scandinavian"/>
+  <quality text="sentient"/>
+  <quality text="sophisticated"/>
+  <quality text="spunky"/>
+  <quality text="stately"/>
+  <quality text="steel-reinforced"/>
+  <quality text="teeny-weeny"/>
+  <quality text="tie-dyed"/>
+  <quality text="transnormal"/>
+  <quality text="water-logged"/>
+
+
+  
+  <material text="adamantium"/>
+  <material text="aquamarine"/>
+  <material text="balsa wood"/>
+  <material text="bling"/>
+  <material text="bronze"/>
+  <material text="carnelian"/>
+  <material text="charcoal"/>
+  <material text="chiffon"/>
+  <material text="citrine"/>
+  <material text="corduroy"/>
+  <material text="cotton"/>
+  <material text="cubic zirconia"/>
+  <material text="Diggle eggshell"/>
+  <material text="emerald"/>
+  <material text="lace"/>
+  <material text="lapis lazuli"/>
+  <material text="moss"/>
+  <material text="nylon"/>
+  <material text="peanut butter"/>
+  <material text="pearl"/>
+  <material text="pixie dust"/>
+  <material text="plastic"/>
+  <material text="platinum"/>
+  <material text="plummage"/>
+  <material text="redstone"/>
+  <material text="snakeskin"/>
+  <material text="stardust"/>
+  <material text="studs"/>
+  <material text="strange matter"/>
+  <material text="transparent aluminum"/>
+  <material text="zinc"/>
+  
+  
+  <decor text="absent-minded doodles"/>
+  <decor text="Beatles sheet music"/>
+  <decor text="barbed wire"/>
+  <decor text="bicycle chain"/>
+  <decor text="blossoming vines"/>
+  <decor text="brightly-colored translucent polyhedrals"/>
+  <decor text="camouflage netting"/>
+  <decor text="dragon scales"/>
+  <decor text="Elvis's autograph"/>
+  <decor text="embossed seals of the notary public"/>
+  <decor text="extra limbs"/>
+  <decor text="facebook status updates"/>
+  <decor text="flower petals"/>
+  <decor text="frozen dinosaur embryos"/>
+  <decor text="KICK ME signs"/>
+  <decor text="LEGO bricks"/>
+  <decor text="magnets"/>
+  <decor text="Monster Scout merit badges"/>
+  <decor text="mummy wrappings"/>
+  <decor text="noodles"/>
+  <decor text="panty-hose"/>
+  <decor text="paperclips"/>
+  <decor text="pewter miniatures"/>
+  <decor text="pin-up girls"/>
+  <decor text="pixie dust"/>
+  <decor text="potato skins"/>
+  <decor text="powdered sugar"/>
+  <decor text="pretty pink ribbons"/>
+  <decor text="refractory holograms"/>
+  <decor text="retractable blades and corkscrews"/>
+  <decor text="rusty nails"/>
+  <decor text="safety pins"/>
+  <decor text="seashells"/>
+  <decor text="shag carpeting"/>
+  <decor text="silk scarves"/>
+  <decor text="sprinkles and birthday candles"/>
+  <decor text="tin foil"/>
+  <decor text="tiger stripes"/>
+  <decor text="toenail clippings"/>
+  <decor text="twinkly LEDs"/>
+  <decor text="zippers"/>
+  
+  
+  <startPhoneme text="Dutt"/>
+  <startPhoneme text="Gon"/>
+  <startPhoneme text="Gul"/>
+  <startPhoneme text="Gyra"/>
+  <startPhoneme text="Haug"/>
+  <startPhoneme text="Helm"/>
+  <startPhoneme text="Hai"/>
+  <startPhoneme text="Jid"/>
+  <startPhoneme text="Jur"/>
+  <startPhoneme text="Jalan"/>
+  <startPhoneme text="Ost"/>
+  <startPhoneme text="Ogg"/>
+  <startPhoneme text="Orth"/>
+  <startPhoneme text="Oighn"/>
+  <startPhoneme text="Yawg"/>
+  <startPhoneme text="Quin"/>
+  <startPhoneme text="Quag"/>
+  <startPhoneme text="Ragn"/>
+  <startPhoneme text="Rolk"/>
+  <startPhoneme text="Rasan"/>
+  <startPhoneme text="Reep"/>
+  <startPhoneme text="Rod"/>
+  <startPhoneme text="Sutt"/>
+  <startPhoneme text="Slyth"/>
+  <startPhoneme text="Szut"/>
+  <startPhoneme text="Sard"/>
+  <startPhoneme text="Sahm"/>
+  <startPhoneme text="Snik"/>
+  <startPhoneme text="Spiv"/>
+  <startPhoneme text="Shon"/>
+  <startPhoneme text="Yol"/>
+  <startPhoneme text="Xulg"/>
+  <startPhoneme text="Xhiu"/>
+
+
+ 
+  <phoneme text="ad"/>
+  <phoneme text="afer"/>
+  <phoneme text="ahb"/>
+  <phoneme text="ald"/>
+  <phoneme text="aldo"/>
+  <phoneme text="allo"/>
+  <phoneme text="am"/>
+  <phoneme text="amer"/>
+  <phoneme text="amo"/>
+  <phoneme text="ando"/>
+  <phoneme text="anel"/>
+  <phoneme text="ar"/>
+  <phoneme text="arel"/>
+  <phoneme text="ariel"/>
+  <phoneme text="arn"/>
+  <phoneme text="aroll"/>
+  <phoneme text="aron"/>
+  <phoneme text="as"/>
+  <phoneme text="asti"/>
+  <phoneme text="asto"/>
+  <phoneme text="aug"/>
+  <phoneme text="az"/>
+  <phoneme text="eesh"/>
+  <phoneme text="effer"/>
+  <phoneme text="eghi"/>
+  <phoneme text="ehm"/>
+  <phoneme text="elb"/>
+  <phoneme text="ell"/>
+  <phoneme text="emm"/>
+  <phoneme text="endo"/>
+  <phoneme text="enti"/>
+  <phoneme text="erd"/>
+  <phoneme text="erel"/>
+  <phoneme text="erm"/>
+  <phoneme text="eroll"/>
+  <phoneme text="eron"/>
+  <phoneme text="ess"/>
+  <phoneme text="est"/>
+  <phoneme text="esto"/>
+  <phoneme text="ette"/>
+  <phoneme text="eye"/>
+  <phoneme text="ian"/>
+  <phoneme text="iel"/>
+  <phoneme text="ien"/>
+  <phoneme text="ifer"/>
+  <phoneme text="ig"/>
+  <phoneme text="ight"/>
+  <phoneme text="ilb"/>
+  <phoneme text="ily"/>
+  <phoneme text="imer"/>
+  <phoneme text="ina"/>
+  <phoneme text="inel"/>
+  <phoneme text="inth"/>
+  <phoneme text="irb"/>
+  <phoneme text="irel"/>
+  <phoneme text="istel"/>
+  <phoneme text="ith"/>
+  <phoneme text="iv"/>
+  <phoneme text="izz"/>
+  <phoneme text="oast"/>
+  <phoneme text="och"/>
+  <phoneme text="ob"/>
+  <phoneme text="odo"/>
+  <phoneme text="ok"/>
+  <phoneme text="oli"/>
+  <phoneme text="om"/>
+  <phoneme text="ondo"/>
+  <phoneme text="ong"/>
+  <phoneme text="oob"/>
+  <phoneme text="oom"/>
+  <phoneme text="oor"/>
+  <phoneme text="ooth"/>
+  <phoneme text="org"/>
+  <phoneme text="orn"/>
+  <phoneme text="orth"/>
+  <phoneme text="os"/>
+  <phoneme text="osk"/>
+  <phoneme text="oth"/>
+  <phoneme text="ouh"/>
+  <phoneme text="uhli"/>
+  <phoneme text="ul"/>
+  <phoneme text="ulb"/>
+  <phoneme text="ulchro"/>
+  <phoneme text="uli"/>
+  <phoneme text="ulk"/>
+  <phoneme text="ulp"/>
+  <phoneme text="ultho"/>
+  <phoneme text="um"/>
+  <phoneme text="umsh"/>
+  <phoneme text="ur"/>
+  <phoneme text="urf"/>
+  <phoneme text="urg"/>
+  <phoneme text="urgh"/>
+  <phoneme text="urgra"/>
+  <phoneme text="urn"/>
+  <phoneme text="urush"/>
+  <phoneme text="usk"/>
+  <phoneme text="ust"/>
+  <phoneme text="ustus"/>
+  <phoneme text="uth"/>
+  <phoneme text="uvik"/>
+  <phoneme text="ux"/>
+  <phoneme text="yan"/>
+  <phoneme text="ynx"/>
+  <phoneme text="yss"/>
+
+
+
+  <noun text="Bagel" plural="Bagels" statue="dungeon/statue_bagel.png" />
+  <noun text="Bath Towel" plural="Bath Towels" painting="dungeon/tapestry_towels.png" />
+  <noun text="Bookworm" plural="Bookworms" statue="dungeon/statue_bookworm.png" />
+  <noun text="Donut" plural="Doughnuts" statue="dungeon/statue_bagel.png" />
+  <noun text="Furnace" plural="Furnaces" statue="dungeon/furnaceA.png" />
+  <noun text="Garlic" plural="Garlic" statue="dungeon/statue_garlic.png" />
+  <noun text="Inner Tube" plural="Inner Tubes" statue="dungeon/statue_bagel.png" />
+  <noun text="Kitten" plural="Kittens" painting="dungeon/painting_kitten.png" />
+  <noun text="Neanderthal" plural="Neanderthals" statue="dungeon/statue_neanderthal.png"/>
+  <noun text="Onion" plural="Onions" statue="dungeon/statue_onion.png" />
+  <noun text="Pin-cushion" plural="Pin-cushions" statue="dungeon/statue_pincushion.png" />
+  <noun text="Pizza" plural="Pizzas" floor="dungeon/floor_pizza.png" statue="dungeon/statue_pizza.png" />
+  <noun text="Pentagram" plural="Pentagrams" floor="dungeon/pentagram.png" />
+  <noun text="Postcard" plural="Postcards" painting="dungeon/painting_postcard.png" />
+  <noun text="Propaganda" plural="Propaganda Posters" painting="dungeon/poster_hero.png" />
+  <noun text="Sapling" plural="Saplings" statue="dungeon/tree_1.png" />
+  <noun text="Snowman" plural="Snowmen" statue="dungeon/statue_snowman.png" />
+  <noun text="Stein" plural="Steins" statue="dungeon/statue_stein.png" />
+  <noun text="Target" plural="Targets" statue="dungeon/practice_target.png" />
+  <noun text="Tiger" plural="Tigers" painting="dungeon/painting_tiger.png" />
+  <noun text="Tree" plural="Trees" statue="dungeon/tree_2.png" />
+
+
+
+  <noun text="Brewer's Yeast" plural="Yeasts" />
+  <noun text="Brussel Sprout" plural="Brussel Sprouts" />
+  <noun text="Diggle" plural="Diggles"  />
+  <noun text="Beercan" plural="Beercans"  />
+  <noun text="Groupie" plural="Groupies" />
+  <noun text="Hangnail" plural="Hangnails" />
+  <noun text="Mermaid" plural="Mermaids" />
+  <noun text="Portcullis" plural="Portculli" />
+  <noun text="Scarab" plural="Scarab-Beetles" />
+  <noun text="Singularity" plural="Pluralities" />
+  <noun text="Something Unholy" plural="All Things Unholy" />
+  <noun text="Sunflower" plural="Sunflowers" />
+  <noun text="Top Hat" plural="Top Hats"  />
+  
+  
+  
+  <adjective text="Acidic" />
+  <adjective text="Acratic" />
+  <adjective text="Ample-Bossomed" />
+  <adjective text="Boundless" />
+  <adjective text="Bumpy" />
+  <adjective text="Burning"/>
+  <adjective text="Cartoon"/>
+  <adjective text="Celergenic" />
+  <adjective text="Crescent-Fresh" />
+  <adjective text="Decorous" />
+  <adjective text="Disharmonius" />
+  <adjective text="Easily-Offended" />
+  <adjective text="Eldritch" />
+  <adjective text="Epiploic"/>
+  <adjective text="Everlasting" />
+  <adjective text="Feminine"/>
+  <adjective text="Feverish" />
+  <adjective text="Flatulent" />
+  <adjective text="Folding" />
+  <adjective text="Ghoulish" />
+  <adjective text="Grainy" />
+  <adjective text="Homoerotic" />
+  <adjective text="Ictheous" />
+  <adjective text="Innocent"/>
+  <adjective text="Languid" />
+  <adjective text="Manly"/>
+  <adjective text="Mediocre" />
+  <adjective text="Misspelled" />
+  <adjective text="Mountainous" />
+  <adjective text="Musky" />
+  <adjective text="Nippley" />
+  <adjective text="Pains-taking" />
+  <adjective text="Palindromic" />
+  <adjective text="Penitent" />
+  <adjective text="Pewling" />
+  <adjective text="Plump" />
+  <adjective text="Pregnant" />
+  <adjective text="Prehistoric" />
+  <adjective text="Psychopompous" />
+  <adjective text="Quintessential"/>
+  <adjective text="Rolling" />
+  <adjective text="Rubbery" />
+  <adjective text="Sabre-toothed" />
+  <adjective text="Self-Absorbed" />
+  <adjective text="Silken" />
+  <adjective text="Skeletal" />
+  <adjective text="Slumbering" />
+  <adjective text="Squiggly" />
+  <adjective text="Stereotypical"/>
+  <adjective text="Stimulating" />
+  <adjective text="Svelt" />
+  <adjective text="Sweltering" />
+  <adjective text="Tantalizing" />
+  <adjective text="Thunderous" />
+  <adjective text="Unavoidable" />
+  <adjective text="Unhousebroken" />
+  <adjective text="Unpronounceable" />
+  <adjective text="Unspoken" />
+  <adjective text="Unutterable" />
+  <adjective text="Venomous" />
+  <adjective text="Vigorous" />
+  <adjective text="Vociferous" />
+  <adjective text="Volatile" />
+  <adjective text="Woolly" />
+  <adjective text="Zany" />
+
+
+  
+  
+  <!-- ichors. mmm, ichors. -->
+
+  <ichor text="aqueous humour"/>
+  <ichor text="artificial flavors"/>
+  <ichor text="ash"/>
+  <ichor text="bacterium"/>
+  <ichor text="black bile"/>
+  <ichor text="borborygmus"/>
+  <ichor text="candy (like a pinata)"/>
+  <ichor text="carrion"/>
+  <ichor text="caviar"/>
+  <ichor text="cerumen"/>
+  <ichor text="charred bone"/>
+  <ichor text="chitlins"/>
+  <ichor text="claret"/>
+  <ichor text="coagulents"/>
+  <ichor text="contamination"/>
+  <ichor text="corpse"/>
+  <ichor text="crud"/>
+  <ichor text="cruor"/>
+  <ichor text="culinary art"/>
+  <ichor text="dandruff flakes"/>
+  <ichor text="dark green bile"/>
+  <ichor text="dead tomato squashed with moldy purple spots"/>
+  <ichor text="detritus"/>
+  <ichor text="diggle pee"/>
+  <ichor text="doubt"/>
+  <ichor text="ear wax"/>
+  <ichor text="ectoplasm"/>
+  <ichor text="epistaxis"/>
+  <ichor text="excrement"/>
+  <ichor text="experience points"/>
+  <ichor text="feculence"/>
+  <ichor text="filth"/>
+  <ichor text="flotsam and jetsam"/>
+  <ichor text="foulness"/>
+  <ichor text="garbage"/>
+  <ichor text="gastric juices"/>
+  <ichor text="giblets"/>
+  <ichor text="gore"/>
+  <ichor text="gravy"/>
+  <ichor text="hemoglobin"/>
+  <ichor text="impurity"/>
+  <ichor text="kibble"/>
+  <ichor text="kosher gelatin"/>
+  <ichor text="leavings"/>
+  <ichor text="litter"/>
+  <ichor text="lutefisk and anti-lutefisk (which self-annhilate on contact)"/>
+  <ichor text="lymph"/>
+  <ichor text="malice"/>
+  <ichor text="marrow"/>
+  <ichor text="nastiness"/>
+  <ichor text="natural calf rennet"/>
+  <ichor text="naughty bits"/>
+  <ichor text="nevi"/>
+  <ichor text="nuts and bolts"/>
+  <ichor text="old robes (but no body)"/>
+  <ichor text="omentum"/>
+  <ichor text="ordure"/>
+  <ichor text="orphans"/>
+  <ichor text="parasitic worms"/>
+  <ichor text="peritoneal fluid"/>
+  <ichor text="plasma"/>
+  <ichor text="potent magical artifacts (no, wait, you ruined those)"/>
+  <ichor text="putridity"/>
+  <ichor text="quivering monster-flesh"/>
+  <ichor text="Red No. 40"/>
+  <ichor text="regrets"/>
+  <ichor text="sebum"/>
+  <ichor text="self-hate"/>
+  <ichor text="serosanguineous fluid"/>
+  <ichor text="sinews"/>
+  <ichor text="skin and bones"/>
+  <ichor text="slime"/>
+  <ichor text="sludge"/>
+  <ichor text="smut"/>
+  <ichor text="snips and snails and puppy-dog tails"/>
+  <ichor text="soap"/>
+  <ichor text="spell components"/>
+  <ichor text="sugar and spice and everything nice"/>
+  <ichor text="tallow"/>
+  <ichor text="tears"/>
+  <ichor text="terror"/>
+  <ichor text="things not even _you_ would eat"/>
+  <ichor text="tripe"/>
+  <ichor text="unfinished business"/>
+  <ichor text="unidentified fluids"/>
+  <ichor text="utter rubbish fluids"/>
+  <ichor text="vitreous humour"/>
+  <ichor text="yellow bile"/>
+  <ichor text="yellowish-brown bile"/>
+  <ichor text="zorkmids"/>
+
+
+
+  <insult text="ah, that delivery i expected must be here... where do i sign?"/>
+  <insult text="akiiraaa!!!"/>
+  <insult text="all monsters report to battle stations"/>
+  <insult text="alms for the poor"/>
+  <insult text="are you makin' eyes at me???"/>
+  <insult text="are you ready to RUMBLE!?"/>
+  <insult text="before i kill you, eyebrowed one..."/>
+  <insult text="can I have your autograph?"/>
+  <insult text="can we get this over quickly? I have to get up at 5 am"/>
+  <insult text="can you spare any change?"/>
+  <insult text="dibs! this clone is mine"/>
+  <insult text="didn't your mom teach you not to stare?"/>
+  <insult text="do you have a sister?"/>
+  <insult text="don't fire till you see the whites under their eyebrows"/>
+  <insult text="Dredmor, Dredmor, he's our man, if he can't kill you, no one can!"/>
+  <insult text="even food can't save you now!"/>
+  <insult text="eyebrowed one, I am your father"/>
+  <insult text="eyebrowachu, I choose you!"/>
+  <insult text="fear my polish hammer attack"/>
+  <insult text="fresh meat"/>
+  <insult text="Girls! Pentagram of Death!"/>
+  <insult text="gooooooooo Team Dredmor!"/>
+  <insult text="have you accepted Lord Dredmor as your personal savior?"/>
+  <insult text="hello, 911? I'd like to report a home invasion"/>
+  <insult text="hi ho hi ho it's off to work i go"/>
+  <insult text="hoo-rah!"/>
+  <insult text="human for dinner again?!?"/>
+  <insult text="i am the key master, are you the gate keeper?"/>
+  <insult text="i guess i shouldn't have cut class today"/>
+  <insult text="i have a restraining order that says you can't come within 500 feet"/>
+  <insult text="i swear this is just a cry for attention"/>
+  <insult text="i thought you always played on Elvish Easy"/>
+  <insult text="i was just having some wine and cheese, would you care to join me?"/>
+  <insult text="i want my mummy"/>
+  <insult text="ia! ia! cthulhu fhtagn!"/>
+  <insult text="i'll use my magic sword, it's +1 vs eyebrows"/>
+  <insult text="i'm casting a curse on your next Evil Chest!"/>
+  <insult text="i'm so excited, I just peed myself"/>
+  <insult text="i'm so short, i can't see the dungeon for the trees"/>
+  <insult text="i'm gonna hit you so hard, your next three player characters will feel it"/>
+  <insult text="IGNORE ME!!!"/>
+  <insult text="in Dredmor we trust"/>
+  <insult text="is that a chevre log in your belt, or are you just happy to see me?"/>
+  <insult text="is that lutefisk in your pants, or are you just gross and slimy?"/>
+  <insult text="lemme at im"/>
+  <insult text="let the genocide begin"/>
+  <insult text="lock and load"/>
+  <insult text="look, behind you!"/>
+  <insult text="meat is back on the menu!"/>
+  <insult text="Mecha-Shiva! Mecha-Shiva!"/>
+  <insult text="my parents were killed by someone who looked just like you"/>
+  <insult text="none shall pass"/>
+  <insult text="oh great, another wandering eyebrow salesman"/>
+  <insult text="outta my way"/>
+  <insult text="pardon me, but would you happen to have any Grey Poupon?"/>
+  <insult text="please cast 'Animal Friend' on me"/>
+  <insult text="puff up, puff up! they hate that"/>
+  <insult text="praise be to Dredmor"/>
+  <insult text="protect the children and eggs!"/>
+  <insult text="rally round the Dredmor statue"/>
+  <insult text="red alert"/>
+  <insult text="save yourselves! it's the Eyebrowed Horror!"/>
+  <insult text="say, do you have a twin?"/>
+  <insult text="shiny!"/>
+  <insult text="skol!"/>
+  <insult text="slidikins!"/>
+  <insult text="take me with you! I can't LIVE down here!"/>
+  <insult text="there can be only one"/>
+  <insult text="these are not the diggles you're looking for"/>
+  <insult text="thou art a beslubbering ill-composed clack-dish"/>
+  <insult text="thy churlish fool-born nut-hook hath a swag-bellied maggot-pie"/>
+  <insult text="today is a good day to die"/>
+  <insult text="toys for tots, donate here"/>
+  <insult text="trick or treat!"/>
+  <insult text="two men enter, one man leaves!"/>
+  <insult text="vengeance is mine"/>
+  <insult text="viva la Dredmor"/>
+  <insult text="we don't serve your kind here"/>
+  <insult text="we'll hang ye by the gibbet, ye parrot-loving sea-dog"/>
+  <insult text="what's with the forehead merkins?"/>
+  <insult text="when i grow up, i wanna be a _wandering_ monster"/>
+  <insult text="woo-hoo"/>
+  <insult text="would you like to buy some candy bars, to support Monster Scout Troop 108?"/>
+  <insult text="yo momma"/>
+  <insult text="you better save your game before I get to you"/>
+  <insult text="you demented meat-puppet"/>
+  <insult text="you have all the tenderness of a sea-sick crocodile"/>
+  <insult text="you sure do dress funny"/>
+  <insult text="you'll go nicely with a little grated cheese"/>
+  <insult text="you'll need food to regain health"/>
+  <insult text="you're a crooked jerky jockey"/>
+  <insult text="you're a knee-biter"/>
+  <insult text="you're interrupting diggle glee club"/>
+  <insult text="you're tracking mud all over my floor"/>
+  <insult text="your wardrobe is laughable"/>
+  <insult text="your skin will make a nice rug to cover over the patch of dirt in the corner"/>
+  <insult text="zounds!"/>
+  <insult text="2 more XP and i'll level up"/>
+
+  
+  
+  
+  <random text="5 by 5. We're in the pipe."/>
+  <random text="A random Uber-Chest has been sealed closed forever. That's one less lever to pull."/>
+  <random text="Attention B-Mart shoppers. There is a blue light special in Brax shop number 3."/>
+  <random text="Checking for wandering monsters..."/>
+  <random text="Commence ignition."/>
+  <random text="Danger! Danger Eyebrow Robinson!"/>
+  <random text="Elvis has left the dungeon."/>
+  <random text="Finish him!"/>
+  <random text="Ground Control to Major Tom..."/>
+  <random text="Lord Dredmor has leveled up. Please delay further."/>
+  <random text="Red wizard needs food badly."/>
+  <random text="Stop poking me."/>
+  <random text="The Death Star has cleared the planet."/>
+  <random text="The pungent scent of Lutefisk wafts down the hall."/>
+  <random text="There's a Diggle Commando creeping up behind you!"/>
+  <random text="This is a subliminal message. Play more Dredmor."/>
+  <random text="Thud."/>
+  <random text="Wandering Monster spawned at coordinates x173 y28."/>
+  <random text="Wow! Did you see that?"/>
+  <random text="You could probably use a shower, buddy."/>
+  
+
+  
+  <!-- this section of the database reveals the true horror of all romantic languages -->
+  
+  <verb text="Behold" past="Beheld" continuous="Beholding"/>
+  <verb text="Bring" past="Brought" continuous="Bringing"/>
+  <verb text="Burn" past="Burned" continuous="Burning"/>
+  <verb text="Cannulate" past="Cannulated" continuous="Cannulating"/>
+  <verb text="Conjugate" past="Conjugated" continuous="Conjugating"/>
+  <verb text="Craft" past="Crafted" continuous="Crafting"/>
+  <verb text="Creep" past="Crept" continuous="Creeping"/>
+  <verb text="Fall" past="Fell" continuous="Falling"/>
+  <verb text="Die" past="Died" continuous="Dying"/>
+  <verb text="Dive" past="Dove" continuous="Diving"/>
+  <verb text="Exact" past="Exacted" continuous="Exacting"/>
+  <verb text="Execute" past="Executed" continuous="Executing"/>
+  <verb text="Forsee" past="Foresaw" continuous="Foreseeing"/>
+  <verb text="Melt" past="Melted" continuous="Melting"/>
+  <verb text="Mystify" past="Mystified" continuous="Mystifying"/>
+  <verb text="Parry" past="Parried" continuous="Parrying"/>
+  <verb text="Pierce" past="Pierced" continuous="Piercing"/>
+  <verb text="Rot" past="Rotted" continuous="Rotting"/>
+  <verb text="Swing" past="Swung" continuous="Swinging"/>
+  <verb text="Quit" past="Quit" continuous="Quitting"/>
+  <verb text="Translate" past="Translated" continuous="Translating"/>
+  <verb text="Wend" past="Wended" continuous="Wending"/>
+  <verb text="Zink" past="Zincked" continuous="Zincking"/>
+  
+  
+  
+  <architecture text="Abode" plural="Abodes"/>  
+  <architecture text="Alcove" plural="Alcove"/>
+  <architecture text="Acropolis" plural="Acropoli"/>
+  <architecture text="Antechamber" plural="Antechambers"/>  
+  <architecture text="Apartment" plural="Apartments"/>  
+  <architecture text="Appendage" plural="Appendages"/>
+  <architecture text="Approach" plural="Approaches"/>
+  <architecture text="Arch" plural="Arches"/>  
+  <architecture text="Attic" plural="Attics"/>  
+  <architecture text="Auditorium" plural="Auditoriums"/>
+  <architecture text="Balcony" plural="Balconies"/>  
+  <architecture text="Ballroom" plural="Ballrooms"/>  
+  <architecture text="Barn" plural="Barns"/>
+  <architecture text="Base" plural="Bases"/>
+  <architecture text="Basement" plural="Basements"/> 
+  <architecture text="Bassinet" plural="Bassinets"/>
+  <architecture text="Berth" plural="Berths"/>
+  <architecture text="Big Shed" plural="Big Sheds"/>  
+  <architecture text="Boudoir" plural="Boudoirs"/>  
+  <architecture text="Breeding-Grounds" plural="Breeding Grounds"/>  
+  <architecture text="Buffet" plural="Buffet Lines"/>  
+  <architecture text="Burrow" plural="Burrows"/> 
+  <architecture text="Cabin" plural="Cabins"/> 
+  <architecture text="Caboose" plural="Cabooses"/>
+  <architecture text="Camp" plural="Camps"/>
+  <architecture text="Cantina" plural="Cantinas"/>
+  <architecture text="Carriage" plural="Carriages"/>  
+  <architecture text="Catacomb" plural="Catacombs"/>
+  <architecture text="Cavity" plural="Cavities"/>
+  <architecture text="Cell" plural="Cells"/> 
+  <architecture text="Cemetary" plural="Cemetaries"/>
+  <architecture text="Chalet" plural="Chalets"/>
+  <architecture text="Chapel" plural="Chapels"/>  
+  <architecture text="Classroom" plural="Classrooms"/>  
+  <architecture text="Cloister" plural="Cloisters"/>  
+  <architecture text="Closet" plural="Closets"/>  
+  <architecture text="Club" plural="Clubs"/>
+  <architecture text="Colosseum" plural="Colosseums"/>
+  <architecture text="Commode" plural="Commodes"/> 
+  <architecture text="Commons" plural="Commons"/>  
+  <architecture text="Commorancy" plural="Commorancies"/>
+  <architecture text="Concert Hall" plural="Concert Halls"/>
+  <architecture text="Conservatory" plural="Conservatories"/>  
+  <architecture text="Coop" plural="Coops"/> 
+  <architecture text="Corner" plural="Corners"/>  
+  <architecture text="Court" plural="Courts"/>  
+  <architecture text="Courtyard" plural="Courtyards"/>  
+  <architecture text="Cranny" plural="Crannies"/>  
+  <architecture text="Crib" plural="Cribs"/>  
+  <architecture text="Cubbyhole" plural="Cubbyholes"/>  
+  <architecture text="Dance Hall" plural="Dance Halls"/>  
+  <architecture text="Depot" plural="Depots"/>
+  <architecture text="Dining Room" plural="Dining Rooms"/>  
+  <architecture text="Disco" plural="Discos"/>  
+  <architecture text="Dive" plural="Dives"/>
+  <architecture text="Dock" plural="Docks"/>
+  <architecture text="Doorway" plural="Doors"/>  
+  <architecture text="Dorm" plural="Dormitory"/>  
+  <architecture text="Dread Gazebo" plural="Dreaded Gazebos"/>  
+  <architecture text="Dressing Room" plural="Dressing Rooms"/>   
+  <architecture text="Dwelling" plural="Dwellings"/>
+  <architecture text="Edifice" plural="Edifices"/>
+  <architecture text="Entresol" plural="Entresols"/> 
+  <architecture text="Entryway" plural="Entryways"/> 
+  <architecture text="Facility" plural="Facilities"/>
+  <architecture text="Family Room" plural="Family Rooms"/> 
+  <architecture text="Flat" plural="Flats"/>
+  <architecture text="Flophouse" plural="Flophouses"/>
+  <architecture text="Forum" plural="Fora"/>  
+  <architecture text="Foyer" plural="Foyers"/> 
+  <architecture text="Gallery" plural="Galleries"/>
+  <architecture text="Gallows" plural="Gallows"/>  
+  <architecture text="Garage" plural="Garages"/> 
+  <architecture text="Garrison" plural="Garrisons"/>
+  <architecture text="Garret" plural="Garrets"/>  
+  <architecture text="Gibbet" plural="Gibbets"/>  
+  <architecture text="Gong" plural="Bathrooms"/>
+  <architecture text="Grave" plural="Graves"/>  
+  <architecture text="Great Hall" plural="Great Halls"/>
+  <architecture text="Grotto" plural="Grottoes"/>  
+  <architecture text="Guest Room" plural="Guest Rooms"/> 
+  <architecture text="Haunt" plural="Haunts"/>
+  <architecture text="Hearth" plural="Hearths"/>
+  <architecture text="Holodeck" plural="Holodecks"/>
+  <architecture text="Honky-Tonk" plural="Honky-Tonks"/>
+  <architecture text="Hostel" plural="Hostels"/>  
+  <architecture text="Hotel" plural="Hotels"/>
+  <architecture text="Hovel" plural="Hovels"/>
+  <architecture text="HQ" plural="Headquarters"/>
+  <architecture text="Infirmary" plural="Infirmaries"/> 
+  <architecture text="Inglenook" plural="Inglenooks"/>  
+  <architecture text="Ingress" plural="Ingresses"/>
+  <architecture text="Inn" plural="Inns"/>  
+  <architecture text="Jacuzzi" plural="Jacuzzies"/>  
+  <architecture text="Joint" plural="Joints"/>
+  <architecture text="Jungle" plural="Jungles"/>  
+  <architecture text="Keep" plural="Keeps"/>  
+  <architecture text="Kitchenette" plural="Kitchenettes"/>  
+  <architecture text="Knoll" plural="Knolls"/>  
+  <architecture text="Ladies' Room" plural="Ladies' Rooms"/>  
+  <architecture text="Lair" plural="Lairs"/>
+  <architecture text="Larder" plural="Larders"/>  
+  <architecture text="Library" plural="Libraries"/>  
+  <architecture text="Living Room" plural="Living Rooms"/>  
+  <architecture text="Lobby" plural="Lobbies"/>  
+  <architecture text="Lavatory" plural="Lavatories"/> 
+  <architecture text="Location" plural="Locations"/>
+  <architecture text="Locker" plural="Lockers"/>  
+  <architecture text="Loft" plural="Lofts"/>  
+  <architecture text="Lounge" plural="Lounges"/>  
+  <architecture text="Manger" plural="Mangers"/>  
+  <architecture text="Mausoleum" plural="Mausoleums"/>  
+  <architecture text="Mezzanine" plural="Mezzanines"/>
+  <architecture text="Mailroom" plural="Mailrooms"/>  
+  <architecture text="Man-Cave" plural="Man-Caves"/>
+  <architecture text="Mastaba" plural="Mastabas"/>
+  <architecture text="Mud Room" plural="Mud Rooms"/>  
+  <architecture text="Nave" plural="Naves"/>
+  <architecture text="Necropolis" plural="Necropolises"/>
+  <architecture text="Nest" plural="Nests"/>  
+  <architecture text="Nursery" plural="Nurseries"/>  
+  <architecture text="Office" plural="Offices"/>  
+  <architecture text="Op Center" plural="Op Centers"/>  
+  <architecture text="Pad" plural="Pads"/>
+  <architecture text="Panic Room" plural="Panicked Rooms"/>  
+  <architecture text="Pantry" plural="Pantries"/>  
+  <architecture text="Parlor" plural="Parlors"/>  
+  <architecture text="Perch" plural="Perches"/>
+  <architecture text="Playroom" plural="Playrooms"/>  
+  <architecture text="Plaza" plural="Plazas"/>  
+  <architecture text="Porch" plural="Porches"/>  
+  <architecture text="Portal" plural="Portals"/>
+  <architecture text="Prison" plural="Prisons"/>  
+  <architecture text="Quarters" plural="Quarters"/>
+  <architecture text="Rack" plural="Racks"/>  
+  <architecture text="Ranch" plural="Ranches"/>
+  <architecture text="Range" plural="Ranges"/>
+  <architecture text="Recess" plural="Recesses"/>
+  <architecture text="Repository" plural="Repositories"/>  
+  <architecture text="Restaurant" plural="Restaurants"/>  
+  <architecture text="Restroom" plural="Restrooms"/>  
+  <architecture text="Road-House" plural="Road-Houses"/>
+  <architecture text="Roost" plural="Roosts"/>
+  <architecture text="Root Cellar" plural="Root Cellars"/>
+  <architecture text="Rodeo" plural="Rodeos"/>  
+  <architecture text="Rumpus Room" plural="Rumpus Rooms"/> 
+  <architecture text="Salon" plural="Salons"/>  
+  <architecture text="Saloon" plural="Saloons"/>
+  <architecture text="School" plural="Schools"/>  
+  <architecture text="Scullery" plural="Sculleries"/>  
+  <architecture text="Sepulchre" plural="Sepulchres"/>  
+  <architecture text="Shanty" plural="Shanties"/>
+  <architecture text="Showroom" plural="Showrooms"/>  
+  <architecture text="Sickbay" plural="Sickbays"/>  
+  <architecture text="Sitooterie" plural="Sitooteries"/>  
+  <architecture text="Solarium" plural="Solariums"/>  
+  <architecture text="Speak-Easy" plural="Speak-Easies"/>
+  <architecture text="Stall" plural="Stalls"/>
+  <architecture text="Stockroom" plural="Stockrooms"/>  
+  <architecture text="Store" plural="Stores"/>  
+  <architecture text="Studio" plural="Studios"/>  
+  <architecture text="Study" plural="Studies"/>  
+  <architecture text="Sub-Basement" plural="Sub-Basements"/>
+  <architecture text="Sub-Let" plural="Sub-Lets"/>
+  <architecture text="Sub-Sub-Basement" plural="Sub-Sub-Basements"/>
+  <architecture text="Suite" plural="Suites"/>  
+  <architecture text="Tack Shed" plural="Tack Sheds"/> 
+  <architecture text="Tavern" plural="Taverns"/>  
+  <architecture text="Torture Chamber" plural="Torture Chambers"/> 
+  <architecture text="Trunk" plural="Trunks"/>  
+  <architecture text="Tuff Shed" plural="Tuff Sheds"/>  
+  <architecture text="Threshold" plural="Thresholds"/>  
+  <architecture text="Undercroft" plural="Undercrofts"/>
+  <architecture text="Utility Room" plural="Utility Rooms"/> 
+  <architecture text="Vault" plural="Vaults"/>  
+  <architecture text="Vomitorium" plural="Vomitoriums"/>  
+  <architecture text="Waiting Room" plural="Waiting Rooms"/>  
+  <architecture text="Wardrobe" plural="Wardrobes"/>  
+  <architecture text="Wardroom" plural="Wardrooms"/>  
+  <architecture text="Watershed" plural="Watersheds"/>  
+  <architecture text="Wine Cellar" plural="Wine Cellars"/>  
+  <architecture text="Wood Shed" plural="Wood Sheds"/>  
+  <architecture text="Workroom" plural="Workrooms"/>  
+  <architecture text="Wound" plural="Wounds"/>
+  <architecture text="Ziggurat" plural="Ziggurats"/>
+  
+
+  <firstname text="Officer"/>
+
+
+  <title text="Advocate for"/>
+  <title text="Alderman of"/>
+  <title text="Almost (but not quite)"/>
+  <title text="Ambassador of"/>
+  <title text="Assistant to"/>
+  <title text="Bastard of"/>
+  <title text="Better Than"/>
+  <title text="CEO of"/>
+  <title text="Collector of"/>
+  <title text="Consumer of"/>
+  <title text="Czar of"/>
+  <title text="Dauphine of"/>
+  <title text="Deputy Assistant Director of"/>
+  <title text="Disturbing Thing About"/>
+  <title text="Dominatrix Over"/>
+  <title text="Duke of"/>
+  <title text="Elector-Count of"/>
+  <title text="Emperor of"/>
+  <title text="Field-Marshall of"/>
+  <title text="Ghost From Beyond"/>
+  <title text="Godfather of"/>
+  <title text="Guardian of"/>
+  <title text="Half - Man, Half -"/>
+  <title text="Harvester of"/>
+  <title text="Hwang of"/>
+  <title text="Indentured Servant of"/>
+  <title text="Island of"/>
+  <title text="Khan of"/>
+  <title text="Lady-in-Waiting to"/>
+  <title text="Leader of"/>
+  <title text="Lover of"/>
+  <title text="Maharajah of"/>
+  <title text="Manager of"/>
+  <title text="Marquis of"/>
+  <title text="Master of"/>
+  <title text="Mayor of"/>
+  <title text="Nightmare About"/>
+  <title text="Overlord Above"/>
+  <title text="President Pro Tempore of"/>
+  <title text="Producer of"/>
+  <title text="Reborn"/>
+  <title text="Red-headed Stepchild of"/>
+  <title text="Seamstress of"/>
+  <title text="Senator from"/>
+  <title text="Servant of"/>
+  <title text="Sheik of"/>
+  <title text="Sous-Chef of"/>
+  <title text="Space-Hunter of"/>
+  <title text="Specialist in"/>
+  <title text="Superintendent to"/>
+  <title text="Sultan of"/>
+  <title text="Supervisor of"/>
+  <title text="Support Coordinator in charge of"/>
+  <title text="Technical Consultant to"/>
+  <title text="Third Cousin (twice removed) of"/>
+  <title text="Tzar of"/>
+  <title text="Valide Sultan of"/>
+  <title text="Vassal to"/>
+  <title text="Viscontessa of"/>
+  <title text="Wage-Slave to"/>
+  <title text="Worshiper of"/>
+
+  
+</text>

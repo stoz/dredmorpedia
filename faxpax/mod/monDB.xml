@@ -1,0 +1,61 @@
+<monDB>
+<monster type="1" subtype="5" name="Clone" level="10" special="1" tiny="0" splat="ichor" taxa="Animal">
+	<idleSprite left="sprites/monster/m_clone/m_clone_run_l.spr"
+	right="sprites/monster/m_clone/m_clone_run_r.spr"
+	up="sprites/monster/m_clone/m_clone_run_u.spr"
+	down="sprites/monster/m_clone/m_clone_run_d.spr"/>
+	<attackSprite left="sprites/monster/m_clone/m_clone_atk_l.spr"
+	right="sprites/monster/m_clone/m_clone_atk_r.spr"
+	up="sprites/monster/m_clone/m_clone_atk_u.spr"
+	down="sprites/monster/m_clone/m_clone_atk_d.spr"/>
+	<hitSprite left="sprites/monster/m_clone/m_clone_hit_l.spr"
+	right="sprites/monster/m_clone/m_clone_hit_r.spr"
+	up="sprites/monster/m_clone/m_clone_hit_u.spr"
+	down="sprites/monster/m_clone/m_clone_hit_d.spr"/>
+	<dieSprite name="sprites/monster/m_clone/m_clone_die.spr"/>
+	
+	<sfx attack="unarmed2" hit="humanoid_hit" die="humanoid_die" spell="humanoid_spell"/>
+	
+	<ai aggressiveness="5" span="5" />
+	
+	<stats numFig="4" numRog="4" numWiz="2" xpValue="0" />
+     
+        <palette tint="60" />
+	<damage crushing="4" slashing="4" piercing="4" />
+	<secondarybuff id="10" amount="3"/> <!-- armour -->
+	<secondarybuff id="6" amount="10"/> <!-- dodge -->
+	<secondarybuff id="0" amount="12"/> <!-- hp --> 
+        <resistances crushing="2" slashing="2" piercing="2" />
+	
+	<info latin="(Clonus Andrus)" text="Men! From the sky! Raining everywhere!"/>
+  </monster>
+
+<monster type="1" subtype="5" name="Tacow" level="4" tiny="0" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/tacow/tacow_walk_left.xml"
+		right="sprites/tacow/tacow_walk_right.xml"
+		up="sprites/tacow/tacow_walk_up.xml"
+		down="sprites/tacow/tacow_walk_down.xml"/>
+	<attackSprite left="sprites/tacow/tacow_attack_left.xml"
+		right="sprites/tacow/tacow_attack_right.xml"
+		up="sprites/tacow/tacow_attack_up.xml"
+		down="sprites/tacow/tacow_attack_down.xml"/>
+	<hitSprite left="sprites/tacow/tacow_hit_left.xml"
+		right="sprites/tacow/tacow_hit_right.xml"
+		up="sprites/tacow/tacow_hit_up.xml"
+		down="sprites/tacow/tacow_hit_down.xml"/>
+	<dieSprite name="sprites/tacow/tacow_die.xml"/>
+	
+	<sfx attack="small_attack" hit="small_hit" die="small_die" spell="small_spell"/>
+	
+	<stats numFig="4" xpValue="30" />
+     
+        <palette tint="0" />
+	<damage conflagratory="5" />
+        <resistances conflagratory="3" toxic="5" />
+	<onhit spell="Hot Sauce" onechancein="3" />
+
+	<drop name="TACO" percent="50"/>
+	
+	<info latin="(Mexicanus Bovinus)" text="Filled with hot meat, hot sauce, sour cream, and guacamole, these cows seem happy to see you. But beware their dangerous HOT SAUCE BREATH, for it burns mightily."/>
+	</monster>
+</monDB>

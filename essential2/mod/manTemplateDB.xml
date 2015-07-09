@@ -1,0 +1,19 @@
+<templatedb>
+
+  <template width="5" height="6" name="601" affectsPlayer="0">
+      <row text="@@@@@"/>
+      <row text=".@@@."/>
+      <row text=".@@@."/>
+      <row text="..@.."/>
+      <row text="..@.."/>
+      <row text="..#.."/>
+  </template>
+  
+  <template width="7" height="4" name="602" affectsPlayer="0">
+      <row text="..@@@.."/>
+      <row text=".@@@@@."/>
+      <row text="@@@@@@@"/>
+      <row text="@@@#@@@"/>
+  </template>      
+
+</templatedb>

@@ -1,0 +1,420 @@
+<spellDB>
+
+<SilverTongueSpells>
+<spell name="Mimic Dwaravon" downtime="16" type="template" templateID="100" anchored="1" icon="skills/bored32.png" wand="0">
+         <effect type="sleep"/>
+         <buff useTimer="1" time="16" stacksize="1" self="0" bad="1" icon="skills/bored64.png" smallicon="skills/bored32.png">
+      <primarybuff id="0" amount="-3"/> <!-- Buf -->
+      <primarybuff id="3" amount="-3"/> <!-- cad -->
+      <primarybuff id="2" amount="-4"/> <!-- nim -->
+      <primarybuff id="4" amount="-4"/> <!-- stu -->
+      <secondarybuff id="6" amount="-10"/> <!-- Dodge -->
+      </buff>
+      <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="100" centerEffect="1" sfx="induction" />
+      <description text="Your speech is so boring that people fade out...and even after they recover, they'll be out of it for a while. Some very weak enemies might even be bored to death!"/>
+      </spell>
+  
+<spell name="Fake It Till You Make It" downtime="99" type="self" icon="skills/magic_license32.png" wand="0">
+        <buff removable="1" useTimer="1" time="12" allowstacking="0" icon="skills/magic_license64.png" smallicon="skills/magic_license32.png">
+		<secondarybuff id="15" amount="1"/> <!-- Wands -->
+		<secondarybuff id="16" amount="2"/> <!-- Traps -->
+		<secondarybuff id="19" amount="1"/> <!-- Smithing -->
+ 		<secondarybuff id="20" amount="1"/> <!-- Tinkering -->
+		<secondarybuff id="21" amount="1"/> <!-- Alchemy -->
+	<description text="You are faking it like Sally. You know, from Harry Met...nevermind." />
+	</buff> 
+        </spell>
+
+<spell name="Iron Eyes" type="target">
+        <effect type="fear" amount="4" />
+        <buff useTimer="1" time="4" allowstacking="0" self="0" bad="1" icon="skills/odins_barter64.png" smallicon="skills/odins_barter32.png">
+        <secondarybuff id="2" amount="-4" /> <!-- melee power -->
+        <secondarybuff id="3" amount="-6" /> <!-- magic power --> 
+        <secondarybuff id="10" amount="-2"/> <!-- armor absorb -->
+        </buff>
+        <description text="When Iron Eyes Are Smiling, get the Hell Out Of the Way!"/>
+        </spell>
+
+<spell name="Bullshit" type="target" downtime="24" wand="0" icon="skills/stat_chr32.png">
+         <effect type="confuse" turns="6" amount="3" />
+         <effect type="paralyze" turns="4" />
+         <description text="They are so baffled at the moment, they can't remember how to use their limbs."/> 
+         </spell>
+
+<spell name="SelfMidas" type="self">
+         <effect type="trigger" spell="Midas"/> 
+         </spell>
+</SilverTongueSpells>
+
+
+<NinjitsuSpells>
+<spell name="Conjure Basic Ninja Weapons" type="self">
+         <effect type="spawn" itemname="Throwing Knife" amount ="1"/>
+         </spell>
+
+<spell name="Conjure Ninja Weapons" type="self">
+         <effect type="spawn" itemname="Kunai" amount="1"/>
+         </spell>
+
+<spell name="Conjure Advanced Ninja Weapons" type="self">
+         <effect type="spawn" itemname="Throwing Star" amount="1"/>
+         </spell>
+
+<spell name="Conjure Ultimate Ninja Weapons" type="self">
+         <effect type="spawn" itemname="Shuriken" amount="1"/>
+         </spell>
+
+<spell name="Conjure Super Secret Ninja Weapons" type="self">
+         <effect type="spawn" itemname="Ninjato" amount="1"/>
+         </spell>
+
+<spell name="Secret Sword" type="self" icon="skills/skill_thrown_small.png">
+	 <requirements mp="12" savvyBonus="0.2" mincost="8" />
+         <effect type="trigger" spell="Conjure Basic Ninja Weapons"/>
+         <effect type="trigger" percent="50" spell="Conjure Ninja Weapons"/>
+         <effect type="trigger" percent="25" spell="Conjure Advanced Ninja Weapons"/>
+         <effect type="trigger" percent="12" spell="Conjure Ultimate Ninja Weapons"/>
+         <effect type="trigger" percent="1"  spell="Conjure Super Secret Ninja Weapons"/>
+	 <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" sfx="ping" />
+	</spell>
+
+<spell name="Angst!" type="target">
+        <effect type="damage" existential="999" affectscaster="0"/>
+        <anim sprite="sprites/sfx/divine_inscription/divine_inscription" frames="4" sfx="small critter - a dying noise" />
+        </spell>
+
+<spell name="SlayLog" type="target">
+        <effect type="trigger" spell="Angst!" amount="4"/>
+	<anim sprite="sprites/sfx/divine_inscription/divine_inscription" frames="4" sfx="impact" />
+</spell>
+
+<spell name="Substitution Cloud" 
+		type="self" 
+		mineTimer="32" 
+		mineUseGlints="1" 
+		mineGlintDensity="8" 
+		mineSpritePNGSeries="sprites/sfx/smokepuffA/smokepuffA" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="8" 
+		mineSpritePNGRate="150" 
+		mine="1"
+	        mineSpriteDrawOrder="1"
+		mineradius="2" wand="0">
+	<effect type="confuse" self="0" sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="100" centerEffect="1" />
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" sfx="magic" centerEffect="1"/>
+   </spell>
+
+<spell name="Substitution Jutsu" type="self" icon="skills/spells/lethian_mist32.png" wand="0">
+	 <requirements mp="21" savvyBonus="0.3" mincost="8" />        
+         <effect type="summon" monsterType="Log" />
+         <effect type="trigger" spell="SlayLog" />
+         <effect type="trigger" spell="Substitution Cloud"/>
+         <effect type="blink" self="1"/>
+   <anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>          
+   </spell>
+
+
+<spell name="Pacify" type="template" anchored="1" templateID="100">
+        <effect type="pacify" resistable="0" />
+        <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" sfx="magic" centerEffect="1"/>        
+        </spell>
+
+<spell name="Poof" type="self">
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic_open"/>
+        <effect type="trigger" spell="Pacify"/>
+		<buff useTimer="1" time="2" icon="skills/rogue/skill_stealth0_64.png" smallicon="skills/rogue/skill_stealth0_32.png" stacksize="1" self="1" >
+		<invisible amount="1" />
+                <description text="You've vanished, but only long enough to take a single action unmolested."/>
+	</buff>
+   </spell>
+
+<spell name="Yubijitsu" type="target">
+        <effect type="paralyze" turns="2" self="0"/>
+        </spell>
+
+<spell name="Taijutsu Stance" type="self" icon="skills/taijutsu32.png" wand="0">
+	<requirements mp="12" savvyBonus="0.3" mincost="8" />   
+        <buff removable="1" usetimer="0" attacks="16" manaUpkeep="8" icon="skills/taijutsu64.png" smallicon="skills/taijutsu32.png" stacksize="1" self="1">
+        <targetHitEffectBuff percentage="25" name="Yubijitsu" />
+        <description text="You stand a decent chance of knocking someone silly for a moment whenever you attack."/>   
+        </buff>
+        <description text="You stand a decent chance of knocking someone silly for a moment whenever you attack."/>        
+         </spell>
+
+<spell name="Ninpo Displacement" type="template" templateID="09" anchored="1" wand="0">
+<effect type="displace" sfx="teleport"/>
+</spell> 
+
+<!-- Hatpacked.
+<spell name="Ninpo" type="self" downtime="6" icon="skills/ninpo32.png" wand="0">
+       <buff removable="1" icon="skills/ninpo64.png" smallicon="skills/ninpo32.png">
+                <playerHitEffectbuff percentage="20" spell="Ninpo Displacement"/>
+                <description text="When hit, you engage the ancient powers of the Ninja to send your enemies spiralling off into the distance."/>
+                </buff>
+       </spell>
+-->
+
+<spell name="Conflagration" type="target">
+       <effect type="damage" burn="1" conflagratory="4" conflagratoryF=".67"/>
+       </spell>
+
+
+<spell name="Brr!" type="target" wand="0" affectsCaster="0"> 
+	<buff usetimer="1" time="4" allowstacking="1" stacksize="4" bad="1" self="0" affectsCaster="0" icon="skills/wizard/spell_water1_64.png" smallicon="skills/wizard/spell_water1_32.png">
+                <primarybuff id="1" amount="-3"/>
+		<primarybuff id="2" amount="-5"/>
+		<primarybuff id="3" amount="-3"/>
+		</buff>
+	</spell>
+
+<spell name="Icy Area" type="targetfloor" self="0"
+		mineTimer="8" 
+		mineSpritePNGSeries="sprites/sfx/icepuff/icepuff" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="6" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="2"
+     		mineSpriteDrawOrder="1"
+		minePermanent="1" >	
+	<effect type="trigger" spell="Brr!"/>
+        <effect type="damage" hyperborean="2" hyperboreanF=".34"/> 
+	</spell>
+
+<spell name="Hoarfrost" type="target">
+       <effect type="damage" hyperborean="2" hyperboreanF=".34"/>
+       <effect type="trigger" spell="Icy Area" affectsCaster="0"/>
+       </spell>
+
+<spell name="Electrical Epilepsy" type="target">
+       <effect type="damage" voltaic="2" voltaicF=".34" percent="50"/>
+       <effect type="confuse" turns="2" resistable="0" percent="50"/> 
+       <halo sprite="sprites/sfx/impact_electrical/impact_electrical" frames="6" firstframe="0" framerate="35" centerEffect="1"/> 
+       </spell> 
+
+<spell name="Seizures" type="target">
+	<effect type="damage" voltaic="2" voltaicF=".34" percent="50"/>
+	<effect type="dot" spell="Electrical Epilepsy" amount="5" affectscaster="1"/>
+	<anim sprite="sprites/sfx/impact_electrical/impact_electrical" frames="6" firstframe="0" framerate="35" sfx="electrical damage" centerEffect="1"/>
+	</spell>
+       
+<spell name="Steve Austin" type="target">
+        <effect type="damage" crushing="4" crushingF=".67"/>
+        <effect type="paralyze" turns="2"/>
+	</spell>
+
+<spell name="Catch This" type="target">
+        <effect type="damage" piercing="2" piercingF=".34"/>
+        <effect type="knock" resistable="0"/>
+        <effect type="knock"/>
+        </spell>
+
+<spell name="Otherworldly" type="target">
+        <effect type="damage" aethereal="2" atherealF=".34"/>
+	<effect type="displace"/>
+        </spell>
+
+<spell name="Ancestral Summoning" type="target">
+	<effect type="summon" monsterType="Magic Golem"/>
+        </spell>
+
+<spell name="Goldify" type="target">
+        <effect type="damage" blasting="4" blastingF=".67" midas="1"/>
+        </spell>
+
+<spell name="Cripple" type="target">
+        <effect type="damage" slashing="4" slashingF=".67"/>
+        <effect type="lockdown" amount="20" resistable="0"/>
+        </spell> 
+
+<spell name="Nerve Strike" type="target">
+	<effect type="trigger" spell="Nerve Staple"/>
+        </spell>
+
+<spell name="Slay" type="target">
+	<effect type="damage" necromantic="25" resistable="0"/>
+	</spell>
+
+<spell name="Mild Poison" type="target" icon="skills/wizard/spell_black6_32.png" >
+  <effect type="damage" toxic="2" toxicF=".15" affectscaster="0" />
+  <description text="is poisoned!" monsterText="is poisoned!" />
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
+  </spell>
+
+<spell name="Poisoned!" type="target">
+   <effect type="dot" amount="4" spell="Mild Poison"/>
+   <impact sprite="sprites/sfx/goosplatA/goosplatA" frames="4" sfx="magic_damage" framerate="100" centerEffect="1"/>
+   </spell>
+
+<spell name="Kuji Kiri" type="target">
+       	<effect type="triggerfromlist">
+		<option name="Conflagration" /> 
+       		<option name="Conflagration" /> 
+		<option name="Conflagration" /> 
+ 		<option name="Hoarfrost" /> 
+ 		<option name="Hoarfrost" /> 
+ 		<option name="Hoarfrost" /> 
+        	<option name="Seizures" />
+        	<option name="Seizures" />
+        	<option name="Seizures" />
+        	<option name="Cripple" />
+        	<option name="Cripple" />
+        	<option name="Cripple" /> 
+        	<option name="Steve Austin" />  
+        	<option name="Steve Austin" />  
+		<option name="Catch This" /> 
+		<option name="Catch This" /> 
+        	<option name="Otherworldly" /> 
+        	<option name="Otherworldly" /> 
+        	<option name="Goldify" /> 
+        	<option name="Goldify" /> 
+        	<option name="Ancestral Summoning" />  
+        	<option name="Nerve Strike" /> 
+        	<option name="Slay" />
+       		<option name="Poisoned!" />
+        	</effect>
+  </spell>
+
+</NinjitsuSpells>
+
+
+<WarlockerySpells>
+<spell name="Ebb and Flow" type="self">
+         <buff removable="1" useTimer="1" time="8" allowStacking="1" stacksize="8" icon="skills/wizard/spell_air1_64.png" smallicon="skills/wizard/spell_air1_32.png">
+          <secondaryBuff id="6" amount="12"/>
+          <secondaryBuff id="9" amount="12"/>
+          <description text="You are attuned to the ebon flow of combat, making you much harder to hit while making it much easier for you to hit everything else."/>
+          </buff>
+          </spell>
+
+<spell name="Ebon Flow" type="self" icon="skills/wizard/spell_air8_32.png" wand="0">
+         <requirements mp="1" savvyBonus="0" mincost="1" />
+         <buff manaupkeep="3" usetimer="0" removable="1" icon="skills/wizard/spell_air8_64.png" smallicon="skills/wizard/spell_air8_32.png">
+         <PlayerHitEffectBuff percentage="80" name="Ebb and Flow"/>
+         <description text="You've got a good chance, each time you're hit, of becoming less hittable and more hitty."/>
+         </buff>
+         </spell>
+
+<spell name="The Smitening" type="self" icon="skills/wizard/spell_fire1_32.png" wand="0">
+         <buff removable="1" usetimer="1" time="8" allowStacking="1" stacksize="8" icon="skills/wizard/spell_fire1_64.png" smallicon="skills/wizard/spell_fire1_32.png">
+         <damagebuff aethereal="1"/>
+         <damagebuff conflagratory="1"/>
+         <description text="Your attacks are infused with otherworldly fire!"/> 
+	 </buff>
+         </spell>
+          
+<spell name="Eldritch Smite" type="self" icon="skills/skill_battlemage_small.png" wand="0">
+         <requirements mp="1" savvyBonus="0" mincost="1" />
+         <buff manaupkeep="3" useTimer="0" removable="1" icon="skills/skill_battlemage.png" smallicon="skills/skill_battlemage_small.png">
+          <targetHitEffectBuff percentage="80" name="The Smitening"/>
+          <description text="You've got a good chance, each time you hit something, of hitting harder the next time you hit something."/>
+          </buff>
+          </spell>
+
+<spell name="Massive Attack" type="template" templateID="601" anchored="1" icon="skills/skill_twohanded_small.png" attack="1"> 
+          <requirements mp="24" savvyBonus=".4" mincost="16" /> 
+          <effect type="damage" aethereal="3" aetherealF=".34" crushing="5" crushingF=".3"/>
+          <description text="You bash the everliving hell out of everything beside and in front of you with a giant spiritual hammer.  Mmm...Spiritual Hammmer."/>   
+	<anim sprite="sprites/sfx/impact_crushing/impact_crushing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
+          </spell>
+
+<spell name="Essence's Empowerment" type="self" icon="skills/transformation32.png" wand="0">
+        <requirements mp="12" savvyBonus=".4" mincost="6" /> 
+   	<buff manaupkeep="1" useTimer="0" allowstacking="0" self="1"  icon="skills/transformation64.png" smallicon="skills/transformation32.png">    
+	  	<polymorph name="Log"/>
+		<primarybuff id="0" amount="4"/><!-- Bur -->
+		<primarybuff id="2" amount="4"/><!-- Nim -->
+		<primarybuff id="3" amount="4"/><!-- Cad -->
+		<secondarybuff id="10" amount="3"/><!-- armour -->
+		<damagebuff aethereal="3" />
+	</buff>
+  <description text="Your (possibly newly) male body has been charged up with magical energies and kicks a lot of ass." />
+  <impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+  <anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+
+<spell name="Mana Touched" type="adjacent" icon="skills/manatouched32.png" wand="0" attack="1">
+	<requirements mp="1" mincost="1"/>
+        <effect type="damage" aethereal="1" aetherealF=".5"/>
+  	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+        <description text="You flood pure mana into your enemy's bodies along with a normal melee attack."/>
+        </spell>
+
+<spell name="Warlock Bolt" downtime="39" type="beam" anchored="1" icon="skills/warlockbolt32.png" wand="0">
+         <effect type="damage" voltaic="5" voltaicF=".3" aethereal="3" aetherealF=".4"/>
+         <effect type="paralyze" turns="2"/>
+         <anim sprite="sprites/sfx/fulminaric_bolt/fulminaric_bolt" frames="10" sync="1" sfx="lightning_bolt" framerate="90"  centerEffect="0"/>
+         <description text="It's a frigging lightning bolt for zero mana. Seriously, what? WHAT?!?"/> 
+         </spell>
+
+<spell name="Overcharged Payback" type="self" icon="skills/overcharged32.png" >
+   <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="disintegrate" />  
+   <buff useTimer="1" time="40" allowStacking="0" self="1" bad="1" icon="skills/overcharged64.png" smallicon="skills/overcharged32.png">
+      <halo name="sprites/sfx/curse_loop/curse_loop" first="0" num="7" frameRate="100"/>
+      <primarybuff id="1" amount="-3"/> <!-- Sag -->
+      <primarybuff id="3" amount="-3"/> <!-- cad -->
+      <primarybuff id="4" amount="-3"/> <!-- stu -->
+      <primarybuff id="5" amount="-3"/> <!-- sav -->
+      <secondarybuff id="11" amount="-10"/> <!-- resist -->
+      <description text="You charged too hard, and now you're suffering the consequences."/>
+      </buff>
+   </spell>
+
+<spell name="Supercharged" downtime="71" type="self" icon="skills/supercharged32.png" wand="0">
+   	 <effect type="dot" resistable="0" spell="Regen Mana 3" amount="30" />
+         <buff useTimer="1" manaupkeep="1" time="30" allowstacking="0" self="1"  icon="skills/supercharged64.png" smallicon="skills/supercharged32.png">
+            <halo name="sprites/sfx/radiance_loop/radiance_loop" first="0" num="4" frameRate="100" /> 
+            <primarybuff id="0" amount="4"/>
+            <primarybuff id="1" amount="4"/>
+            <primarybuff id="2" amount="4"/>
+            <primarybuff id="3" amount="4"/>
+            <primarybuff id="4" amount="4"/>
+            <primarybuff id="5" amount="4"/>
+            <description text="You're overpowering your empoweredness. This is probably gonna hurt when it all ends."/>
+         </buff>
+         <effect type="trigger" spell="Overcharged Payback" amount="30"/>
+         </spell>
+
+<spell name="Crystallize Mana" type="targetfloor" mine="1" mineradius="1" mineSpriteDrawOrder="0" minesprite="dungeon/healing_crystals.png" icon="skills/spells/crystal_healing32.png">
+   <effect type="spellpoints" amount="3" sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="choir" />
+   <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="choir" centerEffect="0"/>
+   <description text="You just blew through so much mana that some of it got left around you on the floor."/>
+   </spell>
+
+<spell name="Mana Burst" type="template" templateID="08">
+       <effect type="damage" aethereal="4" aetherealF=".4" conflagratory="2" conflagratoryF=".2" voltaic="2" voltaicF=".2" /> 
+       <effect type="trigger" percent="10" spell="Crystallize Mana"/>
+       <anim sprite="sprites/sfx/energyring/energyring" frames="8" sfx="magic_damage" />
+        </spell>
+
+<spell name="Mana Bomb 1" type="template" anchored ="1" templateID="20"> 
+        <effect type="trigger" percent="80" spell="Mana Burst" />
+        <anim sprite="sprites/sfx/manacrush_up/manacrush_up" frames="10" sfx="choir" />
+         </spell>
+
+<spell name="Mana Bomb 2" type="template" anchored="1" templateID="21"> 
+        <effect type="trigger" percent="60" spell="Mana Burst" />        
+	<anim sprite="sprites/sfx/manacrush_up/manacrush_up" frames="10" sfx="choir" />
+         </spell>
+
+<spell name="Mana Bomb 3" type="template" anchored="1" templateID="22"> 
+        <effect type="trigger" percent="40" spell="Mana Burst" />
+	 <anim sprite="sprites/sfx/manacrush_up/manacrush_up" frames="10" sfx="choir" />
+         </spell>
+
+<spell name="Mana Crush" downtime="384" type="self" icon="skills/manacrush32.png" wand="0">
+         <anim sprite="sprites/sfx/evil_pact/evil_pact" frames="16" sfx="learning a new spell" framerate="80" centerEffect="1"/>
+         <effect type="trigger" spell="Mana Bomb 1" amount="0" />
+         <effect type="trigger" spell="Mana Bomb 2" amount="0" />
+         <effect type="trigger" spell="Mana Bomb 3" amount="0" />
+         <effect type="spellpoints" amount="-999" /> 
+         <description text="You drop crap like birds. Giant, evil, mana birds."/>
+         </spell>
+
+</WarlockerySpells>
+</spellDB>
+
+
+
+
+

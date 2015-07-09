@@ -1,0 +1,631 @@
+/******************************************************************************
+** General
+******************************************************************************/
+
+html {
+	font-size: 13px;
+	font-family: sans-serif;
+}
+
+body {
+	background: url('../img/gaslamp-blackpaper-background.jpg');
+	
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#page {
+	width: 1000px;
+	margin: 10px auto;
+	background: #F0E8DD url('../img/gaslamp-palepaper-background.jpg');
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Distinguish references */
+a.ref {
+	color: #912E0E;
+}
+
+/* Vertically align small icons with the text */
+span img, span canvas {
+	vertical-align: middle;
+	margin-top: -4px;
+	margin-right: 2px;
+}
+
+/******************************************************************************
+** Lists
+******************************************************************************/
+
+ul {
+	margin-left: 20px;
+	list-style-image: url('../img/bullet-brass.png');
+}
+
+/******************************************************************************
+** Tables
+******************************************************************************/
+
+table {
+	margin: 0;
+	padding: 0;
+	
+	border-spacing: 0 16px;
+	vertical-align: middle;
+}
+
+th {
+	text-align: center;
+	font-weight: bold;
+}
+
+td {
+	padding: 8px;
+	
+	border-top: 1px solid #a77c5c;
+	border-bottom: 1px solid #a77c5c;
+	border-right: 1px dotted #a77c5c;
+}
+
+td:nth-child(2) {
+	border-left: 1px dotted #a77c5c;
+}
+
+table.innerTable {
+	width: 100%;
+	border-spacing: 0;
+}
+
+table.innerTable td:nth-child(2) {
+	border-left: 0;
+}
+
+table.innerTable td:nth-child(1) {
+	border-left: 1px dotted #a77c5c;
+}
+
+tr.highlighted {
+	background: rgba(255, 255, 72, 0.1);
+}
+
+/******************************************************************************
+** jQuery UI Restylin'
+******************************************************************************/
+
+div.ui-tabs > ul.tabs > li {
+	border: 1px solid #cbc7bd !important;
+	border-radius: 5px;
+	margin-right: 1px !important;
+	margin-bottom: 3px !important;
+	padding-bottom: 0 !important;
+}
+
+div.content > div.ui-tabs-panel {
+	padding: 0;
+}
+
+#page > div.ui-tabs-panel {
+	padding: 16px;
+}
+
+/******************************************************************************
+** Blocks
+******************************************************************************/
+
+div.block {
+	padding: 20px;
+	margin-bottom: 16px;
+	border: 1px solid #a77c5c;
+	border-style: solid dotted;
+	color: #453821;
+}
+
+/******************************************************************************
+** Watermarks
+******************************************************************************/
+
+.watermark {
+	width: 0;
+	height: 0;
+	float: right;
+	margin-right: -5px;
+	line-height: 0;
+	color: #A77C5C;
+	font-style: italic;
+	opacity: 0.5;
+	direction: rtl;
+}
+
+/******************************************************************************
+** Tooltip
+******************************************************************************/
+
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	box-shadow: 0 0 100px #888888;
+	background: #F0E8DD url('../img/gaslamp-palepaper-background.jpg');
+	padding: 5px;
+	width: 800px;
+}
+
+#tooltip table {
+	border-spacing: 0;
+}
+
+/******************************************************************************
+** Loading Animation
+******************************************************************************/
+
+#loading {
+	width: 144px;
+	height: 144px;
+	background: #868686;
+	display: none;
+	border: 1px dotted #ffffff;
+	text-align: center;
+}
+
+#loading table {
+	width: 144px;
+	height: 144px;
+}
+
+#loading td {
+	text-align: center;
+	border: 0;
+}
+
+#loadingProgress {
+	width: 75%;
+	height: 16px;
+	margin: 16px auto;
+}
+
+/******************************************************************************
+** Dredmorpedia
+******************************************************************************/
+
+/**
+** name
+**
+** A name for something.
+*/
+div.name {
+	font-weight: bold;
+}
+
+/**
+** description
+**
+** A description for something.
+*/
+div.description {
+	margin: 1em 0;
+}
+
+/**
+** stats
+**
+** Statistics: Damage, Resistance, Primary, Secondary.
+*/
+div.stats {
+	white-space: normal;
+	line-height: 24px;
+}
+
+div.stats span {
+	display: inline-block;
+}
+
+div.stats span > img {
+	margin-left: 6px;
+}
+
+/**
+** quality
+**
+** Quality stars that show how good your loot is.
+*/
+div.quality {
+	width: 100px;
+}
+
+/**
+** price
+**
+** Price in Zorkmids that show how pricey your loot is.
+*/
+div.price {
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+
+div.price img {
+	vertical-align: middle;
+	margin: -4px 0 0 -16px;
+}
+
+/**
+** craftInputs
+**
+** Inputs for a crafting recipe.
+*/
+div.craftInputs {
+	text-align: center;
+}
+
+/**
+** craftOutput
+**
+** Output for a crafting recipe.
+*/
+div.craftOutput {
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+
+div.craftOutput img {
+	vertical-align: middle;
+}
+
+/**
+** checkbox
+**
+** An image checkbox.
+*/
+div.checkbox {
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+
+div.checkbox img {
+	vertical-align: middle;
+}
+
+/**
+** spellTriggers
+**
+** Container for spell triggers.
+*/
+div.spellTriggers > div {
+    border: 1px dotted #a77c5c;
+    padding: 8px;
+}
+
+/**
+** effect
+**
+** An effect
+*/
+div.effect {
+    border: 1px dotted #a77c5c;
+    padding: 8px;
+}
+
+/**
+** sourceTag
+**
+** Tag on table rows that shows the data source (e.g. base game, expansion, mod)
+*/
+td.sourceTag {
+	display: block;
+	position: relative;
+	width: 0;
+	height: 0;
+	border: 0;
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+td.sourceTag > div {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	
+	padding: 0 5px;
+	
+	white-space: nowrap;
+	background: url('../img/bg-ffffff.png');
+	border: 1px dotted #a77c5c;
+	border-right: 0;
+	border-top: 0;
+}
+
+td.sourceTag > div:hover {
+	opacity: 0.25;
+}
+
+/**
+** linkTag
+**
+** Tag on table rows that allows you to link to it.
+*/
+td.linkTag {
+	display: block;
+	position: relative;
+	width: 0;
+	height: 0;
+	border: 0;
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+td.linkTag > div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	
+	padding: 4px;
+	opacity: 0.75;
+}
+
+/**
+** template
+**
+** Parsed template representation.
+*/
+div.template {
+	line-height: 0px; /* Force lines to be as close as possible */
+}
+
+div.template > span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1px dotted #a77c5c;
+}
+
+div.template > span.fill {
+	border: 1px solid #a77c5c;
+	background-image: url(../img/background-dotted.png);
+	background-repeat: repeat;
+}
+
+div.template > span.anchorPlayer {
+	background-image: url(../img/template-anchor-player.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+div.template > span.anchorTarget {
+	background-image: url(../img/template-anchor-target.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+div.template > span.anchorPlayer.fill {
+	background-image: url(../img/template-anchor-player.png), url(../img/background-dotted.png);
+	background-repeat: no-repeat, repeat;
+}
+
+div.template > span.anchorTarget.fill {
+	background-image: url(../img/template-anchor-target.png), url(../img/background-dotted.png);
+	background-repeat: no-repeat, repeat;
+}
+
+/******************************************************************************
+** Item
+******************************************************************************/
+
+td.itemIconColumn {
+	min-width: 100px;
+}
+
+td.itemIconColumn img.icon {
+	margin: 0 34px;
+}
+
+td.itemDescriptionColumn{
+	width: 100%;
+}
+
+td.itemStatsColumn {
+	min-width: 210px;
+	max-width: 210px;
+}
+
+td.itemLinksColumn {
+	min-width: 250px;
+}
+
+/******************************************************************************
+** Craft
+******************************************************************************/
+
+td.craftHiddenColumn {
+	min-width: 100px;
+}
+
+td.craftInputsColumn{
+	min-width: 160px;
+}
+
+td.craftOutputsColumn {
+	width: 100%;
+}
+
+td.craftOutputsColumn > table {
+	width: 200px;
+}
+
+td.craftStatsColumn{
+	width: 64px;
+	text-align: center;
+}
+
+td.craftOutputColumn{
+	width: 100px;
+	text-align: center;
+}
+
+/******************************************************************************
+** Skill
+******************************************************************************/
+
+td.skillIconColumn {
+	min-width: 100px;
+	min-height: 200px;
+	text-align: center;
+	font-weight: bold;
+}
+
+td.skillIconColumn > img {
+	width: 64px;
+	height: 64px;
+}
+
+td.skillDescriptionColumn{
+	width: 100%;
+}
+
+td.skillItemsColumn {
+	min-width: 250px;
+	max-width: 250px;
+}
+
+td.skillItemsColumn > div {
+	height: 32px;
+	line-height: 32px;
+}
+
+td.skillItemsColumn > div img {
+	vertical-align: middle;
+}
+
+td.abilityIconColumn {
+	min-width: 100px;
+	text-align: center;
+}
+
+td.abilityIconColumn > img {
+	width: 64px;
+	height: 64px;
+}
+
+td.abilityDescriptionColumn{
+	width: 100%;
+}
+
+td.abilityStatsColumn {
+	min-width: 210px;
+	max-width: 210px;
+}
+
+td.abilitySpellsColumn {
+	min-width: 250px;
+}
+
+/******************************************************************************
+** Spell
+******************************************************************************/
+
+td.spellIconColumn {
+	min-width: 100px;
+	text-align: center;
+}
+
+td.spellDescriptionColumn{
+	width: 100%;
+}
+
+td.spellEffectsColumn {
+	min-width: 250px;
+	max-width: 250px;
+}
+
+td.spellSpellsColumn {
+	min-width: 250px;
+}
+
+/******************************************************************************
+** Monster
+******************************************************************************/
+
+td.monsterIconColumn {
+	min-width: 100px;
+	text-align: center;
+}
+
+td.monsterIconColumn > img {
+	width: auto;
+	height: auto;
+}
+
+td.monsterDescriptionColumn{
+	width: 100%;
+}
+
+td.monsterEffectsColumn {
+	min-width: 250px;
+	max-width: 250px;
+}
+
+td.monsterSpellsColumn {
+	min-width: 250px;
+}
+
+/******************************************************************************
+** Stat
+******************************************************************************/
+
+td.statIconColumn {
+	min-width: 100px;
+	text-align: center;
+}
+
+td.statDescriptionColumn {
+	width: 100%;
+}
+
+/******************************************************************************
+** Template
+******************************************************************************/
+
+td.templateNameColumn {
+	min-width: 100px;
+	text-align: center;
+}
+
+td.templateFigureColumn {
+	width: 100%;
+}
+
+/******************************************************************************
+** Meta
+******************************************************************************/
+
+td.metaIconColumn {
+	min-width: 100px;
+	text-align: center;
+}
+
+td.metaNameColumn {
+	min-width: 300px;
+}
+
+td.metaInfoColumn {
+	width: 100%;
+}
+
+/******************************************************************************
+** About
+******************************************************************************/
+
+td.aboutDateColumn {
+	min-width: 100px;
+	text-align: center;
+}
+
+td.aboutNotesColumn{
+	width: 100%;
+}

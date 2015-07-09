@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="200">tacow_attack_right_1.png</frame>
+  <frame delay="200">tacow_attack_right_2.png</frame>
+  <frame delay="200">tacow_attack_right_3.png</frame>
+  <frame delay="100">tacow_attack_right_4.png</frame>
+  <frame delay="100">tacow_attack_right_5.png</frame>
+  <frame delay="100">tacow_attack_right_6.png</frame>
+  <frame delay="200">tacow_attack_right_7.png</frame>
+</sprite>

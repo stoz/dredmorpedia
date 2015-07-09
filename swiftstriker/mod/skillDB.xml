@@ -1,0 +1,47 @@
+<skillDB>
+<skill name="Swift Striker" id="180" type="warrior" description="GET OVER HERE!">
+   <art icon="skills/SwiftStriker64.png"/>
+   </skill>
+
+<ability name="Swift Striker" icon="skills/SwiftStriker64.png" skill="180" startSkill="1">
+  <description text="You have a wide variety of tricks to help you maneuver around the battlefield."/>
+  </ability>
+ 
+ <ability name="Shoulder Bash" icon="skills/ShoulderBash64.png" skill="180" level="0" >
+  <spell name="Shoulder Bash"/>
+  <description text="When you're cornered, just push the damn diggles out of the way! It's that simple!" />
+<primarybuff id="3" amount="1" />
+<secondaryBuff id="2" amount="1"/> <!-- melee power -->
+
+  </ability>
+ <ability name="Target Locked" icon="skills/TargetLocked64.png" skill="180" level="1" >
+  <spell name="Target Locked"/>
+  <description text="Direct all of your attention towards a single target, ensuring they won't make a fool out of you." />
+<primarybuff id="3" amount="1" />
+ <secondarybuff id="18" amount="1" /> 
+
+  </ability>
+ <ability name="Quickstep" icon="skills/QuickStep64.png" skill="180" level="2" >
+  <spell name="Quickstep"/>
+  <description text="You can step... with quickness. Seriously, does it get more straightforward?" />
+<primarybuff id="3" amount="1" />
+  </ability>
+	 <ability name="BoltProof" icon="skills/BoltProof64.png" skill="180" level="4" >
+  <spell name="BoltProof"/>
+  <description text="Close in on your assailant as their cowardly ranged attacks accomplish nothing!" />
+<primarybuff id="3" amount="1" />
+  </ability>
+	 <ability name="Flying Tackle" icon="skills/FlyingTackle64.png" skill="180" level="3" >
+  <spell name="Flying Tackle"/>
+  <description text="Pounce on your target with all the force of a sabretooth tiger! ...Or the force of a domesticated Tabby Cat if you're using this in a rogue/wizard build. But why in Krong's name would you do that?" />
+<primarybuff id="3" amount="1" />
+  </ability>
+
+	 <ability name="Jump" icon="skills/Jump64.png" skill="180" level="5" >
+  <spell name="Jump"/>
+  <description text="The ultimate technique of the SwiftStriker! Leap high into the air and crash down upon your foe! Please note that you don't ACTUALLY need a lance/spear/polearm to pull off this technique, or even a weapon at all. And you especially don't need that goofy helmet that simply screams 'I don't have a clue what the word 'dragoon' actually means.'" />
+<primarybuff id="3" amount="1" />
+  </ability>
+
+
+ </skillDB>

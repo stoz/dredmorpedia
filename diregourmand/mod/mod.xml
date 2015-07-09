@@ -1,0 +1,27 @@
+<dredmormod>
+<revision text="0.8"/>
+<author text="Rarefied Horse Meat"/>
+<name text="Dire Gourmand"/>
+<description text="Fry yourself some armor! Travel the dungeon, distill your enemies, then drink them!"/>
+<info totalconversion="0"/>
+</dredmormod>
+
+<!-- Questions:
+
+Will this be enough Magic Resist to help melee characters with their high mortality rate? I don't actually understand the precise mechanics of Magic Resist!
+!-->
+
+<!-- Notes:
+
+This skill is about being a slightly hedonistic gourmand (with a splash of Weird Science) - you love to eat and drink, but you don't necessarily seek the fanciest of foods. It is closer in philosophy to Epicureanism than Cyrenaics.
+
+This skill is designed to make melee characters slightly less prone to dying.
+
+This skill is designed to work well with Werediggles.
+
+This skill is designed to provide an otherwise pure Warrior build with the ability to generate sufficient mana for full usage of Viking Wizardry, Psionics, or other splash Wizard skill.
+
+This skill is designed to sneak Magic Resist into a pure Warrior build via Stubbornness.
+
+This skill is intentionally spikier than Berserking, so that you can have more Fun when the RNG hates you, and so that the buffs can be more appreciable in size.
+-->

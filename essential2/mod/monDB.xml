@@ -1,0 +1,37 @@
+<monDB>
+
+  <monster type="3" subtype="27" name="Log" level="12"  branch="-1" special="1">
+        <idleSprite left="sprites/hero/hero_run_l.spr"
+        right="sprites/hero/hero_run_r.spr"
+        up="sprites/hero/hero_run_u.spr"
+        down="sprites/hero/hero_run_d.spr"/>
+        <attackSprite left="sprites/hero/hero_atk_unarm_l.spr"
+        right="sprites/hero/hero_atk_unarm_r.spr"
+        up="sprites/hero/hero_atk_unarm_u.spr"
+        down="sprites/hero/hero_atk_unarm_d.spr"/>
+        <hitSprite left="sprites/hero/hero_hit_l.spr"
+        right="sprites/hero/hero_hit_r.spr"
+        up="sprites/hero/hero_hit_u.spr"
+        down="sprites/hero/hero_hit_d.spr"/>
+	<dieSprite name="sprites/hero/hero_die.spr"/>
+
+  <morphsprites
+    eatSprite="sprites/hero/hero_eat_r.spr"
+    drinkSprite="sprites/hero/hero_drink_r.spr"
+    levelupmSprite ="sprites/hero/hero_levelup_l.spr"
+    levelupfSprite ="sprites/hero/hero_levelup_r.spr"
+    vanishSprite="sprites/hero/hero_vanish_r.spr"
+    longidleSprite="sprites/hero/hero_long_idle.spr"/>
+  
+
+    <stats numFig="2" numRog="2" />
+    <damagebuff piercing="1"/>
+    <secondarybuff id="0" amount="500"/>
+
+    <info latin="(Narutus Wannabeus)" text="A log that you've used ninja magic to make look (and act) a lot like you."/>
+
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+	<damage crushing="3" slashing="2" piercing="2"/>
+  </monster>   
+
+</monDB>

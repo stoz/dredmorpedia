@@ -1,0 +1,218 @@
+<spellDB>
+
+<BushidoSpells>
+
+<spell name="Kiai" type="template" anchored="1" templateID="100">
+      <effect type="shout"/>
+      <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="600" centerEffect="0" sfx="dmg_blast02a" />
+      <buff usetimer="1" time="2" allowstacking="0" self="0" bad="1" icon="skills/unskilled_weapon.png" smallicon="skills/warrior/unskilled_weapon32.png">
+             <secondarybuff id="4" amount="-50"/>
+      <description text="Misaligned ki makes their attacks almost never deadly."/>
+      </buff>
+      </spell>
+
+<spell name="Kiaido" downtime="2" type="adjacent" icon="skills/wizard/spell_white4_32.png" attack="1" wand="0">
+<!--  <effect type="damage" blasting="1" blastingF=".34"/> -->
+      <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+      <effect type="trigger" spell="Kiai"/>
+      <description text="Your loud yell has aligned your ki and disrupted that of your opponents, who will find it virtually impossible to land a deadly blow against you in the next few seconds."/>
+       </spell>
+
+<spell name="MtSelf" type="self" icon="skills/wizard/spell_earth6_32.png" wand="0">
+	<anim sprite="sprites/sfx/fleshy_buff/fleshy_buff" frames="6" sfx="magic" framerate="100" centerEffect="1"/>
+        <buff removable="1" useTimer="1" time="5" allowstacking="0" icon="skills/wizard/spell_earth6_64.png" smallicon="skills/wizard/spell_earth6_32.png">
+		<primarybuff id="0" amount="2"/> <!-- Burliness -->
+		<effect type="dot" resistable="0" spell="Regen Life Effect 1" amount="5"/> <!-- HP gain -->
+		<resistbuff piercing="2"/>
+	</buff>
+	<description text="You are one studly Samurai." />
+   </spell>
+
+<spell name="Meatloafery" type="self">
+	<buff useTimer="0" brittle="4" removable="0" bad="1" stacksize="1" allowstacking="0" icon="skills/wizard/spell_black9_64.png" smallicon="skills/wizard/spell_black9_32.png">
+                <primarybuff id="1" amount="-20"/> <!-- sagacity -->
+                <primarybuff id="2" amount="-10"/> <!-- nimbleness --> 
+                <secondarybuff id="6" amount="-45"/> <!-- dodge -->
+                <secondarybuff id="8" amount="-25"/> <!-- counter -->
+                <secondarybuff id="18" amount="-4"/> <!-- sight -->
+                <secondarybuff id="17" amount="-8"/> <!-- trapsight -->
+		<description text="All that blood being gone from your brain has left you essentially defenseless. This unfortunately lasts a bit longer than the healing part does."/>
+		</buff>
+	</spell>
+
+<spell name="Mind Like Meatloaf" downtime="48" type="self" icon="skills/wizard/spell_water3_32.png" wand="0">
+	<effect type="trigger" spell="Meatloafery"/>
+	<buff useTimer="0" brittle="1" removable="1" stacksize="1" allowstacking="0" icon="skills/wizard/spell_water3_64.png" smallicon="skills/wizard/spell_water3_32.png">
+		<secondarybuff id="13" amount="13"/> <!-- hp regen -->
+        </buff>
+        <description text="Your blood has drained from your brain in order to fuel your body's healing. You'll snap back out of it when someone punches you in the face."/>
+</spell>
+
+
+
+<spell name="Jaws of Death" type="self" icon="skills/wizard/spell_white8_32.png" wand="0">
+        <buff removable="1" useTimer="1" time="12" allowstacking="1" stacksize="6" icon="skills/wizard/spell_white8_64.png" smallicon="skills/wizard/spell_white8_32.png">
+               	<resistbuff acidic="1"/>
+		<resistbuff aethereal="1"/>
+		<resistbuff conflagratory="1"/>
+		<resistbuff existential="1"/>
+		<resistbuff hyperborean="1"/>
+		<resistbuff putrefying="1"/>
+		<resistbuff righteous="1"/>
+		<resistbuff toxic="1"/>
+		<resistbuff transmutative="1"/>
+		<resistbuff voltaic="1"/>
+	</buff>
+	<description text="Your spirit has achieved a higher level of being and it renders your body mostly untouchable by energies and magics."/>
+</spell>
+
+
+<spell name="Final Stand" downtime="256" type="self" icon="skills/final_stand32.png" wand="0">
+	<buff useTimer="0" destroyonmove="1" stacksize="1" allowstacking="0" icon="skills/final_stand64.png" smallicon="skills/final_stand32.png">
+		<halo name="sprites/sfx/conflux/conflux" first="0" num="3" frameRate="100"/>
+		<primarybuff id="0" amount="6"/> <!-- Burliness -->
+		<primarybuff id="2" amount="6"/> <!-- Nimbleness -->
+		<secondarybuff id="10" amount="4"/> <!-- armour -->
+		<secondarybuff id="7" amount="75"/> <!-- block -->
+		<secondarybuff id="11" amount="50"/> <!-- resist --> 
+                <damagebuff blasting="4" righteous="2"/>
+	</buff>
+   <halo name="sprites/sfx/blood_loop/blood_loop" num="6" frameRate="100" />
+	<description text="You're not giving up. Not giving in. This time, it's to the death. Unless of course you're losing, then go ahead and bail." />
+   </spell>
+
+</BushidoSpells>
+
+<QiGongSpells>
+
+<spell name="Qi Smite" type="adjacent">
+     <effect type="damage" righteous="2" righteousF=".5"/>
+     <impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+     </spell>
+
+<spell name="Qi Blast" type="missile" downtime="7" icon="skills/wizard/spell_air4_32.png" wand="0">
+	<effect type="damage" blasting="2" blastingF=".33" righteous="4" righteousF=".34" affectscaster="0"/>
+	<description text="A massive blast of internal energy, made external."/>
+	<anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="90" sfx="magic" />
+   	<effect type="trigger" spell="Qi Burst"/>
+   </spell>
+
+<spell name="More Qi Blast" type="missile" downtime="7" icon="skills/wizard/spell_air4_32.png" wand="0">
+	<effect type="damage" blasting="2" blastingF=".33" righteous="4" righteousF=".34" affectscaster="0"/>
+	<description text="A massive blast of internal energy, made external."/>
+	<anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="90" sfx="magic" />
+   	<effect type="trigger" spell="Qi Burst"/>
+   </spell>
+
+<spell name="Qi Burst" type="template" templateID="98" anchored="0" >
+   <effect type="damage" blasting="1" blastingF=".33" righetous="2" righteousF=".34" affectscaster="1"/>
+   <anim sprite="sprites/sfx/impact_aethereal/impact_aethereal" frames="5" framerate="70" sfx="psychic_shove" />
+   </spell>
+
+<spell name="Open Meridians" downtime="120" type="self" icon="skills/stat_con32.png" wand="0">
+	<effect type="uncurse" amount="1" />
+	<description text="You can push raw, carnal energy through your body to cleanse it of any unwanted magic, psychic activity, qi, or fish." />
+	<anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="60" centerEffect="1" sfx="choir" />
+	</spell>
+
+<spell name="Spirit Bomb" type="self" downtime="256" icon="skills/wizard/spell_water8_32.png">
+   <effect type="trigger" spell="Spirit Blast 1" amount="0" />
+   <effect type="trigger" spell="Spirit Blast 2" amount="0" />
+   <effect type="trigger" spell="Spirit Blast 3" amount="0" />
+   <effect type="trigger" spell="Spirit Blast 4" amount="1" />
+   <description text="Fish." />
+</spell>
+
+<spell name="Spirit Blast 4" type="template" templateID="600">
+  <effect type="damage" blasting="4" blastingF="0.10" righteous="5" righteousF="0.35" affectscaster="1" />
+  <effect type="knock" self="0" amount="3" />
+  <anim sprite="sprites/sfx/divine_hit/divine_hit" frames="7" framerate="80" sfx="blast" centerEffect="0"/>
+</spell>
+
+<spell name="Spirit Blast 3" type="template" templateID="20" >
+  <effect type="damage" blasting="3" blastingF="0.10" righteous="4" righteousF="0.25" affectscaster="1" />
+  <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centerEffect="0"/>
+   </spell>
+
+<spell name="Spirit Blast 2" type="template" templateID="21" >
+  <effect type="damage" blasting="2" blastingF="0.10" righteous="3" righteousF="0.20" affectscaster="1" />
+  <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centerEffect="0"/>
+   </spell>
+
+<spell name="Spirit Blast 1" type="template" templateID="22" >
+  <effect type="damage" blasting="1" blastingF="0.10" righteous="2" righteousF="0.15" affectscaster="1" />
+  <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centerEffect="0"/>
+   </spell>
+
+</QiGongSpells>
+
+<PoisoneerSpells>
+<spell name="Mild Poison" type="target" icon="skills/wizard/spell_black6_32.png" >
+  <effect type="damage" toxic="2" toxicF=".15" affectscaster="0" />
+  <description text="is poisoned!" monsterText="is poisoned!" />
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
+  </spell>
+
+<spell name="Poisoned!" type="target">
+   <effect type="dot" amount="4" spell="Mild Poison"/>
+   <impact sprite="sprites/sfx/goosplatA/goosplatA" frames="4" sfx="magic_damage" framerate="100" centerEffect="1"/>
+   </spell>
+
+<spell name="Your Basic Poison" type="adjacent" downtime="12" attack="1" icon="skills/poison_blade32.png" wand="0">
+  <description text="You have a chance to poison your enemies with something mysterious that never manages to show up in your inventory or be used for any other purpose." />
+  <effect type="dot" amount="5" spell="Mild Poison" />
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
+   </spell>
+
+<spell name="Neurotoxin" type="target">
+   <effect type="dot" amount="5" spell="Mild Poison"/>
+   <effect type="paralyze" turns="4" self="0" />
+   <buff useTimer="1" time="20" stacksize="3" self="0" bad="1" icon="skills/vital_siphon32.png" smallicon="skills/vital_siphon32.png">
+      <primarybuff id="1" amount="-3"/> 
+      <primarybuff id="3" amount="-3"/> 
+      <primarybuff id="4" amount="-3"/> 
+      <primarybuff id="5" amount="-3"/>
+      </buff>
+   <description text="Deals toxic damage to one being. Indiscrete use of this toxin may provoke economic sanctimoniousness." />
+   </spell>
+
+<spell name="Neurotoxic" downtime="24" type="self" icon="skills/wizard/spell_black7_32.png" wand="0" >
+    <buff usetimer="0" attacks="10" removable="1" allowstacking="0" icon="skills/vital_siphon64.png" smallicon="skills/vital_siphon32.png">
+    <targetHitEffectBuff percentage="25" name="Neurotoxin" />
+    </buff>  
+    <description text="Your weapon is prepared with a powerful neurotoxin!" />
+    </spell>     
+
+<spell name="Venomous Darts" downtime="57" type="self" icon="skills/rogue/venom_darts32.png" wand="0" >
+  <description text="Scrape together some toxic thrown weapons out of dungeon scraps." />
+  <effect type="spawn" itemname="Poison Dart" amount="3"/>
+   <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" sfx="ping" />
+  </spell>
+
+<spell name="Anti-Poison" type="self" downtime="48" icon="skills/wizard/spell_white0_32.png" >
+  <effect type="dot" self="1" resistable="0" amount="10" spell="Regen Life Effect 1"/>
+  <description text="You've been Anti-poisoned! You don't heal normally because your system is trying to fight the anti-poison off, but you heal from the anti-poison quite handily." />
+  <buff useTimer="1" time="10" allowstacking="0" icon="skills/wizard/spell_white0_64.png" smallicon="skills/wizard/spell_white0_32.png">
+  <secondarybuff id="13" amount="-99"/> 
+  </buff>
+  </spell>
+
+<spell name="Major Toxin" type="target" icon="skills/wizard/spell_water5_32.png" >
+  <effect type="damage" toxic="4" toxicF=".3" affectscaster="0" />
+  <description text="is REALLY poisoned!" monsterText="is poisoned!" />
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
+  </spell>
+
+<spell name="Deadly Toxin" type="target" icon="skills/wizard/spell_water5_32.png" >
+  <description text="You have a chance to poison your enemies very badly with something mysterious that never manages to show up in your inventory or be used for any other purpose." />
+  <effect type="dot" amount="8" spell="Major Toxin" />
+   </spell>
+
+<spell name="You're Toxic" type="template" templateID="09" anchored="1" icon="skills/rogue/toxic_self32.png" wand="0">
+   <effect type="dot" amount="8" spell="Major Toxin"/>
+      <anim sprite="sprites/sfx/goosplatA/goosplatA" frames="4" sfx="magic_damage" framerate="100" centerEffect="1"/>
+</spell>
+
+</PoisoneerSpells>
+
+</spellDB>

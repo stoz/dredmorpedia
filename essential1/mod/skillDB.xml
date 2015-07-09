@@ -1,0 +1,166 @@
+<skillDB>
+  
+<skill name="QiGong" id="601" type="warrior" description="You sacrifice your mana pool and mana regeneration in order to obtain a different kind of internal energy. Fish are also somehow involved.">
+   <art icon="skills/wizard/spell_water4_64.png"/>
+   </skill>
+
+<skill name="Poisoneer" id="602" type="rogue" description="You can infect your enemies with virulent poisons in a variety of manners.">
+   <loadout type="weapon" subtype="Venomous Stiletto" always="1"/>
+   <art icon="skills/poison_blade64.png"/>
+   </skill>
+
+<skill name="Bushido" id="603" type="warrior" description="You have heard tales of the warriors of the East plunging headlong into the jaws of death without fear or hesitation. This is your best attempt at doing something vaguely akin to that.">
+   <loadout type="weapon" subtype="Wakizashi" always="1"/>
+   <art icon="skills/wizard/spell_white4_64.png"/>
+   </skill>
+
+ 
+<!-- ********************************SECTION BREAK******************************** -->  
+  
+  
+
+<ability name="QiGong" icon="skills/wizard/spell_water4_64.png" skill="601" startSkill="1">
+   <description text="You've trained in the art of converting your external mana into powerful internal energies. Fish are somehow involved."/>
+   </ability>
+<ability name="Poisoneer" icon="skills/poison_blade64.png" skill="602" startSkill="1">
+  <description text="You can infect your enemies with virulent poisons in a variety of manners."/>
+  </ability>
+<ability name="Bushido" icon="skills/wizard/spell_white4_64.png" skill="603" startSkill="1">
+   <description text="You have heard tales of the warriors of the East plunging headlong into the jaws of death without fear or hesitation. This is your best attempt at doing something vaguely akin to that."/>
+   </ability>
+
+
+<!-- ************************************SECTION BREAK************************************* -->
+
+
+<QiGongSkills>
+<ability name="Qi Smite" icon="skills/wizard/spell_white9_64.png" skill="601" level="0">
+  <description text="You can channel the raw, carnal energy of the cosmos through your feet, weapons, and occasionally frozen fish."/>
+  <damagebuff righteous="1"/>
+  <targetHitEffectBuff percentage="40" name="Qi Smite"/>
+  <secondarybuff id="9" amount="2"/> <!-- enemy dodge reduction -->
+  <secondarybuff id="3" amount="2"/> <!-- magic power -->
+  <secondarybuff id="1" amount="-8"/>  <!-- mana --> 
+  </ability>
+<ability name="Qi Blast" icon="skills/wizard/spell_air4_64.png" skill="601" level="1">
+  <description text="You unleash your raw, carnal energies at your foes and occassionally live fish."/>
+  <spell name="Qi Blast"/>
+  <secondarybuff id="1" amount="-13"/> <!-- mana -->
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  <secondarybuff id="3" amount="2"/> <!-- magic power -->
+  </ability>
+<ability name="Open Meridians" icon="skills/stat_con64.png" skill="601" level="2">
+  <description text="By pushing vast quantities of raw, carnal energies through your body, you can shrug off vile magic and toxins, and occasionally raw, carnal fish."/>
+  <spell name="Open Meridians"/>
+  <secondarybuff id="1" amount="-2"/> <!-- mana -->
+  <secondarybuff id="3" amount="2"/> <!-- magic power -->
+  <damagebuff righteous="2"/>
+  <secondarybuff id="11" amount="10"/> <!-- magic resistance -->
+  </ability>
+<ability name="Qi Infusion" icon="skills/wizard/spell_water4_64.png" skill="601" level="3">
+  <description text="You sacrifice any hope of naturally regaining Mana for a huge boost of raw, carnal energy. And occasionally GHOTI. Also, more Qi Blasting!"/>
+  <spell name="More Qi Blast"/>
+  <secondarybuff id="14" amount="-99"/> <!-- mana regeneration -->
+  <secondarybuff id="10" amount="2"/> <!-- armor absorbtion -->
+  <secondarybuff id="9" amount="3"/> <!-- enemy dodge reduction -->
+  <secondarybuff id="2" amount="2"/> <!-- melee power -->
+  <secondarybuff id="3" amount="3"/> <!-- magic power -->
+  <secondarybuff id="11" amount="20"/> <!-- magic resistance -->
+  <secondarybuff id="0" amount="5"/> <!-- HP -->
+  <resistbuff righteous="3"/>
+  </ability>
+<ability name="Spirit Bomb" icon="skills/wizard/spell_water8_64.png" skill="601" level="4">
+  <description text="You may call upon the raw, carnal fishness of every particle of matter in your vicinity to wreak massive havoc upon your foes...if it doesn't kill you."/>
+  <spell name="Spirit Bomb"/>
+  <damagebuff righteous="2"/>
+  <secondarybuff id="1" amount="-4"/> <!-- mana -->
+  <secondarybuff id="5" amount="10"/> <!-- haywire -->
+  <secondarybuff id="3" amount="3"/> <!-- magic power -->
+  <primarybuff id="0" amount="1"/> <!-- burliness -->
+  </ability>
+</QiGongSkills>
+
+<poisoneerSkills>
+<ability name="Your Basic Poison" icon="skills/poison_blade64.png" skill="602" level="0" >
+  <description text="You have a chance to poison your enemies with something mysterious that never manages to show up in your inventory or be used for any other purpose."/>
+  <spell name="Your Basic Poison" />
+  <resistBuff toxic="1" />
+  <secondaryBuff id="4" amount="1" />  <!-- crit chance -->
+</ability>
+<ability name="Neurotoxin" icon="skills/wizard/spell_black7_64.png" skill="602" level="1">
+  <description text="You've found a way to turn common everyday dungeon mold into a potent neurotoxin. It only lasts for a while before it wears off your blade, and it's only occasionally effective, but when it is effective, it's nasty!"/>
+  <spell name="Neurotoxic"/>
+  <damageBuff toxic="1" />
+  <secondaryBUff id="9" amount="1" /> <!-- EDR -->
+  </ability>
+<ability name="Venomous Darts" icon="skills/rogue/venom_darts.png" skill="602" level="2">
+   <description text="Any old thing you happen to toss at someone gets a good firm dipping in your secret sauce first."/>
+   <resistBuff toxic="1" />
+   <secondaryBuff id="4" amount="2" />  <!-- crit chance -->
+   <thrownBuff name="Poisoned!" percentage="100" />
+   </ability>
+<ability name="Anti-Poison" icon="skills/wizard/spell_white0_64.png" skill="602" level="3">
+   <description text="You found a special way to cause your usual poison to work BACKWARDS, putting a body back together. Awesome!"/>
+   <damageBuff toxic="1" />
+   <secondaryBUff id="9" amount="2" /> <!-- EDR -->
+   <spell name="Anti-Poison"/>
+   </ability>
+<ability name="Deadly Toxin" icon="skills/wizard/spell_water5_64.png" skill="602" level="4">
+   <description text="You have a chance to very direly poison your enemies with something mysterious that never manages to show up in your inventory or be used for any other purpose."/>
+   <resistBuff toxic="1" />
+   <secondaryBuff id="4" amount="2" />  <!-- crit chance -->
+   <secondaryBUff id="9" amount="2" /> <!-- EDR -->
+   <targetHitEffectBuff percentage="24" name="Deadly Toxin" />
+   </ability>
+<ability name="You Know That You're Toxic" icon="skills/rogue/toxic_self64.png" skill="602" level="5">
+    <description text="You've been dealing with poison so long that your very blood is prone to poisoning the people near you whenever you get hit hard enough to cause a spray."/>
+    <damagebuff toxic="2" />
+    <playerHitEffectBuff percentage="20" name="You're Toxic"/>
+    <secondaryBuff id="12" amount="3" /> <!-- Sneakiness -->
+    <secondaryBuff id="0" amount="5" /> <!-- HP -->
+</ability>
+</poisoneerSkills>
+
+<BushidoSkills>
+<ability name="Kiaido" icon="skills/wizard/spell_white4_64.png" skill="603" level="0">
+  <description text="Samurai didn't believe in stealth so much as in yelling really loud, pretty much all the time."/>
+  <spell name="Kiaido"/>
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  </ability>
+<ability name="Body Like Mountain" icon="skills/wizard/spell_earth6_64.png" skill="603" level="1">
+  <description text="Your body is immutable like the mountain. Sometimes, when hit, you'll show it."/>
+  <playerHitEffectBuff percentage="20" name="MtSelf"/>
+  <secondarybuff id="0" amount="5"/> <!-- HP -->
+  </ability>
+<ability name="Make Me One With Everything" icon="skills/wizard/spell_white1_64.png" skill="603" level="2">
+  <description text="You have achieved martial oneness with the universe. The universe tells you when to get the hell out of Dodge."/>
+  <secondaryBuff id="6" amount="8"/> <!-- dodge -->
+  <primaryBuff id="3" amount="1" /> <!-- caddishness -->
+  <secondaryBuff id="18" amount="1"/> <!-- sight -->
+  <secondaryBuff id="17" amount="1"/> <!-- trapsight --> 
+  </ability>
+<ability name="Mind Like Meatloaf" icon="skills/wizard/spell_water3_64.png" skill="603" level="3">
+  <description text="Your body is immutable like the mountain...unless your mind gets in the way. Now, you can fix that for a while!"/>
+  <spell name="Mind Like Meatloaf"/>
+  <secondaryBuff id="2" amount="1"/> <!-- melee power -->
+  </ability>
+<ability name="Change Must Come From Within" icon="skills/wizard/spell_white2_64.png" skill="603" level="4">
+  <description text="You have learned to change your inner self, and in so doing, made enemy magic harder to figure you out."/>
+  <secondaryBuff id="11" amount="10"/> <!-- magic resist -->
+  <secondaryBuff id="22" amount="5"/> <!-- magic reflect -->
+  <secondaryBuff id="5" amount="4"/> <!-- haywire chance --> 
+  <primaryBuff id="4" amount="1"/> <!-- stubbornness -->
+  </ability>
+<ability name="Headlong Into the Jaws of Death" icon="skills/wizard/spell_white8_64.png" skill="603" level="5">
+  <description text="You no longer fear anything. Your spirit adapts to enemy attacks up to, but not including, Death itself."/>
+  <playerHitEffectBuff percentage="66" name="Jaws of Death" />
+  </ability>
+<ability name="Final Stand" icon="skills/final_stand64.png" skill="603" level="6">
+  <description text="Everyone has to die at some place and time. Why not here and now? Gives you incredible powers so long as you make a stand. Move, and you laugh alone."/> 
+   <secondaryBuff id="2" amount="1"/> <!-- melee power -->
+   <spell name="Final Stand"/>
+   </ability>
+</BushidoSkills>
+
+
+</skillDB>

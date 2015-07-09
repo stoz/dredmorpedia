@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<roomdb>
+<!-- -debug-flag -testroom "ITEMTEST" -x 5 -y 5 -->
+
+<room width="12" height="12" name="ITEMTEST" >
+  <row text="############"/>
+  <row text="#..........#"/>
+  <row text="#..........#"/>
+  <row text="#..........#"/>
+  <row text="#..........#"/>
+  <row text="#..........#"/>
+  <row text="#..........#"/>
+  <row text="#..........#"/>
+  <row text="#..........#"/>
+  <row text="#..........#"/>
+  <row text="#..........#"/>
+  <row text="############"/>
+  <flags special="1" nomonsters="0" notraps="1" noblockers="1" notreasure="1" minLevel="40" maxLevel="40" />
+
+  <loot type="weapon" subtype="Maxwell's Silver Hammer" x="5" y="6" />
+
+
+</room>
+</roomdb>

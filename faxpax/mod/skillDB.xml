@@ -1,0 +1,651 @@
+<?xml version="1.0"?>
+<skillDB>
+<skill name="Clutch of Midas" id="200" type="warrior" description="Midas may or may not have been one of your ancestors. Who knows? Dude got around.">
+   <art icon="sprites/skills/warrior/regal64.png"/>
+   <loadout type="reagent" subtype="Gold Ingot" always="1" amount="2"/>
+   </skill>
+
+<skill name="Dragonfire Aspirant" id="201" type="warrior" description="You've taken a draconic patron: a fiery draconic lord of terrible might.">
+   <art icon="sprites/dfa_base_fire_64.png"/>
+   <loadout type="armour" subtype="Flippy Floppies" always="1" />
+   <loadout type="armour" subtype="Iron Ring" always="1" />
+   </skill>
+
+<skill name="Uttercold Aspirant" id="202" type="warrior" description="You've taken a draconic patron: a dragon lord from the arctic wastes.">
+   <art icon="sprites/dfa_base_ice_64.png"/>
+   <loadout type="armour" subtype="Leather Belt" always="1" />
+   </skill>
+
+<skill name="Thunderbreath Aspirant" id="203" type="warrior" description="You've taken a draconic patron: a storm-chasing, lightning spewing dragon lord.">
+   <art icon="sprites/dfa_base_elec_64.png"/>
+   <loadout type="armour" subtype="Copper Ring" always="1" />
+   </skill>
+
+<skill name="Heartburn Aspirant" id="204" type="warrior" description="You've taken a draconic patron: a vile, venom-dripping draconic lord.">
+   <art icon="sprites/dfa_base_acid_64.png"/>
+   <loadout type="armour" subtype="Simple Wooden Shield" always="1" />
+   </skill>
+
+<skill name="Breathstealer Aspirant" id="205" type="warrior" description="You've taken a draconic patron: a constricting, breath-stealing dragon lord.">
+   <art icon="sprites/dfa_base_asph_64.png"/>
+   <loadout type="weapon" subtype="Small Crossbow" always="1"/>
+   <loadout type="weapon" subtype="Wooden Bolt" amount="18" always="1"/>
+   </skill>
+
+<skill name="Self-Righteous Aspirant" id="206" type="warrior" description="You've taken a draconic patron: a smug, pious draconic lord.">
+   <art icon="sprites/dfa_base_right_64.png"/>
+   <loadout type="armour" subtype="Astrologer's Hat" always="1" />
+   </skill>
+
+<skill name="Necrolyzing Aspirant" id="207" type="warrior" description="You've taken a draconic patron: a draconic lich with mighty vital-sapping power.">
+   <art icon="sprites/dfa_base_necro_64.png"/>
+   <loadout type="weapon" subtype="Sacrificial Dagger" always="1" />
+   </skill>
+
+<skill name="Inquisitor" id="208" type="wizard" description="The hammer of righteousness is strong in your arms!">
+   <art icon="skills/wizard/spell_white4_64.png"/>
+   <loadout type="weapon" subtype="Rough Iron Mace" always="1" amount="1"/>
+   </skill>
+
+<skill name="Spellsword" id="209" type="wizard" description="You mix magic and melee in a unique and devastating way.">
+   <art icon="skills/warrior/sword_lore64.png"/>
+   <loadout type="weapon" subtype="Sacrificial Dagger" always="1" amount="1"/>
+   </skill>
+
+<skill name="Meteorology" id="210" type="wizard" description="Today's forecast: partly cloudy with a chance of PAIN.">
+   <art icon="sprites/skills/skill_meteorology_64.png"/>
+   </skill>
+
+<skill name="Avenging Executioner" id="211" type="rogue" description="You have a score to settle, and you've heard there's lich on the menu.">
+   <art icon="sprites/skills/avex/executioner64.png"/>
+   <loadout type="weapon" subtype="Razor Sword" always="1" amount="1"/>
+   </skill>
+
+ 
+<!-- ********************************SECTION BREAK******************************** -->  
+
+<ability name="Clutch of Midas" icon="sprites/skills/warrior/regal64.png" skill="200" startSkill="1">
+   <description text="Some people say you have a heart of gold. You know that's true."/>
+   </ability>
+
+<ability name="Dragonfire Aspirant" icon="sprites/dfa_base_fire_64.png" skill="201" startSkill="1">
+   <description text="You've taken a draconic patron: a fiery draconic lord of terrible might."/>
+   </ability>
+
+<ability name="Uttercold Aspirant" icon="sprites/dfa_base_ice_64.png" skill="202" startSkill="1">
+   <description text="You've taken a draconic patron: a dragon lord from the arctic wastes."/>
+   </ability>
+
+<ability name="Thunderbreath Aspirant" icon="sprites/dfa_base_elec_64.png" skill="203" startSkill="1">
+   <description text="You've taken a draconic patron: a storm-chasing, lightning spewing dragon lord."/>
+   </ability>
+
+<ability name="Heartburn Aspirant" icon="sprites/dfa_base_acid_64.png" skill="204" startSkill="1">
+   <description text="You've taken a draconic patron: a vile, venom-dripping draconic lord."/>
+   </ability>
+
+<ability name="Breathstealer Aspirant" icon="sprites/dfa_base_asph_64.png" skill="205" startSkill="1">
+   <description text="You've taken a draconic patron: a constricting, breath-stealing dragon lord."/>
+   </ability>
+
+<ability name="Self-Righteous Aspirant" icon="sprites/dfa_base_right_64.png" skill="206" startSkill="1">
+   <description text="You've taken a draconic patron: a smug, pious draconic lord."/>
+   </ability>
+
+<ability name="Necrolyzing Aspirant" icon="sprites/dfa_base_necro_64.png" skill="207" startSkill="1">
+   <description text="You've taken a draconic patron: a draconic lich with mighty vital-sapping power."/>
+   </ability>
+
+<ability name="Inquisitor" icon="skills/wizard/spell_white4_64.png" skill="208" startSkill="1">
+   <description text="The hammer of righteousness is strong in your arms!"/>
+   </ability>
+
+<ability name="Spellsword" icon="skills/warrior/sword_lore64.png" skill="209" startSkill="1">
+   <description text="The hammer of righteousness is strong in your arms!"/>
+   </ability> 
+
+<ability name="Meteorology" icon="sprites/skills/skill_meteorology_64.png" skill="210" startSkill="1">
+   <description text="Today's forecast: partly cloudy with a chance of PAIN."/>
+   </ability>
+
+<ability name="Avenging Executioner" icon="sprites/skills/avex/executioner64.png" skill="211" startSkill="1">
+   <description text="You have a score to settle, and you've heard there's lich on the menu."/>
+   </ability>
+
+<!-- ************************************SECTION BREAK************************************* -->
+
+<ClutchOfMidasSkills>
+<ability name="Blood of Kings" icon="sprites/skills/warrior/selfrighteous_aura64.png" skill="200" level="0">
+  <description text="In your veins flows the blood of kings!"/>
+  <primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+  <secondarybuff id="0" amount="1"/> <!-- hp -->
+  <resistbuff existential="3"/>
+  </ability>
+<ability name="Body of Gold" icon="sprites/skills/warrior/regal64.png" skill="200" level="1">
+  <description text="Your body consists of mostly gold. While a pliable metal, it's certainly more durable than regular flesh. It is, however, somewhat more conductive and harder to move."/>
+  <primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+  <secondarybuff id="0" amount="2"/> <!-- hp -->
+  <damagebuff crushing="1"/>
+  <resistbuff slashing="1" piercing="1" crushing="1" blasting="1" voltaic="-1"/>
+  </ability>
+<ability name="The Bad Touch" icon="sprites/skills/warrior/spell_earth4_64.png" skill="200" level="2">
+  <description text="You and me baby ain't nothin' but metals, so let's turn you into something I can sell for a kettle."/>
+  <targetHitEffectBuff percentage="20" name="Midas" />
+  <primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+  <secondarybuff id="0" amount="3"/> <!-- hp -->
+  <damagebuff transmutative="1"/>
+  <resistbuff slashing="1" piercing="1" crushing="1" blasting="1" voltaic="-1"/>
+  </ability>
+<ability name="Lead Into Gold" icon="sprites/skills/warrior/skill_antiques_dealer2_64.png" skill="200" level="3">
+  <description text="Contrary to popular belief, you can turn more than lead into gold."/>
+  <spell name="Lead Into Gold"/>
+  <primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+  <secondarybuff id="0" amount="4"/> <!-- hp -->
+  <secondarybuff id="21" amount="1" /> <!-- alchemy -->
+  <damagebuff transmutative="1"/>
+  <resistbuff slashing="1" piercing="1" crushing="1" blasting="1" voltaic="-1"/>
+  </ability>
+<ability name="The Worse Touch" icon="sprites/skills/warrior/curse_of_midas64.png" skill="200" level="4">
+  <description text="You and me baby ain't nothin' but gold, so let's oh screw it MONEYYYYY"/>
+  <targetHitEffectBuff percentage="30" name="Midas" />
+  <primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+  <secondarybuff id="0" amount="5"/> <!-- hp -->
+  <damagebuff transmutative="1"/>
+  <resistbuff slashing="1" piercing="1" crushing="1" blasting="1" voltaic="-1"/>
+  </ability>
+<ability name="Body of Molten Gold" icon="sprites/skills/warrior/infernal64.png" skill="200" level="5">
+  <description text="Your body glows with terrible molten energies."/>
+  <primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+  <secondarybuff id="0" amount="6"/> <!-- hp -->
+  <damagebuff conflagratory="4" transmutative="3"/>
+  <resistbuff conflagratory="4" voltaic="-1"/>
+  </ability>
+<ability name="Cashblast" icon="sprites/skills/warrior/digging_ray64.png" skill="200" level="6">
+  <description text="You understand the truth of the universe: that all creatures can be bled for money!"/>
+  <primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+  <secondarybuff id="0" amount="7"/> <!-- hp -->
+  <resistbuff slashing="1" piercing="1" crushing="1" blasting="1" voltaic="-1"/>
+  <spell name="Cashblast"/>
+  </ability>
+</ClutchOfMidasSkills>
+
+<DragonfireSkills>
+<ability name="Fire Breath" icon="sprites/dfa_breath_fire_64.png" skill="201" level="0">
+	<description text="They always said you were full of hot air..."/>
+	<resistbuff conflagratory="1"/>
+	<spell name="Fire Breath"/>
+	</ability>
+<ability name="Lingering Fire Breath" icon="sprites/dfa_lingering_fire_breath_64.png" skill="201" level="1">
+	<description text="You sure have a fiery personality."/>
+	<resistbuff conflagratory="1"/>
+	<spell name="Lingering Fire Breath"/>
+	</ability>
+<ability name="Draconic Transformation" icon="sprites/dfa_scales_fire_64.png" skill="201" level="2">
+	<description text="Your...extended contact with your patron hardens your skin and makes you tougher."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="2" amount="2" />
+	<secondarybuff id="4" amount="5" />
+	<resistbuff conflagratory="1" />
+	<damagebuff conflagratory="2" />
+	</ability>
+<ability name="Entangling Fire Breath" icon="sprites/dfa_entangling_fire_64.png" skill="201" level="3">
+	<description text="Like napalm. No agent orange, though."/>
+	<resistbuff conflagratory="1"/>
+	<spell name="Entangling Fire Breath"/>
+	</ability>
+<ability name="Fire Barrier" icon="sprites/dfa_fire_barrier_64.png" skill="201" level="4">
+	<description text="Just don't stand too close: it can still hurt you."/>
+	<resistbuff conflagratory="1"/>
+	<spell name="Fire Barrier"/>
+	</ability>
+<ability name="Conflagration" icon="skills/spells/flame_brand64.png" skill="201" level="5">
+	<description text="There are no words for how hot this is."/>
+	<resistbuff conflagratory="1"/>
+	<spell name="Conflagration"/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="2" amount="2" />
+	<secondarybuff id="4" amount="5" />
+	<damagebuff conflagratory="3" />
+	</ability>
+</DragonfireSkills>
+
+<UttercoldSkills>
+<ability name="Freezing Breath" icon="sprites/dfa_breath_ice_64.png" skill="202" level="0">
+	<description text="A little better than the cold shoulder. You could probably get this from chewing the right kid of gum."/>
+	<resistbuff hyperborean="1"/>
+	<spell name="Freezing Breath"/>
+	</ability>
+<ability name="Freezing Fog" icon="sprites/dfa_freezing_fog_64.png" skill="202" level="1">
+	<description text="Cold, clinging fog that chills to the bone."/>
+	<resistbuff hyperborean="1"/>
+	<spell name="Freezing Fog"/>
+	</ability>
+<ability name="Draconic Transformation" icon="sprites/dfa_scales_ice_64.png" skill="202" level="2">
+	<description text="Your...extended contact with your patron hardens your skin and makes you tougher."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="11" amount="5" />
+	<secondarybuff id="22" amount="5" />
+	<resistbuff hyperborean="1" />
+	<damagebuff hyperborean="2" />
+	</ability>
+<ability name="Cloying Breath" icon="sprites/dfa_cloying_breath_64.png" skill="202" level="3">
+	<description text="Your minty fresh cold breath is sticky, for some inexplicable reason."/>
+	<resistbuff hyperborean="1"/>
+	<spell name="Cloying Breath"/>
+	</ability>
+<ability name="Frozen Barrier" icon="sprites/dfa_frozen_barrier_64.png" skill="202" level="4">
+	<description text="Add a top, and it's an igloo!"/>
+	<resistbuff hyperborean="1"/>
+	<spell name="Frozen Barrier"/>
+	</ability>
+<ability name="Uttercold" icon="sprites/dfa_uttercold_64.png" skill="202" level="5">
+	<description text="For a brief moment, you can surround yourself with the arctic."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="11" amount="5" />
+	<secondarybuff id="22" amount="5" />
+	<resistbuff hyperborean="1" />
+	<damagebuff hyperborean="3" />
+	<spell name="Uttercold"/>
+	</ability>
+</UttercoldSkills>
+
+<ThunderbreathSkills>
+<ability name="Thunder Breath" icon="sprites/dfa_breath_elec_64.png" skill="203" level="0">
+	<description text="Sometimes, your words are rather shocking."/>
+	<resistbuff voltaic="1"/>
+	<spell name="Thunder Breath"/>
+	</ability>
+<ability name="Static Field" icon="sprites/dfa_static_field_64.png" skill="203" level="1">
+	<description text="Ooh, tingly."/>
+	<resistbuff voltaic="1"/>
+	<spell name="Static Field"/>
+	</ability>
+<ability name="Draconic Transformation" icon="sprites/dfa_scales_elec_64.png" skill="203" level="2">
+	<description text="Your...extended contact with your patron hardens your skin and makes you tougher."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="18" amount="1" />
+	<secondarybuff id="16" amount="2" />
+	<secondarybuff id="17" amount="1" />
+	<resistbuff voltaic="1"/>
+	<damagebuff voltaic="2"/>
+	</ability>
+<ability name="Static Net" icon="sprites/dfa_static_net_64.png" skill="203" level="3">
+	<description text="The reason this one takes so long to recharge is because you have to rub your feet against wool for a few minutes."/>
+	<resistbuff voltaic="1"/>
+	<spell name="Static Net"/>
+	</ability>
+<ability name="Thunder Barrier" icon="sprites/dfa_thunder_barrier_64.png" skill="203" level="4">
+	<description text="Surrounding yourself with a bubble of lightning makes life difficult for your enemies."/>
+	<resistbuff voltaic="1"/>
+	<spell name="Thunder Barrier"/>
+	</ability>
+<ability name="Storm of Vengeance" icon="sprites/dfa_storm_of_vengeance_64.png" skill="203" level="5">
+	<description text="Revengeance is on your mind! That's totally a word now. Revengeance. Write it down."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="18" amount="1" />
+	<secondarybuff id="16" amount="2" />
+	<secondarybuff id="17" amount="1" />
+	<resistbuff voltaic="1"/>
+	<damagebuff voltaic="3"/>
+	<spell name="Storm of Vengeance"/>
+	</ability>
+</ThunderbreathSkills>
+
+<HeartburnSkills>
+<ability name="Acid Reflux" icon="sprites/dfa_breath_acid_64.png" skill="204" level="0">
+	<description text="...shouldn't have eaten that havarti."/>
+	<resistbuff acidic="1"/>
+	<spell name="Acid Reflux"/>
+	</ability>
+<ability name="Mighty Belch" icon="sprites/dfa_mighty_belch_64.png" skill="204" level="1">
+	<description text="...or that pan-galactic gargle blaster."/>
+	<resistbuff acidic="1"/>
+	<spell name="Mighty Belch"/>
+	</ability>
+<ability name="Draconic Transformation" icon="sprites/dfa_scales_acid_64.png" skill="204" level="2">
+	<description text="...or that lutefisk."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="8" amount="5" />
+	<secondarybuff id="9" amount="5" />
+	<resistbuff acidic="1"/>
+	<damagebuff acidic="2"/>
+	</ability>
+<ability name="Congealing Acid" icon="sprites/dfa_congealing_acid_64.png" skill="204" level="3">
+	<description text="...or that aged steak."/>
+	<resistbuff acidic="1"/>
+	<spell name="Congealing Acid"/>
+	</ability>
+<ability name="Acid Sheath" icon="sprites/dfa_acid_sheath_64.png" skill="204" level="4">
+	<description text="...or that plumber's agaric"/>
+	<resistbuff acidic="1"/>
+	<spell name="Acid Sheath"/>
+	</ability>
+<ability name="Horrid Wilting" icon="sprites/dfa_horrid_wilting_64.png" skill="204" level="5">
+	<description text="...and definitely not that applejack."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="8" amount="5" />
+	<secondarybuff id="9" amount="5" />
+	<resistbuff acidic="1"/>
+	<damagebuff acidic="3"/>
+	<spell name="Horrid Wilting"/>
+	</ability>
+</HeartburnSkills>
+
+<BreathstealerSkills>
+<ability name="Inhalation" icon="sprites/dfa_breath_asph_64.png" skill="205" level="0">
+	<description text="You take a little bit after that guy Kirby."/>
+	<resistbuff asphyxiative="1"/>
+	<spell name="Inhalation"/>
+	</ability>
+<ability name="Lingering Vacuum" icon="sprites/dfa_lingering_vacuum_64.png" skill="205" level="1">
+	<description text="You suck so hard you leave behind a vortex of swirling non-air."/>
+	<resistbuff asphyxiative="1"/>
+	<spell name="Lingering Vacuum"/>
+	</ability>
+<ability name="Draconic Transformation" icon="sprites/dfa_scales_asph_64.png" skill="205" level="2">
+	<description text="Your...extended contact with your patron hardens your skin and makes you tougher."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="4" amount="5" />
+	<secondarybuff id="5" amount="5" />
+	<resistbuff asphyxiative="1"/>
+	<damagebuff asphyxiative="2"/>
+	</ability>
+<ability name="Consciousness Stealer" icon="sprites/dfa_consciousness_stealer_64.png" skill="205" level="3">
+	<description text="Enemies trapped within your furious sucking lose consciousness."/>
+	<resistbuff asphyxiative="1"/>
+	<spell name="Consciousness Stealer"/>
+	</ability>
+<ability name="Asphyxiative Barrier" icon="sprites/dfa_asphyxiative_barrier_64.png" skill="205" level="4">
+	<description text="You can place a wall of suck around you, keeping your foes at bay."/>
+	<resistbuff asphyxiative="1"/>
+	<spell name="Asphyxiative Barrier"/>
+	</ability>
+<ability name="Harsh Vacuum" icon="sprites/dfa_harsh_vacuum_64.png" skill="205" level="5">
+	<description text="Your mighty sucking knows no peers."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="4" amount="5" />
+	<secondarybuff id="5" amount="5" />
+	<resistbuff asphyxiative="1"/>
+	<damagebuff asphyxiative="3"/>
+	<spell name="Harsh Vacuum"/>
+	</ability>
+</BreathstealerSkills>
+
+<SelfRighteousSkills>
+<ability name="Self-Righteous Breath" icon="sprites/dfa_breath_right_64.png" skill="206" level="0">
+	<description text="You are totally better than they are."/>
+	<resistbuff righteous="1"/>
+	<spell name="Self-Righteous Breath"/>
+	</ability>
+<ability name="Forceful Righteousness" icon="sprites/dfa_forceful_righteousness_64.png" skill="206" level="1">
+	<description text="Your fierce pride in your faith has caused you to throw The Book at some people."/>
+	<resistbuff righteous="1"/>
+	<spell name="Forceful Righteousness"/>
+	</ability>
+<ability name="Draconic Transformation" icon="sprites/dfa_scales_right_64.png" skill="206" level="2">
+	<description text="Your...extended contact with your patron hardens your skin and makes you tougher."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="13" amount="2" />
+	<secondarybuff id="14" amount="2" />
+	<secondarybuff id="18" amount="1" />
+	<resistbuff righteous="1"/>
+	<damagebuff righteous="2"/>
+	</ability>
+<ability name="Pious Exhalation" icon="sprites/dfa_pious_exhalation_64.png" skill="206" level="3">
+	<description text="Dredmor, Book 2, Verses 5-9: With but a breath, your enemies are rent asunder by the power of your awesome faith."/>
+	<resistbuff righteous="1"/>
+	<spell name="Pious Exhalation"/>
+	</ability>
+<ability name="Righteous Shield" icon="sprites/dfa_righteous_shield_64.png" skill="206" level="4">
+	<description text="Dredmor, Book 5, Verses 3-5: Surround yourself in divine power and your enemies will be pushed away."/>
+	<resistbuff righteous="1"/>
+	<spell name="Righteous Shield"/>
+	</ability>
+<ability name="Holier-Than-Thou" icon="sprites/dfa_holier_than_thou_64.png" skill="206" level="5">
+	<description text="Your god is an awesome god."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="13" amount="2" />
+	<secondarybuff id="14" amount="2" />
+	<secondarybuff id="18" amount="1" />
+	<resistbuff righteous="1"/>
+	<damagebuff righteous="3"/>
+	<spell name="Holier-Than-Thou"/>
+	</ability>
+</SelfRighteousSkills>
+
+<NecrolyzingSkills>
+<ability name="Necrotic Breath" icon="sprites/dfa_breath_necro_64.png" skill="207" level="0">
+	<description text="This is worse than halitosis. Far worse."/>
+	<resistbuff necromantic="1"/>
+	<spell name="Necrotic Breath"/>
+	</ability>
+<ability name="Mind Rot" icon="sprites/dfa_mind_rot_64.png" skill="207" level="1">
+	<description text="Your breath can convince targets they should go watch TV for a while."/>
+	<resistbuff necromantic="1"/>
+	<spell name="Mind Rot"/>
+	</ability>
+<ability name="Draconic Transformation" icon="sprites/dfa_scales_necro_64.png" skill="207" level="2">
+	<description text="Your...extended contact with your patron hardens your skin and makes you tougher."/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="20" amount="1" />
+	<secondarybuff id="19" amount="1" />
+	<secondarybuff id="23" amount="1"/>
+	<secondarybuff id="21" amount="1" />
+	<resistbuff necromantic="1"/>
+	<damagebuff necromantic="2"/>
+	</ability>
+<ability name="Hoard Life" icon="sprites/dfa_hoard_life_64.png" skill="207" level="3">
+	<description text="Your breath can thieve the life from your enemies and restore your own."/>
+	<resistbuff necromantic="1"/>
+	<spell name="Hoard Life"/>
+	</ability>
+<ability name="Necrotic Barrier" icon="sprites/dfa_necrotic_barrier_64.png" skill="207" level="4">
+	<description text="Surround yourself with the mighty (or not so mighty) spirits of deceased adventurers!"/>
+	<resistbuff necromantic="1"/>
+	<spell name="Necrotic Barrier"/>
+	</ability>
+<ability name="Deathly Radiance" icon="sprites/dfa_deathly_radiance_64.png" skill="207" level="5">
+	<description text="With but a word, your powerful, life-bending energies surround and suffuse you."/>
+	<resistbuff necromantic="1"/>
+	<damagebuff necromantic="3"/>
+	<secondarybuff id="0" amount="5" />
+	<secondarybuff id="7" amount="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="20" amount="1" />
+	<secondarybuff id="19" amount="1" />
+	<secondarybuff id="23" amount="1"/>
+	<secondarybuff id="21" amount="1" />
+	<spell name="Deathly Radiance"/>
+	</ability>
+</NecrolyzingSkills>
+
+<InquisitorSkills>
+<ability name="Smite Evil" icon="skills/warrior/macery1_64.png" skill="208" level="0" >
+	<description text="The proper term is, 'Smite Evil,' not, 'Bump Uglies'." />
+	<resistbuff necromantic="1" putrefying="1" />
+	<spell name="Smite Evil" />
+	</ability>
+<ability name="Holy Sword" icon="skills/wizard/spell_white9_64.png" skill="208" level="1">
+	<description text="Not necessarily a sword, mind you, just the idea of one will do."/>
+	<resistbuff necromantic="1" putrefying="1" />
+	<spell name="Holy Sword" />
+	</ability>
+<ability name="Martyr's Aegis" icon="skills/spells/martyrs_aegis64.png" skill="208" level="2">
+	<description text="There, but for the grace of god, go you."/>
+	<resistbuff necromantic="1" putrefying="1" />
+	<spell name="Martyr's Aegis" />
+	<secondarybuff id="0" amount="8" /> <!-- HP -->
+	</ability>
+<ability name="Know Thine Enemy" icon="skills/wizard/spell_white1_64.png" skill="208" level="3">
+	<description text="It is said that if you know your enemies and know yourself, you will not be imperiled in a hundred battles; if you do not know your enemies but do know yourself, you will win one and lose one; if you do not know your enemies nor yourself, you will be imperiled in every single battle."/>
+	<resistbuff necromantic="1" putrefying="1" />
+	<spell name="Know Thine Enemy" />
+	</ability>
+<ability name="Solemn Vow" icon="skills/spells/pure_righteousness64.png" skill="208" level="4">
+	<description text="Your patron shields you from harm for your mighty faith."/>
+	<resistbuff acidic="1" aethereal="1" asphyxiative="1" blasting="1" conflagratory="1" crushing="1" existential="1" hyperborean="1" necromantic="1" piercing="1" putrefying="1" righteous="1" slashing="1" toxic="1" transmutative="1" voltaic="1" />
+	<secondarybuff id="11" amount="15" /> <!-- magic resist -->
+	<secondarybuff id="22" amount="15" /> <!-- magic reflect -->
+	</ability>
+<ability name="Divine Restoration" icon="skills/spells/restoration64.png" skill="208" level="5">
+	<description text="By the power of Krong, you are HEALED!"/>
+	<resistbuff necromantic="1" putrefying="1" />
+	<secondarybuff id="13" amount="3" /> <!-- HPR -->
+	<secondarybuff id="14" amount="3" /> <!-- MPR -->
+	<spell name="Divine Restoration" />
+	</ability>
+</InquisitorSkills>
+
+<SpellswordSkills>
+<ability name="Magic in the Blood" icon="skills/spells/springs_rain64.png" skill="209" level="0">
+	<description text="You have a history of wizards in your ancestry, but you've turned from your heritage and are focused on more martial pursuits."/>
+	<secondarybuff id="3" amount="1" /> <!-- magic power -->
+	<secondarybuff id="14" amount="1" /> <!-- magic regen -->
+	<spell name="Magic in the Blood" />
+	</ability>
+<ability name="Arcane Strike" icon="skills/wizard/spell_air4_64.png" skill="209" level="1" >
+	<description text="You can focus your magic into your attacks, hitting harder and more accurately." />
+	<spell name="Arcane Strike" />
+	<secondarybuff id="3" amount="1" /> <!-- magic power -->
+	</ability>
+<ability name="Cyclonic Shield" icon="skills/wizard/spell_air8_64.png" skill="209" level="2">
+	<description text="You can summon winds to surround you and shield you from incoming attacks."/>
+	<spell name="Cyclonic Shield" />
+	<secondarybuff id="11" amount="5" /> <!-- resist -->
+	<secondarybuff id="22" amount="5" />  <!-- reflect -->
+	</ability>
+<ability name="Arcane Channeling" icon="skills/spells/azure_magicks64.png" skill="209" level="3">
+	<description text="Your attacks drain arcane energies from your foes and energize you."/>
+	<targetHitEffectBuff type="trigger" name="Arcane Channeling" percentage="33" />
+	<secondarybuff id="3" amount="1" /> <!-- magic power -->
+	<secondarybuff id="14" amount="1" /> <!-- magic regen -->
+	</ability>
+<ability name="Words of Power" icon="skills/spells/unholy_warcry64.png" skill="209" level="4">
+	<description text="With but a word, your voice pushes foes away from you and saps their strength."/>
+	<spell name="Words of Power" />
+	<secondarybuff id="11" amount="7" /> <!-- resist -->
+	</ability>
+<ability name="Arcane Might" icon="skills/magic_tap64.png" skill="209" level="5">
+	<description text="Arcane energies travel through you like water through a fountain. Your melding of sword and spell is unparalleled."/>
+	<spell name="Arcane Might" />
+	<secondarybuff id="11" amount="8" /> <!-- resist -->
+	<secondarybuff id="3" amount="3" /> <!-- magic power -->
+	</ability>
+</SpellswordSkills>
+
+<MeteorologySkills>
+<ability name="Vague Predictions" icon="sprites/skills/skill_meteorology_64.png" skill="210" level="0" >
+	<description text="It's your job to be right about 40% of the time. Be vague to increase your accuracy!" />
+	<resistbuff existential="1" />
+	<spell name="Vague Prediction" />
+	</ability>
+<ability name="Weather Is Fascinating!" icon="sprites/skills/weather_is_fascinating_64.png" skill="210" level="1">
+	<description text="Dear lord, this is amazing! Look how this cold front and warm front interact to create this cumulus cloud layer!"/>
+	<resistbuff existential="1" />
+	<secondarybuff id="14" amount="1" /> <!-- MPR -->
+	<spell name="Weather Is Fascinating" />
+	</ability>
+<ability name="Cloudy With A Chance Of Meatballs" icon="skills/fungal_mana64.png" skill="210" level="2">
+	<description text="Today's Forecast: fresh steak with a chance of steak sauce showers."/>
+	<resistbuff existential="1" />
+	<targetKillBuff name="Meatballs" percentage="20" />
+	</ability>
+<ability name="Roll The Dice" icon="sprites/skills/roll_the_dice_64.png" skill="210" level="3">
+	<description text="Take a chance! Maybe you'll be right."/>
+	<resistbuff existential="1" />
+	<spell name="Roll The Dice" />
+	</ability>
+<ability name="Acid Rain" icon="sprites/skills/acid_rain_64.png" skill="210" level="4">
+	<description text="That burning sensation you feel is really just pollution."/>
+	<resistbuff existential="1" acidic="3" />
+	<spell name="Acid Rain" />
+	</ability>
+<ability name="Refreshing Rain" icon="sprites/skills/refreshing_rain_64.png" skill="210" level="5">
+	<description text="Sweet, sweet rain. Need it now so we can have good snow this winter."/>
+	<resistbuff existential="1" />
+	<spell name="Refreshing Rain" />
+	<secondarybuff id="13" amount="1" /> <!-- HPR -->
+	<secondarybuff id="14" amount="1" /> <!-- MPR -->
+	</ability>
+<ability name="It's Raining Men" icon="sprites/skills/its_raining_men_64.png" skill="210" level="6">
+	<description text="HALLELUJIAH!"/>
+	<resistbuff existential="1" />
+	<spell name="It's Raining Men" />
+	</ability>
+<ability name="Meteor Shower" icon="sprites/skills/meteor_shower_64.png" skill="210" level="7">
+	<description text="Would you look at that! Shooting stars sure are pretty."/>
+	<resistbuff existential="1" crushing="3" blasting="1" conflagratory="1" aethereal="1" />
+	<spell name="Meteor Shower" />
+	</ability>
+</MeteorologySkills>
+
+<ExecutionerSkills>
+<ability name="Dread Blade" icon="sprites/skills/avex/dreadblade64.png" skill="211" level="0" >
+	<description text="You are fearsome and ruthless with a blade. The diggles whisper something about the 'demon barber' when you come near." />
+	<secondarybuff id="4" amount="2" />
+	<secondarybuff id="12" amount="2" />
+	<criticalBuff name="Dread Blade" after="1" />
+	</ability>
+
+<ability name="Telling Blow" icon="sprites/skills/avex/tellingblow64.png" skill="211" level="1" >
+	<description text="When you hit hard, you hit really hard." />
+	<secondarybuff id="4" amount="2" />
+	<secondarybuff id="12" amount="2" />
+	<criticalBuff name="Telling Blow" after="1" />
+	</ability>
+
+<ability name="Inspire Terror" icon="sprites/skills/avex/inspireterror64.png" skill="211" level="2" >
+	<description text="Your presence is so fearsome that your enemies cower and flee before you." />
+	<secondarybuff id="4" amount="2" />
+	<secondarybuff id="12" amount="2" />
+	<spell name="Inspire Terror" />
+	</ability>
+
+<ability name="Gruesome Finish" icon="skills/skill_placeholder.png" skill="211" level="3" >
+	<description text="You enjoy reveling in the slaughter of your enemies. You find it...revitalizing." />
+	<secondarybuff id="4" amount="2" />
+	<secondarybuff id="12" amount="2" />
+	<targetKillBuff name="Gruesome Finish" after="1" />
+	</ability>
+
+<ability name="Bloody Murder" icon="skills/skill_placeholder.png" skill="211" level="4" >
+	<description text="Enemies who witness your brutal slaughter in battle are struck with fear and awe. And some damage." />
+	<secondarybuff id="4" amount="2" />
+	<secondarybuff id="12" amount="2" />
+	<targetKillBuff name="Bloody Murder" after="1" />
+	</ability>
+
+<ability name="What Is Best In Life?" icon="skills/crushed_bones64.png" skill="211" level="5" >
+	<description text="To crush your enemies, see them driven before you, and to hear the lamentation of their diggles!" />
+	<secondarybuff id="4" amount="2" />
+	<secondarybuff id="12" amount="2" />
+	<targetKillBuff name="What Is Best In Life?" after="1" />
+	</ability>
+</ExecutionerSkills>
+</skillDB>

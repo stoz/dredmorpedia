@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<craftDB>
+<craft>
+	<output skill="0" name="Rune Word of Swiftness" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Self"/>
+	<input name="Rune of Movement"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Instability" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Life"/>
+	<input name="Rune of Movement"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Force" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Strength"/>
+	<input name="Rune of Movement"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Health" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Strength"/>
+	<input name="Rune of Life"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Stone" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Matter"/>
+	<input name="Rune of Strength"/>
+	<input name="Rune of Life"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Storms" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Energy"/>
+	<input name="Rune of Strength"/>
+	<input name="Rune of Movement"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Ice" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Matter"/>
+	<input name="Rune of Water"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Flames" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Fire"/>
+	<input name="Rune of Energy"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Teleportation" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Spirit"/>
+	<input name="Rune of Movement"/>
+	<input name="Rune of Self"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Blossom" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Life"/>
+	<input name="Rune of Water"/>
+	<input name="Rune of Harvest"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Aurification" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Life"/>
+	<input name="Rune of Transformation"/>
+	<input name="Rune of Matter"/>
+	<input name="Rune of Harvest"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Decay" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Life"/>
+	<input name="Rune of Transformation"/>
+	<input name="Rune of Water"/>
+	<input name="Rune of Spirit"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Steel" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Rigidity"/>
+	<input name="Rune of Fire"/>
+	<input name="Rune of Strength"/>
+	<input name="Rune of Matter"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Light" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Purity"/>
+	<input name="Rune of Fire"/>
+	<input name="Rune of Energy"/>
+	<input name="Rune of Heavens"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Death" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Rigidity"/>
+	<input name="Rune of Life"/>
+	<input name="Rune of Spirit"/>
+	<input name="Rune of Destiny"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Restoration" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Transformation"/>
+	<input name="Rune of Life"/>
+	<input name="Rune of Spirit"/>
+	<input name="Rune of Purity"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Prophecy" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Heavens"/>
+	<input name="Rune of Wisdom"/>
+	<input name="Rune of Self"/>
+	<input name="Rune of Destiny"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Love" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Harmony"/>
+	<input name="Rune of Purity"/>
+	<input name="Rune of Water"/>
+	<input name="Rune of Life"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Power" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Ambition"/>
+	<input name="Rune of Spirit"/>
+	<input name="Rune of Transformation"/>
+	<input name="Rune of Self"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Destruction" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Gods"/>
+	<input name="Rune of Destiny"/>
+	<input name="Rune of Heavens"/>
+	<input name="Rune of Fire"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune Word of Entropy" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Rune of Chaos"/>
+	<input name="Rune of Purity"/>
+	<input name="Rune of Transformation"/>
+	<input name="Rune of Energy"/>
+	</craft>
+<!-- rune transmutation recipes -->
+<craft>
+	<output skill="0" name="Rune of Strength" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Self"/>
+	<input name="Rune of Self"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Self" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Life"/>
+	<input name="Rune of Life"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Life" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Movement"/>
+	<input name="Rune of Movement"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Movement" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Strength"/>
+	<input name="Rune of Strength"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Fire" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Matter"/>
+	<input name="Rune of Matter"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Matter" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Water"/>
+	<input name="Rune of Water"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Water" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Energy"/>
+	<input name="Rune of Energy"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Energy" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Fire"/>
+	<input name="Rune of Fire"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Harvest" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Transformation"/>
+	<input name="Rune of Transformation"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Transformation" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Rigidity"/>
+	<input name="Rune of Rigidity"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Rigidity" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Spirit"/>
+	<input name="Rune of Spirit"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Spirit" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Harvest"/>
+	<input name="Rune of Harvest"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Heavens" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Wisdom"/>
+	<input name="Rune of Wisdom"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Wisdom" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Purity"/>
+	<input name="Rune of Purity"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Purity" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Destiny"/>
+	<input name="Rune of Destiny"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Destiny" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Heavens"/>
+	<input name="Rune of Heavens"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Gods" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Ambition"/>
+	<input name="Rune of Ambition"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Ambition" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Harmony"/>
+	<input name="Rune of Harmony"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Harmony" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Chaos"/>
+	<input name="Rune of Chaos"/>
+	</craft>
+<craft>
+	<output skill="0" name="Rune of Chaos" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Rune of Gods"/>
+	<input name="Rune of Gods"/>
+	</craft>
+
+</craftDB>

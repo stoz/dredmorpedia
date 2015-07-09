@@ -1,0 +1,255 @@
+<spellDB>
+
+<!-- itemDB-related stuff -->
+<spell name="Mind Afire" type="self" icon="skills/warrior/gourmand2_64.png" >
+	<effect type="spellpoints" amount="3" />
+	<effect type="dot" self="1" resistable="0" amount="15" spell="Fungal Mana 0" />
+	<anim sprite="sprites/sfx/goosplatA/goosplatA" frames="4" framerate="100" sfx="drink" />
+	<description text="You are hyper-fueled by hyper-booze."/>
+	<buff useTimer="1" time="15" allowstacking="1" icon="skills/warrior/gourmand2_64.png" smallicon="skills/warrior/gourmand2_32.png">
+   <primarybuff id="2" amount="-2"/> <!-- Nimbleness -->
+   <secondarybuff id="9" amount="-4"/> <!-- EDR -->	
+      </buff>
+   </spell>
+   
+<spell name="Green Harvest 2" type="target" wand="0">
+	<effect type="damage" slashing="5"/>
+  <effect type="spawnitemfromlist">
+    <option name="Tofu"/>
+    <option name="Pear"/>
+    <option name="Plum"/>
+    <option name="Apple"/>
+    <option name="Pear"/>
+    <option name="Plum"/>
+    <option name="Apple"/>
+    <option name="Onion"/>
+    <option name="Onion"/>
+    <option name="Onion"/>
+  </effect> 
+	<description text="The streets shall run green!" />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+
+<spell name="Refined Goo" type="target" wand="0">
+	<effect type="damage" acid="5"/>
+  <effect type="spawnitemfromlist">
+<!-- <option name="Goopy Orb"/> -->
+    <option name="Acid Flask"/>
+    <option name="Acid Flask"/>
+    <option name="Elmer's Glue"/>
+    <option name="Elmer's Glue"/>
+    <option name="Gold Ingot"/>
+    <option name="Silver Ingot"/>
+    <option name="Iron Ingot"/>
+    <option name="Copper Ingot"/>
+    <option name="Zinc Ingot"/>
+  </effect>
+	<description text="Why are these goobers made of such rare earths?!" />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic_steel" />
+</spell>
+
+<spell name="Infernally Contaminated" type="self" >
+	<anim sprite="sprites/sfx/evil_pact/evil_pact" frames="16" framerate="80" centerEffect="1" sfx="darkmagic" />
+	<buff useTimer="1" stackable="1" stacksize="8" time="20" icon="skills/demonic_contract64.png" smallicon="skills/demonic_contract32.png" >
+		<primarybuff id="0" amount="-4" />
+		<primarybuff id="1" amount="-4" />
+		<primarybuff id="2" amount="-4" />
+		<primarybuff id="3" amount="-4" />
+		<primarybuff id="4" amount="-4" />
+		<primarybuff id="5" amount="-4" />      
+		</buff>
+	<description text="Contaminated by the powers of darkness, the infernal flame burns your eternal soul! ... I hope it was worth it." />
+	</spell>
+	
+<spell name="Random Empowerment" type="self" wand="0">
+	<effect type="triggerfromlist">
+	<option name="Infernally Contaminated"/>
+	<option name="Regal Vim"/>
+	<option name="Azure Magicks"/>
+	<option name="Fell Power"/>
+	<option name="Plaid Power"/>
+	<option name="Animate Sanguiblobby"/>
+	<option name="Thaumaturgic Conflux"/>
+	<option name="Dire Empowerment"/>
+	<option name="Infernal Empowerment"/>
+	<option name="Hyperborean Empowerment"/>
+	<option name="Obvious Fireball"/>
+	</effect>
+	<description text="Get powerful, get contaminated, get on fire! What's not to like?" />
+	</spell>
+	
+ <spell name="Bottled Lightning" type="target" icon="skills/smith_ingot32.png" wand="0">
+	<effect type="damage" voltaic="5"/>
+  <effect type="spawnitemfromlist">
+    <option name="Scrap Iron"/>
+    <option name="Scrap Steel"/>
+    <option name="Copper Scrap Piping"/>
+	<option name="Aluminum Scrap Piping"/>
+    <option name="Brass Mechanism"/>
+    <option name="Brass Piping"/>
+    <option name="Voltaic Potion"/>
+    <option name="Voltaic Potion"/>
+    <option name="Solution of Gold"/>
+    <option name="Pressure Plate"/>
+    <option name="Clockwork Tesla Rod"/>
+    <option name="Clockwork Orb"/>
+    <option name="Rock"/>
+    <option name="Copper Ring"/>
+ </effect>
+	<description text="You take apart and reuse fallen constructs!" />
+	<anim sprite="sprites/sfx/mechanical_buff/mechanical_buff" frames="8" framerate="90"  centerEffect="0" sfx="tinkering" />
+</spell>
+
+<spell name="Nasty Concoctions" type="target" icon="skills/green_harvest32.png" wand="0">
+	<effect type="damage" putrefying="5"/>
+  <effect type="spawnitemfromlist">
+<!-- <option name="Skull Orb"/> -->
+    <option name="Verdant Poison"/>
+    <option name="Verdant Poison"/>
+    <option name="Poison Flask"/>
+    <option name="Poison Flask"/>
+    <option name="Oil of Vitriol"/>
+    <option name="Potion of Dire Empowerment"/>
+    <option name="Mud Wen"/>
+    <option name="Sewer Brew"/>
+    <option name="Dwarven Gut Rot"/>
+  </effect>
+	<description text="The streets shall run green!" />
+	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="naughty" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+</spell>
+
+<!-- Dire Gourmand skill stuff -->
+
+<spell name="Steak Knife" type="target" icon="skills/spells/fleshbore32.png" >
+   <effect type="damage" piercing="3" piercingF="0.3" bleed="1" />
+   <buff useTimer="1" time="10" self="0" allowstacking="1" stacksize="2" icon="skills/crippled64.png" smallicon="skills/crippled32.png" bad="1" >
+   <primarybuff id="2" amount="-5"/> <!-- Nimbleness -->
+   <secondarybuff id="4" amount="-10"/> <!-- Crit -->
+   <description text="This creature has a steak knife in it." />
+   </buff>
+   </spell>
+<spell name="Screw You Too!" type="self" icon="skills/warrior/gourmand3_32.png" wand="0">
+     <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" firstframe="0" sfx="fleshbore" framerate="100" centerEffect="0"/>
+     <buff useTimer="1" time="7" allowstacking="1" stacksize="3" icon="skills/warrior/gourmand3_64.png" smallicon="skills/warrior/gourmand3_32.png">
+          <primarybuff id="3" amount="4"/> <!-- Cad -->
+          <primarybuff id="4" amount="4"/> <!-- Stub -->
+      </buff>
+     <description text="These STUPID monsters can have these STUPID knives that your STUPID family sent. Gahh!" />
+   </spell>
+
+<gourmandSkills>
+
+<spell name="Extra Crispy" type="self" icon="skills/warrior/gourmand1_32.png" wand="0">
+	<buff useTimer="0" brittle="4" allowstacking="1" stacksize="3" icon="skills/warrior/gourmand1_64.png" smallicon="skills/warrior/gourmand1_32.png">
+	<primarybuff id="4" amount="2"/> <!-- Stub -->      <secondarybuff id="4" amount="2"/> <!-- Armor -->      
+	<resistbuff conflagratory="1" />
+	<effect type="trigger" percent="60%" spell="Greasefire 1" amount="0" />
+	<effect type="trigger" percent="20%" spell="Greasefire 2" amount="0" />
+	<!-- <effect type="trigger" percent="20%" spell="Greasefire 3" amount="0" /> -->
+	<!-- <effect type="trigger" percent="20%" spell="Greasefire 4" amount="0" /> -->
+   <description text="You have fried a nice cripsy shell of beer, blood, and batter to protect yourself."/>
+   </buff>
+   </spell>
+<spell name="Greasefire 1" type="template" templateID="08" anchored="1" >
+	<effect burn="1" type="damage" conflagratory="1" conflagratoryF="0.2" asphyxiative="1" asphyxiativeF="0.1" />
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" firstframe="0" framerate="90" sfx="flame_weak" centerEffect="1"/>
+	<effect type="trigger" spell="Flamefield Z" />
+	</spell>
+<spell name="Greasefire 2" type="template" templateID="31" anchored="1" >
+	<effect burn="1" type="damage" conflagratory="1" conflagratoryF="0.2" asphyxiative="1" asphyxiativeF="0.1" />
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="8" firstframe="1" framerate="90" sfx="flame_weak" centerEffect="1"/>
+	<effect type="trigger" spell="Flamefield Z" />
+   </spell>
+<!-- <spell name="Greasefire 3" type="template" templateID="32" anchored="1" >
+	<effect burn="1" type="damage" conflagratory="2" conflagratoryF="0.2" asphyxiative="2" asphyxiativeF="0.1" />
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" firstframe="0" framerate="90" sfx="flame_weak" centerEffect="1"/>
+	<effect type="trigger" spell="Flamefield Z" />
+   </spell> -->
+<spell name="Flamefield Z" 
+      type="targetfloor" 
+      mineTimer="4" 
+      mineUseGlints="1" 
+      mineGlintDensity="14" 
+      mineSpritePNGSeries="sprites/sfx/flame_field/flame_field" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="10" 
+      mineSpritePNGRate="100" 
+      mine="1" 
+      mineradius="1"
+      minePermanent="1" >
+   <effect type="damage" conflagratory="1" conflagratoryF="0.1" affectscaster="1" />
+   <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" centerEffect="1" sfx="flame_weak"/>
+   </spell>
+   
+<!-- <spell name="Meal Killer" type="self" icon="skills/warrior/gourmand1_32.png" wand="0">
+     <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="ping" />
+     <buff useTimer="1" time="5" stacksize="3" icon="skills/warrior/gourmand1_64.png" smallicon="skills/warrior/gourmand1_32.png">
+        <primarybuff id="3" amount="2"/> 
+        <primarybuff id="4" amount="2"/> 
+      </buff>
+     <description text="The creatures you want to eat are trying to kill you! You're too hungry to allow that to happen." />
+   </spell> -->
+
+<spell name="Ferment" type="target" icon="skills/warrior/gourmand2_32.png" wand="0">
+     <effect type="damage" toxic="3" toxicF="0.15" />
+     <description text="Your target's body liquifies, ferments, and becomes slightly intoxicating." />
+     <anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="distill" />
+ </spell>
+<spell name="Brew!" type="target" icon="skills/warrior/gourmand2_32.png" wand="0">
+     <effect type="damage" toxic="1" />
+  <effect type="spawnitemfromlist">
+    <option name="Sewer Brew"/>    
+    <option name="Sewer Brew"/>    
+    <option name="Sewer Brew"/>    
+    <option name="Sewer Brew"/>    
+    <option name="Sewer Brew"/>    
+    <option name="Irish Freaking Whiskey"/>    
+    <option name="Hamm's"/>    
+  </effect>
+     <anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="fridge_open" />
+ </spell>
+
+<spell name="Screw Everything" type="target" icon="skills/crippled64.png">
+	 <effect type="trigger" percent="100%" spell="Steak Knife" amount="0" />
+	 <effect type="trigger" percent="100%" spell="Screw You Too!" amount="0" />
+</spell>
+ 
+<spell name="Expanded Mind" type="self" icon="skills/warrior/gourmand4_32.png" wand="0">
+     <requirements mp="10" savvyBonus="0.25" mincost="4" />
+	 <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" sfx="blast" centerEffect="1"/>
+     <buff useTimer="0" removable="1" manaUpkeep="5" allowstacking="0" icon="skills/warrior/gourmandX.png" smallicon="skills/warrior/gourmandY.png">
+		<halo name="sprites/sfx/radiance_loop/radiance_loop" first="0" num="4" frameRate="100" />
+		<sightbuff amount="1" />
+		<primarybuff id="1" amount="2"/><!--Sag -->
+		<secondarybuff id="11" amount="8"/> <!-- resist --> 
+		<resistbuff existential="4" />
+		<resistbuff righteous="4" />
+   </buff>
+   </spell>
+
+<spell name="Belly Bounce" type="adjacent" icon="skills/warrior/gourmand5_32.png" wand="0">
+     <anim sprite="sprites/sfx/impact_crushing/impact_crushing" frames="4" framerate="50" sfx="bampf" />
+	 <effect type="knock" amount="1" self="0" />
+     <buff useTimer="1" time="10" self="0" allowstacking="1" stacksize="3" icon="skills/crippled64.png" smallicon="skills/crippled32.png" bad="1" >
+     <secondarybuff id="4" amount="-10"/> <!-- Crit -->
+     <secondarybuff id="9" amount="-10"/> <!-- edr -->
+	 <description text="This wobbling creature recently collided with your rubbery exterior." />
+	 </buff>
+     </spell>
+   
+<!-- <spell name="Rebound" type="adjacent" icon="skills/warrior/gourmand5_32.png" wand="0">
+     <anim sprite="sprites/sfx/impact_crushing/impact_crushing" frames="4" framerate="50" sfx="bampf" />
+	 <effect type="knock" amount="1" self="0"/>
+     <buff useTimer="1" time="10" self="0" allowstacking="3" icon="skills/crippled64.png" smallicon="skills/crippled32.png" bad="1" >
+     <secondarybuff id="4" amount="-10"/> 
+     <secondarybuff id="9" amount="-10"/> 
+	 <description text="This wobbling creature recently collided with your rubbery exterior." />
+	 </buff>
+     </spell> -->
+   
+</gourmandSkills>
+   
+</spellDB>

@@ -1,0 +1,216 @@
+<skillDB>
+  
+
+<skill name="Silver Tongue" id="604" type="rogue" description="Talking well enough to convince even Arch Diggles to pay attention just kind of comes naturally to you.">
+   <art icon="skills/stat_chr64.png"/>
+   </skill>
+<skill name="Ninjitsu" id="605" type="rogue" description="You're a ninja. What more do you want?">
+   <art icon="skills/ninjitsu.png"/>
+    <loadout type="armor" subtype="Tabi" always="1"/>
+   </skill>
+
+<skill name="Warlockery" id="606" type="wizard" description="Warlocks are wizards that really wish they were warriors. Or rogues. Or fishmongers. Anything but wizards, really.  Their 'spells' (as they are) serve to make them less wizard-like in a variety of ways.">
+   <loadout type="armor" subtype="Burning Tome" always="1"/>
+   <art icon="skills/skill_battlemage.png"/>
+    </skill>
+
+ 
+<!-- ********************************SECTION BREAK******************************** -->  
+  
+ 
+<ability name="Silver Tongue" icon="skills/stat_chr64.png" skill="604" startSkill="1">
+   <description text="Talking well enough to convince even Arch Diggles to pay attention just kind of comes naturally to you."/>
+   </ability>
+<ability name="Ninjitsu" icon="skills/ninjitsu.png" skill="605" startSkill="1">
+   <description text="You're a ninja. You use sweet ninja magic to accomplish Roguish goals. What more do you want?"/>
+   </ability>
+
+<ability name="Warlockery" icon="skills/skill_battlemage.png" skill="606" startSkill="1">
+   <description text="Warlocks are wizards that really wish they were warriors. Or rogues. Or fishmongers. Anything but wizards, really.  Their 'spells' (as they are) serve to make them less wizard-like in a variety of ways."/>
+    </ability>
+
+
+
+<!-- ************************************SECTION BREAK************************************* -->
+
+
+<SilverTongueSkills>
+<ability name="Dwarven Inspirational Speech" icon="skills/bored64.png" skill="604" level="0">
+  <description text="You can deliver a traditional Dwarven inspirational speech -- the kind that puts everything but Dwarves into a deep, lasting slumber. You might even bore some minor enemies to death!"/>
+  <secondarybuff id="5" amount="3"/> <!-- haywire -->
+  <spell name="Mimic Dwaravon"/>
+  </ability>
+
+<ability name="Fake It Till You Make It" icon="skills/magic_license64.png" skill="604" level="1">
+  <description text="You can convince other people -- and yourself -- that you have skills you don't actually have."/>
+  <secondarybuff id="1" amout="1"/> <!-- Magic Power --> 
+  <primarybuff id="3" amount="1"/> <!-- caddishness --> 
+  <spell name="Fake It Till You Make It"/>
+  </ability>
+
+<ability name="Iron Eyes" icon="skills/odins_barter64.png" skill="604" level="2">
+  <description text="You're a professional at scaring the crap out of your enemies in combat. This makes them less able to defend themselves -- as well as crapless."/>
+  <secondarybuff id="9" amount="4"/> <!-- EDR -->
+  <secondarybuff id="4" amount="2"/> <!-- Crit -->
+  <targetHitEffectBuff percentage="33" name="Iron Eyes"/>
+  </ability>
+
+<ability name="Baffle them with Bullshit" icon="skills/stat_chr64.png" skill="604" level="3">
+  <description text="Blah, blah blah. What? No seriously, What in the blue hell are you talking about?"/>
+   <secondarybuff id="5" amount="4"/> <!-- haywire -->
+   <primarybuff id="3" amount="1"/> <!-- caddishness -->
+   <spell name="Bullshit"/>
+   </ability>
+
+<ability name="Metaphorical Panty Stealing" icon="skills/rogue/skill_antiques_dealer0_64.png" skill="604" level="4">
+   <description text="You steal panties. When interacting with genderless monsters, this ability manifests as a very small chance, whenever you hit them, that they'll suddenly declare the depths of their passion for you and go off trying to kill their 'former posse' on your behalf."/> 
+    <primarybuff id="2" amount="2"/> <!-- nimbleness --> 
+    <targetHitEffectBuff percentage="8" name="Unconditional Love"/>
+    </ability>
+
+<ability name="Pimp My Hide" icon="skills/rogue/skill_antiques_dealer2_64.png" skill="604" level="5">
+    <description text="Your sense of style is so overwhelming and your aura of pimpin' so magnificent that money seems to simply throw itself at you. Be warned, however -- pimpin' ain't easy, and you have a tendency to bleed gold -- literally -- when struck as well. Fortunately, your solid gold accessories make that slightly more difficult."/>
+    <secondaryBuff id="10" amount="1"/> <!-- absorb --> 
+    <secondaryBuff id="7" amount="6"/> <!-- block -->
+    <targetHitEffectBuff percentage="66" name="Midas"/>
+    <playerHitEffectBuff percentage="33" name="SelfMidas"/>
+    </ability>
+</SilverTongueSkills>
+
+
+<NinjitsuSkills>
+<ability name="Secret Sword" icon="skills/skill_thrown.png" skill="605" level="0"> 
+    <description text="You have an uncanny ability to never run out of things to throw at people. Also, you're a sneaky, mobile kind of guy. Or girl. Kunoichi, I suppose."/>
+    <secondaryBuff id="6" amount="2"/> <!-- Dodge -->
+    <secondaryBuff id="9" amount="1"/> <!-- EDR -->
+    <secondaryBuff id="12" amount="1"/> <!-- Sneakiness -->
+    <spell name="Secret Sword"/>
+    </ability>
+
+<ability name="Genjutsu" icon="skills/spells/lethian_mist64.png" skill="605" level="1">
+    <description text="Haven't you always wanted to be Naruto? (All clones created with this jutsu must be created in male form, regardless of ninja's original gender, to avoid potential ecchi and/or hentai related problems. Failure to abide by this rule will result in instant permadeath regardless of game settings.)"/>
+    <secondaryBuff id="3" amount="1"/> <!-- Magic Power -->
+    <secondaryBuff id="11" amount="2"/> <!-- Magic Resist -->
+    <secondaryBuff id="12" amount="1"/> <!-- Sneakiness -->
+    <spell name="Substitution Jutsu"/> 
+    </ability>
+
+<ability name="Fadeout" icon="skills/ninjitsu.png" skill="605" level="2">
+    <description text="You've mastered the art of no art. As in, whenever you successfully dodge, your sprite vanishes and the other, more toothy-clawy sprites can't see you. Or hit you. For a turn."/>
+    <secondaryBuff id="6" amount="11"/> <!-- Dodge -->
+    <secondaryBuff id="8" amount="1"/> <!-- Counter -->
+    <secondaryBuff id="12" amount="2"/> <!-- Sneakiness -->
+    <triggerondodge percent="100" name="Poof"/>
+    </ability>
+
+<ability name="Taijutsu" icon="skills/taijutsu64.png" skill="605" level="3">
+    <description text="No sneaking around this level! This is the level that kicks ASS!"/>
+    <secondaryBuff id="2" amount="1"/> <!-- Melee Power -->
+    <secondaryBuff id="4" amount="2"/> <!-- Critical -->
+    <secondaryBuff id="8" amount="1"/> <!-- Counter --> 
+    <spell name="Taijutsu Stance"/>
+    </ability>
+
+
+<ability name="Ninpo" icon="skills/ninpo64.png" skill="605" level="4">
+    <description text="OK, fine. You're a ninja MASTER. You have access to the Kuji Kiri, a secret set of Ninja ki-focusing hand gestures that you can use to charge your thrown weapons with any of an assortment of magical powers. Most of your thrown weapons will attach one of a dozen different magical effects along with their normal damage.  ...NOW what more do you want?"/>
+    <primaryBuff id="0" amount="2"/> <!-- Burliness -->
+    <primaryBuff id="1" amount="2"/> <!-- Sagacity --> 
+    <secondaryBuff id="12" amount="3"/> <!-- Sneakiness -->
+    <secondaryBuff id="7" amount="2"/> <!-- Block --> 
+    <thrownBuff percentage="50" name="Kuji Kiri"/>
+    </ability>
+
+</NinjitsuSkills>
+
+
+<WarlockerySkills>
+<ability name="Ebon Flow" icon="skills/wizard/spell_air7_64.png" skill="606" level="0">
+    <description text="A warlock must first attend to his own defense.  This spell responds to danger by improving your defensive abilities. Also, due to the nature of yin and yang or some crap, your accuracy."/> 
+    <secondaryBuff id="2" amount="1"/> 
+    <secondaryBuff id="7" amount="3"/>  
+    <spell name="Ebon Flow"/> 
+    </ability>
+
+<ability name="Eldritch Smite" icon="skills/skill_battlemage.png" skill="606" level="1">
+    <description text="You've moved on to offense now.  This spell provides a significant boost to your raw melee damage."/>
+    <secondaryBuff id="10" amount="1"/>
+    <secondaryBuff id="0" amount="5"/> 
+    <spell name="Eldritch Smite"/>
+    </ability>
+
+<ability name="Eldritch Smite" icon="skills/skill_battlemage.png" skill="606" level="1" polymorphedOnly="1" polymorphTag="Log">
+    <description text="You've moved on to offense now.  This spell provides a significant boost to your raw melee damage."/>
+    <secondaryBuff id="10" amount="1"/>
+    <secondaryBuff id="0" amount="5"/> 
+    <spell name="Eldritch Smite"/>
+    </ability>
+
+
+<ability name="Massive Attack" icon="skills/skill_twohanded.png" skill="606" level="2">
+    <description text="You can spend a huge chunk of mana to make a magically-enhanced weapon attack on basically everything in front of you - and beside you, and pretty much everywhere on one side of you."/>
+    <secondaryBuff id="6" amount="3"/>
+    <secondaryBuff id="8" amount="3"/>
+    <spell name="Massive Attack"/> 
+    </ability>
+
+<ability name="Ebon Flow" icon="skills/wizard/spell_air7_64.png" skill="606" level="2" polymorphedOnly="1" polymorphTag="Log">
+    <description text="A warlock must first attend to his own defense.  This spell responds to danger by improving your defensive abilities. Also, due to the nature of yin and yang or some crap, your accuracy."/> 
+    <secondaryBuff id="2" amount="1"/> 
+    <secondaryBuff id="7" amount="3"/>  
+    <spell name="Ebon Flow"/> 
+    </ability>
+
+<ability name="Massive Attack" icon="skills/skill_twohanded.png" skill="606" level="2" polymorphedOnly="1" polymorphTag="Log">
+    <description text="You can spend a huge chunk of mana to make a magically-enhanced weapon attack on basically everything in front of you - and beside you, and pretty much everywhere on one side of you."/>
+    <secondaryBuff id="6" amount="3"/>
+    <secondaryBuff id="8" amount="3"/>
+    <spell name="Massive Attack"/> 
+    </ability>
+
+<ability name="Essence's Empowerment" icon="skills/transformation64.png" skill="606" level="3">
+    <description text="By channeling mana directly into your own flesh, you transform yourself into a juggernaut of war -- temporarily losing access to all of your normal magic and skills. Females, as an uncontrollable side effect, temporarily become male. All attempts to invert this portion of the effect have failed with very awful hormonal side effects."/>
+    <spell name="Essence's Empowerment"/>
+    </ability>
+
+<ability name="Mana Touched" icon="skills/manatouched64.png" skill="606" level="4" polymorphedOnly="1" polymorphTag="Log">
+    <description text="A simple touch floods other creatures with mana, wreaking havoc on their bodies. They're not Warlocks, after all -- you're built for this stuff; they're not.  Your Polymorphed form's defenses improve a bit as well."/> 
+    <secondaryBuff id="10" amount="1"/> 
+    <secondaryBuff id="7" amount="10"/>  
+    <resistbuff piercing="2"/>
+    <resistbuff toxic="1"/>
+    <resistbuff putrefying="1"/>
+    <resistbuff acidic="1"/>
+    <spell name="Mana Touched"/> 
+    </ability>
+
+<ability name="Warlock Bolt" icon="skills/warlockbolt64.png" skill="606" level="5" polymorphedOnly="1" polymorphTag="Log">
+    <description text="You've figured out how to throw a scad of your innate mana in a nice long, straight line. Interestingly, this doesn't cost you any mana to use. Also, Your Empowered form's offenses improve slightly."/> 
+    <secondaryBuff id="2" amount="1"/> 
+    <secondaryBuff id="4" amount="5"/>  
+    <damagebuff aetheric="1"/>
+    <damagebuff voltaic="1"/>
+    <damagebuff conflagratory="1"/>
+    <spell name="Warlock Bolt"/> 
+    </ability>
+
+<ability name="Supercharged" icon="skills/supercharged64.png" skill="606" level="6" polymorphedOnly="1" polymorphTag="Log">
+    <description text="You can feed your natural mana into itself to improve your own improvement. It's quite baffling, and it creates a feedback loop that can only end badly. Your Empowered form also now heals quickly and sees much better."/> 
+    <secondaryBuff id="13" amount="13"/> 
+    <secondaryBuff id="18" amount="2"/>  
+    <secondaryBuff id="17" amount="2"/>
+    <spell name="Supercharged"/> 
+    </ability>
+
+
+<ability name="Mana Crush" icon="skills/manacrush64.png" skill="606" level="7" polymorphedonly="1" polymorphTag="Log">
+    <description text="You can unleash all of your mana in a giant flood, dealing heinous damage to everything in your vicinity and wrenching yourself out of your Empowered form. Also, your Empowered form becomes significantly tougher and more Manaful."/> 
+    <secondaryBuff id="0" amount="12"/>
+    <secondaryBuff id="1" amount="12"/>
+    <spell name="Mana Crush"/>
+    </ability>    
+
+</WarlockerySkills>
+
+
+</skillDB>

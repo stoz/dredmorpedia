@@ -1,0 +1,349 @@
+﻿<?xml version="1.0"?>
+<itemDB>
+<!-- EQUIPMENT-->
+<item name="Coat of Himonya" iconFile="items/armour_runecaster.png" artifact="1" >
+	<price amount="650"/>
+	<armour level="5" type="chest"/>
+    <primarybuff id="1" amount="1" /> <!-- Sagacity -->
+	<secondarybuff id="6" amount="2"/> <!-- dodge -->
+	<secondarybuff id="1" amount="4"/> <!-- mana -->
+	<artifact quality="1"/>
+	<description text="Stained with magic rune ink, this sturdy coat enhances your runecrafting endurance." />
+	</item>
+<item name="Coat of Lesko" iconFile="items/armour_lesko.png" artifact="1" >
+	<price amount="9001"/>
+	<armour level="6" type="chest"/>
+    <primarybuff id="1" amount="1" /> <!-- Sagacity -->
+	<primarybuff id="5" amount="1" /> <!-- Saavy -->
+	<secondarybuff id="6" amount="2"/> <!-- dodge -->
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<secondarybuff id="1" amount="4"/> <!-- mana -->
+	<secondarybuff id="14" amount="2"/> <!-- mana regen -->
+	<artifact quality="1"/>
+	<description text="This stylish, quizzical jacket belonged to a devious illusionist who charged money for something that was free." />
+	</item>
+<item name="FREE ZORKMIDS TO CHANGE YOUR LIFE" iconFile="items/tome_lesko.png" overrideClassName="Tome" >
+   <price amount="3052" />
+   <armour level="6" type="shield" />
+   <description text="An exhaustive index of every single way that common dungeon monsters can be transformed into gold for free." />
+	<targetHitEffectBuff percentage="100" name="Mega Midas" />
+   </item>
+<!-- RUNE WORDS-->
+<item name="Rune Word of Entropy" iconFile="items/runeword_entropy.png" level="10" type="5" special="1" overrideClassName="Rune Word" >
+	<price amount="0"/>
+	<weapon crushing="0" thrown="items/runeword_entropy.png" hit="Runeword Entropy" canTargetFloor="1"/>
+	<description text="KAL JUX ORT SAR: Concentrated Chaos-- pure randomness... You cannot predict this rune. You have been warned."/>
+	</item>
+<item name="Runeword of Entropy" iconFile="items/runeword_entropy.png" level="10" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="6000"/>
+	<weapon crushing="0" thrown="items/runeword_entropy.png" hit="Runeword Entropy" canTargetFloor="1"/>
+	<description text="KAL JUX ORT SAR: Concentrated Chaos-- pure randomness... You cannot predict this rune. You have been warned."/>
+	</item>
+<item name="Rune Word of Destruction" iconFile="items/runeword_destruction.png" level="10" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon conflagratory="12" blasting="12" thrown="items/runeword_destruction.png" hit="Runeword Destruction" canTargetFloor="1"/>
+	<description text="VAS CORP FLAM TYM: The rune quietly rumbles in your hand. Be VERY far away when you cast this."/>
+	</item>
+<item name="Runeword of Destruction" iconFile="items/runeword_destruction.png" level="10" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="15000"/>
+	<weapon conflagratory="12" blasting="12" thrown="items/runeword_destruction.png" hit="Runeword Destruction" canTargetFloor="1"/>
+	<description text="VAS CORP FLAM TYM: The rune quietly rumbles in your hand. Be VERY far away when you cast this."/>
+	</item>
+<item name="Rune Word of Power" iconFile="items/runeword_power.png" level="10" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon crushing="0" thrown="items/runeword_power.png" hit="Runeword Power" canTargetFloor="1"/>
+	<description text="UUS QUA DAM AGE: Your hand trembles as you hold this rune. With its power, you may destroy anything."/>
+	</item>
+<item name="Runeword of Power" iconFile="items/runeword_power.png" level="10" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="6000"/>
+	<weapon crushing="0" thrown="items/runeword_power.png" hit="Runeword Power" canTargetFloor="1"/>
+	<description text="UUS QUA DAM AGE: Your hand trembles as you hold this rune. With its power, you may destroy anything."/>
+	</item>
+<item name="Rune Word of Love" iconFile="items/runeword_love.png" level="10" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon crushing="0" thrown="items/runeword_love.png" hit="Runeword Love" canTargetFloor="1"/>
+	<description text="KAL WIS EX MANI: Any creature struck by this glyph will love you unconditionally... for a few turns..."/>
+	</item>
+<item name="Runeword of Love" iconFile="items/runeword_love.png" level="10" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="3000"/>
+	<weapon crushing="0" thrown="items/runeword_love.png" hit="Runeword Love" canTargetFloor="1"/>
+	<description text="KAL WIS EX MANI: Any creature struck by this glyph will love you unconditionally... for a few turns..."/>
+	</item>
+<item name="Rune Word of Prophecy" iconFile="items/runeword_prophecy.png" level="8" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon thrown="items/runeword_prophecy.png" hit="Runeword Prophecy" canTargetFloor="1"/>
+	<description text="KAL WIS TYM: The glyph channels terrible celestial energies. The glyph will transform your target into a conduit of destructive power. Their fate will be sealed. "/>
+	</item>
+<item name="Runeword of Prophecy" iconFile="items/runeword_prophecy.png" level="8" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="3000"/>
+	<weapon thrown="items/runeword_prophecy.png" hit="Runeword Prophecy" canTargetFloor="1"/>
+	<description text="KAL WIS TYM: The glyph channels terrible celestial energies. The glyph will transform your target into a conduit of destructive power. Their fate will be sealed. "/>
+	</item>
+<item name="Rune Word of Restoration" iconFile="items/runeword_restoration.png" level="8" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon crushing="0" thrown="items/runeword_restoration.png" hit="Runeword Restoration" canTargetFloor="1"/>
+	<description text="ORT MANI SANCT: Stand on the glyph and be restored. "/>
+	</item>
+<item name="Runeword of Restoration" iconFile="items/runeword_restoration.png" level="8" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="3000"/>
+	<weapon crushing="0" thrown="items/runeword_restoration.png" hit="Runeword Restoration" canTargetFloor="1"/>
+	<description text="ORT MANI SANCT: Stand on the glyph and be restored. "/>
+	</item>
+<item name="Rune Word of Light" iconFile="items/runeword_light.png" level="8" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon crushing="0" thrown="items/runeword_light.png" hit="Runeword Light" canTargetFloor="1"/>
+	<description text="VAS ORT LOR: Standing on the glyph will grant you protection against evil creatures. The glyph will smite any demon or undead who dares to walk upon it. "/>
+	</item>
+<item name="Runeword of Light" iconFile="items/runeword_light.png" level="8" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="3000"/>
+	<weapon crushing="0" thrown="items/runeword_light.png" hit="Runeword Light" canTargetFloor="1"/>
+	<description text="VAS ORT LOR: Standing on the glyph will grant you protection against evil creatures. The glyph will smite any demon or undead who dares to walk upon it. "/>
+	</item>
+<item name="Rune Word of Death" iconFile="items/runeword_death.png" level="8" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon crushing="0" thrown="items/runeword_death.png" hit="Runeword Death" canTargetFloor="1"/>
+	<description text="DES CORP DEL: Any living creature touched by this glyph will die. Note: you can't kill things that aren't alive. Casting this rune invokes a terrible price... "/>
+	</item>
+<item name="Runeword of Death" iconFile="items/runeword_death.png" level="8" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="3000"/>
+	<weapon crushing="0" thrown="items/runeword_death.png" hit="Runeword Death" canTargetFloor="1"/>
+	<description text="DES CORP DEL: Any living creature touched by this glyph will die. Note: you can't kill things that aren't alive. Casting this rune invokes a terrible price... "/>
+	</item>
+<item name="Rune Word of Steel" iconFile="items/runeword_steel.png" level="6" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon thrown="items/runeword_steel.png" hit="Runeword Steel" canTargetFloor="1"/>
+	<description text="UUS HUR YLEM: The glyph creates a steel golem that will fight at your side. It also sends sharp metal flying everywhere. "/>
+	</item>
+<item name="Runeword of Steel" iconFile="items/runeword_steel.png" level="6" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="2500"/>
+	<weapon thrown="items/runeword_steel.png" hit="Runeword Steel" canTargetFloor="1"/>
+	<description text="UUS HUR YLEM: The glyph creates a steel golem that will fight at your side. It also sends sharp metal flying everywhere. "/>
+	</item>
+<item name="Rune Word of Decay" iconFile="items/runeword_decay.png" level="6" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon putrefying="5" toxic="5" thrown="items/runeword_decay.png" hit="Runeword Decay" canTargetFloor="1"/>
+	<description text="VAS BAL NOX: The Glyph emits a putrid miasma that attracts flesh-eating thaumites. Be far away when you throw this. "/>
+	</item>
+<item name="Runeword of Decay" iconFile="items/runeword_decay.png" level="6" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="2500"/>
+	<weapon putrefying="5" toxic="5" thrown="items/runeword_decay.png" hit="Runeword Decay" canTargetFloor="1"/>
+	<description text="VAS BAL NOX: The Glyph emits a putrid miasma that attracts flesh-eating thaumites. Be far away when you throw this. "/>
+	</item>
+<item name="Rune Word of Aurification" iconFile="items/runeword_aurification.png" level="6" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon transmutative="10" thrown="items/runeword_aurification.png" hit="Runeword Aurification" canTargetFloor="1"/>
+	<description text="CHA CHING BLING: Those who step on the glyph will turn into gold. "/>
+	</item>
+<item name="Runeword of Aurification" iconFile="items/runeword_aurification.png" level="6" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="2500"/>
+	<weapon transmutative="10" thrown="items/runeword_aurification.png" hit="Runeword Aurification" canTargetFloor="1"/>
+	<description text="CHA CHING BLING: Those who step on the glyph will turn into gold. "/>
+	</item>
+<item name="Rune Word of Blossom" iconFile="items/runeword_fruit.png" level="6" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon thrown="items/runeword_fruit.png" hit="Runeword Blossom" canTargetFloor="1"/>
+	<description text="UUS MANI YLEM: A verdant bounty flows out of the glyph. A flood of such spontaneity is likely to confuse your enemies. "/>
+	</item>
+<item name="Runeword of Blossom" iconFile="items/runeword_fruit.png" level="6" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="2500"/>
+	<weapon thrown="items/runeword_fruit.png" hit="Runeword Blossom" canTargetFloor="1"/>
+	<description text="UUS MANI YLEM: A verdant bounty flows out of the glyph. A flood of such spontaneity is likely to confuse your enemies. "/>
+	</item>
+<item name="Rune Word of Teleportation" iconFile="items/runeword_teleportation.png" level="6" type="5" special="1" overrideClassName="Rune Word" maxstack="8" >
+	<price amount="0"/>
+	<weapon thrown="items/runeword_teleportation.png" hit="Runeword Teleport" canTargetFloor="1"/>
+	<description text="VAS REL POR: The caster will warp to the location of the glyph. "/>
+	</item>
+<item name="Runeword of Teleportation" iconFile="items/runeword_teleportation.png" level="6" type="5" overrideClassName="Rune Word" maxstack="8" >
+	<price amount="2500"/>
+	<weapon thrown="items/runeword_teleportation.png" hit="Runeword Teleport" canTargetFloor="1"/>
+	<description text="VAS REL POR: The caster will warp to the location of the glyph. "/>
+	</item>
+<item name="Rune Word of Flames" iconFile="items/runeword_flame.png" level="4" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon conflagratory="6" thrown="items/runeword_flame.png" hit="Runeword Flame" canTargetFloor="1"/>
+	<description text="KAL VAS FLAM: A wall of flames burn anyone who approaches the glyph. "/>
+	</item>
+<item name="Runeword of Flames" iconFile="items/runeword_flame.png" level="4" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="2000"/>
+	<weapon conflagratory="6" thrown="items/runeword_flame.png" hit="Runeword Flame" canTargetFloor="1"/>
+	<description text="KAL VAS FLAM: A wall of flames burn anyone who approaches the glyph. "/>
+	</item>
+<item name="Rune Word of Ice" iconFile="items/runeword_ice.png" level="4" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon hyperborean="6" thrown="items/runeword_ice.png" hit="Runeword Ice" canTargetFloor="1"/>
+	<description text="XEN AN FLAM: The area surrounding the glyph freezes. Please be careful not to slip on the ice. "/>
+	</item>
+<item name="Runeword of Ice" iconFile="items/runeword_ice.png" level="4" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="2000"/>
+	<weapon hyperborean="6" thrown="items/runeword_ice.png" hit="Runeword Ice" canTargetFloor="1"/>
+	<description text="XEN AN FLAM: The area surrounding the glyph freezes. Please be careful not to slip on the ice. "/>
+	</item>
+<item name="Rune Word of Storms" iconFile="items/runeword_storm.png" level="4" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon voltaic="6" thrown="items/runeword_storm.png" hit="Runeword Storm" canTargetFloor="1"/>
+	<description text="POR ORT GRAV: Lightning bolts strike the glyph. "/>
+	</item>
+<item name="Runeword of Storms" iconFile="items/runeword_storm.png" level="4" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="2000"/>
+	<weapon voltaic="6" thrown="items/runeword_storm.png" hit="Runeword Storm" canTargetFloor="1"/>
+	<description text="POR ORT GRAV: Lightning bolts strike the glyph. "/>
+	</item>
+<item name="Rune Word of Stone" iconFile="items/runeword_stone.png" level="4" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon crushing="6" blasting="6" thrown="items/runeword_stone.png" hit="Runeword Stone" canTargetFloor="1"/>
+	<description text="KAL UUS YLEM: Erects a great magic wall. "/>
+	</item>
+<item name="Runeword of Stone" iconFile="items/runeword_stone.png" level="4" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="2000"/>
+	<weapon crushing="6" blasting="6" thrown="items/runeword_stone.png" hit="Runeword Stone" canTargetFloor="1"/>
+	<description text="KAL UUS YLEM: Erects a great magic wall. "/>
+	</item>
+<item name="Rune Word of Swiftness" iconFile="items/runeword_swiftness.png" level="2" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon crushing="0" thrown="items/runeword_swiftness.png" hit="Runeword Swiftness" canTargetFloor="1"/>
+	<description text="VAS EX UUS: You will be quick and agile if you stand on the glyph. "/>
+	</item>
+<item name="Runeword of Swiftness" iconFile="items/runeword_swiftness.png" level="2" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="750"/>
+	<weapon crushing="0" thrown="items/runeword_swiftness.png" hit="Runeword Swiftness" canTargetFloor="1"/>
+	<description text="VAS EX UUS: You will be quick and agile if you stand on the glyph. "/>
+	</item>
+<item name="Rune Word of Instability" iconFile="items/runeword_instability.png" level="2" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon aethereal="3" thrown="items/runeword_instability.png" hit="Runeword Instability" canTargetFloor="1"/>
+	<description text="JUX REL POR: Any enemy who steps on the glyph will be violently warped to a random location "/>
+	</item>
+<item name="Runeword of Instability" iconFile="items/runeword_instability.png" level="2" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="750"/>
+	<weapon aethereal="3" thrown="items/runeword_instability.png" hit="Runeword Instability" canTargetFloor="1"/>
+	<description text="JUX REL POR: Any enemy who steps on the glyph will be violently warped to a random location "/>
+	</item>
+<item name="Rune Word of Health" iconFile="items/runeword_health.png" level="2" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon thrown="items/runeword_health.png" hit="Runeword Health" canTargetFloor="1"/>
+	<description text="OBB SU VULNI: Stand in the gylph and be healed."/>
+	</item>
+<item name="Runeword of Health" iconFile="items/runeword_health.png" level="2" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="750"/>
+	<weapon thrown="items/runeword_health.png" hit="Runeword Health" canTargetFloor="1"/>
+	<description text="OBB SU VULNI: Stand in the gylph and be healed."/>
+	</item>
+<item name="Rune Word of Force" iconFile="items/runeword_force.png" level="2" type="5" special="1" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="0"/>
+	<weapon blasting="3" thrown="items/runeword_force.png" hit="Runeword Force" canTargetFloor="1"/>
+	<description text="FUS RO DAH: Any enemy who steps on the glyph will be struck with a powerful force."/>
+	</item>
+<item name="Runeword of Force" iconFile="items/runeword_force.png" level="2" type="5" overrideClassName="Rune Word" maxstack="1" >
+	<price amount="750"/>
+	<weapon blasting="3" thrown="items/runeword_force.png" hit="Runeword Force" canTargetFloor="1"/>
+	<description text="FUS RO DAH: Any enemy who steps on the glyph will be struck with a powerful force."/>
+	</item>
+<!-- RUNE PIECES-->
+  <item name="Rune of Strength" iconFile="items/rune_strength.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Movement" iconFile="items/rune_movement.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Life" iconFile="items/rune_life.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Self" iconFile="items/rune_self.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Matter" iconFile="items/rune_matter.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Energy" iconFile="items/rune_energy.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Fire" iconFile="items/rune_fire.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Water" iconFile="items/rune_water.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Spirit" iconFile="items/rune_spirit.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Harvest" iconFile="items/rune_harvest.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Rigidity" iconFile="items/rune_rigidity.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Transformation" iconFile="items/rune_transformation.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Heavens" iconFile="items/rune_heavens.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Destiny" iconFile="items/rune_destiny.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Wisdom" iconFile="items/rune_wisdom.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Purity" iconFile="items/rune_purity.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Ambition" iconFile="items/rune_ambition.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Gods" iconFile="items/rune_gods.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Harmony" iconFile="items/rune_harmony.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+  <item name="Rune of Chaos" iconFile="items/rune_chaos.png" alchemical="0" special="1">
+    <price amount="0"/>
+    <gem />
+    <description text=""/>
+    </item>
+<!-- FOOD -->
+<item name="Runecrunch Cereal" iconFile="items/food_runecrunch.png" level="8">
+   <price amount="700"/>
+   <food hp="9" effect="Runic Prize" />
+   <description text="Now with entropic orange marshmellows! Hidden in this box is a special prize. "/>
+   </item>
+	</itemDB>

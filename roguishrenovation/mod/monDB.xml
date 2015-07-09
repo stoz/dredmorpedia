@@ -1,0 +1,124 @@
+<monDB>
+
+<monster type="4" subtype="23" name="Dragon Whelp" level="0"  tiny="1" terrain="2" taxa="Animal" special="0" >
+	<idleSprite
+		left="sprites/monster/fire/fire_Walk_Left.spr"
+		right="sprites/monster/fire/fire_Walk_Right.spr"
+		up="sprites/monster/fire/fire_Walk_Up.spr"
+		down="sprites/monster/fire/fire_Walk_Down.spr"/>
+	<attackSprite
+		left="sprites/monster/fire/fire_Atk_left.spr"
+		right="sprites/monster/fire/fire_Atk_right.spr"
+		up="sprites/monster/fire/fire_Atk_up.spr"
+		down="sprites/monster/fire/fire_Atk_down.spr"/>
+	<beamSprite
+		left="sprites/monster/fire/fire_Atk_left.spr"
+		right="sprites/monster/fire/fire_Atk_right.spr"
+		up="sprites/monster/fire/fire_Atk_up.spr"
+		down="sprites/monster/fire/fire_Atk_down.spr"/>
+	<hitSprite
+		left="sprites/monster/fire/fire_Hit_left.spr"
+		right="sprites/monster/fire/fire_Hit_right.spr"
+		up="sprites/monster/fire/fire_Hit_up.spr"
+		down="sprites/monster/fire/fire_Hit_down.spr"/>
+
+	<castSpellSprite name="sprites/monster/fire/fire_Cast.spr"/>
+	<dieSprite name="sprites/monster/fire/fire_Die.spr"/>
+	<sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+
+	<stats numFig="3" xpValue="12"/>
+	<resistances conflagratory="4" hyperborean="-2"/> <!-- Basing this off diggle, but a little stronger. -->
+	<damage blasting="1" conflagratory="2"/>
+	<ai aggressiveness="3" span="6" />
+	<info latin="(draconis ignitis youngunus)" text="A dragon whelp, barely more than a day old. We've got whelps! That's a fifty DKP minus."/>
+
+	<monster type="3" subtype="25" name="Mana Hunter" level="4" terrain="2" special="0" > <!-- Mage Killer, but very weak to melee. -->
+		<stats numWiz="11" numRog="2" xpValue="105"/>
+		<resistances aethereal="10" transmutative="10" conflagratory="0" hyperborean="0"/>
+		<secondarybuff id="4" amount="-5"/> <!-- crit -->
+		<secondarybuff id="10" amount="-2"/>
+		<secondarybuff id="11" amount="25"/>
+		<secondarybuff id="22" amount="25"/>
+		<damage blasting="1" aethereal="6" conflagratory="0" />
+		<onhit spell="Targeted Mana Drain" onechancein="1"/>
+		<palette tint="165"/>
+		<info latin="(draconis magicus nommus)" text="A wyrmling that sniffs out and voraciously devours all sorts of magic. Try not to use spells against this."/>
+		<ai aggressiveness="3" span="6" spellPercentage="30"/>
+		<spell name="Thaumic Drain"/>
+		<spell name="Thaumic Drain"/>
+		<spell name="Targeted Mana Drain"/>
+		<spell name="Targeted Mana Drain"/>
+		<spell name="Aethereal Missile" />
+	</monster>
+
+	<monster type="3" subtype="25" name="Swamp Wyrmling" level="5" terrain="2" special="0" > <!-- Anti rogue monster...that's a rogue. -->
+		<stats numFig="5" numRog="8" xpValue="110"/>
+		<resistances acidic="10" toxic="10" putrefying="10" conflagratory="0" hyperborean="0"/>
+		<secondarybuff id="0" amount="-10"/>
+		<secondarybuff id="6" amount="3"/>
+		<secondarybuff id="9" amount="7"/>
+		<damage blasting="2" acidic="9" conflagratory="0" />
+		<onhit spell="Vile Gunk" onechancein="10"/>
+		<palette tint="140"/>
+		<info latin="(draconis slimus)" text="A lithe, slimy wyrmling that gunks up everything it touches."/>
+		<ai aggressiveness="3" span="6" spellPercentage="10"/>
+		<spell name="Gargoyle Acid Bolt" />
+	</monster>
+
+	<monster type="3" subtype="25" name="Radiant Wyrm" level="12" terrain="2" special="0" > <!-- Mage Killer, but very weak to melee. Since there aren't enough monsters on DL13, I thought I'd spice it up. -->
+		<stats numRog="5" numWiz="20" xpValue="200"/>
+		<resistances righteous="20" conflagratory="10" hyperborean="0"/>
+		<secondarybuff id="10" amount="-5"/>
+		<secondarybuff id="11" amount="50"/>
+		<secondarybuff id="22" amount="50"/>
+		<damage blasting="1" righteous="12" conflagratory="0" />
+		<onhit spell="Greater Targeted Mana Drain" onechancein="1"/>
+		<palette tint="50"/>
+		<info latin="(draconis radianta)" text="A dragon formed of blinding, radiant energy trapped within a fragile, scaly shell. Spells have nothing on this thing."/>
+		<ai aggressiveness="3" span="6" spellPercentage="30"/>
+		<spell name="Greater Thaumic Drain"/>
+		<spell name="Greater Thaumic Drain"/>
+		<spell name="Greater Targeted Mana Drain"/>
+		<spell name="Greater Targeted Mana Drain"/>
+		<spell name="Major Lutefisk Smite" />
+	</monster>
+	
+	<monster type="3" subtype="25" name="Obsidian Warder" level="13" terrain="2" special="1"> <!-- Special boss monster for Lower Obsidia shrines. Lower Obsidia shrines will have a certain chance of holding one perfect obsidian and five of these guys. -->
+		<stats numFig="30" numRog="5" xpValue="400"/>
+		<resistances toxic="10" putrefying="10" necromantic="10" conflagratory="30" hyperborean="0"/> <!-- No rifting these guys to death. Also, reduce evil chest items' power against them. -->
+		<secondarybuff id="0" amount="125"/> <!-- As the mother goddess' favoured, they're going to be really healthy. -->
+		<secondarybuff id="10" amount="25"/> <!-- armour. And brick-tough, too. -->
+		<secondarybuff id="7" amount="15"/> <!-- block -->
+		<damage crushing="25" conflagratory="20" />
+		<onhit spell="Gog's Tactical Pyre" onechancein="3"/>
+		<palette tint="-130"/>
+		<info latin="(draconis osbidis)" text="A dragon that has dedicated its life to the draconic mother goddess Obsidia, its dark, gleaming scales testament to the goddess' favour that grants it immense strength and sturdiness."/>
+		<ai aggressiveness="6" span="6" spellPercentage="25" cancharm="0"/>
+		<spell name="Obvious Fireball"/>
+	</monster>
+
+	<monster type="3" subtype="25" name="Fiersome" level="15" terrain="2" special="1"> <!-- Boss fight! Prometheans, meet your match! Stat allocation is based on level 10 Lord Dredmor total times two thirds. -->
+		<stats numFig="15" numWiz="30" xpValue="7500"/>
+		<resistances toxic="15" putrefying="15" necromantic="15" conflagratory="30" hyperborean="-5"/> <!-- No rifting him to pieces. Also, cold is his weakness. -->
+		<secondarybuff id="0" amount="120"/> <!-- health! Not too much, now. -->
+		<secondarybuff id="10" amount="10"/> <!-- armour -->
+		<secondarybuff id="11" amount="10"/> <!-- A wizard dragon, you didn't expect spells to be amazingly good against him, did you? -->
+		<secondarybuff id="22" amount="10"/>
+		<damage blasting="6" conflagratory="8" /> <!-- Weak in melee! Take advantage of that! -->
+		<onhit spell="Flamefield 1" onechancein="2"/>
+		<palette tint="0"/>
+		<info latin="(draconis championus fierus)" text="You face Fiersome, Obsidia's burning champion on this material plane. Prometheans, meet your counterpart. Beware, this is a VERY dangerous monster."/>
+		<ai aggressiveness="10" span="6" spellPercentage="40" chicken="1" cancharm="0"/>
+		<spell name="Obvious Fireball"/>
+		<spell name="Thermite Center"/>
+		<spell name="Rune of Exploding"/>
+		<spell name="Gog's Tactical Pyre"/>
+<!--		<spell name="Infernal Torus"/> I really want him to do this, but he will kill himself with it. Stupid AI. -->
+		<spell name="Antimagic Field"/>
+		<spell name="Flamefield 2"/>
+		<spell name="Strong Brimstone Cloud"/>
+	</monster>
+
+</monster>
+
+</monDB>

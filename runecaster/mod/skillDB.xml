@@ -1,0 +1,59 @@
+<skillDB>
+<skill name="Runecaster" id="174" type="wizard" description="You're very scholarly, you also make runes.">
+   <art icon="skills/skill_rune0big.png"/>
+   <loadout type="armour" subtype="Coat of Himonya"/>
+   <loadout type="reagent" subtype="Rune of Self" amount="1"  always="1" />
+   <loadout type="reagent" subtype="Rune of Life" amount="1"  always="1" />
+   <loadout type="reagent" subtype="Rune of Strength" amount="2"  always="1" />
+   <loadout type="reagent" subtype="Rune of Movement" amount="3"  always="1" />
+   <loadout type="weapon" subtype="Rune Word of Force" amount="1" always="1"/>
+   <loadout type="toolkit" subtype="Modular Alchemy Box"  always="1"/>
+   <loadout type="toolkit" subtype="n-Dimensional Lathe"  always="1"/>
+   </skill>
+
+<ability name="Runecaster" icon="skills/skill_rune0big.png" skill="174" startSkill="1">
+  <description text="You're very scholarly, you also make runes."/>
+  </ability>
+ 
+ <ability name="1st Circle Runes" icon="skills/skill_rune1big.png" skill="174" level="0" >
+  <spell name="1st Circle Rune" />
+  <description text="You posess knowledge of the runes of nature." />
+  <primarybuff id="1" amount="1"/> <!-- sagacity -->
+  </ability>
+ <ability name="2nd Circle Runes" icon="skills/skill_rune2big.png" skill="174" level="1" >
+  <spell name="2nd Circle Rune" />
+  <description text="Your runecrafting knowledge includes the runes of the primal elements." />
+  <primarybuff id="1" amount="1"/> <!-- sagacity -->
+  </ability>
+<ability name=" Mass 1st Circle Runess" icon="skills/skill_massrune1big.png" skill="174" level="2" >
+  <spell name="Mass 1st Circle Runes" />
+  <description text="You may create a multiple first circle runes. More efficient." />
+  <primarybuff id="1" amount="1"/> <!-- sagacity -->
+  </ability>
+<ability name="3rd Circle Runes" icon="skills/skill_rune3big.png" skill="174" level="3">
+  <spell name="3rd Circle Rune" />
+  <description text="Your skills allow you to fabricate runes of artifice."/>
+  <primarybuff id="1" amount="1"/> <!-- sagacity -->
+  </ability>
+ <ability name="Mass 2nd Circle Runes" icon="skills/skill_massrune2big.png" skill="174" level="4" >
+  <spell name="Mass 2nd Circle Runes" />
+  <description text="You may create a multiple second circle runes. More efficient." />
+  <primarybuff id="1" amount="1"/> <!-- sagacity -->
+  </ability>
+<ability name="4th Circle Runes" icon="skills/skill_rune4big.png" skill="174" level="5">
+  <spell name="4th Circle Rune" />
+  <description text="You've mastered the celestial runes that affect the astral forces of aether."/>
+  <primarybuff id="1" amount="1"/> <!-- sagacity -->
+  </ability>
+<ability name="Mass 3rd Circle Runes" icon="skills/skill_massrune3big.png" skill="174" level="6">
+  <spell name="Mass 3rd Circle Runes" />
+  <description text="You may create a multiple third circle runes. More efficient."/>
+  <primarybuff id="1" amount="1"/> <!-- sagacity -->
+  </ability>
+<ability name="5th Circle Runes" icon="skills/skill_rune5big.png" skill="174" level="7" >
+  <spell name="5th Circle Rune" />
+  <description text="You've discovered the forbidden secrets, runes that hold the power of gods." />
+  <primarybuff id="1" amount="1"/> <!-- sagacity -->
+  </ability>
+
+</skillDB>

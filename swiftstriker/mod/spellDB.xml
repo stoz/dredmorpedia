@@ -1,0 +1,82 @@
+<spellDB>
+<spell name="Shoulder Bash" downtime="0" type="adjacent" icon="skills/ShoulderBash32.png">
+	<description text="Bash into your opponent, knocking them out of your way."/>
+	<effect type="knock" amount="1"/>
+	<effect type="teleport"/>
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic"/>
+   </spell>
+<spell name="Target Locked" downtime="8" type="target" icon="skills/TargetLocked32.png">
+	<buff useTimer="1" time="8" 
+		self="0" 
+		stacksize="3" 
+		allowstacking="0" 
+		icon="skills/TargetLocked64.png" 
+		smallicon="skills/TargetLocked32.png"
+      bad="1" >
+	 <secondarybuff id="8" amount="-100" /> <!-- counter -->
+	  <secondarybuff id="4" amount="-100" /> <!-- crit -->	</buff>
+	   <description text="This monster is the subject of your undivided attention. No way he's pulling any fast ones on you!" />
+   <effect type="trigger" spell="TunnelVision"/>
+   </spell>
+
+<spell name="TunnelVision" type="self">
+	<buff useTimer="1" time="8" allowstacking="0" icon="skills/TunnelVision.png" smallicon="skills/blank32.png" bad="1">
+		<sightbuff amount = "-3"/>	
+      </buff>
+	<description text="Excessive focus on a target has temporarily impaired your awareness of your surroundings!"/>
+   </spell>
+
+<spell name="Jump Power" type="self">
+	<buff useTimer="0" destroyonmove="1" allowstacking="0" icon="skills/Jump64.png" smallicon="skills/Jump32.png">
+		<secondarybuff id="4" amount="50" />
+      </buff>
+	<description text="Your critical rate is buffed for this one attack."/>
+   </spell>
+<spell name="Tackle Power" type="self">
+	<buff useTimer="0" destroyonmove="1" allowstacking="0" icon="skills/FlyingTackle64.png" smallicon="skills/FlyingTackle32.png">
+		<secondarybuff id="4" amount="30" />
+      </buff>
+	<description text="Your critical rate is buffed for this one attack."/>
+   </spell>
+
+
+
+<spell name="Quickstep" downtime="8" type="rook" icon="skills/QuickStep32.png">
+	<description text="Pull off a burst of speed in a straight line, at the cost of incurring tunnelvision."/>
+	<effect type="knock" amount="1"/>
+	<effect type="teleport"/>
+	<effect type="trigger" spell="TunnelVision"/>
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic"/>
+   </spell>
+
+<spell name="BoltProof" downtime="100" type="self" icon="skills/BoltProof32.png">	<anim sprite="sprites/sfx/summonA/summonA" frames="10" sfx="radiant" framerate="60" centerEffect="1"/>
+	<buff useTimer="0" attacks="1" removable="1" allowstacking="0" icon="skills/BoltProof64.png" smallicon="skills/BoltProof32.png">
+		<secondarybuff id="11" amount="75"/> <!-- resist -->
+	</buff>
+	<description text="Gain immense resistance to magical attacks until you use an attack yourself."/>
+   <ai hint="ally" />
+</spell>
+<spell name="Jump" downtime="70" type="target" attack="1" icon="skills/Jump32.png">
+	<description text="Leap high into the air, crashing into your target on the way down!"/>
+	<effect type="trigger" spell="Jump Power"/>
+	<effect type="knock" amount="3"/>
+	<effect type="damage" slashing="1"/>
+	<effect type="damage" slashing="1"/>
+	<effect type="damage" slashing="1"/>
+
+	<effect type="teleport"/>
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic"/>
+   </spell>
+<spell name="Flying Tackle" downtime="20" type="target" attack="1" icon="skills/FlyingTackle32.png">
+	<description text="Slam into your opponent!"/>
+	<effect type="trigger" spell="Tackle Power"/>
+	<effect type="knock" amount="2"/>
+	<effect type="damage" crushing="1"/>
+	<effect type="damage" crushing="1"/>
+
+	<effect type="teleport"/>
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic"/>
+   </spell>
+
+ </spellDB>
+ 

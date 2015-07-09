@@ -1,0 +1,54 @@
+<skillDB>
+  
+  
+<skill name="Dire Gourmand" id="78" type="warrior" description="You like to cook, you like to drink, and you've been ordered to clear dungeons. You've begrudgingly combined all of these abilities into one.">
+   <art icon="skills/warrior/distilled_diggle64.png"/>
+   <loadout type="armour" subtype="Helm of Threepwood" always="1" />
+   <loadout type="weapon" subtype="Frying Pan" always="1"/>
+</skill>
+
+  
+<ability name="Dire Gourmand" icon="skills/warrior/distilled_diggle64.png" skill="78" startSkill="1">
+ <description text="Always hungry; NEVER sober!"/>
+ </ability>
+
+ 
+<gourmandSkills>
+
+<ability name="Blood-and-Beer-Battered Body" icon="skills/warrior/gourmand1_64.png" skill="78" level="0">
+  <description text="Butchering monsters is messy business, caking your clothes in beer and blood. Flash-frying the whole mess provides you with a hardened, tasty coating. Your rushed, sloppy cooking sometimes causes grease fires."/>  
+  <primarybuff id="4" amount="1"/> <!-- Stub -->
+  <targetHitEffectBuff percentage="25" name="Extra Crispy" />
+  </ability>
+  
+<ability name="Distill Enemy" icon="skills/warrior/gourmand2_64.png" skill="78" level="1">
+  <description text="You have mastered the ancient art of instantly fermenting people, mystically converting chunks of your enemies into semi-palatable booze." />
+  <primarybuff id="4" amount="1"/> <!-- Stub -->
+  <targetHitEffectBuff percentage="22" name="FermentA" taxa="Animal" />
+  <targetHitEffectBuff percentage="20" name="FermentV" taxa="Vegetable" />
+  <targetHitEffectBuff percentage="18" name="FermentU" taxa="Undead" />
+  </ability>
+  
+ <ability name="We'll Even Throw in a Set of Steak Knives" icon="skills/warrior/gourmand3_64.png" skill="78" level="2">
+  <description text="Your family wishes you Happy Birthday, and have sent gourmet steak knives. You occasionally leave them in your enemies of spite."/>
+  <primarybuff id="4" amount="1"/> <!-- Stub -->
+  <targetHitEffectBuff percentage="20" name="Screw You Too" />
+  </ability>
+  
+<ability name="For Medicinal Use" icon="skills/warrior/gourmand4_64.png" skill="78" level="3">
+  <description text="You bake dungeon flora into delicious desserts that make you feel like a magic monkey. You nibble on them constantly."/>
+  <primarybuff id="4" amount="1"/> <!-- Stub -->
+  <spell name="Expanded Mind"/>
+  </ability>
+  
+<ability name="Fat, but not Jolly" icon="skills/warrior/gourmand5_64.png" skill="78" level="4">
+  <description text="Your alcoholism has rendered you bitter, durable, and large. Monsters will have a very difficult time killing ALL of you. Things sometimes bounce off of you."/>
+  <primarybuff id="2" amount="-6"/> <!-- Nimbleness -->
+  <primarybuff id="4" amount="8"/> <!-- Stub -->
+  <secondarybuff id="22" amount="20"/> <!-- magic reflect -->
+  <playerHitEffectBuff percentage="15" name="Rebound" />
+  </ability>
+
+</gourmandSkills>
+
+</skillDB>

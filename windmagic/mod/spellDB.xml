@@ -1,0 +1,179 @@
+<spellDB>
+	<spell name="Gust" type="cone" radius="2" icon="skills/spells/gust32.png">
+		<requirements mp="7" savvyBonus="0.10" mincost="3"/>
+		<description text="blows a gust of wind" monsterText="blows you away with wind"/>
+		<effect type="knock"/>
+		<effect type="damage" blasting="2" blastingF="0.2" asphyxiative="1" asphyxiativeF="0.1"/>
+		<effect type="paralyze" amount="1" turns="1"/>
+		<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="60" sfx="magic" centerEffect="0"/>
+	</spell>
+	
+	<spell name="Breathstealer" type="beam" anchored="1" icon="skills/spells/backdraft32.png">
+		<requirements mp="10" savvyBonus="0.135" mincost="5"/>
+		<effect type="damage" asphyxiative="2" asphyxiativeF="0.2" crushing="2" crushingF="0.15"/>
+		<effect type="trigger" affectsCaster="0" spell="Stolen Breath"/>
+		<description text="Steals breath from all monsters it hits" monsterText="steals your breath"/>
+		<anim sprite="sprites/sfx/manafount/manafont" frames="6" sfx="magic" centerEffect="0"/>
+		<!-- funfact for anyone reading this: originally I had planned this spell to be backdraft - hence the name -->
+		<!-- upon learning that amount did nothing for knock (and that negative amounts would mean nothing) I instead used this, as the intention was to deal with mages both ways -->
+		<!-- I later found out that there was an effect type suction that pulled monsters to you; this would likely have been used for a spell similar to backdraft -->
+	</spell>
+	
+	<spell name="Stolen Breath" type="target">
+		<buff self="0" bad="1" useTimer="1" time="8" allowstacking="0" stacksize="1" affectsCaster="0" icon="skills/spells/backdraft64.png" smallicon="skills/spells/backdraft32.png">
+			<mute amount="1"/>
+			<resistbuff asphyxiative="-1"/>
+		</buff>
+		<description text="This creature is unfortunately unable to perform the incantations necessary for spellcasting. How dissapointing."/>
+	</spell>
+	
+	<spell name="Flight" type="targetfloor" icon="skills/spells/windmagicflight32.png">
+		<requirements mp="7" savvyBonus="0.15" mincost="4"/>
+		<effect type="teleport"/>
+		<effect type="targetblink"/>
+		<effect type="trigger" spell="In Flight"/>
+		<anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>
+	</spell>
+	
+	<spell name="In Flight" type="self" icon="skills/spells/windmagicflight32.png">
+		<buff useTimer="1" time="10" allowstacking="1" stacksize="3" icon="skills/spells/windmagicflight64.png" smallicon="skills/spells/windmagicflight64.png">
+			<secondarybuff id="6" amount="12"/> <!-- dodge -->
+			<secondarybuff id="11" amount="8"/> <!-- resist -->
+			<secondarybuff id="12" amount="16"/> <!-- sneak -->
+			<description text="You are in flight like the most graceful of birds"/>
+		</buff>
+	</spell>
+	
+	<spell name="Tornado" type="missile" icon="skills/spells/tornado32.png">
+		<requirements mp="15" savvyBonus="0.13" mincost="8"/>
+		<effect type="damage" blasting="3" blastingF="0.20" asphyxiative="3" asphyxiativeF="0.25" affectsCaster="1"/>
+		<effect type="knock"/>
+		<effect type="trigger" spell="Tornado Mine"/>
+		<anim sprite="sprites/sfx/arctic_vortex/arctic_vortex" frames="6" firstframe="0" framerate="25" sfx="magic" centerEffect="0"/>
+	</spell>
+	
+	<spell name="Tornado Mine" type="targetfloor" icon="skills/spells/tornado32.png"
+		mine="1"
+		mineTimer="16"
+		minePermanent="1"
+		mineradius="1"
+		mineSpriteDrawOrder="0"
+		mineSpritePNGSeries="sprites/sfx/arctic_vortex/arctic_vortex" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="6" 
+		mineSpritePNGRate="100">
+		<ai hint="mine" />
+		<effect type="damage" blasting="2" blastingF="0.15" asphyxiative="2" asphyxiativeF="0.20" affectsCaster="1"/>
+		<effect type="knock"/>
+		<effect type="paralyze" amount="1" turns="1"/>
+		<anim sprite="sprites/sfx/arctic_vortex/arctic_vortex" frames="6" firstframe="0" framerate="30" sfx="magic" centerEffect="0"/>
+	</spell>
+	
+	<spell name="Windwalk Second Hit" type="targetfloor">
+		<effect type="damage" asphyxiative="4" asphyxiativeF="0.15" blasting="2" blastingF="0.05"/>
+		<effect type="paralyze" percent="80" turns="1"/>
+		<anim sprite="sprites/sfx/manafount/manafont" frames="6" sfx="magic" centerEffect="0"/>
+	</spell>
+	
+	<spell name="Windwalk First Hit" type="targetfloor">
+		<effect type="damage" asphyxiative="5" asphyxiativeF="0.20" blasting="2" blastingF="0.10"/>
+		<effect type="paralyze" percent="80" turns="1"/>
+		<anim sprite="sprites/sfx/manafount/manafont" frames="6" sfx="magic" centerEffect="0"/>
+	</spell>
+	
+	<spell name="Windwalk Beam" type="beam" icon="skills/spells/windwalk32.png">
+		<effect type="trigger" amount="0" spell="Windwalk First Hit"/>
+		<effect type="trigger" amount="1" spell="Windwalk Second Hit" affectsCorpses="0"/>
+		<anim sprite="sprites/sfx/null" sfx="lightning_bolt" firstframe="0" frames="1" framerate="20"/>
+	</spell>
+	
+	<spell name="Windwalk" type="targetfloor" icon="skills/spells/windwalk32.png">
+		<requirements mp="16" savvyBonus="0.15" mincost="11"/>
+		<effect type="trigger" spell="Windwalk Beam"/>
+		<effect type="teleport"/>
+		<anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>
+	</spell>
+
+	<spell name="Eye of the Storm" type="self" icon="skills/spells/eye_of_the_storm32.png" >
+		<requirements mp="30" savvyBonus="0.20" mincost="15"/>
+		<description text="You are the center of a powerful whirlwind, destroy your enemies" monsterText="summons a powerful whirlwind"/>
+		<buff useTimer="1" time="8" self="1" allowstacking="0" icon="skills/spells/eye_of_the_storm64.png" smallicon="skills/spells/eye_of_the_storm32.png">
+			<halo name="sprites/sfx/energyring/energyring" first="2" num="3" framerate="60" centerEffect="1"/>
+			<targetHitEffectBuff percentage="100" name="Eye of the Storm Lightning"/>
+			<playerHitEffectBuff percentage="100" name="Eye of the Storm Lightning"/>
+			<crossbowBuff percentage="100" name="Eye of the Storm Lightning"/>
+			<thrownBuff percentage="100" name="Eye of the Storm Lightning"/>
+			<triggeroncast percent="100" name="Eye of the Storm Lightning"/>
+		</buff>
+		<!-- 
+		<effect type="dot" amount="8" spell="Eye of the Storm Effect"/>
+		<effect type="dot" amount="8" spell="Eye of the Storm Rain Cloud"/>
+		til resisting dots is fixed -->
+		<effect type="dot" resistable="0" amount="8" spell="Eye of the Storm Effect"/>
+		<effect type="dot" resistable="0" amount="8" spell="Eye of the Storm Rain Cloud"/>
+		<effect type="dot" resistable="0" amount="11" spell="Remove Drenched"/>
+		<effect type="trigger" spell="Drenched" /> <!-- so the above never changes yours above 0 -->
+	</spell>
+
+	<spell name="Eye of the Storm Effect" type="template" templateID="Eye of the Storm Effect">
+		<description text="strikes with a raging storm" monsterText="strikes you with a raging storm"/>
+		<effect type="damage" asphyxiative="1" asphyxiativeF="0.10" blasting="2" blastingF="0.15"/>
+		<effect type="trigger" percent="10" spell="Eye of the Storm Lightning"/>
+		<anim sprite="sprites/sfx/null" sfx="lightning_bolt" firstframe="0" frames="1" framerate="20"/>
+	</spell>
+
+	<spell name="Eye of the Storm Lightning" type="targetfloor">
+		<description text="zaps lightning from the storm" monsterText="zaps you with lightning from its storm"/>
+		<effect type="damage" voltaic="2" voltaicF="0.20"/>
+		<effect type="paralyze" amount="2" turns="3"/>
+		<effect type="trigger" percent="1" spell="Thor's Fulminaric Bolt"/> <!-- why not -->
+		<anim sprite="sprites/sfx/lightningstrike/lightningstrike" sfx="elec" frames="6" framerate="65"/>
+	</spell>
+
+	<spell name="Eye of the Storm Rain Cloud" type="self"
+	mine="1"
+	minePermanent="1"
+	mineTimer="3"
+	mineradius="3"
+	mineUseGlints="1"
+	mineGlintDensity="16"
+	mineSpritePNGSeries="sprites/sfx/raindrop/raindrop"
+	mineSpritePNGFirst="0"
+	mineSpritePNGNum="6"
+	mineSpritePNGRate="100">
+		<effect type="trigger" self="0" bad="1" spell="Drenched" affectsCaster="0"/>
+	</spell>
+
+	<spell name="Drenched" type="target" icon="skills/spells/drenched32.png">
+		<buff useTimer="1" time="2" self="0" bad="1" allowStacking="0" stackable="0" stacksize="1" affectsCaster="0" icon="skills/spells/drenched64.png" smallicon="skills/spells/drenched32.png">
+			<resistbuff voltaic="-5"/>
+			<resistbuff asphyxiative="-3"/> <!-- these two make less sense, but it's so that it combos with other wind magic -->
+			<resistbuff blasting="-3"/>
+			<secondarybuff id="6" amount="-10" /> <!-- dodge -->
+			<secondarybuff id="11" amount="-10" /> <!-- resist -->
+		</buff>
+		<description text="The drenching from the rain reduces one's resistance to lightning! Watch out!"/>
+	</spell>
+	
+	<spell name="Remove Drenched" type="target">
+		<effect type="removebuffbyname" name="Drenched"/>
+	</spell>
+	
+	
+	<!--
+	<spell name="Storm Shield" type="self" icon="skills/spells/storm_shield32.png">
+		<buff useTimer="0" manaUpkeep="1" removable="1" icon="skills/spells/storm_shield64.png" smallicon="skills/spells/storm_shield32.png">
+			<halo name="sprites/sfx/storm_shield/storm_shield" first="0" framerate="70" num="7" />
+			<secondarybuff id="22" amount="100"/> <!-- reflect 
+			<secondarybuff id="7" amount="50"/> <!-- block 
+			<secondarybuff id="11" amount="10"/> <!-- resist 
+			<playerHitEffectBuff percentage="100" name="Storm Shield Hit"/>
+		</buff>
+		<description text="The winds wrap around yourself damaging all of those who would hurt you."/>
+	</spell> 
+	
+	<spell name="Storm Shield Hit" type="target">
+		<effect type="damage" asphyxiative="1" asphyxiativeF="0.15" blasting="2" blastingF="0.25"/>
+	</spell> -->
+	
+</spellDB>

@@ -1,0 +1,122 @@
+<monDB>
+	<!-- Summon Past Self ***************************************************************************************** -->
+	<monster name="Past Self M" displayName="Your Past Self" level="1" special="1" terrain="1" taxa="Adventurer">
+		<idleSprite
+			left="sprites/monster/past_self_m/hero_slp_r.xml"
+			right="sprites/monster/past_self_m/hero_slp_r.xml"
+			up="sprites/monster/past_self_m/hero_slp_r.xml"
+			down="sprites/monster/past_self_m/hero_slp_r.xml" />
+		<attackSprite
+			left="sprites/monster/past_self_m/hero_null.xml"
+			right="sprites/monster/past_self_m/hero_null.xml"
+			up="sprites/monster/past_self_m/hero_null.xml"
+			down="sprites/monster/past_self_m/hero_null.xml" />
+		<hitSprite
+			left="sprites/monster/past_self_m/hero_null.xml"
+			right="sprites/monster/past_self_m/hero_null.xml"
+			up="sprites/monster/past_self_m/hero_null.xml"
+			down="sprites/monster/past_self_m/hero_null.xml" />
+		<dieSprite
+			name="sprites/monster/past_self_m/hero_die_disintegrated_r.xml" />
+			
+		<sfx die="player is disintegrated" />
+		
+		<ai spellPercentage="100" />
+		<spell name="Waste Time" />
+		
+		<info latin="(Ego)" text="Your past self! Try not to think about it too much..." />
+	</monster>
+
+	<monster name="Past Self F" displayName="Your Past Self" level="1" special="1" terrain="1" taxa="Adventurer">
+		<idleSprite
+			left="sprites/monster/past_self_f/hero_slp_r.xml"
+			right="sprites/monster/past_self_f/hero_slp_r.xml"
+			up="sprites/monster/past_self_f/hero_slp_r.xml"
+			down="sprites/monster/past_self_f/hero_slp_r.xml" />
+		<attackSprite
+			left="sprites/monster/past_self_f/hero_null.xml"
+			right="sprites/monster/past_self_f/hero_null.xml"
+			up="sprites/monster/past_self_f/hero_null.xml"
+			down="sprites/monster/past_self_f/hero_null.xml" />
+		<hitSprite
+			left="sprites/monster/past_self_f/hero_null.xml"
+			right="sprites/monster/past_self_f/hero_null.xml"
+			up="sprites/monster/past_self_f/hero_null.xml"
+			down="sprites/monster/past_self_f/hero_null.xml" />
+		<dieSprite
+			name="sprites/monster/past_self_f/hero_die_disintegrated_r.xml" />
+			
+		<sfx die="player is disintegrated" />
+		
+		<ai spellPercentage="100" />
+		<spell name="Waste Time" />
+		
+		<info latin="(Ego)" text="Your past self! Try not to think about it too much..." />
+	</monster>
+
+	<!-- Grandfather Clock **************************************************************************************** -->
+	<monster name="Grandfather Clock" level="1" special="1" terrain="1" taxa="Spacetime Conduit">
+		<idleSprite
+			left="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			right="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			up="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			down="sprites/sfx/grandfather_clock/grandfather_clock.xml" />	
+		<morphsprites
+			eatSprite="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			drinkSprite="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			levelupmSprite="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			levelupfSprite="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			vanishSprite="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			longidleSprite="sprites/sfx/grandfather_clock/grandfather_clock.xml" />
+		<attackSprite
+			left="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			right="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			up="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			down="sprites/sfx/grandfather_clock/grandfather_clock.xml" />
+		<hitSprite
+			left="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			right="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			up="sprites/sfx/grandfather_clock/grandfather_clock.xml"
+			down="sprites/sfx/grandfather_clock/grandfather_clock.xml" />
+		<dieSprite
+			name="sprites/sfx/grandfather_clock/grandfather_clock.xml" />
+
+		<secondarybuff id="0" amount="500" />
+			
+		<ai spellPercentage="100" />
+		<spell name="Waste Time" />
+			
+		<info latin="(Avus Tempore Custos)" text="This isn't your father's clock."/>
+	</monster>
+	
+	<!-- Lease of Time ******************************************************************************************** -->
+	<monster name="Time Skeleton" level="1" special="1" taxa="Spacetime Conduit">
+		<idleSprite
+			left="sprites/sfx/time_skeleton/time_skeleton.xml"
+			right="sprites/sfx/time_skeleton/time_skeleton.xml"
+			up="sprites/sfx/time_skeleton/time_skeleton.xml"
+			down="sprites/sfx/time_skeleton/time_skeleton.xml" />
+		<morphsprites
+			eatSprite="sprites/sfx/time_skeleton/time_skeleton.xml"
+			drinkSprite="sprites/sfx/time_skeleton/time_skeleton.xml"
+			levelupmSprite="sprites/sfx/time_skeleton/time_skeleton.xml"
+			levelupfSprite="sprites/sfx/time_skeleton/time_skeleton.xml"
+			vanishSprite="sprites/sfx/time_skeleton/time_skeleton.xml"
+			longidleSprite="sprites/sfx/time_skeleton/time_skeleton.xml" />
+		<attackSprite
+			left="sprites/sfx/time_skeleton/time_skeleton.xml"
+			right="sprites/sfx/time_skeleton/time_skeleton.xml"
+			up="sprites/sfx/time_skeleton/time_skeleton.xml"
+			down="sprites/sfx/time_skeleton/time_skeleton.xml" />
+		<hitSprite
+			left="sprites/sfx/time_skeleton/time_skeleton.xml"
+			right="sprites/sfx/time_skeleton/time_skeleton.xml"
+			up="sprites/sfx/time_skeleton/time_skeleton.xml"
+			down="sprites/sfx/time_skeleton/time_skeleton.xml" />
+		<dieSprite
+			name="sprites/sfx/time_skeleton/time_skeleton.xml" />
+
+		<info latin="(Tempus Ossei)" text="It's a Spooky Scary Skeleton!"/>
+	</monster>
+
+</monDB>

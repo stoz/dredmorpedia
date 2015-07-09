@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="100">anim_sword_01.png</frame>
+  <frame delay="100">anim_sword_02.png</frame>
+  <frame delay="100">anim_sword_03.png</frame>
+  <frame delay="100">anim_sword_04.png</frame>
+  <frame delay="100">anim_sword_05.png</frame>
+  <frame delay="100">anim_sword_06.png</frame>
+  <frame delay="100">anim_sword_07.png</frame>
+  <frame delay="100">anim_sword_08.png</frame>
+  <frame delay="100">anim_sword_09.png</frame>
+  <frame delay="100">anim_sword_10.png</frame>
+  <frame delay="100">anim_sword_11.png</frame>
+  <frame delay="100">anim_sword_12.png</frame>
+  <frame delay="100">anim_sword_13.png</frame>
+  <frame delay="100">anim_sword_14.png</frame>
+  <frame delay="100">anim_sword_15.png</frame>
+  <frame delay="100">anim_sword_16.png</frame>
+</sprite>

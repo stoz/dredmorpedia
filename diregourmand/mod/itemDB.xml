@@ -1,0 +1,79 @@
+	<itemDB>
+
+	<!-- Food -->
+	 <item name="Onion" iconFile="items/onion.png" level="1">
+	   <price amount="4" />
+	   <food hp="4" />
+	   <description text="It's not very tasty, but it's useful." />
+	 </item>
+	 
+	<!-- Food -->
+	<item name="Irish Freaking Whiskey" iconFile="items/irish_whiskey.png" level="6">
+		<food mp="3" effect="Lingering Weakness"/>
+		<price amount="110"/>
+		<casts spell="Mind Afire"/>
+		<description text="This alcohol is so intense, it can combine with other alcohols to further empower your power. Things go a little blurry, too."/>
+		</item>
+		
+	<!-- tomes -->
+	<item name="If Wan can Chop, So Can You!" iconFile="items/cookbook_vegetable.png" overrideClassName="cookbook" >
+	   <price amount="112" />
+	   <armour level="1" type="shield" />
+	   <description text="This book instructs you how to chop up veggies properly. You must be bad at following directions, because you keep turning them into fruit instead." />
+	   <damagebuff slashing="1" />
+	   <resistbuff asphyxiative="1" slashing="1" />
+	   <targetKillBuff name="Green Harvest 2" taxa="Vegetable" percentage="100" />
+	   </item>
+
+	<item name="Delicious Diggles and Other Tasty Beasts!" iconFile="items/cookbook_animal.png" overrideClassName="cookbook" >
+	   <price amount="230" />
+	   <armour level="2" type="shield" />
+	   <description text="'It's 1, 2, 3, easy! Trap, tenderize, THEN taste!'" />
+	   <damagebuff crushing="2" />
+	   <secondarybuff id="10" amount="1"/> <!-- armor -->
+		<targetKillBuff percentage="100" name="Spawn Meat" taxa="Animal" />
+	   </item>
+
+	<item name="Goop Into Gold - and 59 Other Physical Impossibilities!" iconFile="items/cookbook_other.png" overrideClassName="cookbook" >
+	   <price amount="650" />
+	   <armour level="3" type="shield" />
+	   <description text="What is an Ooze, anyways? Turns out it's a homogenous mixture of acids, minerals, and a whole lot of Elmer's Glue. By dampening the 'animating force' you can sometimes distill out those constituent materials." />
+	   <damagebuff existential="2" transmutative="1" />
+	   <resistbuff crushing="1" toxic="1" acidic="1" />
+		<targetKillBuff percentage="80" name="Refined Goo" taxa="Other" />
+	   </item>
+	   
+	<item name="Useful Undead!" iconFile="items/cookbook_undead2.png" overrideClassName="cookbook">
+		<price amount="1337"/>
+		<armour level="4" type="shield" />
+		<damagebuff righteous="3" transmutative="2"/>
+		<resistbuff putrefying="1" necromantic="1" toxic="1" asphyxiative="1"/>
+		<description text="A dead undead has not one, but TWO deaths inside of it. This book will teach you how to make useful items out of all that death - order now to receive a FREE bonus recipe for bathtub rotgut!"/>
+		<targetKillBuff percentage="80" name="Nasty Concoctions" taxa="Undead" />
+		</item>	
+
+	<item name="A Guide to Eating Demon Hearts" iconFile="items/cookbook_demon_rotated_5.png" overrideClassName="cookbook" artifact="1" >
+		<artifact quality="2"/>
+		<price amount="4503"/>
+	  <armour level="5" type="shield"/>
+		<damagebuff coflagratory="5"/>
+		<secondarybuff id="11" amount="6"/> <!-- resist -->
+		<resistbuff aethereal="1" conflagratory="1" transmutative="1"/>	
+		<targetKillBuff percentage="100" name="Random Empowerment" taxa="Demon" />
+		<description text="For people who don't mind staining their soul black as night, demon hearts are surprisingly nutritious and appetizing!"/>
+		</item>
+
+
+	<item name="Practical Robot Recipes for Golem Gourmets" iconFile="items/cookbook_construct.png" overrideClassName="cookbook" >
+		<price amount="8192"/>
+	  <targetHitEffectBuff percentage="33" name="Invive Thaumite Swarm" />
+	  <armour level="6" type="shield"/>
+		<damagebuff voltaic="8"/>
+		<resistbuff crushing="2" voltaic="3"/>
+		<targetKillBuff percentage="75" name="Bottled Lightning" taxa="Construct" />
+		<description text="This book is full of schematics, blueprints, and wiring diagrams. Is it a cookbook, or a construction manual?"/>
+		</item>
+
+		<!-- Wizard Shields aka Orbs -->
+		
+	</itemDB>

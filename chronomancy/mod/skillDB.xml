@@ -1,0 +1,118 @@
+<skillDB>
+
+	<skill name="Chronomancy" id="051155" type="rogue" description="You can manipulate time to get out of sticky situations.">
+		<art icon="skills/skill_chronology_64.png"/>
+	</skill>
+
+	<ability name="Chronomancy" icon="skills/skill_chronology_64.png" skill="051155" startskill="1">
+		<description text="Some call you 'The Human Metronome'. Mostly you just know the right time to make your exit."/>
+	</ability>
+
+	<!-- Daydream ************************************************************************************************* -->
+	<ability name="Daydream" icon="skills/spells/daydream_64.png" skill="051155" level="0">
+		<spell name="Daydream" />
+		
+		<description text="Years of study have taught you how to bypass the normal flow of time... or it would have if you spent less time daydreaming. Refreshes you, but beware of being disturbed." />
+	</ability>
+	
+	<!-- Precognition ********************************************************************************************* -->
+	<ability name="Precognition" icon="skills/spells/precognition_64.png" skill="051155" level="1">
+		<spell name="Precognition" />
+		
+		<description text="You can see the future! Something terrible is going to happen to that monster... probably. Time will tell!" />
+	</ability>
+	
+	<ability name="Precognition" icon="skills/spells/precognition_64.png" skill="051155" level="1" polymorphedOnly="1" polymorphTag="Time Skeleton">
+		<spell name="Precognition " />
+		
+		<description text="You can see the future! Something terrible is going to happen to that monster... probably. Time will tell!" />
+	</ability>
+
+	<!-- Bolt Time ************************************************************************************************ -->
+	<ability name="Bolt Time" icon="skills/spells/bolt_time_64.png" skill="051155" level="2">
+		<spell name="Bolt Time" />
+
+		<description text="You feel like The One (or at least a close second). Master the art of special effects to slow down time around you, drastically increasing evasiveness." />
+	</ability>
+	
+	<ability name="Bolt Time" icon="skills/spells/bolt_time_64.png" skill="051155" level="2" polymorphedOnly="1" polymorphTag="Time Skeleton">
+		<spell name="Bolt Time " />
+		
+		<description text="You feel like The One (or at least a close second). Master the art of special effects to slow down time around you, drastically increasing evasiveness." />
+	</ability>
+
+	<!-- Time Flux ************************************************************************************************ -->
+	<ability name="Time Flux" icon="skills/spells/time_flux_64.png" skill="051155" level="3">
+		<spell name="Time Flux" />
+		
+		<description text="Project yourself into the future! You are invulnerable while in the flux of time and those around you are ravaged by the passing ages." />
+	</ability>
+	
+	<ability name="Time Flux" icon="skills/spells/time_flux_64.png" skill="051155" level="3" polymorphedOnly="1" polymorphTag="Time Skeleton">
+		<spell name="Time Flux " />
+		
+		<description text="Project yourself into the future! You are invulnerable while in the flux of time and those around you are ravaged by the passing ages." />
+	</ability>
+
+	<!-- Summon Past Self ***************************************************************************************** -->
+	<ability name="Summon Past Self" icon="skills/spells/summon_past_self_64.png" skill="051155" level="4">
+		<spell name="Summon Past Self" />
+		
+		<resistbuff existential="-1" />
+		
+		<description text="Reach back through time to summon yourself as a distraction! Just try not to think about it too much or you'll do your head in." />
+	</ability>
+	
+	<ability name="Summon Past Self" icon="skills/spells/summon_past_self_64.png" skill="051155" level="4" polymorphedOnly="1" polymorphTag="Time Skeleton">
+		<spell name="Summon Past Self " />
+		
+		<resistbuff existential="-1" />
+		
+		<description text="Reach back through time to summon yourself as a distraction! Just try not to think about it too much or you'll do your head in." />
+	</ability>
+	
+	<!-- The Darkest Timeline ************************************************************************************* -->
+	<ability name="The Darkest Timeline" icon="skills/spells/the_darkest_timeline_64.png" skill="051155" level="5">
+		<spell name="The Darkest Timeline" />
+		
+		<resistbuff existential="-1" />
+		
+		<description text="By choosing this ability you are creating 7 different timelines. In your darkest hour you can turn back the clock and return to the prime timeline." />
+	</ability>
+	
+	<ability name="The Darkest Timeline" icon="skills/spells/the_darkest_timeline_64.png" skill="051155" level="5" polymorphedOnly="1" polymorphTag="Time Skeleton">
+		<spell name="The Darkest Timeline " />
+		
+		<resistbuff existential="-1" />
+		
+		<description text="By choosing this ability you are creating 7 different timelines. In your darkest hour you can turn back the clock and return to the prime timeline." />
+	</ability>
+	
+	<!-- Grandfather Clock Paradox ******************************************************************************** -->
+	<ability name="Grandfather Clock Paradox" icon="skills/spells/grandfather_clock_paradox_64.png" skill="051155" level="6">
+		<spell name="Grandfather Clock Paradox" />
+		
+		<resistbuff existential="-1" />
+		<targetKillBuff percentage="100" name="Thinking With Portals" taxa="Grandfather Clock" />
+		
+		<description text="One of the lesser known paradoxes, the Grandfather Clock Paradox stipulates that all Grandfather Clocks are, infact, the same clock. Should two different clocks exist, spacetime would fold between the clocks such that they converge. This has been thrown out by most leading philosophers, but hey, it's worth a shot!" />
+	</ability>
+	
+	<ability name="Grandfather Clock Paradox" icon="skills/spells/grandfather_clock_paradox_64.png" skill="051155" level="6" polymorphedOnly="1" polymorphTag="Time Skeleton">
+		<spell name="Grandfather Clock Paradox " />
+		
+		<resistbuff existential="-1" />
+		
+		<description text="One of the lesser known paradoxes, the Grandfather Clock Paradox stipulates that all Grandfather Clocks are, infact, the same clock. Should two different clocks exist, spacetime would fold between the clocks such that they converge. This has been thrown out by most leading philosophers, but hey, it's worth a shot!" />
+	</ability>
+
+	<!-- Lease of Time ******************************************************************************************** -->
+	<ability name="Lease of Time" icon="skills/spells/lease_of_time_64.png" skill="051155" level="7">
+		<spell name="Lease of Time" />
+		
+		<resistbuff existential="-1" />
+		
+		<description text="You've bought a timeshare at the end of time. By allowing your mortal flesh to be a vessel for all of eternity you can momentarily break the Laws of Cooldown Dynamics." />
+	</ability>
+
+</skillDB>

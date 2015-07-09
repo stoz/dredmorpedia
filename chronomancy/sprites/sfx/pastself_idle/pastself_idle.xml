@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="600">pastself_idle_0.png</frame>
+  <frame delay="600">pastself_idle_1.png</frame>
+  <frame delay="600">pastself_idle_2.png</frame>
+  <frame delay="600">pastself_idle_3.png</frame>
+</sprite>

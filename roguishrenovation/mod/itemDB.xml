@@ -1,0 +1,1318 @@
+<itemDB>
+
+<!-- Food items. -->
+
+<item name="'Jelly Donut'" iconFile="items/food_riceball.png" level="1">
+	<price amount="9"/>
+	<food hp="2"/>
+	<description text="It looks like a rice ball, smells like a rice ball, tastes like a rice ball and even feels like one, but the higher-ups say it's a jelly donut and that's what it'll be." />
+	</item>
+
+<item name="Lutefisk Rice Ball" iconFile="items/food_lutefiskriceball.png" level="3">
+	<price amount="9"/>
+	<food hp="10" meat="1" />
+	<description text="If this is what this newfangled 'fusion cuisine' is producing, you want no part of it. Like elves and dwarves, there are some things that shouldn't be mixed." />
+	</item>
+
+<item name="Oran Berry" iconFile="items/food_oran.png" level="3">
+	<price amount="9"/>
+	<food hp="10"/>
+	<description text="A blue orange. Well, you've seen stranger things in your time. Fills your belly a little." />
+	</item>
+
+<item name="Honey" iconFile="items/food_honey.png" level="3">
+	<price amount="7"/>
+	<food hp="9"/>
+	<description text="What it says on the label, a jar of honey.  Spread it on bread, candies or trees for best results." />
+	</item>
+
+<item name="Sitrus Berry" iconFile="items/food_sitrus.png" level="8">
+	<price amount="120"/>
+	<food hp="30"/>
+	<description text="Tangy and crisp, this berry is a delight to eat. Fills your belly somewhat." />
+	</item>
+
+<item name="Piquant Poffin Pie" iconFile="items/food_pie.png" level="8">
+	<price amount="130"/>
+	<food hp="35"/>
+	<description text="It's a poffin creatively shaped like a pie. Both children and adults enjoy eating it to fill their bellies." />
+	</item>
+
+
+
+<!-- Food items with effects. -->
+
+<item name="Leppa Berry" iconFile="items/food_leppa.png" level="6">
+	<price amount="40"/>
+	<food hp="10" effect="Minor PP Restoration" />
+	<description text="Eating this won't just fill your Belly, it'll also restore a little PP." />
+	</item>
+
+<item name="Tofu Salad" iconFile="items/food_tofusalad.png" level="7">
+	<price amount="90"/>
+	<food hp="25" effect="Healthy Living" />
+	<description text="It's boiled tofu in boiled greens, a vegan's paradise. Over or improper consumption may lead to nutritional deficiencies." />
+	</item>
+
+<item name="Lutefisk Sushi" iconFile="items/food_sushi.png" level="6">
+	<price amount="75"/>
+	<food hp="15" meat="1" effect="Fishy" />
+	<description text="Even the Japanese can't save lutefisk, not with all the wasabi in the world." />
+	</item>
+
+<item name="Dinner" iconFile="items/food_dinner.png" level="8">
+	<price amount="100"/>
+	<food hp="20" effect="Create Wondermail" />
+	<description text="Crunch-munch! Chew-chew! Snuffle-slurp! Crunch-munch! Chew-chew! Snuffle-slurp! Oh wait, there seems to be a note stuck in the bottom of the bowl; you'll have to eat your dinner to get to it. You've heard of messages written on the bottoms of glasses, but this is ridiculous." />
+	</item>
+
+<item name="Gummi" iconFile="items/food_gummi.png" level="6">
+	<price amount="75"/>
+	<food hp="7" effect="Gummi Smarts" />
+	<description text="Looking at this little piece of chewy candy, you can see how it might fill your belly, but the manufacturer's claims about it raising your IQ is another kettle of fish altogether."/>
+	</item>
+
+<item name="Grimy Food" iconFile="items/food_grimy_food.png" level="2">
+	<price amount="1"/>
+	<food hp="10" effect="Tummy Ache" />
+	<description text="Fills the Belly, but..." />
+	</item>
+
+<item name="Creamy Poffin Cake" iconFile="items/food_cake.png" special="1" level="8">
+	<price amount="140"/>
+	<food hp="50" effect="Filled Belly" />
+	<description text="It's a poffin creatively shaped like a cake. Its conflicts with pie have been some of the bloodiest (and creamiest) throughout history."/>
+	</item>
+
+<item name="Perfect Apple" iconFile="items/food_perfect_apple.png" special="1" level="10">
+	<price amount="250"/>
+	<food hp="64" effect="Filled Belly" />
+	<description text="A huge and delicious apple. You'd better not let the Guildmaster catch you eating this! YOOM-TAH! Fills your belly a lot and increases its size for a little while."/>
+	</item>
+
+<item name="Temporal Poffin Pike" iconFile="items/food_temporal_pike.png" special="1" level="10" >
+	<price amount="750"/>
+	<food hp="64" effect="Temporal Deliciousness" />
+	<description text="It's a dastardly combination of both cake AND pie, the eating of which will create a temporal paradox of rich deliciousness which may or may not subsequently cause the destruction of Temporal Tower and the planet's paralysis. You can still eat it if you're willing to brave the effects, though."/>
+	</item>
+
+<item name="Pokemon Egg" iconFile="items/food_p_egg.png" level="3" special="1" >
+	<price amount="2000"/>
+	<food hp="20" effect="Really Now" />
+	<description text="This pokemon egg moves a little every now and then; it's obviously almost about to hatch. WHATEVER YOU DO, DON'T EAT THIS. I WARNED you. Take it to Brax, he'll find a good home for it and pay you a pretty penny in the bargain."/>
+	</item>
+
+
+
+<!-- Drink items. -->
+
+<item name="Spinda's Cafe Drink" iconFile="items/drink_s_drink.png" level="3">
+	<price amount="50"/>
+	<food mp="15" />
+	<description text="Shake it this way...shake it that way... and stir it all around...and it's done!"/>
+	</item>
+
+<item name="Lemonade" iconFile="items/drink_lemonade.png" level="10">
+	<price amount="275"/>
+	<food mp="50" />
+	<description text="It's a can of lemonade. Odd how you never see people drinking these, but giving them to pokemon instead..."/>
+	</item>
+
+
+
+<!-- Drink items with effects. -->
+
+<item name="Soda Pop" iconFile="items/drink_sodapop.png" level="1">
+	<price amount="12"/>
+	<food mp="5" effect="Sugar Rush" />
+	<description text="A very sweet and thoroughly unhealthy drink. Why are you even considering putting this anywhere close to your mouth?"/>
+	</item>
+
+<item name="Green Tea" iconFile="items/drink_greentea.png" level="3">
+	<price amount="45"/>
+	<food mp="8" effect="Inner Peace" />
+	<description text="It's a traditional clay cup of green tea. All you need now is a small table, a couple of cushions, and a plate of steamed buns."/>
+	</item>
+
+<item name="High Class Glass" iconFile="items/drink_highclassglass.png" level="5">
+	<price amount="61"/>
+	<food mp="16" effect="Classy" />
+	<description text="It's wine, only in a horribly expensive crystal wineglass. Or maybe it's just plastic - you can't tell."/>
+	</item>
+
+<item name="Milk" iconFile="items/drink_milk.png" level="5">
+	<price amount="80"/>
+	<food mp="20" meat="1" effect="Helluva Tough" />
+	<description text="Remember, kids. Eat your greens, drink your milk, brush your teeth and stay in school."/>
+	</item>
+
+<item name="Spinda's Cafe Good Drink" iconFile="items/drink_s_gooddrink.png" level="6">
+	<price amount="225"/>
+	<food mp="30" effect="Gummi Smarts" />
+	<description text="Moderately sweet, the natural flavour promises to come bursting forth from this drink. An indescribably wonderful flavour...a special blend for both the discerning pokemon and you."/>
+	</item>
+
+<item name="Fruity Wine" iconFile="items/drink_fruitywine.png" level="10" special="1" >
+	<price amount="325"/>
+	<food mp="40" effect="Fruity Fruit" />
+	<description text="A marvellous blend of fruit flavours swirls in this dessert wine."/>
+	</item>
+
+<item name="Minotaur Milk" iconFile="items/drink_minomilk.png" level="13" special="1" >
+	<price amount="500"/>
+	<food mp="50" meat="1" effect="Minotaur Milk Effect" />
+	<description text="Ever wondered how the minotaurs on the covers of bodybuilding magazines look like that? It's because they grew up on this thick, rich and creamy stuff. Legal production of minotaur milk is strictly controlled by the minotaur matriarchs, who maintain a Bolt Council-like death grip on the flow to keep prices sky-high. Illegal minotaur milk production usually involves young, desperate minotaur women, shady, unhygenic milking parlours, and various criminal organisations. Either way, there's a lot of guilt associated with this milk."/>
+	</item>
+
+<item name="Hurricane" iconFile="items/drink_hurricane.png" level="13">
+	<price amount="375"/>
+	<food mp="60" effect="Woozy" />
+	<description text="A tempest in a bottle."/>
+	</item>
+
+<item name="Amazing Miracle Drink" iconFile="items/drink_s_miracledrink.png" special="1" level="10">
+	<price amount="750"/>
+	<food mp="64" effect="Miracle Drink Effect"/>
+	<description text="You imagine drinking the amazing miracle drink. !!!!!! Never before has a heavenly, super-special, incredible, miracle-combination flavour like this been experienced! Right now, right here, you are dreaming of enjoying a flavour that is out of this world! Obscene stat boosts sold separately."/>
+	</item>
+
+<item name="Fresh Water" iconFile="items/drink_fresh_water.png" level="4">
+	<price amount="50"/>
+	<food mp="20" effect="Liquid Refreshment" />
+	<description text="A bottle of water with high mineral content, blown in by the North Wind. Refreshment guaranteed."/>
+	</item>
+
+
+
+<!-- Potions. -->
+
+<item name="Protein" iconFile="items/potion_protein.png" level="7" >
+	<description text="Boosts your Attack. Since you're not a pokemon, the effect is only temporary." />
+	<potion spell="Protein Boost" />
+	<price amount="600" />
+	</item>
+
+<item name="Iron" iconFile="items/potion_iron.png" level="7" >
+	<description text="Boosts your Defense; usually made by boiling up an anchor and straining off the residue. Since you're not a pokemon, the effect is only temporary." />
+	<potion spell="Iron Boost" />
+	<price amount="600" />
+	</item>
+
+<item name="Carbos" iconFile="items/potion_carbos.png" level="7" >
+	<description text="Boosts your Speed; the most commonly abused substance at the pokeathlon and the reason for mandatory vitamin tests. Since you're not a pokemon, the effect is only temporary." />
+	<potion spell="Carbos Boost" />
+	<price amount="600" />
+	</item>
+
+<item name="Calcium" iconFile="items/potion_calcium.png" level="7" >
+	<description text="Boosts your Special Attack. Since you're not a pokemon, the effect is only temporary." />
+	<potion spell="Calcium Boost" />
+	<price amount="600" />
+	</item>
+
+<item name="Zinc" iconFile="items/potion_zinc.png" level="7" >
+	<description text="Boosts your Special Defense. Since you're not a pokemon, the effect is only temporary." />
+	<potion spell="Zinc Boost" />
+	<price amount="600" />
+	</item>
+
+<item name="Ginseng" iconFile="items/potion_ginseng.png" level="7" >
+	<description text="Normally, this would boost the power of a pokemon's move, but you're not one. It's still a powerful tonic, best taken when reduced to a syrup after boiling 40 times." />
+	<potion spell="Ginseng Boost" />
+	<price amount="600" />
+	</item>
+
+<item name="Pills" iconFile="items/potion_pills.png" level="6" >
+	<description text="They're here. Does anything and everything." />
+	<potion spell="Pills Here" />
+	<price amount="600" />
+	</item>
+
+
+<item name="R.O.I.D.S" iconFile="items/potion_roids.png" level="6" >
+	<description text="Short for Rancid Orcish Imitation Dietary Supplements, these nasty and addictive pills are handed out to Dredmor's assembly-line workers to make them work harder, faster, and on less sleep. Overdosing will mess up your body, so watch it." />
+	<potion spell="Roid Rage" />
+	<price amount="600" />
+	</item>
+
+
+<item name="Dream Dust" iconFile="items/potion_powder.png" level="6" >
+	<description text="When you bought this game, you were promised the chance to stuff aluminum powder up your nostrils. Now you can do that - and more. This is an addictive substance - overdosing will NOT help you." />
+	<potion spell="Expanded Mind" />
+	<price amount="600" />
+	</item>
+
+
+
+<!-- Wondermails and other notes -->
+
+<item name="Reminder From The Guildmaster" iconFile="items/note.png" alchemical="0" special="1" overrideClassName="Note">
+	<price amount="0"/>
+	<description text="'Hello, friendly friends! It's great that you're out exploring and all, but don't forget the three top rules for exploration teams! One! Don't shirk work! Two! Run away and pay! Three! Smiles go for miles! Yoom-tah!'"/>
+	</item>
+
+<item name="Note From The Shopkeeper" iconFile="items/note.png" alchemical="0" special="1" overrideClassName="Note">
+	<price amount="0"/>
+	<description text="'Dear Horrible Thief: Please stop selling me all your gold ribbons, picking them up, and using a pure seed to warp to the stairs before I can beat you to a pulp. We all hate you so much. Yours Faithfully, the Kecleon Brothers.'"/>
+	</item>
+
+<item name="Note From Your Partner" iconFile="items/note.png" alchemical="0" special="1" overrideClassName="Note">
+	<price amount="0"/>
+	<description text="'You know, you don't have to be so hopelessly shy. I still remember when we were first starting out; you actually had to look at a notice board to figure out how to talk to me when I was standing right next to you! I thought you'd gotten over it, but just yesterday you had a Sky Gift delivered to me at the Shaymin Village. When I was standing next to you. I think we have a few issues we need to sort out...'"/>
+	</item>
+
+<item name="Mysterious Message" iconFile="items/note.png" alchemical="0" special="1" overrideClassName="Note">
+	<price amount="0"/>
+	<description text="Oh, look; it's a map to a new exploration area that only you know about! Too bad you've left your Wonder Map behind, and even if you didn't, you're still stuck in this dungeon without an Escape Orb."/>
+	</item>
+
+<item name="Golden Chamber Wondermail" iconFile="items/note.png" alchemical="0" special="1" overrideClassName="Note">
+	<price amount="0"/>
+	<description text="'Looking for someone to lug my sorry behind through a restricted dungeon and waste all their time for a couple of golden gummis and apples at the end of it all. Golden seeds? Nah, no such luck.'"/>
+	</item>
+
+<item name="Escort Mission Wondermail" iconFile="items/note.png" alchemical="0" special="1" overrideClassName="Note">
+	<price amount="0"/>
+	<description text="'Gee, I don't know why my boyfriend ended up twenty-two levels deep in the middle of goodness knows where, but I desperately need to see him anyways. You know, I'll just hang around, be completely useless, and waste all your reviver seeds as I get myself wrecked over and over again by room-effect moves. Oh, and then I'll faint, somehow making YOU lose your loot, not to mention your mobile scarf, golden mask and goggle specs. Well, will you take me along?'"/>
+	</item>
+
+<item name="Outlaw Apprehension Wondermail" iconFile="items/note.png" alchemical="0" special="1" overrideClassName="Note">
+	<price amount="0"/>
+	<description text="'ZZZT! I am Officer Magnezone, the local arm of the law. ZZZT! I have a thoroughly annoying way of speaking. ZZZT! My underlings and I are hopelessly incompetent, primarily because we are pathetically underlevelled. ZZZT! No wonder we can't do much and instead need exploration teams to do our work for us. ZZZT!'"/>
+	</item>
+
+<item name="Sightseeing Wondermail" iconFile="items/note.png" alchemical="0" special="1" overrideClassName="Note">
+	<price amount="0"/>
+	<description text="'Golly, I've just had a hankering to take in the sights of somewhere really wild and dangerous, and would like an exploration team to take me on a holiday in a place where serious bodily harm might easily come to my person! I don't even know what I want to see or where I want to stop, so I'll leave the destination floor blank and you'll have to trek through the whole dungeon!'"/>
+	</item>
+
+<item name="Treasure Hunting Wondermail" iconFile="items/note.png" alchemical="0" special="1" overrideClassName="Note">
+	<price amount="0"/>
+	<description text="'Let's go treasure hunting together! Oddly enough, I won't demand any of the often rare spoils, and will actually reward you for taking me out anyway! I guess the life experience really is the best reward, not the loot!'"/>
+	</item>
+
+<item name="SOS Wondermail" iconFile="items/note.png" alchemical="0" special="1" overrideClassName="Note">
+	<price amount="0"/>
+	<description text="'Help! I appear to have done something stupid and gotten myself knocked out! Problem is, I want to keep all the loot in MY treasure bag, which means some poor sap like you is going to have to trek out and save me!'"/>
+	</item>
+
+
+
+<!-- Grab Bags -->
+
+<item name="Sealed Box" iconFile="items/item_smallchest.png" level="1" special="1" craftoutput="1" >
+	<price amount="2000"/>
+	<wand spell="Grab Bag 1" mincharge="1" maxcharge="1" />
+	<description text="A tightly-sealed box; something inside rattles when you shake it. Will you open it up by using it on yourself, or sell it as it is?"/>
+</item>
+
+<item name="Deluxe Box" iconFile="items/item_chest.png" level="5" special="1" craftoutput="1" >
+	<price amount="4000"/>
+	<wand spell="Grab Bag 2" mincharge="1" maxcharge="1" />
+	<description text="A tightly-sealed box; something inside thunks about when you shake it. Will you open it up by using it on yourself, or sell it as it is?"/>
+</item>
+
+<item name="Lost Loot" iconFile="items/item_lost_loot.png" level="13" special="1" craftoutput="1" >
+	<price amount="10000"/>
+	<wand spell="Grab Bag 3" mincharge="1" maxcharge="1" />
+	<description text="What appears to be a treasure chest full of loot. Open it up, or not risk it and sell it to Brax?"/>
+</item>
+
+<item name="Small Item Capsule" iconFile="items/item_capsule.png" level="1" special="1" craftoutput="1" >
+	<price amount="500"/>
+	<wand spell="Item Grab Bag 1" mincharge="1" maxcharge="1" />
+	<description text="A tightly-sealed capsule, used to secure loot. Will you open it up by using it on yourself, or sell it as it is?"/>
+</item>
+
+<item name="Bolt Council Gift Hamper" iconFile="items/item_bolthamper.png" level="1" >
+	<price amount="500"/>
+	<wand spell="Bolt Grab Bag" mincharge="1" maxcharge="1" />
+	<description text="This lovely take-away hamper is often given away at Bolt Council community-liasion fairs. Open it up to find what's inside!"/>
+</item>
+
+
+
+<!-- Special Reagents -->
+
+<item name="Dragon Skull" iconFile="items/item_dbone.png" special="1" craftoutput="1">
+	<price amount="7500"/>
+	<description text="An old dragon skull, perhaps part of a long-rotted trophy. Whatever will you make with this?"/>
+	</item>
+
+<item name="Perfect Obsidian" iconFile="items/item_pobsidian.png" alchemical="0" special="1">
+	<price amount="15000"/>
+	<gem />
+	<description text="This enormous, flat obsidian crystal gleams with an inner fire. You can't be sure if it really is a fallen scale from the draconic mother goddess, but it's definitely special in some way."/>
+</item>
+
+<item name="Sword Blank" iconFile="items/item_swordblank.png" level="15" type="0" special="1" >
+	<price amount="1"/>
+	<weapon crushing="1" />
+	<description text="A sword blank made from a strange substance. It feels cold to the touch."/>
+	</item> 
+
+<!-- Weapons -->
+
+<!-- Swords -->
+
+<item name="Needlestrike" iconFile="items/weapon_starsaber.png" level="10" type="0" artifact="1" special="1" craftoutput="1" > <!-- Bone Obsidia Item. -->
+	<price amount="15000" />
+	<weapon slashing="20" piercing="12" />
+	<secondarybuff id="6" amount="4" /> <!-- dodge -->
+	<secondarybuff id="9" amount="5" /> <!-- EDR -->
+	<artifact quality="8" />
+	<triggerondodge percentage="20" name="Adventurer Aikido" />
+	<description text="This slender and elegant bone rapier gives you a small chance turn your dodges into counterattacks." />
+	</item>
+
+<item name="Z Saber" iconFile="items/weapon_zsaber.png" level="15" type="0" artifact="1" >
+	<price amount="375000"/>
+	<weapon slashing="20" aethereal="10" voltaic="7" />
+	<secondarybuff id="9" amount="5" />
+	<artifact quality="10"/>
+	<criticalBuff percentage="100" name="Combo Breaker" />
+	<description text="'I never cared about justice, and I don't ever recall calling myself a hero...I have always only fought for the people that I believe in. I won't hesitate...if an enemy appears before me, I will destroy it!'"/>
+	</item>
+
+<item name="Hydra Edge" iconFile="items/weapon_hydraedge.png" level="6" type="0" artifact="1" >
+	<price amount="4000"/>
+	<weapon slashing="4" conflagratory="2" acidic="2" necromantic="2" />
+	<artifact quality="2"/>
+	<targetHitEffectBuff percentage="30" name="Hydra Edge Effect" />
+	<description text="Each blade of this three-bladed sword has a different edge. The blades look like they're arguing. "/>
+	</item>
+
+<item name="Sacred Sword" iconFile="items/weapon_sacred_sword.png" level="15" type="0" artifact="1" special="1" >
+	<price amount="35000"/>
+	<weapon slashing="25" righteous="10" />
+	<secondarybuff id="9" amount="5" />
+	<artifact quality="10"/>
+	<targetHitEffectBuff percentage="33" name="Sacred Strike" />
+	<description text="This gleaming sword embodies the Musketeer Quartet's signature move of the same name. It not just slices through your primary target's defensive stats, but also cuts a swathe through adjacent foes in a triple battle."/>
+	</item> 
+
+<item name="Omni-Elemental" iconFile="items/weapon_omnielement.png" level="15" type="0" artifact="1" >
+	<price amount="37500"/>
+	<weapon crushing="10" hyperborean="10" voltaic="10" conflagratory="10" />
+	<secondarybuff id="10" amount="1" />
+	<resistbuff hyperborean="1" voltaic="1" conflagratory="1" />
+	<artifact quality="6"/>
+	<description text="Earth! Wind! Water! Fire! No, you can't join in - what kind of lame power is Heart, anyway?"/>
+	</item> 
+
+<item name="The Black Sword" iconFile="items/weapon_blacksword.png" level="15" type="0" artifact="1" special="1" >
+	<price amount="37500"/>
+	<weapon slashing="25" necromantic="15" existential="15" />
+	<secondarybuff id="0" amount="-20" />
+	<secondarybuff id="4" amount="7" />
+	<secondarybuff id="9" amount="5" />
+	<secondarybuff id="13" amount="-2" />
+	<resistbuff righteous="-5" necromantic="3" />
+	<artifact quality="10"/>
+	<targetHitEffectBuff percentage="50" name="Black Sword Effect" />
+	<description text="'The name's Arcadion,' the demon trapped within the blade growls. 'NOT Alastor. Remember that, and don't you dare say 'round trip' in my presence. So, what'll you be having tonight, fire or magic? I don't do death any more.'"/>
+	</item> 
+
+<item name="Razor Fang" iconFile="items/weapon_razor_fang.png" level="2" type="0" >
+	<price amount="200"/>
+	<weapon piercing="2" slashing="1" />
+	<targetHitEffectBuff percentage="30" name="Flinching" />
+	<description text="This sharp little fang has a small chance of causing an opponent to flinch (or in Japanese, cringe) when you strike with it, making them lose their turn."/>
+	</item>
+
+<item name="Invisible Blade" iconFile="items/weapon_invisisword.png" level="2" type="0" >
+	<price amount="350"/>
+	<weapon slashing="2" existential="2" />
+	<description text="If you stab someone and there is no one around to see it, did it really happen?"/>
+	</item>
+
+<item name="Wind Sword" iconFile="items/weapon_windsword.png" level="4" type="0">
+  <price amount="1800"/>
+	<weapon slashing="1" voltaic="3" asphyxiative="3" />
+	<secondarybuff id="8" amount="2"/> <!-- counter -->
+	<secondarybuff id="9" amount="1"/> <!-- EDR -->
+	<description text="Sliced with the wind."/>
+	</item>
+
+<item name="Defender" iconFile="items/weapon_defender.png" level="8" type="0" artifact="1" >
+  <price amount="16000"/>
+	<weapon slashing="15" />
+	<secondarybuff id="7" amount="4"/>
+	<secondarybuff id="10" amount="1"/>
+	<artifact quality="5"/>
+	<blockBuff percentage="15" name="Adventurer Aikido"/>
+	<description text="This small, flat sword helps you block incoming blows and has a small chance of allowing you to counterattack after a successful block."/>
+	</item>
+
+<!-- Staves -->
+
+<item name="Charcoal" iconFile="items/weapon_charcoal.png" level="6" type="3">
+	<price amount="5000"/>
+	<weapon crushing="3" conflagratory="2" asphyxiative="2" />
+	<targetHitEffectBuff percentage="66" name="Fire 1" />
+	<description text="A stick of charcoal that serves well enough for clobbering monsters. Also handy for starting a fire."/>
+	</item>
+
+<item name="Fishing Rod" iconFile="items/weapon_fishingrod.png"  level="6" type="3" special="1" >
+	<price amount="4000"/>
+	<weapon crushing="2" piercing="9"/>
+	<secondarybuff id="9" amount="3"/> <!-- EDR -->
+	<description text="You didn't know there were any good fishing spots in the dungeon, or you'd have brought your cooler and tackle box."/>
+	</item>
+
+<item name="Spear of Rot" iconFile="items/weapon_spearofrot.png"  level="8" type="3" artifact="1" >
+	<price amount="6000"/>
+	<weapon crushing="1" asphyxiative="7" putrefying="7" />
+	<artifact quality="5"/>
+	<targetHitEffectBuff percentage="20" name="Diggle Plague" />
+	<description text="A thick green slime covers the shaft of this spear, and an equally foul stench rises from the edge. Are you REALLY sure you want to be using this thing?"/>
+	</item>
+
+<item name="Dragon Fang" iconFile="items/weapon_dragonfang.png"  level="10" type="3"> <!-- Rogues can use more than just swords. -->
+	<price amount="14170"/>
+	<weapon slashing="2" piercing="12" conflagratory="12"/>
+	<resistbuff conflagratory="3" />
+	<secondarybuff id="8" amount="3"/> <!-- Counter -->
+	<primarybuff id="2" amount="5" /> <!-- Nim -->
+	<description text="First conceived of by a dragon's personal dentist (who subsequently became very rich), the point of this spear is shaped from a dragon's tooth."/>
+	</item> 
+
+<item name="Rainbow Lance" iconFile="items/weapon_rainbowlance.png"  level="13" type="3" artifact="1" >
+	<price amount="30000"/>
+	<weapon crushing="10" piercing="10" />
+	<artifact quality="5"/>
+	<secondarybuff id="3" amount="10"/> <!-- magic power -->
+	<secondarybuff id="11" amount="5"/> <!-- resist -->
+	<secondarybuff id="14" amount="2"/> <!-- mana regen -->
+	<description text="A magical lance of the sort knights throw at ghouls and ghosts, only considerably souped up."/>
+	</item>
+
+<item name="Death Scythe(s)" iconFile="items/weapon_obsscythe.png"  level="15" type="3" artifact="1" special="1" craftoutput="1" > <!-- castbuff later, plx -->
+	<price amount="30000"/>
+	<weapon slashing="20" necromantic="10" />
+	<artifact quality="10"/>
+	<secondarybuff id="3" amount="15"/> <!-- magic power -->
+	<secondarybuff id="11" amount="10"/> <!-- resist -->
+	<resistbuff necromantic="10" />
+	<description text="With all the work in recent years, what with the elves and dwarves and so many young people taking degrees in dungeoneering, Death's had to step up his game to deal with the increased workload. He's still got enough pride in his work not to turn to outsourcing, but has come up with a number of work-saving innovations, and this obsidian-bladed scythe is based on one of those."/>
+	</item>
+
+<!-- Maces -->
+
+<item name="Floppy Fish" iconFile="items/weapon_rfish.png" level="2" type="2" >
+	<price amount="100"/>
+	<weapon crushing="2" toxic="2"/>
+	<targetHitEffectBuff percentage="10" name="Floppy Fish Effect" />
+	<description text="An old, floppy fish. Parts of it are starting to peel and come off when you hit enemies with it."/>
+	</item>
+
+<item name="Kissy Fish" iconFile="items/weapon_lfish.png" level="7" type="2" >
+	<price amount="3500"/>
+	<weapon crushing="7" toxic="7"/>
+	<description text="A reasonably fresh fish, reputed for leaping out of the water and clamping down on unlucky anglers' mouths. After rings fell out of popularity following the Mount Damn Incident, this lovely pink fish was used in marriage proposals for a while."/>
+	</item>
+
+<item name="Blingy Fish" iconFile="items/weapon_gfish.png" level="10" artifact="1" type="2" >
+	<price amount="100"/>
+	<weapon crushing="15" righteous="10" />
+	<targetHitEffectBuff percentage="20" name="Floppy Fish Effect" />
+	<playerHitEffectBuff percentage="33" name="Blinding Flash" />
+	<artifact quality="6"/>
+	<description text="This species of fish has been blessed by the Lutefisk God, blinging it out immensely, and is revered by its worshippers as having some small part of the god's divinity."/>
+	</item>
+
+<item name="Never-Melt Ice" iconFile="items/weapon_nevermeltice.png" artifact="1" level="3" type="2" >
+	<price amount="2200"/>
+	<weapon crushing="1" piercing="2" hyperborean="3"/>
+	<artifact quality="2"/>
+	<targetHitEffectBuff percentage="66" name="Small Weak Snowstorm" />
+	<description text="A hunk of never-melting ice. Since you don't really know any ice-type moves, all you need now is a cooler to put it in..."/>
+	</item>
+
+<item name="Black Sludge" iconFile="items/weapon_blacksludge.png" level="10" type="2" >
+	<price amount="6500"/>
+	<weapon crushing="9" acidic="9"/>
+	<description text="A pile of vile and sticky black goo. Ick. Thank goodness it doesn't drain your health over time."/>
+	</item>
+
+<item name="Skullcrusher" iconFile="items/weapon_skullcrusher.png" level="10" type="2" artifact="1" special="1" craftoutput="1" > <!-- Bone Obsidia Item. -->
+	<price amount="15000" />
+	<weapon crushing="18" righteous="8" necromantic="6" />
+	<secondarybuff id="7" amount="7" /> <!-- AA -->
+	<secondarybuff id="10" amount="2" /> <!-- AA -->
+	<artifact quality="8" />
+	<targetHitEffectBuff percentage="100" name="Lance Effect" />
+	<description text="Made with the dead to fight the dead, this bony mace deals additional damage to evil creatures." />
+	</item>
+
+<item name="Fury of the Earth" iconFile="items/weapon_obshammer.png" level="15" type="2" artifact="1" special="1" craftoutput="1" > <!-- Obsidia item. Give this a blockbuff when it comes out. -->
+	<price amount="25000" />
+	<weapon crushing="30" conflagratory="20" />
+	<secondarybuff id="4" amount="5" /> <!-- Crit -->
+	<resistbuff conflagratory="5" />
+	<artifact quality="10" />
+	<targetHitEffectBuff percentage="20" name="Earth Fury Effect" />
+	<description text="'Now you vermin will feel the full force of my birthright - the fury of the earth itself!'" />
+	</item>
+
+<!-- Axes -->
+
+<item name="Reaper" iconFile="items/weapon_reaper.png" level="9" type="1" >
+	<price amount="8000"/>
+	<weapon slashing="13"/>
+	<criticalBuff percentage="100" name="Reaped Healing" />
+	<description text="The edge of this axe drips with blood. It has the ability to heal you with an enemy's life-force when you land a critical hit."/>
+	</item>
+
+<item name="Spinebreaker" iconFile="items/weapon_spinebreaker.png" level="10" type="1" artifact="1" special="1" craftoutput="1" > <!-- Bone Obsidia Item. -->
+	<price amount="15000" />
+	<weapon slashing="25" crushing="7" />
+	<secondarybuff id="4" amount="3" /> <!-- crit -->
+	<secondarybuff id="8" amount="3" /> <!-- counter -->
+	<artifact quality="8" />
+	<criticalBuff percentage="100" name="Exposed Armour" />
+	<description text="Forged with dragon bone, this heavy axe allows you to use your critical hits to identify and expose your enemies' weaknesses." />
+	</item>
+
+<item name="Volcannon" iconFile="items/weapon_obsaxe.png" level="15" type="1" artifact="1" special="1" craftoutput="1" > <!-- Obsidia item -->
+	<price amount="25000" />
+	<weapon slashing="30" conflagratory="20" />
+	<secondarybuff id="7" amount="5" /> <!-- Block -->
+	<secondarybuff id="10" amount="1" /> <!-- AA -->
+	<artifact quality="10" />
+	<targetHitEffectBuff percentage="100" name="Ignition Bolt" />
+	<description text="An axe with a dark, sharp obsidian blade that seems to both gleam and draw in all light at the same time, no matter how impossible that may sound." />
+	</item>
+
+<!-- Crossbows or bows -->
+
+<item name="Verdant Bow" iconFile="items/weapon_verdantbow.png" type="4" level="4" >
+	<price amount="1600" />
+	<weapon piercing="3" acidic="2" />
+	<secondarybuff id="9" amount="2"/> <!-- edr -->
+	<description text="Used by Elves against Dwarves to great effect in the war, this bow is skilfully crafted from dead wood. As opposed to living wood, which has a tendency to whimper and moan most unsettlingly when one draws the bow." />
+	<crossbowShotBuff percent="100" name="Small Weak Poison Cloud"/>	
+	</item>
+
+<item name="Silent Grave" iconFile="items/weapon_silentgrave.png" type="4" level="10" artifact="1" special="1" craftoutput="1" > <!-- Bone Obsidia item -->
+	<price amount="15000" />
+	<weapon piercing="10" necromantic="10" />
+	<secondarybuff id="3" amount="3"/> <!-- mpow -->
+	<secondarybuff id="5" amount="5"/> <!-- haywire -->
+	<artifact quality="8" />
+	<description text="The hushed whispers of the dead echo in the bowstring of this grim bone bow, hungry for the breath of others." />
+	<crossbowShotBuff percent="50" name="Antimagic Field"/>	
+	</item>
+
+
+
+<!-- Armour -->
+
+<!-- Body -->
+
+<item name="Mage Armour" iconFile="items/armour_magearmour.png" >
+	<price amount="2000"/>
+	<armour level="5" type="chest" />
+	<secondarybuff id="7" amount="3"/> <!-- Block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<secondarybuff id="11" amount="7" /> <!-- magic resist -->
+	<secondarybuff id="22" amount="10" /> <!-- magic reflect -->
+	<resistbuff aethereal="1" transmutative="1" />
+	<description text="Finally, someone's come up with one of these that DOESN'T involve tattoos."/>
+   </item>
+
+<item name="Crystal Carapace" iconFile="items/armour_damprock.png" special="1" craftoutput="1" artifact="1" > <!-- Bone Obsidia item -->
+	<price amount="15000"/>
+	<armour level="10" type="chest"/>
+	<artifact quality="10" />
+	<primarybuff id="1" amount="4" /> <!-- Sagacity -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="3" amount="12"/> <!-- magic power -->
+	<secondarybuff id="10" amount="3"/> <!-- armour absorption -->
+	<secondarybuff id="11" amount="10" /> <!-- magic resist -->
+	<secondarybuff id="14" amount="1" /> <!-- magic regen -->
+	<description text="This clear, armoured shell is wrought from alchemical processing of fossilized dragon bone to draw out every last iota of latent power."/>
+	<resistbuff aethereal="5" transmutative="3" existential="3" righteous="3" />
+	</item>
+
+<item name="Bone Cuirass" iconFile="items/armour_bonearmour.png" special="1" craftoutput="1" artifact="1" > <!-- Bone Obsidia item -->
+	<price amount="15000"/>
+	<armour level="10" type="chest"/>
+	<artifact quality="10" />
+	<secondarybuff id="6" amount="5"/> <!-- dodge -->
+	<secondarybuff id="4" amount="4" /> <!-- Crit -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="7"/> <!-- block -->
+	<secondarybuff id="8" amount="3"/> <!-- counter -->
+	<secondarybuff id="3" amount="-5"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-1"/> <!-- mana regen -->
+	<primarybuff id="2" amount="5" /> <!-- nim -->
+	<resistbuff piercing="2" necromantic="2" putrefying="2" conflagratory="2" />
+	<description text="This light yet sturdy bone cuirass is a little grim-looking. Sometimes, you hear old, deep voices in your head urging you to do things like not eating your greens or drinking your milk! Oh, the horror!" />
+	</item>
+
+<item name="Bone Plate" iconFile="items/armour_bonearmour2.png" special="1" craftoutput="1" artifact="1" > <!-- Bone Obsidia item -->
+	<price amount="15000"/>
+	<armour level="10" type="chest"/>
+	<artifact quality="10" />
+	<secondarybuff id="10" amount="12"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="15"/> <!-- block -->
+	<secondarybuff id="3" amount="-10"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-3"/> <!-- mana regen -->
+	<secondarybuff id="11" amount="10" /> <!-- magic resist -->
+	<primarybuff id="2" amount="-4" /> <!-- nim -->
+	<secondarybuff id="12" amount="-12"/> <!-- sneak --> 
+	<resistbuff piercing="6" necromantic="3" putrefying="3" conflagratory="3" />
+	<description text="Infused with powdered dragonbone, this suit of armour shields you from forces both phyiscal and magical." />
+	</item>
+
+<item name="Glorious Armour" iconFile="items/armour_glorious.png" >
+ 	<price amount="33000"/>
+	<armour level="13" type="chest" />
+	<secondarybuff id="7" amount="8"/> <!-- Block -->
+	<secondarybuff id="10" amount="7"/> <!-- armour absorption -->
+	<secondarybuff id="11" amount="20" /> <!-- magic resist -->
+	<secondarybuff id="22" amount="49" /> <!-- magic reflect -->
+	<primarybuff id="2" amount="-5" /> <!-- nim -->
+	<secondarybuff id="12" amount="-8"/> <!-- sneak --> 
+	<secondarybuff id="3" amount="-12"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-3"/> <!-- mana regen -->
+	<resistbuff aethereal="6" piercing="6" transmutative="2" />
+	<description text="Doesn't ANYONE know that precious metals are most impractical for making armour?"/>
+   </item>
+
+<item name="Obsidian Breastplate" iconFile="items/armour_obsplate.png" special="1" craftoutput="1" artifact="1" > <!-- Obsidia item -->
+	<price amount="35000"/>
+	<armour level="15" type="chest"/>
+	<artifact quality="13" />
+	<primarybuff id="0" amount="10" /> <!-- burl -->
+	<primarybuff id="2" amount="-6" /> <!-- nim -->
+	<secondarybuff id="10" amount="16"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="20"/> <!-- block -->
+	<secondarybuff id="11" amount="15"/> <!-- resist -->
+	<secondarybuff id="3" amount="-12"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-4"/> <!-- mana regen -->
+	<secondarybuff id="12" amount="-15"/> <!-- sneak --> 
+	<resistbuff piercing="6" righteous="4" conflagratory="6" />
+	<description text="This breastplate is no obsidian scale cloak, being heavy and hefty, but will very definitely keep you cool through the deep breathing with all your extremities intact." />
+	</item>
+
+<!-- Head -->
+
+<item name="Scope Lens" iconFile="items/armour_scope.png" artifact="1" overrideClassName="Lens" >
+	<price amount="18000" />
+	<artifact quality="3" />
+	<armour level="10" type="head" />
+	<secondarybuff id="4" amount="15" /> <!-- Crit -->
+	<secondarybuff id="7" amount="5" /> <!-- Block -->
+	<description text="This nifty little lens  fits over your eye well enough and ups your critical-hit ratio." />
+	</item>
+
+<item name="Wide Lens" iconFile="items/armour_widelens.png" artifact="1" overrideClassName="Lens" >
+	<price amount="7000" />
+	<artifact quality="2" />
+	<resistbuff righteous="2"/>
+	<armour level="6" type="head" />
+	<secondarybuff id="9" amount="15" /> <!-- EDR -->
+	<description text="Not only does this nifty little lens fit over your eye well enough, it also protects you from horrible lens flare and ups your accuracy." />
+	</item>
+
+<item name="Goggle Specs" iconFile="items/armour_goggle_specs.png" special="1" >
+	<price amount="5000"/>
+	<armour level="8" type="head"/>
+	<secondarybuff id="16" amount="2" /> <!-- trap level -->
+	<secondarybuff id="17" amount="2" /> <!-- trap sight -->
+	<secondarybuff id="20" amount="2" /> <!-- tinkering -->
+	<secondarybuff id="18" amount="2" /> <!-- Sight radius -->
+	<secondarybuff id="7" amount="2" /> <!-- Block -->
+	<description text="Enhances vision."/>
+	</item>
+
+<item name="Zoom Lens" iconFile="items/armour_zoom_lens.png" overrideClassName="Lens" >
+	<price amount="8500" />
+	<armour level="7" type="head" />
+	<primarybuff id="2" amount="5"/> <!-- nim -->
+	<targetHitEffectBuff percentage="20" name="Combo Breaker" />
+	<description text="This nifty little lens allows you to sometimes strike more than once in a turn." />
+	</item>
+
+<item name="Dragonbone Helm" iconFile="items/item_dbone.png" special="1" > <!-- Bone Obsidia item. -->
+	<price amount="12000"/>
+	<armour level="10" type="head"/>
+	<primarybuff id="0" amount="5" />
+	<primarybuff id="2" amount="-2" />
+	<secondarybuff id="9" amount="-5"/> <!-- edr -->
+	<secondarybuff id="10" amount="8"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="9"/> <!-- block -->
+	<secondarybuff id="3" amount="-5"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-3"/> <!-- mana regen -->
+	<resistbuff necromantic="6" conflagratory="4" />
+	<targetHitEffectBuff percentage="30" name="Boot to the Head" />
+	<description text="The dull, white gleam in the sockets of this skull-turned-helm makes your enemies pause. Speak the words of power and send them flying!" />
+	</item>
+
+<item name="Feathered Cap" iconFile="items/armour_featheredcap.png" artifact="1" >
+	<price amount="15000" />
+	<artifact quality="3" />
+	<armour level="13" type="head" />
+	<primarybuff id="2" amount="5"/> <!-- Nim -->
+	<primarybuff id="3" amount="5"/> <!-- Cad -->
+	<secondarybuff id="4" amount="5" /> <!-- Crit -->
+	<secondarybuff id="6" amount="7"/> <!-- dodge -->
+	<secondarybuff id="8" amount="5" /> <!-- Counter -->
+	<secondarybuff id="10" amount="3"/> <!-- armour absorption -->
+	<resistbuff piercing="3" />
+	<description text="Now who's looking all fine and dandy today?" />
+	</item>
+
+<item name="Obsidian Helm" iconFile="items/armour_obshelm.png" special="1" craftoutput="1" artifact="1" > <!-- Obdisia item -->
+	<price amount="30000" />
+	<armour level="15" type="head" />
+	<artifact quality="10" />
+	<primarybuff id="0" amount="8" /> <!-- BUR -->
+	<primarybuff id="1" amount="8" /> <!-- SAG -->
+	<secondarybuff id="10" amount="7"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="8"/> <!-- block -->
+	<secondarybuff id="18" amount="-1" /> <!-- sight -->
+	<resistbuff conflagratory="2" piercing="4" righteous="2" />
+	<description text="This obsidian helm is light yet sturdy, gleaming in the dungeon's light. A little hard to see out of, though." />
+	</item>
+
+<item name="Black Shades" iconFile="items/armour_obsglasses.png" special="1" craftoutput="1" artifact="1" > <!-- Obdisia item. Give this a counterbuff when it comes out. -->
+	<price amount="30000" />
+	<armour level="15" type="head" />
+	<artifact quality="10" />
+	<primarybuff id="2" amount="7" /> <!-- Nim -->
+	<primarybuff id="3" amount="10" /> <!-- Cad -->
+	<primarybuff id="4" amount="6" /> <!-- Stub -->
+	<secondarybuff id="8" amount="6" /> <!-- Counter -->
+	<secondarybuff id="17" amount="-1" /> <!-- trap sight -->
+	<secondarybuff id="18" amount="-2" /> <!-- sight -->
+	<resistbuff righteous="2" existential="2" />
+	<description text="Does being cool really mean having to bump into every single thing in the dungeon? Who cares? You're cool. Cool people don't care about bruises. Or pain. Or bleeding. Or death. " />
+	</item>
+
+
+
+<!-- Neck -->
+
+<item name="Silk Scarf" iconFile="items/armour_joy_ribbon.png" overrideClassName="Scarf" > <!-- Analoguous to cybertronic amulet. -->
+	<price amount="3500"/>
+	<armour level="3" type="neck"/>
+	<primarybuff id="0" amount="2" /> <!-- burliness -->
+	<secondarybuff id="2" amount="3" /> <!-- Melee power -->
+	<secondarybuff id="10" amount="1" /> <!-- Armour -->
+	<description text="This lustrous silk scarf powers up your normal-type moves, or the closest analogue thereof."/>
+	</item>
+
+<item name="Star Amulet" iconFile="items/armour_starpendant.png">
+	<price amount="3600"/>
+	<armour type="neck" level="6" randoms="0" />
+	<primarybuff id="2" amount="3"/> <!-- Nim -->
+	<primarybuff id="5" amount="3"/> <!-- Savvy -->
+	<damagebuff aethereal="4" />
+	<resistbuff righteous="2" />
+	<description text="No star can glow with a broken heart."/>
+	</item>
+
+<item name="Silvered Amulet" iconFile="items/armour_shinyamulet.png">
+	<price amount="30000"/>
+	<armour type="neck" level="12" />
+	<secondarybuff id="11" amount="12"/> <!-- Resist -->
+	<secondarybuff id="22" amount="20"/> <!-- magic reflection -->
+	<resistbuff necromantic="3" righteous="3" />
+	<description text="Wisps of light play over the reflective surface of this amulet, the sort of which priestly types hold out against the forces of darkness during the climactic scene of a horror movie."/>
+	</item>
+
+
+
+<!-- Shields -->
+
+<item name="Radiant Orb" iconFile="items/armour_radiantorb.png" overrideClassName="Orb">
+	<price amount="850"/>
+	<armour level="4" type="shield"/>
+	<secondarybuff id="3" amount="4"/> <!-- magic power -->
+	<secondarybuff id="1" amount="4"/> <!-- mana -->
+	<secondarybuff id="14" amount="1"/> <!-- mana regen -->
+	<secondarybuff id="18" amount="1"/> <!-- sight -->
+	<primarybuff id="2" amount="-2"/> <!-- nim -->
+	<resistbuff righteous="2" necromantic="1" />
+	<description text="A brilliant light pulses at the heart of this clear glass orb."/>
+	</item> 
+
+<item name="Metal Coat" iconFile="items/armour_metal_coat.png" overrideClassName="Orb" >
+	<price amount="1500"/>
+	<armour level="4" type="shield"/>
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<secondarybuff id="8" amount="4"/> <!-- counter -->
+	<secondarybuff id="10" amount="1"/> <!-- armor absorption -->
+	<secondarybuff id="11" amount="2"/> <!-- armor absorption -->
+	<secondarybuff id="22" amount="2"/> <!-- magic reflect -->
+	<secondarybuff id="3" amount="-3"/> <!-- mpow -->
+	<secondarybuff id="14" amount="-1"/> <!-- mana regen -->
+	<description text="This roll of gleaming metallic film looks thin enough to bake food in, but is sturdy enough to take a few blows."/>    
+	</item>
+
+<item name="Griseous Orb" iconFile="items/armour_griseous_orb.png" overrideClassName="Orb" >
+	<price amount="12000"/>
+	<armour level="10" type="shield"/>
+	<primarybuff id="2" amount="5"/> <!-- nim -->
+	<secondarybuff id="4" amount="5"/> <!-- crit -->
+	<secondarybuff id="8" amount="5"/> <!-- counter -->
+	<resistbuff necromantic="2"/>
+	<targetHitEffectBuff percentage="10" name="Distortion" />
+	<description text="A glowing orb once held by a ghostly dragon, even though it isn't very orb-shaped. Although you don't know any dragon or ghost-type moves, you can still feel its power."/>    
+	</item>
+
+<!-- Give these guys on playerhit and triggeroncast effects when they become available for equipment. -->
+
+<item name="Adamant Orb" iconFile="items/armour_adamant_orb.png" overrideClassName="Orb" >
+	<price amount="12000"/>
+	<armour level="10" type="shield"/>
+	<primarybuff id="0" amount="5"/> <!-- burl -->
+	<secondarybuff id="7" amount="5"/> <!-- block -->
+	<secondarybuff id="11" amount="5"/> <!-- resist -->
+	<secondarybuff id="10" amount="2"/> <!-- armour -->
+	<description text="A glowing orb once held by a temporal dragon, even though it isn't very orb-shaped. Although you don't know any dragon or steel-type moves, you can still feel its power."/>    
+	</item>
+
+<item name="Lustrous Orb" iconFile="items/armour_lustrous_orb.png" overrideClassName="Orb" >
+	<price amount="12000"/>
+	<armour level="10" type="shield"/>
+	<primarybuff id="1" amount="5"/> <!-- Sagacity -->
+	<secondarybuff id="3" amount="5"/> <!-- mpow -->
+	<secondarybuff id="5" amount="5"/> <!-- haywire -->
+	<secondarybuff id="14" amount="2"/> <!-- mana regen -->
+	<description text="A glowing orb once held by a spatial dragon. Although you don't know any dragon or water-type moves, you can still feel its power."/>    
+	</item>
+
+<item name="Breath of Selzauide" iconFile="items/armour_orbselzauide.png" overrideClassName="Orb" artifact="1" >
+	<price amount="16000"/>
+	<armour level="13" type="shield"/>
+	<artifact quality="3" />
+	<secondarybuff id="3" amount="12"/> <!-- magic power -->
+	<secondarybuff id="1" amount="30"/> <!-- mana -->
+	<secondarybuff id="11" amount="7"/> <!-- mana -->
+	<secondarybuff id="14" amount="1"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<resistbuff aethereal="4" voltaic="3" />
+	<description text="1. Fall from an airship and onto a goddess' head. 2. Get made royalty. 3. Go farming. 4. ????? 5. Profit!"/>    
+	</item>
+
+<item name="Soulcraft" iconFile="items/armour_soulcraft.png" overrideClassName="Tome" special="1" >
+	<price amount="2000"/>
+	<armour level="5" type="shield"/>
+	<primarybuff id="0" amount="2"/> <!-- Burl -->
+	<secondarybuff id="2" amount="1"/> <!-- melee pow -->
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<secondarybuff id="19" amount="1" /> <!-- smith -->
+	<description text="At a first glance, you think it's a strategy guide to the newest board game from Inferno Diversions, but upon closer examination it's just a gem-studded tome on smithing. Boo."/>    
+	</item>
+
+<item name="Soulcraft, Advanced" iconFile="items/armour_soulcraftadv.png" overrideClassName="Tome" special="1" >
+	<price amount="7000"/>
+	<armour level="10" type="shield"/>
+	<primarybuff id="0" amount="5"/> <!-- Burl -->
+	<secondarybuff id="2" amount="6"/> <!-- melee pow -->
+	<secondarybuff id="10" amount="4"/> <!-- armour -->
+	<secondarybuff id="19" amount="2" /> <!-- smith -->
+	<description text="Years in the making, this guide is the sequel to the best-selling Soulcraft."/>    
+	</item>
+
+<item name="Eye of the Storm" iconFile="items/armour_eyeofthestorm.png" overrideClassName="Tome" >
+	<price amount="6000"/>
+	<armour level="6" type="shield"/>
+	<damagebuff asphyxiative="6" />
+	<resistbuff asphyxiative="6" />
+	<targetHitEffectBuff percentage="50" name="Boot to the Head" />
+	<description text="Another book by the code-wizard Null, this book promises to make you the master of winds in a sealed-off dungeon with no access to the sky."/>    
+	</item>
+
+<item name="Null's Guide to Practical Geology" iconFile="items/armour_tomegeology.png" overrideClassName="Tome" >
+	<price amount="9000"/>
+	<armour level="10" type="shield"/>
+	<secondarybuff id="10" amount="4"/> <!-- armour -->
+	<damagebuff crushing="12" />
+	<targetHitEffectBuff percentage="50" name="Practical Geology Effect" />
+	<description text="Authored by the great code-wizard Null, this popular book is a must-have for diggers, delvers, and all other spleunky-types."/>    
+	</item>
+
+<item name="Shocking Revelations of a Charged Mind" iconFile="items/armour_voltaicbook.png" overrideClassName="Tome" artifact="1" >
+	<price amount="20000"/>
+	<armour level="13" type="shield"/>
+	<artifact quality="5"/>
+	<damagebuff voltaic="8" />
+	<resistbuff voltaic="8"/>
+	<targetHitEffectBuff percentage="33" name="Thunder Stone Blast" />
+	<description text="This biography of the wizard Tesla focuses on his little-known youth, the young wizard's exploits as an apprentice and the beginnings of his love with all things electric."/>    
+	</item>
+
+<item name="Dredmorpedia" iconFile="items/armour_dredmorpedia.png" special="1" artifact="1" overrideClassName="Tome" >
+	<price amount="20000"/>
+	<armour level="15" type="shield"/>
+	<artifact quality="10" />
+	<primarybuff id="0" amount="1"/>
+	<primarybuff id="1" amount="1"/>
+	<primarybuff id="2" amount="1"/>
+	<primarybuff id="3" amount="1"/>
+	<primarybuff id="4" amount="1"/>
+	<primarybuff id="5" amount="1"/>
+	<secondarybuff id="0" amount="1"/>
+	<secondarybuff id="1" amount="1"/>
+	<secondarybuff id="2" amount="1"/>
+	<secondarybuff id="3" amount="1"/>
+	<secondarybuff id="4" amount="1"/>
+	<secondarybuff id="5" amount="1"/>
+	<secondarybuff id="6" amount="1"/>
+	<secondarybuff id="7" amount="1"/>
+	<secondarybuff id="8" amount="1"/>
+	<secondarybuff id="9" amount="1"/>
+	<secondarybuff id="10" amount="1"/>
+	<secondarybuff id="11" amount="1"/>
+	<secondarybuff id="12" amount="1"/>
+	<secondarybuff id="13" amount="1"/>
+	<secondarybuff id="14" amount="1"/>
+	<secondarybuff id="16" amount="1"/>
+	<secondarybuff id="17" amount="1"/>
+	<secondarybuff id="18" amount="1"/>
+	<secondarybuff id="19" amount="1"/>
+	<secondarybuff id="20" amount="1"/>
+	<secondarybuff id="21" amount="1"/>
+	<secondarybuff id="23" amount="1"/>
+	<damagebuff crushing="1" slashing="1" blasting="1" piercing="1" conflagratory="1" hyperborean="1" voltaic="1" toxic="1" righteous="1" necromantic="1" acidic="1" putrefying="1" transmutative="1" aethereal="1" asphyxiative="1" existential="1" />
+	<description text="This series of thick, scholary tomes is covered in crabbed handwriting by the archivist J-Factor, and holds everything you'll ever want to know about Dredmor and his minions. Unfortunately, there's simply so much that it'd take you more than your lifetime to read it all; this thick volume you hold proclaims itself as 'The guide to dangerous mammals, birds, reptiles, amphibians, fish, jellyfish, insects, spiders, crustaceans, grasses, trees, mosses and lichens of the Dungeons of Dredmor, volume 29C, part three'."/>    
+	</item>
+
+<item name="Earthwarder" iconFile="items/armour_obsshield.png" special="1" craftoutput="1" artifact="1" > <!-- Obsidia item. give this a blockbuff. -->
+	<price amount="30000" />
+	<armour level="15" type="shield" />
+	<secondarybuff id="0" amount="15"/> <!-- hp -->
+	<secondarybuff id="10" amount="7"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="12"/> <!-- block -->
+	<secondarybuff id="3" amount="-5"/> <!-- magic power -->
+	<primarybuff id="2" amount="-7" /> <!-- nim -->
+	<secondarybuff id="12" amount="-5"/> <!-- sneak --> 
+	<secondarybuff id="13" amount="2"/> <!-- life regen -->
+	<resistbuff conflagratory="3" righteous="2" />
+	<artifact quality="13" />
+	<description text="Draconic runes are etched onto the borders of the shield: 'Because the wise amongst us realise that all nations, all peoples, even us, are no more to Her than any other, for everything will be gone in the end and new, different creatures will take their place. But She and the land is, was, and ever will be, until her father awakens, until the end of time.'"/>
+	</item>
+
+
+
+<!-- Belts -->
+
+<item name="Focus Sash" iconFile="items/armour_focussash.png" >
+	<price amount="1250"/>
+	<armour level="5" type="waist"/>
+	<secondarybuff id="13" amount="2"/> <!-- hp regen -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<description text="Contrary to popular belief, this sash won't keep you from fainting. It'll still help, though."/>
+	</item>
+
+<item name="Expert Belt" iconFile="items/armour_expertbelt.png" >
+	<price amount="1250"/>
+	<armour level="4" type="waist"/>
+	<damagebuff crushing="2" />
+	<secondarybuff id="8" amount="5"/> <!-- counter -->
+	<description text="This belt ups the power of your fighting-type moves, whatever those are."/>
+	</item>
+
+<item name="Obsidian Belt" iconFile="items/armour_obsbelt.png" special="1" craftoutput="1" artifact="1" > <!-- Obsidia item -->
+	<price amount="25000"/>
+	<armour level="15" type="waist"/>
+	<primarybuff id="0" amount="5"/> <!-- burl -->
+	<secondarybuff id="7" amount="9"/> <!-- block -->
+	<secondarybuff id="10" amount="5"/> <!-- AA -->
+	<secondarybuff id="3" amount="-5"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-10"/> <!-- sneak -->
+	<damagebuff conflagratory="3" />
+	<resistbuff piercing="2" conflagratory="1" righteous="1" /> 
+	<artifact quality="8" />
+	<description text="Aah, no better material to guard your vulnerables than awfully sharp volcanic glass, is there? You must be a very strong, brave and daring person!"/>
+	</item>
+
+
+
+<!-- Rings -->
+
+<item name="Mudkipz" iconFile="items/armour_mudkipdoll.png" overrideClassName="Trinket" >
+	<price amount="500"/>
+	<armour level="1" type="ring"/>
+	<damagebuff hyperborean="1" />
+	<resistbuff hyperborean="1" /> 
+	<description text="So, I heard you liked these."/>
+	</item>
+
+<item name="Ring of Reflection" iconFile="items/armour_magicring.png" >
+	<price amount="1000"/>
+	<armour level="2" type="ring"/>
+	<secondarybuff id="11" amount="2"/> <!-- Resist -->
+	<secondarybuff id="22" amount="5"/> <!-- magic reflection -->
+	<description text="This small ring has cheap runes of protection etched into it."/>
+	</item>
+
+<item name="Skeletal Ring" iconFile="items/armour_bonering.png" special="1" craftoutput="1" artifact="1"> <!-- Bone Obsidia item. -->
+	<price amount="15000" />
+	<artifact quality="15" />
+	<armour level="10" type="ring" randoms="1" />
+	<resistbuff conflagratory="5" necromantic="5" />
+	<description text="A small hoop of dragonbone, polished to a shine. Somehow, wearing this makes you feel immensely powerful." />
+   </item>
+
+<item name="Essence of Wisdom" iconFile="items/armour_knowledge.png" special="1" craftoutput="1" overrideClassName="Trinket" > <!-- Obsidia item -->
+	<price amount="30000"/>
+	<armour type="ring" level="15" randoms="0" />
+	<description text="This little trinket of gold on obsidian is a fount of wisdom in the palm of your hand."/>
+	<secondarybuff id="1" amount="10"/> <!-- mp -->
+	<secondarybuff id="3" amount="10"/> <!-- mpow -->
+	<secondarybuff id="5" amount="10"/> <!-- haywire -->
+	<secondarybuff id="14" amount="1"/> <!-- mana regen -->
+	</item>
+
+
+
+<!-- Feet -->
+
+<item name="Heavy Boots" iconFile="items/armour_heavyboots.png"> <!-- Revamp damage bonus to only apply to unarmed once devs do the same for stiletto boots -->
+	<price amount="3000"/>
+	<armour level="7" type="feet"/>
+	<damagebuff crushing="7" />
+	<primarybuff id="2" amount="-5"/> <!-- nim -->
+	<secondarybuff id="7" amount="5"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<secondarybuff id="3" amount="-5"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-18"/> <!-- sneak -->
+	<resistbuff piercing="2"/>		
+	<description text="Covered in steel plates and weighted with concrete, these boots will give your feet a solid kick."/>
+	</item>
+
+<item name="Iron Geta" iconFile="items/armour_weightedboots.png"> <!-- Revamp damage bonus to only apply to unarmed once devs do the same for stiletto boots -->
+	<price amount="8500"/>
+	<armour level="10" type="feet"/>
+	<damagebuff crushing="10" />
+	<primarybuff id="2" amount="-9"/> <!-- nim -->
+	<secondarybuff id="7" amount="9"/> <!-- block -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<secondarybuff id="3" amount="-7"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-25"/> <!-- sneak -->
+	<secondarybuff id="14" amount="-1"/> <!-- mp regen -->
+	<resistbuff piercing="3"/>		
+	<description text="Because the Japanese do everything better, even boots to the head."/>
+	</item>
+
+<item name="Bone Boots" iconFile="items/armour_boneboots.png" special="1" craftoutput="1" artifact="1"> <!-- Bone Obsidia item. -->
+	<price amount="10000"/>
+	<armour level="10" type="feet"/>
+	<secondarybuff id="4" amount="3"/> <!-- crit -->
+	<secondarybuff id="6" amount="3"/> <!-- dodge -->
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+	<secondarybuff id="8" amount="3"/> <!-- counter -->
+	<secondarybuff id="10" amount="1"/> <!-- aa -->
+	<secondarybuff id="12" amount="7"/> <!-- sneak -->
+	<artifact quality="5" />
+	<resistbuff piercing="2" necromantic="2"/>		
+	<description text="Walk a mile in someone's shoes, so the saying goes - never said anything about walking a mile in someone's bones."/>
+	</item>
+
+<item name="Mirrored Boots" iconFile="items/armour_mirrorboots.png">
+	<price amount="8700"/>
+	<armour level="11" type="feet"/>
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<secondarybuff id="11" amount="10"/> <!-- Resist -->
+	<secondarybuff id="22" amount="15"/> <!-- magic reflection -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="3" amount="-4"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-10"/> <!-- sneak -->
+	<resistbuff righteous="3"/>		
+	<description text="Seems like a shame to track these all over the dirty dungeon floor."/>
+	</item>
+
+<item name="Obsidian Plated Boots" iconFile="items/armour_obsboots.png" special="1" craftoutput="1" artifact="1"> <!-- Obsidia item. give this a dodgebuff. -->
+	<price amount="30000"/>
+	<armour level="15" type="feet"/>
+	<primarybuff id="2" amount="7"/> <!-- nim -->
+	<secondarybuff id="6" amount="5"/> <!-- dodge -->
+	<secondarybuff id="10" amount="3"/> <!-- armour absorption -->
+	<secondarybuff id="12" amount="5"/> <!-- sneak --> 
+	<resistbuff righteous="2" conflagratory="2"/>
+	<artifact quality="8" />	
+	<description text="Despite being plated in obsidian, these boots are surprisingly light on your feet. You could cross lava on these, if it were hard enough to walk on."/>
+	</item>
+
+
+
+<!-- Gloves -->
+
+<item name="Gardening Gloves" iconFile="items/armour_gardeninggloves.png" >
+	<price amount="150" />
+	<armour level="2" type="hands" />
+	<secondarybuff id="7" amount="1" /> <!-- block -->
+	<resistbuff toxic="1" acidic="1" putrefying="1"/>
+	<description text="These gloves protect your hands while you embrace nature by hacking and digging at it." />
+	</item>
+
+<item name="Grip Gloves" iconFile="items/armour_gripgloves.png" >
+	<price amount="1700" />
+	<armour level="6" type="hands" />
+	<secondarybuff id="4" amount="3" /> <!-- crit -->
+	<secondarybuff id="7" amount="1" /> <!-- block -->
+	<secondarybuff id="9" amount="5" /> <!-- EDR -->
+	<description text="For when you need to get a good grip on your enemies." />
+	</item>
+
+<item name="Obsidian Gauntlets" iconFile="items/armour_obsgauntlet.png" special="1" craftoutput="1" artifact="1"> <!-- Obsidia item -->
+	<price amount="30000"/>
+	<armour level="15" type="hands"/>
+	<secondarybuff id="4" amount="3"/> <!-- block -->
+	<secondarybuff id="7" amount="7"/> <!-- block -->
+	<secondarybuff id="10" amount="3"/> <!-- armour absorption --> 
+	<secondarybuff id="9" amount="-3"/> <!-- minus EDR -->
+	<damagebuff conflagratory="8" />
+	<resistbuff righteous="1" conflagratory="2"/>
+	<artifact quality="5" />
+	<thrownBuff name="Firebolt" percentage="100" />	
+	<description text="The palms of these gauntlets feel extremely warm. No flowers needed - let's get to throwing some fire."/>
+	</item>
+
+<!-- Pants -->
+
+<item name="Studded Roughneck Leggings" iconFile="items/armour_studdedpants.png" > <!-- Rogues need some high-level pants, alas -->
+	<price amount="12500" />
+	<armour level="9" type="legs" />
+	<description text="These pants may proclaim that you are indeed a bad dude (or dudette, for that matter), but are you bad enough to rescue the presiden- I mean, king?" />
+	<primarybuff id="3" amount="4"/> <!-- Cad -->
+	<secondarybuff id="7" amount="5"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<resistbuff piercing="1"/>   
+	</item>
+
+
+
+<!-- Thrown or ranged -->
+
+<!-- Thrown -->
+
+<item name="Blank TM" iconFile="items/thrown_tm.png" level="1" type="5">
+	<price amount="6"/>
+	<weapon slashing="1" thrown="items/thrown_tm.png"/>
+	<description text="A blank Technical Machine. It currently has no move recorded onto it, but still has a reasonably sharp edge."/>
+	</item>
+
+<item name="Knight's Lance" iconFile="items/thrown_lance.png" level="2" type="5" >
+	<price amount="20"/>
+	<weapon crushing="1" piercing="2" thrown="items/thrown_lance.png" hit="Lance Effect" />
+	<description text="A strangely aerodynamic knight's lance. Throw this at ghouls and ghosts for best effect."/>
+	</item>
+
+<item name="Wind Lance" iconFile="items/thrown_windlance.png" level="5" type="5" >
+	<price amount="85"/>
+	<weapon crushing="2" asphyxiative="5" thrown="items/thrown_windlance.png" hit="Boot to the Head" />
+	<description text="A strangely aerodynamic knight's lance. Throw this at enemies to knock them back."/>
+	</item>
+
+<item name="Golden Lance" iconFile="items/thrown_goldlance.png" level="10" type="5" >
+	<price amount="300"/>
+	<weapon crushing="1" piercing="11" thrown="items/thrown_goldlance.png" hit="Gold Lance Effect" />
+	<description text="A strangely aerodynamic knight's lance for gold-armoured knights. Throw this at ghouls and ghosts for best effect."/>
+	</item>
+
+<item name="Molotov Milk" iconFile="items/thrown_molotovmilk.png" level="10" type="5" maxstack="8" >
+	<price amount="625"/>
+	<weapon blasting="2" conflagratory="1" thrown="items/thrown_molotovmilk.png" hit="Molotov Milk Effect" canTargetFloor="1" />
+	<description text="You are the milkman. Your milk is delicious. Special delivery today."/>
+	</item>
+
+<item name="Cooking Oil" iconFile="items/thrown_oil.png" level="5" type="5" maxstack="8" >
+	<price amount="225"/>
+	<weapon blasting="1" thrown="items/thrown_oil.png" hit="Oil Pool" canTargetFloor="1" />
+	<description text="A bottle of cooking oil, perfect for frying things with."/>
+	</item>
+
+<item name="TM of Powder Snow" iconFile="items/thrown_tm.png" level="3" type="5" maxstack="5">
+	<price amount="75"/>
+	<weapon slashing="1" hyperborean="1" thrown="items/thrown_tm.png" hit="Small Snowstorm" canTargetFloor="1" />
+	<description text="A Technical Machine, or TM for short. It currently holds the move Powder Snow, which will create a weak snowfield where the TM hits."/>
+	</item>
+
+<item name="TM of Stealth Rock" iconFile="items/thrown_tm.png" level="6" type="5" maxstack="5">
+	<price amount="200"/>
+	<weapon slashing="1" crushing="1" thrown="items/thrown_tm.png" hit="Stealth Rock" canTargetFloor="1" />
+	<description text="A Technical Machine, or TM for short. It currently holds the move Stealth Rock, which will create trap of pointed stones where the TM hits."/>
+	</item>
+
+<item name="TM of Smog" iconFile="items/thrown_tm.png" level="6" type="5" maxstack="5">
+	<price amount="200"/>
+	<weapon slashing="1" crushing="1" thrown="items/thrown_tm.png" hit="Poison Cloud 1" canTargetFloor="1" />
+	<description text="A Technical Machine, or TM for short. It currently holds the move Smog, which creates a cloud of poison smog where the TM hits."/>
+	</item>
+
+<item name="TM of Poison Jab" iconFile="items/thrown_tm.png" level="10" type="5">
+	<price amount="200"/>
+	<weapon slashing="1" acidic="8" toxic="8" thrown="items/thrown_tm.png" />
+	<description text="A Technical Machine, or TM for short. It currently holds the move Poison Jab, which deals toxic and acidic damage."/>
+	</item>
+
+<!-- Bolts -->
+
+<item name="Ice Bolt" iconFile="items/bolt_icebolt.png" level="8" type="6" maxstack="5" >
+	<price amount="178"/>
+	<weapon piercing="5" hyperborean="5" hit="Stay Frosty" />
+	<description text="A small sliver of ice, perfect for freezing your enemies to the spot."/>
+	</item>
+
+<item name="Aethereal Bolt" iconFile="items/bolt_aetherealbolt.png" level="5" type="6">
+	<price amount="95"/>
+	<weapon piercing="2" aethereal="4"/>
+	<description text="Not a perfect substitute for a magic missile, but you can still cast it into the darkness."/>
+</item>
+
+<item name="Magebane Bolt" iconFile="items/bolt_magebanebolt.png" level="10" type="6" maxstack="7" >
+	<price amount="150"/>
+	<weapon piercing="2" aethereal="10" hit="Antimagic Field" />
+	<description text="These glimmering bolts have the ability to temporarily suppress their target's magics."/>
+</item>
+
+<item name="Burst Bolt" iconFile="items/bolt_burstbolt.png" level="10" type="6" maxstack="2">
+	<price amount="2750"/>
+	<weapon piercing="1" righteous="9" hit="Burst Bolt Effect" canTargetFloor="1"/>
+	<description text="This bolt bursts into a massive blast of divine wrath. Stand well away!"/>
+	</item>
+
+<!-- Wands -->
+
+<item name="Universal Remote" iconFile="items/wand_ejectbutton.png" level="5" >
+	<price amount="2500"/>
+	<wand spell="Universal Remote Effect" mincharge="3" maxcharge="5" />
+	<description text="This little gizmo allows you to temporarily take control of a construct - if the manual override manages to kick in, that is."/>
+</item>
+
+
+
+
+<!-- Traps -->
+
+<item name="Oil Trap" iconFile="dungeon/trap_chainplate.png" >
+	<trap trigger="once" casts="Oil Pool" level="9"/>
+	<description text="When activated, this trap sprays slick, flammable oil all over the place."/>
+	<price amount="1000" />
+	</item>
+
+<item name="Mad Milk Trap" iconFile="dungeon/trap_chainplate.png" >
+	<trap trigger="once" casts="Molotov Milk Effect" level="11"/>
+	<description text="Designed by Boyd Cooper to keep imaginary government agents off his lawn, this trap explodes in a blossom of flammable milk."/>
+	<price amount="1250" />
+	</item>
+
+<!--
+
+<item name="Evil-lutionary Trap" iconFile="dungeon/trap_chainplate.png" >
+	<trap trigger="once" casts="Evil-lutionary Mishap" level="9"/>
+	<description text="This trap harnesses the power of pokemon evolution to turn you into something small, ugly and insignificant."/>
+	<price amount="1000" />
+	</item>
+
+-->
+
+</itemDB>

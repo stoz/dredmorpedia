@@ -1,0 +1,335 @@
+<itemDB>
+
+<!--  secondarys tats
+  
+0: HITPOINTS,
+1:	SPELLPOINTS,
+2:	MELEE_POWER,
+3:	MAGIC_POWER,
+4:	CRITICAL,
+5:	HAYWIRE,
+6:	DODGE,	
+7:	BLOCK,
+8:	COUNTER,
+9:	ENEMY_DODGE_REDUCTION,
+10:	ARMOR_ABSORPTION,
+11: Magic RESIST
+12: SNEAKINESS,
+13:	LIFE_REGEN,
+14: MANA_REGEN,
+15:	WAND_BURNOUT_REDUCTION,
+16:	TRAP_SENSE_LEVEL,
+17:	TRAP_SIGHT_RADIUS,
+18: sight radius
+	
+primary stats
+
+0: STAT_BURLINESS,
+1: STAT_SAGACITY,
+2: STAT_NIMBLENESS,
+3: STAT_CADDISHNESS,
+4: STAT_STUBBORNNESS,
+5: STAT_SAVVY
+
+-->
+  
+<!-- Food -->
+  <item name="Grinch Club Sandwich" iconFile="items/food_grinch.png" level="6">
+		<price amount="120"/>
+    <food hp="60" effect="Unpleasant Poison"/> <!-- say... -->
+    <description text="A triple-decker toadstool sandwich with arsenic sauce. Who would eat such a thing? Yes they would, actually."/>
+  </item>
+  
+  <item name="Frosted Sugar Smiths" iconFile="items/food_cereal.png" level="3">
+    <price amount="260"/>
+    <food hp="7" effect="Toy Surprise"/> <!-- say... -->
+    <description text="Silly Diggle, Sugar Smiths are for Dwarves! Now with more marshmallows and sugar-frosted crunchy bits. Try not to choke on the toy surprise."/>
+  </item>
+
+<!-- Drink and Boozes-->
+
+<item name="Gin" iconFile="items/booze_djinn.png" level="3">
+	<price amount="188"/>
+	<food mp="12" effect="Djinn and Tonic"/> <!-- say... -->
+	<description text="Letting the gin out of the bottle? What's next, cat out of the bag? Friends don't let friends drink and summon. "/>
+	</item>  
+	
+<item name="Trappist Ale" iconFile="items/booze_trappist_ale.png" level="5">
+	<price amount="48"/>
+	<food mp="7" effect="Trappisterism"/> <!-- say... -->
+	<description text="Trappist Monks, eh? Sounds like that ought to be a skill tree."/>
+	</item>  
+
+<item name="Hamm's" iconFile="items/booze_hamms.png" level="1">
+	<price amount="4"/>
+	<food mp="1"/>
+	<description text="From the land of sky blue waters, and about as strong. Hipster approved. Good for washing down the lutefisk."/>
+	</item>
+	
+	
+
+  <!-- SWORD TYPE WEAPONS -->
+<!-- Regular Swords -->
+<item name="Silver Dagger" iconFile="items/sword_silverdag.png" level="1" type="0">
+  <price amount="136"/>
+	<weapon righteous="1" piercing="1"/>
+  <secondarybuff id="3" amount="1"/> <!-- magic power -->
+  <description text="Enchanted against all werewolves, some vampires, and any monster born in Hollywood."/>
+  </item>
+
+<item name="Rainbow Bat'leth" iconFile="items/sword_pridebatleth.png" level="10" type="0" >
+	<price amount="18000"/>
+	<weapon conflagratory="2" righteous="2" acidic="2" slashing="6" hyperborean="2" aethereal="2" necromantic="2" />
+	<description text="As featured in the Klingon Gay Pride Parade."/>
+	</item>
+	
+	
+	
+  <!-- AXE TYPE WEAPONS -->
+<!-- New Axen -->
+<item name="Fireman's Axe" iconFile="items/axe_firemans.png" level="6" type="1" >
+	<price amount="1260"/>
+	<weapon slashing="6" conflagratory="2"/>
+	<secondarybuff id="18" amount="1"/> <!-- sight range to see through smoke-->
+	<resistbuff conflagratory="2" />  <!-- Turns out resistbuffs don't work on weapons. This is worse than intended till they fix that bug. -->
+	<description text="The perfect tool for rescuing kittens from trees."/>
+	</item>
+	
+<item name="Dwarven Urgosh" iconFile="items/axe_urgosh.png" level="8" type="1" >
+	<price amount="4200"/>
+	<weapon slashing="10" piercing="6"/>
+	<resistbuff piercing="-3" /> <!-- Turns out resistbuffs don't work on weapons. This is better than intended till they fix that bug. -->
+	<description text="A weapon only a drunken dwarf could love - an axe with a pointy spike right where you'd like to the handle to be! Take care not to stab yourself in the hand or gut while swinging this thing."/>
+	</item>
+	
+<item name="Halberd" iconFile="items/axe_halberd.png" level="10" type="1" >
+	<price amount="9200"/>
+	<weapon slashing="12" piercing="7"/>
+	<primarybuff id="2" amount="-2"/> <!-- NIM -->
+	<secondarybuff id="9" amount="4"/> <!-- EDR-->
+	<description text="A huge axe-head dangling off the far end of a long spear. It's heavy and hard to wield correctly, but at least they enemy can't easily step beyond your reach."/>
+	</item>
+	
+
+  <!-- MACE TYPE WEAPONS -->
+<!-- New Maces -->
+<item name="Frying Pan" iconFile="items/mace_fryingpan.png" level="1" type="2" >
+	<price amount="125"/>
+	<weapon crushing="2"/>
+	<secondarybuff id="7" amount="3"/> <!-- block-->
+	<description text="The big folk will learn about second breakfast now, Pip."/>
+	</item>
+	
+	
+
+
+  <!-- Artifact Maces -->
+<item name="Pan of Pippin" iconFile="items/mace_pippan.png" level="10" type="2" artifact="1">
+	<price amount="10750"/>
+	<weapon crushing="4" conflagratory="20"/>
+	<secondarybuff id="7" amount="4"/> <!-- block-->
+	<artifact quality="2"/>
+	<description text="This frying pan is shrouded in flame. The handle is engraved 'Property of Pippin The Destroyer.'"/>
+	</item>
+	
+	
+	
+  <!-- STAFF TYPE WEAPONS -->
+<!-- New Staves -->
+	<item name="Sesame Staff" iconFile="items/staff_sesame.png"  level="10" type="3">
+	<price amount="12012"/>
+	<weapon crushing="12" transmutative="12" />
+	<primarybuff id="1" amount="2" /> <!-- Sagacity -->
+	<secondarybuff id="7" amount="2"/> <!-- block-->
+	<description text="For the master of the mighty staff, even a street sign is a deadly weapon. This staff was brought to you today by the letter S, and the numbers 2 and 12."/>
+	</item> 
+	
+
+	
+  <!-- CROSSBOW TYPE WEAPONS -->
+<item name="Lil' Menace Slingshot" iconFile="items/crossbow_slingshot.png" level="2" type="4">
+	<price amount="200"/>
+	<weapon crushing="1" />
+	<primarybuff id="3" amount="1" /> <!-- Caddishness -->
+	<secondarybuff id="12" amount="1"/> <!-- Sneakiness -->
+	<description text="Sure, it'll fling a rock through the neighbor's window, but wouldn't you rather shoot a bolt?"/>
+	</item> 
+	
+  <!-- BOLTS -->
+<!-- Regular Bolts -->
+<item name="Zombie Feather" iconFile="items/bolt_zombie_feather.png" level="1" type="6" maxstack="64" >
+	<price amount="8"/>
+	<weapon necromantic="1" />
+	<description text="Zombies don't have feathers, silly! As strange as it sounds, they actually used to. Then the Bolt Council pressured the Swedish Flesh-Smiths Guild into releasing a patch that made zombies stop dropping feathers."/>
+	</item>  <!-- In Minecraft, Zombies used to drop feathers. -->
+	
+	
+
+	
+	
+  <!-- THROWN TYPE WEAPONS -->
+<!-- Bombs -->
+<item name="Football" iconFile="items/thrown_football.png" level="10" type="5" maxstack="1">
+	<price amount="9000"/>
+	<weapon crushing="1" thrown="items/thrown_football.png" hit="Mass Destruction" cantargetfloor="1" />
+	<description text="'It's pronounced New-Cue-Lur. New-Cue-Lur.'"/>
+	</item> <!-- The US Nuclear Football, as pronounced by Homer Simpson. -->
+	
+
+	
+	
+	
+<!-- Armour -->
+  <!-- AMULETS -->
+ <item name="Feather Boa" iconFile="items/amulet_boa.png" craftoutput="1" special="1" >
+	<price amount="7000" />
+	<armour type="neck" level="9" randoms="0" />
+	<description text="This flamboyant feathery boa makes your nose itch, and it gives you a sort of 'crossdresser mystique'." />
+	<secondarybuff id="6" amount="1"/> <!-- dodge -->
+	<targetHitEffectBuff percentage="30" name="Remember Your Charlemagne" /> 
+	</item>  <!-- It doesn't look like much, but boy is this thing powerful. -->
+	
+	
+	
+  <!-- HELMETS -->
+<!-- normal helms -->
+<item name="Chef's Hat" iconFile="items/helm_chef.png" >
+	<price amount="540"/>
+	<armour level="4" type="head"/>
+	<primarybuff id="1" amount="1" /> <!-- Sagacity -->
+	<primarybuff id="4" amount="3" /> <!-- Stubborness -->
+	<primarybuff id="5" amount="1" /> <!-- Savvy -->
+	<description text="There's a talking rat hidden inside this puffy white chef's hat. You'd be grossed out, if you weren't the sort of person who eats aged steak off a floor of a moldy old dungeon." />
+	</item>
+	
+<item name="Executioner's Hood" iconFile="items/helm_executioner.png">
+	<price amount="480"/>
+	<armour level="4" type="head"/>
+	<secondarybuff id="4" amount="3"/> <!-- critical -->
+	<secondarybuff id="9" amount="3"/> <!-- EDR -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<secondarybuff id="18" amount="-1"/> <!-- sight reduction -->
+	<description text="A cap fit for the executioner of even the foulest peasant."/>
+	</item>
+	
+<item name="Gas Mask" iconFile="items/helm_gas_mask.png">
+	<price amount="420"/>
+	<armour level="2" type="head"/>
+	<resistbuff toxic="2" asphyxiative="1"/>
+	<description text="A mask fit for standing downwind from even the foulest peasant."/>
+	</item>
+
+
+<item name="X-Ray Specs" iconFile="items/helm_x_spec.png" special="1" >
+	<price amount="200"/>
+	<armour level="2" type="head"/>
+	<secondarybuff id="4" amount="1"/> <!-- critical -->
+	<secondarybuff id="17" amount="1"/> <!-- trap sight -->
+	<description text="Turns out naked skeletons aren't nearly as sexy as you'd hoped." />
+	</item>
+
+
+  <!-- BOOTS -->
+<!-- Normal Boots -->
+<item name="Hobbitskin Boots" iconFile="items/boots_hobbitses.png">
+	<price amount="300"/>
+	<armour level="2" type="feet"/>
+	<secondarybuff id="6" amount="1"/> <!-- dodge -->
+	<secondarybuff id="12" amount="6"/> <!-- sneakiness -->	
+	<secondarybuff id="13" amount="-1"/> <!-- life regen -->
+	<description text="Made from the soft supple hide of the hungriest creatures in Middle Earth."/>
+	</item>	
+	
+<item name="Swashbuckling Galoshes" iconFile="items/boots_galoshes.png">
+	<price amount="200"/>
+	<armour level="2" type="feet"/>
+	<secondarybuff id="6" amount="1"/> <!-- dodge -->
+	<secondarybuff id="8" amount="1"/> <!-- counter -->
+	<description text="Popular with the loosely-moraled, be they pirates or flappers. There's some sort of coded innuendo depending on whether or not you've got them buckled. Buckle up for safety."/>
+	</item>
+
+
+
+  <!-- SHIELDS-->
+	<!-- Warrior shields -->
+	
+	
+<!-- Artifact Shields-->  
+<item name="Gorgoneion" iconFile="items/orb_gorgon.png" overrideClassName="Monster Head" artifact="1">
+	<price amount="10225"/>
+	<armour level="7" type="shield"/>
+	<secondarybuff id="5" amount="1"/> <!-- haywire -->
+	<secondarybuff id="8" amount="7"/> <!-- counter-attack -->
+	<secondarybuff id="18" amount="-2"/> <!-- sight penalty -->
+	<damagebuff transmutative="10" toxic="1"/>
+	<artifact quality="3"/>
+	<description text="The serpent-wreathed head of Medusa, you assume. It's hard to get a definitive identification, since looking directly at it will turn you to stone."/>
+	</item>
+	
+	
+	<!-- Rogue shields -->
+<item name="Power Word Octagon" iconFile="items/shield_stop.png" >
+	<price amount="12000" />
+	<armour level="10" type="shield" />
+	<description text="A powerful word of commanding has been emblazoned on this mighty shield." />
+	<secondarybuff id="6" amount="2"/> <!-- dodge -->
+	<secondarybuff id="7" amount="12"/> <!-- block -->
+	<secondarybuff id="8" amount="2"/> <!-- counter -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<targetHitEffectBuff percentage="20" name="Stop That" />
+	</item>
+	
+	
+<!-- rings -->	
+	<item name="Decoder Ring" iconFile="items/ring_decoder.png" special="1" >
+	<price amount="300"/>
+	<armour type="ring" level="1" randoms="0" />
+	<primarybuff id="1" amount="1" /> <!-- Sagacity -->
+	<description text="This ring bears a tiny dial covered with magical symbols. Wearing it makes you feel smarter."/>
+	</item>
+  
+
+<!-- Gloves -->
+<item name="Fingerless Gloves" iconFile="items/gloves_fingerless.png" >
+   <price amount="100" />
+   <armour level="1" type="hands" />
+	<secondarybuff id="6" amount="1"/> <!-- dodge -->
+   <description text="This is what happens to normal gloves when the monsters eat your fingers." />
+   </item>
+   
+<item name="Surgical Gloves" iconFile="items/gloves_surgical.png" >
+	<price amount="3620" />
+	<armour level="7" type="hands" />
+	<secondarybuff id="4" amount="2"/> <!-- crit -->
+	<secondarybuff id="13" amount="2"/> <!-- life regen -->
+	<resistbuff putrefying="2" /> 
+	<description text="Two by two, hands of blue." />
+	</item>
+
+
+<!-- Belts -->
+<!-- Artifact Belts -->
+<item name="Aphrodite's Girdle" iconFile="items/belt_aphro_girdle.png" artifact="1" >
+   <price amount="1200" />
+   <armour level="5" type="waist" />
+	<secondarybuff id="8" amount="3"/> <!-- counter -->
+	<damagebuff righteous="1" />
+	<artifact quality="4"/>
+	<description text="A thin belt of gold with a sea-shell buckle. To get the full effect, you have to be wearing just this.        Slut." />
+   </item>
+
+
+<!-- Pants -->
+<item name="Poodle Skirt" iconFile="items/pants_poodle.png" >
+   <price amount="19550" />
+   <armour level="10" type="legs" />
+   <description text="This fetching skirt will do more than just make you a graceful dancer. The totemic spirit bound to it will protect you from monsters, magic, and even the mailman." />
+	<secondarybuff id="6" amount="11"/> <!-- dodge -->
+	<primarybuff id="0" amount="-4"/> <!-- burl -->
+	<primarybuff id="2" amount="6"/> <!-- nim -->
+	<secondarybuff id="11" amount="10"/> <!-- magic resist -->
+	<resistbuff crushing="4" existential="6" necromantic="2" transmutative="2" righteous="2" />   
+	<targetHitEffectBuff percentage="10" name="Poodle Bite" />   <!-- After testing, I suspect pants can't actually trigger spells this way, so I rebalanced as if it weren't there. -->
+	</item>
+
+</itemDB>

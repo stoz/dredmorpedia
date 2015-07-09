@@ -1,0 +1,180 @@
+<!-- craft DB stores all crafting information -->
+
+<!-- What a mess! I stripped the file down, trying to figure out the order things were listed in, and it's pretty random. What follows is far better organized, I hope it works. -->
+
+<craftDB>
+
+
+<!-- Alchemy -->
+   <!-- alchemy reagents -->	
+<!-- Alchemy potions -->
+<!-- Stranger Alchemical Craftings -->
+
+<craft hidden="1">
+	<output skill="1" name="X-Ray Specs" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Spectacles" />
+	<input name="Potion of Clear Vision" />
+	<input name="Trappist Ale" />
+	</craft>
+
+<!-- Distilling -->
+<!-- booze -->
+  <!-- aqua vitae reactions ; tops off all boozes -->
+  
+<!-- still -->
+
+<!-- Smelting -->
+<!-- ore smelting -->
+<!-- alloy crafting -->
+<!-- Ingot Press foods -->
+<craft hidden="1" >
+	<output skill="1" name="Grinch Club Sandwich" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Mud Wen" />
+	<input name="Mud Wen" />
+	<input name="Mud Wen" />
+	<input name="Sliced Bread" />
+	</craft>
+
+<!-- Smithing -->
+<!-- smithing armour -->
+<craft hidden="0">
+   <output skill="0" name="Fingerless Gloves"/>
+	<tool tag="smithing" />
+   <input name="Adventuring Gloves"/>
+	</craft>
+
+  <!-- smithing boots -->
+
+
+<!-- smithing weapons -->
+<!-- smithing swords -->
+<craft hidden="0">
+   <output skill="1" name="Silver Dagger"/>
+	<tool tag="smithing" />
+   <input name="Silver Ingot"/>
+	</craft>
+	
+
+<!-- smithing axes -->
+<craft hidden="1">
+   <output skill="2" name="Fireman's Axe"/>
+	<tool tag="smithing" />
+   <input name="Woodsman's Axe"/>
+   <input name="Infernal Potion"/>
+	</craft>
+	
+<craft hidden="1">
+   <output skill="4" name="Dwarven Urgosh"/>
+	<tool tag="smithing" />
+   <input name="Bronze Dagger"/>
+   <input name="Double-Bladed Axe"/>
+   <input name="Sewer Brew"/>
+	</craft>
+	
+<craft hidden="1">
+   <output skill="5" name="Halberd"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Broader Axe"/>
+   <input name="Hefty Stick"/>
+	</craft>
+	
+<craft hidden="1">
+   <output skill="5" name="Halberd"/>
+	<tool tag="smithing" />
+   <input name="Spear"/>
+   <input name="Bearded Axe"/>
+	</craft>	
+	
+<!-- smithing staves -->	
+<craft hidden="1">
+   <output skill="5" name="Sesame Staff"/>
+	<tool tag="smithing" />
+   <input name="Triangulon's Staff of Greater Tessellation"/>
+   <input name="Tin Ingot"/>
+   <input name="Tin Ingot"/>
+	</craft>
+	
+<!-- smithing crossbows -->
+<craft hidden="0">
+   <output skill="1" name="Lil' Menace Slingshot"/>
+	<tool tag="smithing" />
+   <input name="Hefty Stick"/>
+   <input name="Leather Belt"/>
+	</craft>
+<!-- crude weapons -->
+<!-- bronze weapons -->	
+<!-- alt weapons -->
+<!-- Smithable throwns -->
+
+	
+<!-- smithing upgrades -->
+<!-- smithing rings -->
+
+<!-- artifacts -->
+<!-- armor -->
+<!-- orbs -->
+<!-- amulets -->
+<!-- de-crafting to make more sticks available -->
+
+
+
+<!-- Tinkerer -->
+   <!-- Tinkerer, parts-->
+   <!-- tinkerer, xbows -->
+	<!-- Tinkerer, Bolts -->
+	<!-- Tinkerer, arms & armour -->
+
+	
+<craft hidden="1">
+	<output skill="1" name="Gas Mask" />
+	<tool tag="tinkerer" />
+	<input name="Plastic Ingot" />
+	<input name="Bituminous Coal" />
+	<input name="Bituminous Coal" />
+	</craft>
+	
+<craft hidden="1">
+	<output skill="2" name="Executioner's Hood" />
+	<tool tag="tinkerer" />
+	<input name="Leather Cap" />
+	<input name="Leather Cap" />
+	</craft>
+	
+<craft hidden="0">
+	<output skill="1" name="Chef's Hat" amount="1" />
+	<tool tag="tinkerer"/>
+	<input name="Brie Cheese" />
+	<input name="Plastic Ingot" />
+	<input name="Robe" />
+	</craft>
+	
+<craft hidden="1">
+   <output skill="4" name="Feather Boa" />
+   <tool tag="tinkerer"/>
+   <input name="Sash of the Blue Wizards"/>
+   <input name="Zombie Feather"/>
+   <input name="Zombie Feather"/>
+   <input name="Zombie Feather"/>
+   </craft>
+	
+	<!-- Tinkerer, Bombs -->
+	<!-- Tinkerer, Traps -->
+<!-- blade traps -->
+<!-- tinkerer random stuff -->
+
+
+<!-- Grinder -->
+<!-- Grinder, meatgrinding -->
+<!-- Grinder, cheesegrating -->
+
+
+
+
+
+<!-- wands -->
+
+
+</craftDB>

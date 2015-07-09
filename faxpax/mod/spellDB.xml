@@ -1,0 +1,1021 @@
+<?xml version="1.0"?>
+<spellDB>
+<!-- MIDAS -->
+<spell name="Lead Into Gold" type="item" downtime="20" consumeItem="1" consumeItemType="reagent" icon="sprites/skills/warrior/skill_antiques_dealer2_32.png">
+	<description text="Turn things into BEAUTIFUL GOLD!."/>
+	<effect type="spawn" itemname="Native Gold" amount="1"/>
+	<effect type="trigger" spell="Lead Into Gold 2" />
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" sfx="ping" />
+	</spell>
+	
+<spell name="Lead Into Gold 2" type="self">
+	<description text="Turn things into BEAUTIFUL GOLD!."/>
+	<effect type="spawnitemfromlist">
+		<option name="Native Gold"/>
+		<option name="Gold Ingot"/>   
+		<option name="Gold Ingot"/> 
+		</effect>
+	</spell>
+
+<spell name="Cashblast" type="template" templateID="100" anchored="1" icon="sprites/skills/warrior/digging_ray32.png" wand="0">
+	<requirements mp="20" savvyBonus="0.50" mincost="5" />
+	<effect type="damage" conflagratory="15" conflagratoryF="0"/>
+	<effect type="damage" transmutative="15" transmutativeF="0.5" midas="1" />
+	<anim sprite="sprites/sfx/midas_loop/midas_loop" frames="4" sfx="item_purchased" framerate="80"  centerEffect="1"/>
+	<description text="You understand the truth of the universe: that all creatures can be bled for money!"/>
+	</spell>
+
+<!-- DRAGON SKILLS -->
+<spell name="Fire Breath" type="cone" radius="2" anchored="1" downtime="6" icon="sprites/dfa_breath_fire_32.png">
+	<description text="They always said you were full of hot air..."/>
+	<effect type="damage" conflagratory="3" conflagratoryF="0.2" burn="1" />
+	<anim sprite="sprites/sfx/fireburst/fireburst" frames="7" framerate="90" sfx="flame" />
+	</spell>
+
+<spell name="Lingering Fire Breath" type="cone" radius="3" anchored="1" downtime="13" icon="sprites/dfa_lingering_fire_breath_32.png">
+	<description text="You sure have a fiery personality."/>
+	<effect type="damage" conflagratory="5" conflagratoryF="0.25" burn="1" />
+	<effect type="trigger" spell="Flamefield 0" />
+	<anim sprite="sprites/sfx/fireburst/fireburst" frames="7" framerate="90" sfx="flame" />
+	</spell>
+
+<spell name="Entangling Fire Breath" type="cone" radius="4" anchored="1" downtime="20" icon="sprites/dfa_entangling_fire_32.png">
+	<description text="Like napalm. No agent orange, though."/>
+	<effect type="damage" conflagratory="7" conflagratoryF="0.3" burn="1" />
+	<effect type="lockdown" amount="5"/>
+	<anim sprite="sprites/sfx/fireburst/fireburst" frames="7" framerate="90" sfx="flame" />
+	</spell>
+
+<spell name="Fire Barrier" type="template" templateID="21" anchored="1" downtime="27" icon="sprites/dfa_fire_barrier_32.png" 
+		mineTimer="10" 
+		mineSpritePNGSeries="sprites/sfx/pyre_loop/pyre_loop" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="4" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="1"
+		mineSpriteDrawOrder="1"
+		minePermanent="1" >
+	<description text="Just don't stand too close: it can still hurt you."/>
+	<anim sprite="sprites/sfx/fireburst/fireburst" frames="7" framerate="90" sfx="flame" />
+	<effect type="damage" conflagratory="9" conflagratoryF="0.35" burn="1" affectscaster="1" />
+	</spell>
+
+<spell name="Conflagration" type="template" templateID="100" anchored="1" downtime="34" icon="skills/spells/flame_brand32.png" >
+	<description text="There are no words for how hot this is."/>
+	<effect type="damage" conflagratory="11" conflagratoryF="0.4" burn="1" />
+	<anim sprite="sprites/sfx/pyre_loop/pyre_loop" frames="5" framerate="90" sfx="flame" />
+	</spell>
+
+<spell name="Freezing Breath" type="cone" radius="2" anchored="1" downtime="6" icon="sprites/dfa_breath_ice_32.png">
+	<description text="A little better than the cold shoulder. You could probably get this from chewing the right kid of gum."/>
+	<effect type="damage" hyperborean="3" hyperboreanF="0.2"/>
+	<anim sprite="sprites/sfx/impact_ice/impact_ice" frames="6" framerate="90" sfx="ice" />
+	</spell>
+
+<spell name="Freezing Fog" type="cone" radius="3" anchored="1" downtime="13" icon="sprites/dfa_freezing_fog_32.png">
+	<description text="Cold, clinging fog that chills to the bone."/>
+	<effect type="damage" hyperborean="5" hyperboreanF="0.25"/>
+	<effect type="trigger" spell="Frostfield" />
+	<anim sprite="sprites/sfx/impact_ice/impact_ice" frames="6" framerate="90" sfx="ice" />
+	</spell>
+
+<spell name="Frostfield" 
+	type="targetfloor" 
+	mineTimer="4" 
+	mineUseGlints="1" 
+	mineGlintDensity="14" 
+	mineSpritePNGSeries="sprites/sfx/impact_ice/impact_ice" 
+	mineSpritePNGFirst="0" 
+	mineSpritePNGNum="5" 
+	mineSpritePNGRate="90" 
+	mine="1" 
+	mineradius="2"
+	minePermanent="1" >
+	<effect type="damage" hyperborean="1" hyperboreanF="0.05" affectscaster="1" />
+	<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" centerEffect="1" sfx="ice"/>
+	</spell>
+
+<spell name="Cloying Breath" type="cone" radius="4" anchored="1" downtime="20" icon="sprites/dfa_cloying_breath_32.png">
+	<description text="Your minty fresh cold breath is sticky, for some inexplicable reason."/>
+	<effect type="damage" hyperborean="7" hyperboreanF="0.3"/>
+	<effect type="trigger" spell="Arctic Swirly" />
+	<anim sprite="sprites/sfx/impact_ice/impact_ice" frames="6" framerate="90" sfx="ice" />
+	</spell>
+
+<spell name="Frozen Barrier" type="template" templateID="21" anchored="1" downtime="27" icon="sprites/dfa_frozen_barrier_32.png" >
+	<description text="Add a top, and it's an igloo!"/>
+	<effect type="knock" amount="1" />
+	<effect type="create" turns="6" objectSprite="sprites/sfx/icebarrier/icebarrier0000.png" self="0" />
+	<anim sprite="sprites/sfx/icebarrier/icebarrier" frames="3" framerate="90" sfx="ice" />
+	</spell>
+
+<spell name="Uttercold" type="template" templateID="100" anchored="1" downtime="34" icon="sprites/dfa_uttercold_32.png" >
+	<description text="For a brief moment, you can surround yourself with the arctic."/>
+	<effect type="damage" hyperborean="11" hyperboreanF="0.3"/>
+	<effect type="lockdown" amount="5" />
+	<anim sprite="sprites/sfx/impact_ice/impact_ice" frames="6" framerate="90" sfx="ice" />
+	</spell>
+
+<spell name="Thunder Breath" type="template" templateID="301" anchored="1" downtime="6" icon="sprites/dfa_breath_elec_32.png">
+	<description text="Sometimes, your words are rather shocking."/>
+	<effect type="damage" voltaic="3" voltaicF="0.2"/>
+	<anim sprite="sprites/sfx/lightningarc/lightningarc" frames="7" framerate="90" sfx="lightning_bolt" />
+	</spell>
+
+<spell name="Static Field" type="template" templateID="302" anchored="1" downtime="13" icon="sprites/dfa_static_field_32.png">
+	<description text="Ooh, tingly."/>
+	<effect type="damage" voltaic="5" voltaicF="0.25"/>
+	<effect type="trigger" spell="Staticfield" />
+	<effect type="fear" amount="5" />
+	<anim sprite="sprites/sfx/lightningarc/lightningarc" frames="7" framerate="90" sfx="lightning_bolt" />
+	</spell>
+
+<spell name="Staticfield" 
+	type="targetfloor" 
+	mineTimer="4" 
+	mineUseGlints="1" 
+	mineGlintDensity="14" 
+	mineSpritePNGSeries="sprites/sfx/lightningarc/lightningarc" 
+	mineSpritePNGFirst="0" 
+	mineSpritePNGNum="6" 
+	mineSpritePNGRate="90" 
+	mine="1" 
+	mineradius="2"
+	minePermanent="1" >
+	<effect type="damage" voltaic="1" voltaicF="0.05" affectscaster="1" />
+	<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" centerEffect="1" sfx="lightning_bolt"/>
+	</spell>
+
+<spell name="Static Net" type="template" templateID="303" anchored="1" downtime="20" icon="sprites/dfa_static_net_32.png">
+	<description text="The reason this one takes so long to recharge is because you have to rub your feet against wool for a few minutes."/>
+	<effect type="damage" voltaic="7" voltaicF="0.3"/>
+	<effect type="fear" amount="7" />
+	<effect type="paralyze" amount="1" />
+	<anim sprite="sprites/sfx/lightningarc/lightningarc" frames="7" framerate="90" sfx="lightning_bolt" />
+	</spell>
+
+<spell name="Thunder Barrier" type="template" templateID="21" anchored="1" downtime="27" icon="sprites/dfa_thunder_barrier_32.png" 
+		mineTimer="10" 
+		mineSpritePNGSeries="sprites/sfx/voltaic_loop/voltaic_loop" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="4" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="1"
+		mineSpriteDrawOrder="1"
+		minePermanent="1" >
+	<description text="Surrounding yourself with a bubble of lightning makes life difficult for your enemies."/>
+	<effect type="damage" voltaic="9" voltaicF="0.35"/>
+	<effect type="fear" amount="9" />
+	<anim sprite="sprites/sfx/lightningarc/lightningarc" frames="7" framerate="90" sfx="lightning_bolt" />
+	</spell>
+
+<spell name="Storm of Vengeance" type="template" templateID="100" anchored="1" downtime="34" icon="sprites/dfa_storm_of_vengeance_32.png" >
+	<description text="Revengeance is on your mind! That's totally a word now. Revengeance. Write it down."/>
+	<effect type="damage" voltaic="11" voltaicF="0.4"/>
+	<anim sprite="sprites/sfx/voltaic_loop/voltaic_loop" frames="5" framerate="90" sfx="lightning_bolt" />
+	<effect type="fear" amount="15" />
+	</spell>
+
+<spell name="Acid Reflux" type="template" templateID="301" anchored="1" downtime="6" icon="sprites/dfa_breath_acid_32.png">
+	<description text="...shouldn't have eaten that havarti."/>
+	<effect type="damage" acidic="2" acidicF="0.2"/>
+	<effect type="trigger" spell="Acid Burn 1" />
+	<anim sprite="sprites/sfx/poison_rain/poison_rain" frames="11" framerate="90" sfx="magic" />
+	</spell>
+
+<spell name="Mighty Belch" type="template" templateID="302" anchored="1" downtime="13" icon="sprites/dfa_mighty_belch_32.png">
+	<description text="...or that pan-galactic gargle blaster."/>
+	<effect type="damage" acidic="5" acidicF="0.25"/>
+	<effect type="trigger" spell="Acidfield" />
+	<anim sprite="sprites/sfx/poison_rain/poison_rain" frames="11" framerate="90" sfx="magic" />
+	</spell>
+
+<spell name="Acidfield" 
+	type="targetfloor" 
+	mineTimer="4" 
+	mineUseGlints="1" 
+	mineGlintDensity="14" 
+	mineSpritePNGSeries="sprites/sfx/poison_rain/poison_rain" 
+	mineSpritePNGFirst="0" 
+	mineSpritePNGNum="10" 
+	mineSpritePNGRate="90" 
+	mine="1" 
+	mineradius="2"
+	minePermanent="1" >
+	<effect type="damage" acidic="1" acidicF="0.05" affectscaster="1" />
+	<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" centerEffect="1" sfx="magic"/>
+	</spell>
+
+<spell name="Congealing Acid" type="template" templateID="303" anchored="1" downtime="20" icon="sprites/dfa_congealing_acid_32.png">
+	<description text="...or that aged steak."/>
+	<effect type="damage" acidic="7" acidicF="0.3"/>
+	<effect type="trigger" spell="Acid Burn 2" />
+	<anim sprite="sprites/sfx/poison_rain/poison_rain" frames="11" framerate="90" sfx="magic" />
+	</spell>
+
+<spell name="Acid Sheath" type="template" templateID="21" anchored="1" downtime="27" icon="sprites/dfa_acid_sheath_32.png" 
+		mineTimer="10" 
+		mineSpritePNGSeries="sprites/sfx/poison_rain/poison_rain" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="10" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="1"
+		mineSpriteDrawOrder="1"
+		minePermanent="1" >
+	<description text="...or that plumber's agaric"/>
+	<effect type="damage" acidic="9" acidicF="0.35"/>
+	<effect type="trigger" spell="Acid Burn 3" />
+	<anim sprite="sprites/sfx/poison_rain/poison_rain" frames="11" framerate="90" sfx="magic" />
+	</spell>
+
+<spell name="Horrid Wilting" type="template" templateID="100" anchored="1" downtime="34" icon="sprites/dfa_horrid_wilting_32.png" >
+	<description text="...and definitely not that applejack."/>
+	<effect type="damage" acidic="11" acidicF="0.4"/>
+	<anim sprite="sprites/sfx/poison_rain/poison_rain" frames="11" framerate="90" sfx="magic" />
+	<effect type="trigger" spell="Acid Burn 5" />
+	</spell>
+
+<spell name="Acid Burn 0" type="target" icon="skills/spells/acid_burn32.png" wand="1">
+	<effect type="damage" bleed="1" acidic="6" affectsCaster="1"/>
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" sfx="magic" framerate="100" centerEffect="1"/>
+	<buff useTimer="1" time="5" stacksize="1" allowstacking="0" self="0" icon="skills/spells/acid_burn64.png" smallicon="skills/spells/acid_burn32.png" bad="1">
+		<halo name="sprites/sfx/acid_puff/acid_puff" first="0" num="6" frameRate="100"/>
+		<secondarybuff id="0" amount="-1"/> <!-- hp -->
+		<secondarybuff id="10" amount="-1"/> <!-- armor -->
+		</buff>
+	<effect type="dot" amount="1" spell="Acidhit0" />
+	<description text="This powerful acid burns flesh and armour alike." />
+	</spell>
+
+<spell name="Acid Burn 1" type="target" icon="skills/spells/acid_burn32.png" wand="1">
+	<effect type="damage" bleed="1" acidic="1" affectsCaster="1"/>
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" sfx="magic" framerate="100" centerEffect="1"/>
+	<buff useTimer="1" time="5" stacksize="1" allowstacking="0" self="0" icon="skills/spells/acid_burn64.png" smallicon="skills/spells/acid_burn32.png" bad="1">
+		<halo name="sprites/sfx/acid_puff/acid_puff" first="0" num="6" frameRate="100"/>
+		<secondarybuff id="0" amount="-1"/> <!-- hp -->
+		<secondarybuff id="10" amount="-1"/> <!-- armor -->
+		<resistbuff crushing="-1" slashing="-1"/>
+   		</buff>
+   	<effect type="dot" amount="3" spell="Acidhit0" />
+   	<description text="This powerful acid burns flesh and armour alike." />
+	</spell>
+
+<spell name="Acid Burn 2" type="target" icon="skills/spells/acid_burn32.png" wand="1">
+	<effect type="damage" bleed="1" acidic="2" affectsCaster="1"/>
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" sfx="magic" framerate="100" centerEffect="1"/>
+	<buff useTimer="1" time="5" stacksize="1" allowstacking="0" self="0" icon="skills/spells/acid_burn64.png" smallicon="skills/spells/acid_burn32.png" bad="1">
+		<halo name="sprites/sfx/acid_puff/acid_puff" first="0" num="6" frameRate="100"/>
+		<secondarybuff id="0" amount="-2"/> <!-- hp -->
+		<secondarybuff id="10" amount="-2"/> <!-- armor -->
+		<resistbuff crushing="-2" slashing="-2"/>
+   		</buff>
+   	<effect type="dot" amount="5" spell="Acidhit0" />
+   	<description text="This powerful acid burns flesh and armour alike." />
+	</spell>
+
+<spell name="Acid Burn 3" type="target" icon="skills/spells/acid_burn32.png" wand="1">
+	<effect type="damage" bleed="1" acidic="3" affectsCaster="1"/>
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" sfx="magic" framerate="100" centerEffect="1"/>
+	<buff useTimer="1" time="5" stacksize="1" allowstacking="0" self="0" icon="skills/spells/acid_burn64.png" smallicon="skills/spells/acid_burn32.png" bad="1">
+		<halo name="sprites/sfx/acid_puff/acid_puff" first="0" num="6" frameRate="100"/>
+		<secondarybuff id="0" amount="-3"/> <!-- hp -->
+		<secondarybuff id="10" amount="-3"/> <!-- armor -->
+		<resistbuff crushing="-3" slashing="-3"/>
+   		</buff>
+   	<effect type="dot" amount="7" spell="Acidhit0" />
+   	<description text="This powerful acid burns flesh and armour alike." />
+	</spell>
+
+<spell name="Acid Burn 4" type="target" icon="skills/spells/acid_burn32.png" wand="1">
+	<effect type="damage" bleed="1" acidic="4" affectsCaster="1"/>
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" sfx="magic" framerate="100" centerEffect="1"/>
+	<buff useTimer="1" time="5" stacksize="1" allowstacking="0" self="0" icon="skills/spells/acid_burn64.png" smallicon="skills/spells/acid_burn32.png" bad="1">
+		<halo name="sprites/sfx/acid_puff/acid_puff" first="0" num="6" frameRate="100"/>
+		<secondarybuff id="0" amount="-4"/> <!-- hp -->
+		<secondarybuff id="10" amount="-4"/> <!-- armor -->
+		<resistbuff crushing="-4" slashing="-4"/>
+   		</buff>
+   	<effect type="dot" amount="9" spell="Acidhit0" />
+   	<description text="This powerful acid burns flesh and armour alike." />
+	</spell>
+
+<spell name="Acid Burn 5" type="target" icon="skills/spells/acid_burn32.png" wand="1">
+	<effect type="damage" bleed="1" acidic="5" affectsCaster="1"/>
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" sfx="magic" framerate="100" centerEffect="1"/>
+	<buff useTimer="1" time="5" stacksize="1" allowstacking="0" self="0" icon="skills/spells/acid_burn64.png" smallicon="skills/spells/acid_burn32.png" bad="1">
+		<halo name="sprites/sfx/acid_puff/acid_puff" first="0" num="6" frameRate="100"/>
+		<secondarybuff id="0" amount="-5"/> <!-- hp -->
+		<secondarybuff id="10" amount="-5"/> <!-- armor -->
+		<resistbuff crushing="-5" slashing="-5"/>
+   		</buff>
+   	<effect type="dot" amount="11" spell="Acidhit0" />
+   	<description text="This powerful acid burns flesh and armour alike." />
+	</spell>
+
+<spell name="Inhalation" type="cone" radius="2" anchored="1" downtime="6" icon="sprites/dfa_breath_asph_32.png">
+	<description text="You take a little bit after that guy Kirby."/>
+	<effect type="damage" asphyxiative="3" asphyxiativeF="0.2"/>
+	<effect type="suction" amount="1" />	
+	<anim sprite="sprites/sfx/impact_asphyxiative/impact_asphyxiative" frames="6" framerate="90" sfx="hex_missile" />
+	</spell>
+
+<spell name="Lingering Vacuum" type="cone" radius="3" anchored="1" downtime="13" icon="sprites/dfa_lingering_vacuum_32.png">
+	<description text="You suck so hard you leave behind a vortex of swirling non-air."/>
+	<effect type="damage" asphyxiative="3" asphyxiativeF="0.2"/>
+	<effect type="trigger" spell="Asphyxfield" />
+	<effect type="suction" amount="1" />
+	<anim sprite="sprites/sfx/impact_asphyxiative/impact_asphyxiative" frames="6" framerate="90" sfx="hex_missile" />
+	</spell>
+
+<spell name="Asphyxfield" 
+	type="targetfloor" 
+	mineTimer="4" 
+	mineUseGlints="1" 
+	mineGlintDensity="14" 
+	mineSpritePNGSeries="sprites/sfx/impact_asphyxiative/impact_asphyxiative"
+	mineSpritePNGFirst="0" 
+	mineSpritePNGNum="5" 
+	mineSpritePNGRate="90" 
+	mine="1" 
+	mineradius="2"
+	minePermanent="1" >
+	<effect type="damage" asphyxiative="1" asphyxiativeF="0.05" affectscaster="1" />
+	<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" centerEffect="1" sfx="hex_missile"/>
+	</spell>
+
+<spell name="Consciousness Stealer" type="cone" radius="4" anchored="1" downtime="20" icon="sprites/dfa_consciousness_stealer_32.png">
+	<description text="Enemies trapped within your furious sucking lose consciousness."/>
+	<effect type="damage" asphyxiative="4" asphyxiativeF="0.2"/>
+	<effect type="paralyze" amount="3" />
+	<anim sprite="sprites/sfx/impact_asphyxiative/impact_asphyxiative" frames="6" framerate="90" sfx="hex_missile" />
+	</spell>
+
+<spell name="Asphyxiative Barrier" type="template" templateID="21" anchored="1" downtime="27" icon="sprites/dfa_asphyxiative_barrier_32.png" 
+		mineTimer="10" 
+		mineSpritePNGSeries="sprites/sfx/impact_asphyxiative/impact_asphyxiative"
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="4" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="1"
+		mineSpriteDrawOrder="1"
+		minePermanent="1" >
+	<description text="You can place a wall of suck around you, keeping your foes at bay."/>
+	<effect type="damage" asphyxiative="6" asphyxiativeF="0.25"/>
+	<anim sprite="sprites/sfx/impact_asphyxiative/impact_asphyxiative" frames="6" framerate="90" sfx="hex_missile" />
+	<effect type="paralyze" amount="5" />
+	</spell>
+
+<spell name="Harsh Vacuum" type="template" templateID="100" anchored="1" downtime="34" icon="sprites/dfa_harsh_vacuum_32.png" >
+	<description text="Your mighty sucking knows no peers."/>
+	<effect type="damage" asphyxiative="8" asphyxiativeF="0.3"/>
+	<anim sprite="sprites/sfx/impact_asphyxiative/impact_asphyxiative" frames="6" framerate="90" sfx="hex_missile" />
+	<effect type="paralyze" amount="7" />
+	</spell>
+
+<spell name="Self-Righteous Breath" type="cone" radius="2" anchored="1" downtime="6" icon="sprites/dfa_breath_right_32.png">
+	<description text="You are totally better than they are."/>
+	<effect type="damage" righteous="3" righteousF="0.2" />
+	<anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="90" sfx="righteous" />
+	</spell>
+
+<spell name="Forceful Righteousness" type="cone" radius="3" anchored="1" downtime="13" icon="sprites/dfa_forceful_righteousness_32.png">
+	<description text="Your fierce pride in your faith has caused you to throw The Book at some people."/>
+	<effect type="damage" righteous="5" righteousF="0.25" />
+	<effect type="knock" amount="3" />
+	<anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="90" sfx="righteous" />
+	</spell>
+
+<spell name="Pious Exhalation" type="cone" radius="4" anchored="1" downtime="20" icon="sprites/dfa_pious_exhalation_32.png">
+	<description text="Dredmor, Book 2, Verses 5-9: With but a breath, your enemies are rent asunder by the power of your awesome faith."/>
+	<effect type="damage" righteous="7" righteousF="0.3" />
+	<effect type="displace" />
+	<anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="90" sfx="righteous" />
+	</spell>
+
+<spell name="Righteous Shield" type="template" templateID="21" anchored="1" downtime="27" icon="sprites/dfa_righteous_shield_32.png" 
+		mineTimer="10" 
+		mineSpritePNGSeries="sprites/sfx/divine_inscription/divine_inscription" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="4" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="1"
+		mineSpriteDrawOrder="1"
+		minePermanent="1" >
+	<description text="Dredmor, Book 5, Verses 3-5: Surround yourself in divine power and your enemies will be pushed away."/>
+	<anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="90" sfx="righteous" />
+	<effect type="damage" righteous="9" righteousF="0.35" affectscaster="1" />
+	<effect type="knock" amount="4" />
+	</spell>
+
+<spell name="Holier-Than-Thou" type="template" templateID="100" anchored="1" downtime="34" icon="sprites/dfa_holier_than_thou_32.png" >
+	<description text="Your god is an awesome god."/>
+	<effect type="damage" righteous="11" righteousF="0.4" />
+	<effect type="displace" />
+	<anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="90" sfx="righteous" />
+	</spell>
+
+<spell name="Necrotic Breath" type="template" templateID="301" anchored="1" downtime="6" icon="sprites/dfa_breath_necro_32.png">
+	<description text="This is worse than halitosis. Far worse."/>
+	<effect type="damage" necromantic="3" necromanticF="0.2" bleed="1" />
+	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="90" sfx="necromantic" />
+	</spell>
+
+<spell name="Mind Rot" type="template" templateID="302" anchored="1" downtime="13" icon="sprites/dfa_mind_rot_32.png">
+	<description text="Your breath can convince targets they should go watch TV for a while."/>
+	<effect type="damage" necromantic="5" necromanticF="0.25" />
+	<effect type="confuse" />
+	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="90" sfx="necromantic" />
+	</spell>
+
+<spell name="Hoard Life" type="template" templateID="303" anchored="1" downtime="20" icon="sprites/dfa_hoard_life_32.png">
+	<description text="Your breath can thieve the life from your enemies and restore your own."/>
+	<effect type="drain" necromantic="5" necromanticF="0.25" />
+	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="90" sfx="necromantic" />
+	</spell>
+
+<spell name="Necrotic Barrier" type="template" templateID="21" anchored="1" downtime="27" icon="sprites/dfa_necrotic_barrier_32.png" 
+		mineTimer="10" 
+		mineSpritePNGSeries="sprites/sfx/weakness_hit/weakness_hit" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="10" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="1"
+		mineSpriteDrawOrder="1"
+		minePermanent="1" >
+	<description text="Surround yourself with the mighty (or not so mighty) spirits of deceased adventurers!"/>
+	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="90" sfx="necromantic" />
+	<effect type="drain" necromantic="9" necromanticF="0.35" />
+	</spell>
+
+<spell name="Deathly Radiance" type="template" templateID="100" anchored="1" downtime="34" icon="sprites/dfa_deathly_radiance_32.png" >
+	<description text="With but a word, your powerful, life-bending energies surround and suffuse you."/>
+	<effect type="drain" necromantic="7" necromanticF="0.3" />
+	<effect type="confuse" />
+	<anim sprite="sprites/sfx/miasmapuffbig/miasmapuffbig" frames="6" framerate="90" sfx="necromantic" />
+	</spell>
+
+<!-- NO ONE EXPECTS THE DIGGLE INQUISITION -->
+<spell name="Smite Evil" type="adjacent" downtime="7" attack="1" icon="skills/warrior/macery1_32.png" >
+	<description text="The proper term is 'smite evil,' not 'bump uglies'." />
+	<effect type="damage" burn="1" righteous="1" righteousF="0.5" taxa="Demon" />
+	<effect type="damage" burn="1" righteous="1" righteousF="0.5" taxa="Undead" />
+	<effect type="knock" amount="2" taxa="Demon" />
+	<effect type="knock" amount="2" taxa="Undead" />
+	<anim sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" sfx="explosion" />
+	</spell>
+
+<spell name="Holy Sword" type="self" icon="skills/wizard/spell_white9_32.png" >
+	<description text="You can empower your sword with righteous energies for a short time." />
+	<requirements mp="10" savvyBonus="0.25" mincost="4" />
+	<anim sprite="sprites/sfx/divine_hit/divine_hit" frames="8" framerate="80" sfx="choir" />
+	<buff useTimer="0" removable="1" attacks="10" allowstacking="0" icon="skills/wizard/spell_white9_64.png" smallicon="skills/wizard/spell_white9_32.png">
+		<secondarybuff id="2" amount="2" /> <!-- melee power -->
+		<secondarybuff id="4" amount="2" /> <!-- crit -->
+		<damagebuff righteous="3" />
+		<effect type="damage" righteous="2" righteousF="0.5" taxa="Demon" />
+		<effect type="damage" righteous="2" righteousF="0.5" taxa="Undead" />
+		<targetHitEffectBuff type="trigger" percent="30" spell="Antimagic Field" />
+		</buff>
+	<ai hint="buff" />
+	</spell>
+
+<spell name="Martyr's Aegis" type="self" icon="skills/spells/martyrs_aegis32.png" >
+	<description text="You can shield yourself with shining light for a short time." />
+	<requirements mp="16" savvyBonus="0.25" mincost="6" />
+	<anim sprite="sprites/sfx/celestial_hit/celestial_hit" frames="8" framerate="80" sfx="choir" />
+	<buff useTimer="0" brittle="6" allowstacking="0" icon="skills/spells/martyrs_aegis64.png" smallicon="skills/spells/martyrs_aegis32.png">
+		<halo name="sprites/sfx/hero_glow/hero_glow" first="0" num="3" frameRate="90" />
+		<secondarybuff id="7" amount="10" /> <!-- block -->
+		<secondarybuff id="10" amount="3" /> <!-- armor -->
+		<secondarybuff id="11" amount="10" /> <!-- resist -->
+		<secondarybuff id="18" amount="2" /> <!-- sight -->
+		<secondarybuff id="12" amount="-25" /> <!-- sneak -->
+		</buff>
+	<ai hint="buff" />
+	</spell>
+
+<spell name="Know Thine Enemy" type="target" icon="skills/wizard/spell_white1_32.png" >
+	<description text="By knowing your enemy, you are better able to defend against them and to overcome their defenses. Enemies do learn, however, so this will only work a few times." />
+	<requirements mp="15" savvyBonus="0.3" mincost="3" />
+	<anim sprite="sprites/sfx/mechanical_buff/mechanical_buff" frames="8" framerate="80" sfx="tinkering" />
+	<buff useTimer="0" brittle="1" self="0" allowstacking="0" resistable="0" bad="1" icon="skills/wizard/spell_white1_64.png" smallicon="skills/wizard/spell_white1_32.png">
+		<halo name="sprites/sfx/target/target" first="0" num="5" frameRate="90" />
+		<secondarybuff id="7" amount="-10" /> <!-- block -->
+		<secondarybuff id="10" amount="-5" /> <!-- armor -->
+		<secondarybuff id="11" amount="-10" /> <!-- resist -->
+		<secondarybuff id="22" amount="-10" /> <!-- reflect -->
+		<secondarybuff id="6" amount="-10" /> <!-- dodge -->
+		<secondarybuff id="4" amount="-10" /> <!-- crit -->
+		<secondarybuff id="5" amount="-10" /> <!-- haywire -->
+		<mute amount="1" />
+		</buff>
+	</spell>
+
+<spell name="Divine Restoration" type="self" icon="skills/spells/restoration32.png" >
+	<description text="By the power of Krong, you are HEALED!" />
+	<requirements mp="40" savvyBonus="0.3" mincost="20" />
+	<anim sprite="sprites/sfx/heal/heal" frames="7" framerate="80" sfx="choir" />
+	<effect type="uncurse" amount="1" />
+	<effect type="heal" amount="20" amountF="0.3" />
+	<effect type="trigger" spell="Blinding Flash" />
+	</spell>
+
+<!-- DUSKBLADE I MEAN SPELLSWORD -->
+<spell name="Magic in the Blood" type="self" downtime="10" icon="skills/spells/springs_rain32.png" >
+	<description text="'Blood magic' in the most literal sense." />
+	<effect type="damage" transmutative="10" transmutativeF="-0.1" bleed="1" affectscaster="1" resistable="0" />
+	<effect type="spellpoints" amount="3" amountF="2.5" secondaryScale="2" />
+	<buff useTimer="1" time="10" allowstacking="0" icon="skills/spells/black_sacrament64.png" smallicon="skills/spells/black_sacrament32.png">
+		<halo name="sprites/sfx/curse_loop/curse_loop" first="0" num="7" frameRate="90" />
+		<secondarybuff id="14" amount="-10" /> <!-- MPR -->
+		</buff>
+	<anim sprite="sprites/sfx/bloodmagic/bloodmagic" frames="7" framerate="60" sfx="fleshbore" />
+	</spell>
+
+<spell name="Arcane Strike" type="adjacent" icon="skills/wizard/spell_air4_32.png" attack="1" >
+	<description text="You can focus your magic into your attacks, hitting harder and more accurately." />
+	<requirements mp="10" savvyBonus="0.25" mincost="4" />
+	<anim sprite="sprites/sfx/weakness_hit/weakness_hit" frames="8" framerate="80" sfx="teleport_short" />
+	<effect type="damage" blasting="3" blastingF="0.4" />
+	</spell>
+
+<spell name="Cyclonic Shield" type="self" icon="skills/wizard/spell_air8_32.png" >
+	<description text="You can summon winds to surround you and shield you from incoming attacks." />
+	<requirements mp="16" savvyBonus="0.25" mincost="6" />
+	<anim sprite="sprites/sfx/arctic_vortex/arctic_vortex" frames="8" framerate="80" sfx="disintegrate" />
+	<buff useTimer="0" brittle="6" allowstacking="0" icon="skills/wizard/spell_air8_64.png" smallicon="skills/wizard/spell_air8_32.png">
+		<halo name="sprites/sfx/impact_slash/impact_slash" first="0" num="6" frameRate="90" />
+		<secondarybuff id="6" amount="10" />
+		<secondarybuff id="22" amount="10" />
+		<resistbuff asphyxiative="5" toxic="3" piercing="3" />
+		</buff>
+	<ai hint="buff" />
+	</spell>
+
+<spell name="Arcane Channeling" type="target" icon="skills/spells/azure_magicks32.png" >
+	<description text="Your attacks drain arcane energies from your foes and energize you." />
+	<effect type="drain" piercing="1" piercingF="0.2" />
+	<buff useTimer="1" time="10" allowstacking="0" self="0" icon="skills/antimagic64.png" smallicon="skills/antimagic32.png" bad="1">
+		<halo name="sprites/sfx/curse_loop/curse_loop" first="0" num="7" frameRate="90" />
+		<mute amount="1" />
+		</buff>
+	</spell>
+
+<spell name="Words of Power" type="template" templateID="13" icon="skills/spells/unholy_warcry32.png" anchored="1" >
+	<description text="With but a word, your voice pushes foes away from you and saps their strength." />
+	<requirements mp="25" savvyBonus="0.25" mincost="5" />
+	<anim sprite="sprites/sfx/evil_pact/evil_pact" frames="17" framerate="80" sfx="naughty" />
+	<effect type="knock" amount="2" />
+	<buff useTimer="1" time="10" allowstacking="0" self="0" icon="skills/spells/unholy_warcry64.png" smallicon="skills/spells/unholy_warcry32.png" bad="1">
+		<halo name="sprites/sfx/oildrip/oildrip" first="0" num="4" frameRate="90" />
+		<primarybuff id="0" amount="-5" />
+		<primarybuff id="2" amount="-5" />
+		<secondarybuff id="2" amount="-3" />
+		<secondarybuff id="3" amount="-3" />
+		<secondarybuff id="4" amount="-3" />
+		<secondarybuff id="5" amount="-3" />
+		<mute amount="1" />
+		</buff>
+	</spell>
+
+<spell name="Awesome Blow" type="self" icon="skills/vile_poison32.png" >
+	<anim sprite="sprites/sfx/weakness_hit/weakness_hit" frames="8" framerate="80" sfx="teleport_short" />
+	<effect type="knock" amount="4" />
+	</spell>
+
+<spell name="Hideous Blow" type="self" icon="skills/vile_poison32.png" >
+	<anim sprite="sprites/sfx/weakness_hit/weakness_hit" frames="8" framerate="80" sfx="teleport_short" />
+	<effect type="damage" piercing="0" piercingF="0.3" slashing="0" slashingF="0.3" crushing="0" crushingF="0.3" />
+	</spell>
+
+<spell name="Arcane Might" type="self" icon="skills/magic_tap32.png" >
+	<description text="Arcane energies travel through you like water through a fountain. Your melding of sword and spell is unparalleled." />
+	<requirements mp="30" savvyBonus="0.25" mincost="15" />
+	<anim sprite="sprites/sfx/poison_rain/poison_rain" frames="11" frameRate="90" sfx="darkmagic" />
+	<buff useTimer="0" removable="1" manaUpkeep="1" icon="skills/magic_tap64.png" smallicon="skills/magic_tap32.png">
+		<primarybuff id="0" amount="5" />
+		<primarybuff id="2" amount="5" />
+		<secondarybuff id="2" amount="3" />
+		<secondarybuff id="3" amount="3" />
+		<secondarybuff id="4" amount="3" />
+		<secondarybuff id="5" amount="3" />
+		<targetHitEffectBuff type="trigger" name="Hideous Blow" percentage="33" />
+		<targetHitEffectBuff type="trigger" name="Arcane Strike" percentage="33" />
+		<targetHitEffectBuff type="trigger" name="Awesome Blow" percentage="33" />
+		</buff>
+	</spell>
+
+<!-- METEO...ROLOGY -->
+<spell name="Vague Prediction" type="self" icon="sprites/skills/skill_meteorology_32.png" >
+	<description text="The wildly inaccurate SCIENCE! of meteorology at work!" />
+	<requirements mp="10" savvyBonus="0.3" mincost="3" />
+	<effect type="triggerfromlist">
+		<option name="Predict Heat" />
+		<option name="Predict Snow" />
+		<option name="Predict Storm" />
+		</effect>
+	</spell>
+
+<spell name="Predict Snow" type="self" icon="sprites/skills/predict_snow_32.png" >
+	<description text="Better bundle up in front of the fire with a cup of cocoa." />
+	<requirements mp="10" savvyBonus="0.3" mincost="3" />
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="80" sfx="aetherial" />
+	<buff useTimer="1" time="200" removable="0" allowstacking="0" icon="sprites/skills/predict_snow_64.png" smallicon="sprites/skills/predict_snow_32.png">
+		<halo name="sprites/sfx/water_loop/water_loop" first="0" num="6" frameRate="90" />
+		<resistbuff conflagratory="-2" hyperborean="4" voltaic="-2" />
+		</buff>
+	<ai hint="buff" />
+	</spell>
+
+<spell name="Predict Storm" type="self" icon="sprites/skills/predict_storm_32.png" >
+	<description text="Good thing you're already underground." />
+	<requirements mp="10" savvyBonus="0.3" mincost="3" />
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="80" sfx="aetherial" />
+	<buff useTimer="1" time="200" removable="0" allowstacking="0" icon="sprites/skills/predict_storm_64.png" smallicon="sprites/skills/predict_storm_32.png">
+		<halo name="sprites/sfx/water_loop/water_loop" first="0" num="6" frameRate="90" />
+		<resistbuff conflagratory="-2" hyperborean="-2" voltaic="4" />
+		</buff>
+	<ai hint="buff" />
+	</spell>
+
+<spell name="Predict Heat" type="self" icon="sprites/skills/predict_heat_32.png" >
+	<description text="Gonna be a scorcher today." />
+	<requirements mp="10" savvyBonus="0.3" mincost="3" />
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="80" sfx="aetherial" />
+	<buff useTimer="1" time="200" removable="0" allowstacking="0" icon="sprites/skills/predict_heat_64.png" smallicon="sprites/skills/predict_heat_32.png">
+		<halo name="sprites/sfx/water_loop/water_loop" first="0" num="6" frameRate="90" />
+		<resistbuff conflagratory="4" hyperborean="-2" voltaic="-2" />
+		</buff>
+	<ai hint="buff" />
+	</spell>
+
+<spell name="Weather Is Fascinating" type="template" templateID="10" icon="sprites/skills/weather_is_fascinating_32.png" >
+	<description text="And look at this interaction, how it creates this crenellated cloud structure that builds off the air stream!" />
+	<requirements mp="5" savvyBonus="0.15" mincost="2" />
+	<anim sprite="sprites/sfx/arctic_vortex/arctic_vortex" frames="6" framerate="80" sfx="aetherial" />
+	<effect type="sleep" />
+	</spell>
+
+<spell name="Meatballs" type="target" icon="skills/butcher32.png" >
+	<effect type="spawnitemfromlist">
+		<option name="Offal"/>
+		<option name="Cube of Flesh"/>
+		<option name="Fresh Steak"/>
+		<option name="Ground Meat"/>
+		<option name="Steak"/>
+		<option name="Aged Steak"/>    
+		</effect>
+	<description text="So much meeeeat." />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+ </spell>
+
+
+<!-- <spell name="Press Pass" type="template" templateID="10" icon="sprites/skills/press_pass_32.png" >
+	<description text="Flash that badge." />
+	<requirements mp="15" savvyBonus="0.3" mincost="4" />
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="80" sfx="magic" />
+	<effect type="knock" amount="3" />
+	<effect type="damage" existential="2" existentialF="0.2" righteous="2" righteousF="0.2" />
+	</spell> -->
+
+<spell name="Roll The Dice" type="self" icon="sprites/skills/roll_the_dice_32.png" >
+	<description text="Sometimes you just have to take a chance." />
+	<requirements mp="10" savvyBonus="0.25" mincost="4" />
+	<anim sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="150" sfx="choir" />
+	<effect type="triggerfromlist">
+		<option name="Medium Health" />
+		<option name="Vile Poison" />
+		<option name="Plaid Power" />
+		<option name="Extra-planar Concentration" />
+		<option name="Antimagic Field" />
+		<option name="Thaumaturgic Conflux" />
+		<option name="Major Thaumaturgic Charge" />
+		<option name="Magic Steel" />
+		</effect>
+	</spell>
+
+<spell name="Acid Rain" icon="sprites/skills/acid_rain_32.png"
+	type="targetfloor" 
+	mineTimer="10" 
+	mineUseGlints="1" 
+	mineGlintDensity="25" 
+	mineSpritePNGSeries="sprites/sfx/poison_rain/poison_rain" 
+	mineSpritePNGFirst="0" 
+	mineSpritePNGNum="11" 
+	mineSpritePNGRate="100" 
+	mine="1" 
+	mineradius="3"
+	minePermanent="1" >
+	<effect type="damage" acidic="3" acidicF="0.4" toxic="1" toxicF="0.2" affectscaster="1" />
+	<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" framerate="80" sfx="magic" />
+	<description text="OH GOD IT BURNS." />
+	<requirements mp="20" savvyBonus="0.25" mincost="5" />
+	</spell>
+
+<spell name="Refreshing Rain" type="self" icon="sprites/skills/refreshing_rain_32.png" >
+	<description text="Sweet purifying, cleansing rain." />
+	<requirements mp="30" savvyBonus="0.3" mincost="15" />
+	<anim sprite="sprites/sfx/heal/heal" frames="7" framerate="80" sfx="choir" />
+	<effect type="uncurse" amount="1" />
+	<effect type="heal" amount="10" amountF="0.3" />
+	</spell>
+
+<spell name="Summon Clone" type="targetemptyfloor" icon="sprites/skills/its_raining_men_32.png" >
+	<requirements mp="1" />
+	<effect type="summon" monsterType="Clone" amount="4" />
+	<anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="100" sfx="blast" centerEffect="1"/>
+	<description text="Summon a clone." />
+	</spell>
+
+<spell name="It's Raining Men" anchored="1" type="template" templateID="09" icon="sprites/skills/its_raining_men_32.png" wand="0">
+	<requirements mp="30" savvyBonus="0.3" mincost="15" />
+	<description text="HALLELUJIAH!" />
+	<effect type="trigger" spell="Summon Clone" />
+	<anim sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
+	</spell>
+
+<spell name="Meteor Shower 4" type="template" templateID="99" >
+    <anim sprite="sprites/sfx/boulder_drop/boulder_drop" frames="9" firstframe="0" framerate="80" sfx="earth" />
+    <effect type="damage" burn="1" crushing="2" crushingF="0.2" blasting="1" blastingF="0.1" conflagratory="1" conflagratoryF="0.1" aethereal="1" aetherealF="0.1" affectscaster="0" />
+    </spell>
+ 
+<spell name="Meteor Shower 3" type="template" templateID="11" >
+    <anim sprite="sprites/sfx/boulder_drop/boulder_drop" frames="9" firstframe="0" framerate="80" sfx="earth" />
+    <effect type="damage" burn="1" crushing="2" crushingF="0.2" blasting="1" blastingF="0.1" conflagratory="1" conflagratoryF="0.1" aethereal="1" aetherealF="0.1" affectscaster="0" />
+    </spell>
+ 
+<spell name="Meteor Shower 2" type="template" templateID="10" >
+    <anim sprite="sprites/sfx/boulder_drop/boulder_drop" frames="9" firstframe="0" framerate="80" sfx="earth" />
+    <effect type="damage" burn="1" crushing="2" crushingF="0.2" blasting="1" blastingF="0.1" conflagratory="1" conflagratoryF="0.1" aethereal="1" aetherealF="0.1" affectscaster="0" />
+    </spell>
+
+<spell name="Meteor Shower 1" type="target" >
+    <anim sprite="sprites/sfx/boulder_drop/boulder_drop" frames="9" firstframe="0" framerate="80" sfx="earth" />
+    <effect type="damage" burn="1" crushing="2" crushingF="0.2" blasting="1" blastingF="0.1" conflagratory="1" conflagratoryF="0.1" aethereal="1" aetherealF="0.1" affectscaster="0" />
+</spell>
+
+ <spell name="Meteor Shower" icon="sprites/skills/meteor_shower_32.png" type="targetfloor" >
+    <anim sprite="sprites/sfx/boulder_drop/boulder_drop" frames="9" firstframe="0" framerate="80" sfx="earth" />
+    <requirements mp="50" savvyBonus="0.4" mincost="20" />
+    <effect type="trigger" spell="Meteor Shower 1" />
+    <effect type="trigger" spell="Meteor Shower 2" />
+    <effect type="trigger" spell="Meteor Shower 3" />
+    <effect type="trigger" spell="Meteor Shower 4" />
+    <description text="Today's forecast: cloudy with a chance of hailstones." />
+    </spell>
+
+<!-- SWEENEY TODD -->
+<spell name="Dread Blade" icon="sprites/skills/avex/dreadblade64.png" type="template" anchored="1" templateID="20" >
+	<anim sprite="sprites/sfx/bloodsplatA/bloodsplatA" frames="4" firstframe="0" framerate="80" sfx="darkmagic" />
+	<effect type="confuse" amount="3" after="1" />
+	<description text="Good lord, that's horrific." />
+	</spell>
+
+<spell name="Telling Blow" icon="sprites/skills/avex/tellingblow64.png" type="target" >
+	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" firstframe="0" framerate="80" sfx="shing" />
+	<effect type="damage" bleed="1" slashing="2" slashingF="0.2" secondaryScale="4" affectscaster="0" after="1" />
+	<description text="Blood, blood everywhere." />
+	</spell>
+
+<spell name="Inspire Terror" icon="sprites/skills/avex/inspireterror32.png" type="target" >
+	<anim sprite="sprites/sfx/bloodmagic/bloodmagic" frames="7" firstframe="0" framerate="80" sfx="darkmagic" />
+	<requirements mp="25" savvyBonus="0.3" mincost="10" />
+	<effect type="confuse" turns="3" amount="3" amountF="0.35" secondaryScale="24" percent="50" />
+	<effect type="paralyze" turns="3" amount="3" amountF="0.35" secondaryScale="26" percent="50" />
+	<description text="Your fearsome gaze causes your enemies to cower before you or flee in terror." />
+	</spell>
+
+<spell name="Gruesome Finish" icon="skills/skill_placeholder.png" type="self" >
+	<anim sprite="sprites/sfx/fleshy_buff/fleshy_buff" frames="6" firstframe="0" framerate="80" sfx="psycho" />
+	<buff useTimer="1" time="10" self="1" stackable="1" resistable="0" stacksize="10" icon="skills/skill_placeholder.png" smallicon="skills/skill_placeholder_small.png" >
+		<secondarybuff id="2" amount="1" /> <!-- melee power -->
+		<secondarybuff id="4" amount="1" /> <!-- crit -->
+		<damagebuff slashing="1"/>
+		</buff>
+	<description text="Glory in the slaughter of your enemies and take their strength as your own!" />
+	</spell>
+
+<spell name="Bloody Murder" icon="skills/skill_placeholder.png" type="template" anchored="1" >
+	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" firstframe="0" framerate="80" sfx="shing" />
+	<effect type="damage" bleed="1" slashing="3" slashingF="0.3" secondaryScale="4" affectscaster="0" after="1" />
+	<description text="Blood, blood everywhere." />
+	</spell>
+
+<spell name="What Is Best In Life?" icon="skills/crushed_bones64.png" type="self" >
+	<anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" firstframe="0" framerate="80" />
+	<buff useTimer="1" time="10" self="1" stackable="1" resistable="0" stacksize="10" icon="skills/crushed_bones64.png" smallicon="skills/crushed_bones32.png" >
+		<primarybuff id="0" amount="2"/> <!-- Burliness -->
+		<secondarybuff id="2" amount="1" /> <!-- melee power -->
+		<secondarybuff id="4" amount="2" /> <!-- crit -->
+		<damagebuff piercing="1"/>
+		<secondarybuff id="13" amount="1" /> <!-- hp regen -->
+		</buff>
+	<effect type="heal" amount="5" resistable="0" />
+	<description text="Blood, blood everywhere." />
+	</spell>
+
+<!-- ITEM STUFF -->
+<spell name="DoT Rage" type="self" icon="skills/warrior/berserker0_64.png" wand="0" >
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="ping" />
+	<effect type="dot" amount="6" spell="Growing Rage" resistable="0" />
+	</spell>
+
+<spell name="Growing Rage" type="self" icon="skills/warrior/berserker0_64.png" wand="0" >
+	<buff useTimer="1" time="6" self="1" stackable="1" resistable="0" stacksize="6" icon="sprites/skills/warrior/berserker0_64.png" smallicon="skills/spells/curse_of_midas32.png" >
+		<primarybuff id="0" amount="2"/> <!-- Burliness -->
+		<secondarybuff id="2" amount="1" /> <!-- melee power -->
+		<damagebuff crushing="1"/>
+		</buff>
+	</spell>
+
+<spell name="Antimagic Buff" type="self" icon="skills/conflux64.png" wand="0" >
+	<anim sprite="sprites/sfx/target/target" frames="5" framerate="90" sfx="cursed" centerEffect="1"/>
+	<effect type="dot" amount="10" spell="Building Magic Shield" resistable="0" />
+	<effect type="trigger" spell="Antimagic Field" />
+	</spell>
+
+<spell name="Building Magic Shield" type="self" icon="skills/conflux64.png" wand="0" >
+	<buff useTimer="1" time="10" self="1" stackable="1" stacksize="10" resistable="0" icon="skills/conflux64.png" smallicon="skills/conflux32.png" >
+		<secondarybuff id="11" amount="5" /> <!-- resist -->
+		<resistbuff aethereal="1" necromantic="1" conflagratory="1" hyperborean="1" voltaic="1" />
+		</buff>
+	</spell>
+
+<spell name="Variable Enhancer" type="self" icon="skills/conflux64.png" wand="0" >
+	<anim sprite="sprites/sfx/target/target" frames="5" framerate="90" sfx="cursed" centerEffect="1"/>
+	<effect type="trigger" spell="Antimagic Buff" percent="20" />
+	<effect type="trigger" spell="DoT Rage" percent="20" />
+	<effect type="trigger" spell="Soul Price" percent="20" />
+	<effect type="trigger" spell="Killing Blow" percent="20" />
+	<effect type="trigger" spell="Medium Regen" percent="20" />
+	<effect type="trigger" spell="Plaid Power" percent="20" />
+	<effect type="trigger" spell="Unpleasant Poison" percent="20" />
+	<effect type="trigger" spell="Thaumaturgic Conflux" percent="20" />
+	</spell>
+
+<spell name="Lutefisking" type="target" icon="skills/butcher32.png" wand="0">
+	<effect type="damage" transmutative="1"/>
+	<effect type="spawnitemfromlist">
+		<option name="Lutefisk"/> 
+		<option name="Lutefisk"/> 
+		<option name="Lutefisk"/> 
+		<option name="Lutefisk"/> 
+		<option name="Lutefisk Scales"/>   
+		</effect>
+	<description text="Change your enemies into delishus lootfizk!" />
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	</spell>
+
+<spell name="Smooth Criminal" type="self" icon="skills/rogue/skill_stealth3_32.png" wand="1">
+	<buff useTimer="1" time="10" self="1" stackable="0" resistable="0" icon="skills/rogue/skill_stealth3_64.png" smallicon="skills/rogue/skill_stealth3_32.png" >
+		<secondarybuff id="6" amount="50" /> <!-- dodge -->
+		<effect type="trigger" spell="DoT Blink" />
+		<effect type="trigger" spell="DoT Invis" />
+		</buff>
+	<description text="You're a smooth criminal, for now." />
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="90" centerEffect="0" sfx="bampf" />
+	</spell>
+
+<spell name="DoT Blink" type="self" icon="skills/rogue/skill_stealth3_64.png" wand="0" >
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="50" sfx="bampf" />
+	<effect type="dot" amount="10" spell="Froda's Jump Discontinuity" resistable="0" />
+	</spell>
+
+<spell name="DoT Invis" type="self" icon="skills/rogue/skill_stealth3_64.png" wand="0" >
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="50" sfx="bampf" />
+	<effect type="dot" amount="1" spell="Invisibility" resistable="0" />
+	<effect type="dot" amount="1" spell="Sunlight Eyes" resistable="0" />
+	</spell>
+
+<spell name="Sunlight Eyes" type="self" icon="skills/wizard/spell_white1_64.png" wand="0" >
+	<anim sprite="sprites/sfx/mechanical_buff/mechanical_buff" frames="8" framerate="50" sfx="bampf" />
+	<buff useTimer="1" time="24" self="1" stackable="1" resistable="0" icon="skills/wizard/spell_white1_64.png" smallicon="skills/wizard/spell_white1_32.png" >
+		<sightbuff amount="2" />
+		</buff>
+	<description text="You can see forever." />
+	</spell>
+
+<spell name="Lordly Might" type="target" icon="skills/power_of_the_rod32.png" wand="1">
+	<buff useTimer="1" time="50" self="1" stackable="0" resistable="0" icon="skills/power_of_the_rod64.png" smallicon="skills/power_of_the_rod32.png" >
+		<secondarybuff id="0" amount="15" /> <!-- HP -->
+		<secondarybuff id="2" amount="3" /> <!-- Melee -->
+		<secondarybuff id="4" amount="3" /> <!-- Crit -->
+		<secondarybuff id="8" amount="3" /> <!-- Counter -->
+		<secondarybuff id="9" amount="3" /> <!-- EDR -->
+		<damagebuff crushing="2" slashing="2" piercing="2" />
+		<targetHitEffectBuff spell="Midas" percentage="30" />
+		</buff>
+	<description text="Your rod of lordly might empowers you!" />
+	<anim sprite="sprites/sfx/celestialring/celestialring" frames="8" framerate="90"  centerEffect="0" sfx="choir" />
+	</spell>
+
+<spell name="Chthonian Tea" type="target" icon="skills/wizard/spell_black5_32.png" wand="1">
+	<effect type="dot" amount="32" spell="Magical Magnet" resistable="0" />
+	<effect type="dot" amount="16" spell="Vital Drain" resistable="0" />
+	<effect type="dot" amount="8" spell="Chthonian Empowerment" resistable="0" />
+	<effect type="dot" amount="4" spell="Dark Energies" resistable="0" />
+	<effect type="dot" amount="2" spell="Extradimenisonal Fires" resistable="0" />
+	<description text="And with strange aeons, even tea may die." />
+	<anim sprite="sprites/sfx/black_ritual/black_ritual" frames="10" framerate="90"  centerEffect="0" sfx="naughty" />
+	</spell>
+
+<spell name="Magical Magnet" type="target" icon="skills/wizard/spell_black0_32.png" wand="0">
+	<buff useTimer="1" time="48" self="1" stackable="1" stacksize="48" resistable="0" icon="skills/wizard/spell_black0_64.png" smallicon="skills/wizard/spell_black0_32.png" >
+		<secondarybuff id="11" amount="-1" /> <!-- Resist -->
+		<secondarybuff id="22" amount="-1" /> <!-- Reflect -->
+		</buff>
+	<description text="Your ability to resist magic is weakened!" />
+	</spell>
+
+<spell name="Vital Drain" type="target" icon="skills/wizard/leylines2_32.png" wand="0">
+	<buff useTimer="1" time="72" self="1" stackable="1" stacksize="24" resistable="0" icon="skills/wizard/leylines2_64.png" smallicon="skills/wizard/leylines2_32.png" >
+		<secondarybuff id="13" amount="-1" /> <!-- HP Regen -->
+		<secondarybuff id="14" amount="-1" /> <!-- MP Regen -->
+		</buff>
+	<description text="Your life force is slipping away, drained by O'rlyeh's awesome might!" />
+	</spell>
+
+<spell name="Chthonian Empowerment" type="target" icon="skills/wizard/magictraining2_32.png" wand="0">
+	<buff useTimer="1" time="84" self="1" stackable="1" stacksize="12" resistable="0" icon="skills/wizard/magictraining2_64.png" smallicon="skills/wizard/magictraining2_32.png" >
+		<secondarybuff id="3" amount="1" /> <!-- Magic Power -->
+		<secondarybuff id="5" amount="2" /> <!-- Haywire -->
+		</buff>
+	<description text="O'rlyeh's magical energies embolden your magicks!" />
+	</spell>
+
+<spell name="Dark Energies" type="target" icon="skills/wizard/spell_black7_32.png" wand="0">
+	<buff useTimer="1" time="90" self="1" stackable="1" stacksize="6" resistable="0" icon="skills/wizard/spell_black7_64.png" smallicon="skills/wizard/spell_black7_32.png" >
+		<secondarybuff id="0" amount="1" /> <!-- HP -->
+		<secondarybuff id="2" amount="1" /> <!-- Melee -->
+		<secondarybuff id="4" amount="1" /> <!-- Crit -->
+		<secondarybuff id="8" amount="1" /> <!-- Counter -->
+		</buff>
+	<description text="You feel mighty dark energies empower you!" />
+	</spell>
+
+<spell name="Extradimenisonal Fires" type="target" icon="skills/wizard/spell_fire0_32.png" wand="0">
+	<buff useTimer="1" time="93" self="1" stackable="1" stacksize="3" resistable="0" icon="skills/wizard/spell_fire0_64.png" smallicon="skills/wizard/spell_fire0_32.png" >
+		<damagebuff conflagratory="3" necromantic="3" aethereal="2"/>
+		<effect type="damage" burn="1" />
+		</buff>
+	<description text="Terrible flames from beyond time and space suffuse your attacks!" />
+	</spell>
+
+<spell name="PIIIIIIIIIIE" type="target" icon="skills/stat_chr32.png" wand="0">
+	<buff useTimer="1" time="30" self="1" stackable="0" resistable="0" icon="skills/stat_chr64.png" smallicon="skills/stat_chr32.png" >
+		<secondarybuff id="13" amount="2" /> <!-- HP Regen -->
+		</buff>
+	<description text="Pretty sweet, bro." />
+	</spell>
+
+<spell name="Sudden Stalagmite" type="target" icon="skills/stat_chr32.png" wand="0">
+	<effect type="damage" piercing="10" piercingF="0.5" />
+	<effect type="lockdown" amount="5" />
+	<description text="...that looks painful." />
+	<anim sprite="sprites/sfx/sudden_stalagmite/sudden_stalagmite" frames="9" framerate="90"  centerEffect="0" sfx="earth" />
+	</spell>
+
+<spell name="Salty Bawl" type="target" icon="skills/fungal_mana32.png" wand="0">
+	<buff useTimer="1" time="30" self="1" stackable="0" resistable="0" icon="skills/fungal_mana64.png" smallicon="skills/fungal_mana32.png" >
+		<secondarybuff id="14" amount="2" /> <!-- MP Regen -->
+		</buff>
+	<description text="Mmm, salty!" />
+	</spell>
+
+<spell name="Crafty Buff" type="target" icon="skills/smith_armour32.png" wand="0">
+	<buff useTimer="1" time="30" self="1" stackable="0" resistable="0" icon="skills/smith_armour64.png" smallicon="skills/smith_armour32.png" >
+		<secondarybuff id="19" amount="1" /> <!-- smithing -->
+		<secondarybuff id="20" amount="1" /> <!-- tinkering -->
+		<secondarybuff id="21" amount="1" /> <!-- alchemy -->
+		<secondarybuff id="23" amount="1" /> <!-- Wandcrafting -->
+		</buff>
+	<description text="You feel like you could make anything!" />
+	</spell>
+
+<spell name="Silver Smite" type="target" icon="skills/stat_chr32.png" wand="0">
+	<effect type="damage" piercing="1" piercingF="0.2" righteous="1" righteousF="0.2" />
+	<effect type="lockdown" amount="3" />
+	<description text="...that looks painful." />
+	<anim sprite="sprites/sfx/spikes/spikes" frames="9" framerate="90"  centerEffect="0" sfx="blades" />
+	</spell>
+
+<spell name="Hot Sauce" type="target" icon="skills/regen64.png" wand="0">
+	<effect type="damage" affectsCaster="1" conflagratory="1" acidic="1" toxic="1" />
+	<description text="Dear lord, it burns! Why does it burn?!" />
+	<anim sprite="sprites/sfx/skullpuff/skullpuff" frames="10" framerate="80"  centerEffect="0" sfx="acid" />
+	</spell>
+
+<spell name="TACO TUESDAY" type="target" icon="skills/stat_chr64.png" wand="0">
+	<buff useTimer="1" time="15" allowstacking="1" stacksize="10" icon="skills/stat_chr64.png">
+		<secondarybuff id="13" amount="3"/>
+		</buff>
+	<description text="OM NOM NOM" />
+	<anim sprite="sprites/sfx/hero_glow/hero_glow" frames="3" framerate="80"  centerEffect="0" sfx="magic" />
+	</spell>
+</spellDB>

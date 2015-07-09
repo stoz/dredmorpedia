@@ -1,0 +1,53 @@
+<skillDB>
+
+<skill name="Wind Magic" id="3021" type="wizard" description="You are the master of all winds in a dungeon completely disconnected from the sky.">
+	<art icon="skills/skill_windmagic.png"/>
+</skill>
+
+<!-- 1:Gust: cone knockback; 2:Backdraft: line pull; 3:Windwalk: teleport, arc knockback, bad scaling, high cost, mana regain per hit, -1 vision to self. -mp to self; 4:Tornado: line knockback, perm knockback mine;
+	 5:Flight of the something: blink, stacking dodge sneakiness and block buffs; 6:Eye of the Storm: pbaoeot damage, root? silence?, then knockback. high cost, mana regain per hit, asphyxiative damage to self; -->
+<ability name="Wind Magic" icon="skills/skill_windmagic.png" skill="3021" startskill="1">
+	<description text="You are the master of all winds in a dungeon completely disconnected from the sky."/>
+</ability>
+	
+<ability name="Gust" icon="skills/spells/gust64.png" skill="3021" level="0">
+	<description text="This spell allows you to blow a gust of air to knockback nearby enemies."/>
+	<spell name="Gust"/>
+</ability>
+
+<ability name="Flight of the Flamingo" icon="skills/spells/windmagicflight64.png" skill="3021" level="1">
+	<description text="You take flight to a point to escape your foes, dodging attacks in the process. Unfortunately you learned to fly at the stormtrooper acadamy."/>
+	<spell name="Flight"/>
+</ability>
+
+<ability name="Breathstealer" icon="skills/spells/backdraft64.png" skill="3021" level="2">
+	<description text="Steals the breath of your enemies, unless of course they don't have any, in which case you just wasted time studying this spell. Either way, their lack of breath means that they are unable to cast spells as all spells require incantation."/>
+	<spell name="Breathstealer"/>
+</ability>
+
+
+<!-- holding off on this until a later update
+<ability name="Storm Shield" icon="skills/spells/storm_shield64.png" skill="3021" level="3">
+	<description text="The winds follow your will and shield your body."/>
+	<spell name="Storm Shield"/>
+</ability>
+-->
+
+<ability name="Tornado" icon="skills/spells/tornado64.png" skill="3021" level="3">
+	<description text="You summon a deadly whirlwind of air to disrupt your enemies."/>
+	<spell name="Tornado"/>
+</ability>
+
+<ability name="Windwalk" icon="skills/spells/windwalk64.png" skill="3021" level="4">
+	<description text="Walking through the air itself you move to a nearby location, damaging all enemies hit with a strong gust of air."/>
+	<spell name="Windwalk"/>
+</ability>
+
+<ability name="Eye of the Storm" icon="skills/spells/eye_of_the_storm64.png" skill="3021" level="5">
+	<description text="You become the center of a raging whirlwind, punishing all around you."/>
+	<spell name="Eye of the Storm"/>
+</ability>
+
+<!-- <ability name=" -->
+	
+</skillDB>

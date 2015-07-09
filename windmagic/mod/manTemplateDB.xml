@@ -1,0 +1,12 @@
+
+<templatedb>
+	<template width="7" height="7" name="Eye of the Storm Effect" affectsPlayer="0">
+		<row text="..@@@.."/>
+		<row text=".@@@@@."/>
+		<row text="@@@@@@@"/>
+		<row text="@@@#@@@"/>
+		<row text="@@@@@@@"/>
+		<row text=".@@@@@."/>
+		<row text="..@@@.."/>
+	</template>
+</templatedb>

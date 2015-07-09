@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<craftDB>
+<!-- WANDS -->
+<craft hidden="1">
+	<output skill="1" name="Pixie Stick" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Fairywodger"/>
+	<input name="Fairywodger"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="3" name="Phoenix Wand" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Fiery Wand"/>
+	<input name="Infernal Potion"/>
+	<input name="Ruby"/>
+	<input name="Rust"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="3" name="Foxy Wand" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Spatial Instability Infusion" />
+	<input name="Parachute Pants" />
+	</craft>
+
+<craft hidden="1">
+	<output skill="3" name="Rod of Lordly Might" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Wand of Bling"/>
+	<input name="Aqua Regia"/>
+	<input name="The Prince"/>
+	</craft>
+
+<!-- WEAPONS -->
+<!-- Swords -->
+<craft hidden="0">
+	<output skill="1" name="Holy Blade of Lutefisking" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Rough Iron Sword"/>
+	<input name="Lutefisk"/>
+	<input name="Lutefisk"/>
+	<input name="Lutefisk"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="5" name="Devious" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Roguely Dagger of Akumos"/>
+	<input name="Steel Ingot"/>
+	<input name="Pyrite Sun"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="5" name="Vicious" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="The Fatblade"/>
+	<input name="Steel Ingot"/>
+	<input name="Pyrite Sun"/>
+	</craft>
+<!--
+<craft hidden="1">
+	<output skill="3" name="Swallow Sword" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Sacrificial Dagger"/>
+	<input name="Sacrificial Dagger"/>
+	<input name="Hefty Stick"/>
+	</craft>
+-->
+<!-- Axes -->
+<craft hidden="1">
+	<output skill="2" name="Orcish Double Axe" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Bearded Axe"/>
+	<input name="Bearded Axe"/>
+	<input name="Hefty Stick"/>
+	</craft>
+
+<!-- Maces -->
+<craft hidden="1">
+	<output skill="2" name="Orcish Dire Mace" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Iron Mace"/>
+	<input name="Iron Mace"/>
+	</craft>
+
+<!-- Staves -->
+<craft hidden="0">
+	<output skill="1" name="Wizard's Spear" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Birry Crystal"/>
+	<input name="Hefty Stick"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Crystal Spear" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Bylli Crystal"/>
+	<input name="Beelae Crystal"/>
+	<input name="Hefty Stick"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="2" name="Orcish Wand" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Fiery Wand"/>
+	<input name="Fiery Wand"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="2" name="Orcish Double Spear" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Javelin"/>
+	<input name="Javelin"/>
+	<input name="Hefty Stick"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="4" name="Crystalline Lance" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Crystal Spear"/>
+	<input name="Diamond"/>
+	<input name="Wand of Bling"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="5" name="Keir's Crystal Shard" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Crystalline Lance"/>
+	<input name="Rod of Lordly Might"/>
+	<input name="Birry Crystal"/>
+	<input name="Beelae Crystal"/>
+	</craft>
+
+<!-- Bows -->
+<craft hidden="0">
+	<output skill="1" name="Elvish Longbow" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Small Crossbow"/>
+	<input name="Hefty Stick"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="1" name="Elven Longbow" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Elvish Longbow"/>
+	<input name="Fairywodger"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="2" name="Icy Bow" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Elven Longbow"/>
+	<input name="Hyperborean Potion"/>
+	<input name="Sapphire"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="3" name="Bow of the Radiant Dawn" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Elven Longbow"/>
+	<input name="Potion of Radiance"/>
+	<input name="Zodiacal Wand"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="5" name="Bow of the Red Archer" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Bow of the Radiant Dawn"/>
+	<input name="Noxious Brimstone Flask"/>
+	<input name="Greedy Blungecap"/>
+	<input name="Bolt of Squid"/>
+	</craft>
+
+<!-- Thrown -->
+<craft hidden="0">
+	<output skill="2" name="Orcish Shuriken" amount="12"/>
+	<output skill="3" name="Orcish Shuriken" amount="18"/>
+	<output skill="4" name="Orcish Shuriken" amount="24"/>
+	<output skill="5" name="Orcish Shuriken" amount="30"/>
+	<output skill="6" name="Orcish Shuriken" amount="40"/>
+	<tool tag="smithing"/>
+	<input name="Throwing Axe"/>
+	<input name="Throwing Axe"/>
+	<input name="Throwing Axe"/>
+	<input name="Throwing Axe"/>
+	</craft>
+
+<!-- Bolts -->
+
+<!-- ARMOR -->
+<!-- Shields and Tomes -->
+<craft hidden="1">
+	<output skill="1" name="Little Red Cookbook" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Little Black Book"/>
+	<input name="Carnelian"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="4" name="Book of Shadows" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Little Black Book"/>
+	<input name="Potion of Radiance"/>
+	<input name="Potion of Clear Vision"/>
+	<input name="Burnt Out Wand"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="3" name="Crafter's Almanac" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Modular Alchemy Box"/>
+	<input name="Tinkerer Parts"/>
+	<input name="n-Dimensional Lathe"/>
+	<input name="Universal Principles"/>
+	</craft>
+
+<!-- Clothing -->
+<craft hidden="1">
+	<output skill="2" name="Dashing Top Hat" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Leather Cap"/>
+	<input name="Black Powder"/>
+	<input name="Spatial Instability Infusion"/>
+	</craft>
+
+<!-- EDIBLES -->
+<!-- Foods -->
+
+<!-- Mushrooms -->
+
+<!-- Potions -->
+<craft hidden="0">
+	<output skill="0" name="Birry Crystal" amount="1"/>
+	<output skill="2" name="Birry Crystal" amount="2"/>
+	<output skill="4" name="Birry Crystal" amount="3"/>
+	<tool tag="ingot"/>
+	<input name="Diamond"/>
+	<input name="Bituminous Coal"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="1" name="Bylli Crystal" amount="1"/>
+	<output skill="3" name="Bylli Crystal" amount="2"/>
+	<output skill="4" name="Bylli Crystal" amount="3"/>
+	<tool tag="alchemy"/>
+	<input name="Birry Crystal"/>
+	<input name="Hyperborean Potion"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="1" name="Beelae Crystal" amount="1"/>
+	<output skill="3" name="Beelae Crystal" amount="2"/>
+	<output skill="4" name="Beelae Crystal" amount="3"/>
+	<tool tag="alchemy"/>
+	<input name="Birry Crystal"/>
+	<input name="Infernal Potion"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="2" name="Variable Enhancer" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Spatial Instability Infusion"/>
+	<input name="Potion of Dire Empowerment"/>
+	<input name="Verdant Poison"/>
+	<input name="Aqua Regia"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="5" name="Tea of O'rlyeh" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Ground Root from Beyond the Stars"/>
+	<input name="Aqua Vitae"/>
+	<input name="Aqua Regia"/>
+	<input name="Aqua Fortis"/>
+	</craft>
+
+<!-- MISCELLANEOUS -->
+<craft hidden="1">
+	<output skill="1" name="Horadric Lutefisk Cube" amount="1"/>
+	<tool tag="lathe"/>
+	<input name="Spatial Instability Infusion"/>
+	<input name="Lutefisk Scales"/>
+	<input name="Lutefisk Scales"/>
+	<input name="Diggle Nog"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="1" name="Rather Common Candy" amount="1"/>
+	<output skill="2" name="Rather Common Candy" amount="2"/>
+	<output skill="3" name="Rather Common Candy" amount="3"/>
+	<output skill="4" name="Rather Common Candy" amount="4"/>
+	<output skill="5" name="Rather Common Candy" amount="5"/>
+	<tool tag="alchemy"/>
+	<input name="Powdered Aluminum"/>
+	<input name="Carnelian"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="2" name="Uncommon Candy" amount="1"/>
+	<output skill="4" name="Uncommon Candy" amount="2"/>
+	<tool tag="alchemy"/>
+	<input name="Rather Common Candy"/>
+	<input name="Turquoise"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="3" name="Rare Candy" amount="1"/>
+	<output skill="5" name="Rare Candy" amount="2"/>
+	<tool tag="alchemy"/>
+	<input name="Uncommon Candy"/>
+	<input name="Citrine"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="0" name="Ground Root from Beyond the Stars" amount="1"/>
+	<tool tag="grinder"/>
+	<input name="Root of T'Char"/>
+	</craft>
+
+</craftDB>

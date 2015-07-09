@@ -1,0 +1,141 @@
+	
+	<spell name="Time Paradox" type="targetfloor" icon="skills/spells/paradox_32.png"
+			mine="1"
+			mineTimer="10"
+			mineradius="3"
+			minePermanent="1"
+			mineUseGlints="1" 
+			mineGlintDensity="8" 
+			mineSpritePNGSeries="sprites/sfx/time_rift/time_rift"  
+			mineSpritePNGFirst="0" 
+			mineSpritePNGNum="6" 
+			mineSpritePNGRate="80" 
+			mineSpriteDrawOrder="1" >
+		<!-- Damage -->
+		<effect type="trigger" spell="Time Paradox Damage" />
+		
+		<!-- Displace -->
+		<effect type="displace" sfx="teleport" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="90" sfx="teleport" />
+		<description text="It's a Time Paradox, run!" />
+	</spell>
+	
+	<!--
+	<spell name="Time Rift" 
+			type="targetfloor" 
+			icon="skills/spells/time_32.png" 
+			mine="1"
+			mineTimer="4" 
+			mineUseGlints="1" 
+			mineGlintDensity="8"
+			mineSpritePNGSeries="sprites/sfx/time_rift/time_rift" 
+			mineSpritePNGFirst="0" 
+			mineSpritePNGNum="6" 
+			mineSpritePNGRate="80" 
+			mineSpriteDrawOrder="1"
+			mineradius="3"
+			minePermanent="1">
+		<description text="A Rift in Time is tearing a hole in our dimension!" />
+	</spell>
+	-->
+	
+	<spell name="Time Paradox Blast 1" type="template" templateID="98" >
+		<effect type="trigger" spell="Time Paradox Random" />
+		<anim sprite="sprites/sfx/thermite_hit/thermite_hit" frames="8" framerate="40" sfx="blast"/>
+	</spell>
+	<spell name="Time Paradox Blast 2" type="template" templateID="99" >
+		<effect type="trigger" spell="Time Paradox Random" />
+		<anim sprite="sprites/sfx/thermite_hit/thermite_hit" frames="8" framerate="40" sfx="blast"/>
+	</spell>
+	<spell name="Time Paradox Blast 3" type="template" templateID="100" >
+		<effect type="trigger" spell="Time Paradox Random" />
+		<anim sprite="sprites/sfx/thermite_hit/thermite_hit" frames="8" framerate="40" sfx="blast"/>
+	</spell>
+	
+	<spell name="Time Paradox Damage" type="targetfloor">
+		<effect type="triggerfromlist">
+			<option name="Time Paradox Acidic" />
+			<option name="Time Paradox Aethereal" />
+			<option name="Time Paradox Asphyxiative" />
+			<option name="Time Paradox Blasting" />
+			<option name="Time Paradox Crushing" />
+			<option name="Time Paradox Righteous" />
+			<option name="Time Paradox Voltaic" />
+			<option name="Time Paradox Existential" />
+			<option name="Time Paradox Conflagratory" />
+			<option name="Time Paradox Hyperborean" />
+			<option name="Time Paradox Necromantic" />
+			<option name="Time Paradox Piercing" />
+			<option name="Time Paradox Putrifying" />
+			<option name="Time Paradox Slashing" />
+			<option name="Time Paradox Toxic" />
+			<option name="Time Paradox Transmutative" />
+		</effect>
+	</spell>
+	
+	<spell name="Time Paradox Acidic" type="targetfloor">
+		<effect type="damage" acidic="1" acidicF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_acid/impact_acid" frames="5" framerate="240" />
+	</spell>
+	<spell name="Time Paradox Aethereal" type="targetfloor">
+		<effect type="damage" aethereal="1" aetherealF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_aethereal/impact_aethereal" frames="6" framerate="200" />
+	</spell>
+	<spell name="Time Paradox Asphyxiative" type="targetfloor">
+		<effect type="damage" asphyxiative="1" asphyxiativeF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_asphyxiative/impact_asphyxiative" frames="6" framerate="200" />
+	</spell>
+	<spell name="Time Paradox Blasting" type="targetfloor">
+		<effect type="damage" blasting="1" blastingF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_blast/impact_blast" frames="5" framerate="240" />
+	</spell>
+	<spell name="Time Paradox Crushing" type="targetfloor">
+		<effect type="damage" crushing="1" crushingF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_crushing/impact_crushing" frames="4" framerate="300" />
+	</spell>
+	<spell name="Time Paradox Righteous" type="targetfloor">
+		<effect type="damage" righteous="1" righteousF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="240" />
+	</spell>
+	<spell name="Time Paradox Voltaic" type="targetfloor">
+		<effect type="damage" voltaic="1" voltaicF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_electrical/impact_electrical" frames="6" framerate="200" />
+	</spell>
+	<spell name="Time Paradox Existential" type="targetfloor">
+		<effect type="damage" existential="1" existentialF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_existential/impact_existential" frames="9" framerate="133" />
+	</spell>
+	<spell name="Time Paradox Conflagratory" type="targetfloor">
+		<effect type="damage" conflagratory="1" conflagratoryF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_fire/impact_fire" frames="5" framerate="240" />
+	</spell>
+	<spell name="Time Paradox Hyperborean" type="targetfloor">
+		<effect type="damage" hyperborean="1" hyperboreanF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_ice/impact_ice" frames="6" framerate="200" />
+	</spell>
+	<spell name="Time Paradox Necromantic" type="targetfloor">
+		<effect type="damage" necromantic="1" necromanticF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_necromatic/impact_necromatic" frames="5" framerate="240" />
+	</spell>
+	<spell name="Time Paradox Piercing" type="targetfloor">
+		<effect type="damage" piercing="1" piercingF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" framerate="400" />
+	</spell>
+	<spell name="Time Paradox Putrifying" type="targetfloor">
+		<effect type="damage" putrifying="1" putrifyingF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_putrifying/impact_putrifying" frames="6" framerate="200" />
+	</spell>
+	<spell name="Time Paradox Slashing" type="targetfloor">
+		<effect type="damage" slashing="1" slashingF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_slash/impact_slash" frames="6" framerate="200" />
+	</spell>
+	<spell name="Time Paradox Toxic" type="targetfloor">
+		<effect type="damage" toxic="1" toxicF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_toxic/impact_toxic" frames="5" framerate="240" />
+	</spell>
+	<spell name="Time Paradox Transmutative" type="targetfloor">
+		<effect type="damage" transmutative="1" transmutativeF="0.1" affectscaster="1" />
+		<anim sprite="sprites/sfx/impact_transmutative/impact_transmutative" frames="6" framerate="200" />
+	</spell>

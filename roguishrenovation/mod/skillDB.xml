@@ -1,0 +1,229 @@
+<skillDB>
+
+<radiantwizardskills>
+
+<skill name="Radiant Wizard" id="751" type="wizard" description="You have immersed yourself in the energies of all things luminous to gain great magical power, at the cost of your physical body deteriorating.">
+	<art icon="skills/wizard/spell_white2_64.png"/>
+	<loadout type="armour" subtype="Cracked Orb" />
+	</skill>
+
+<ability name="Radiant Wizard" icon="skills/wizard/spell_white2_64.png" skill="751" startSkill="1">
+	<description text="You have steeped yourself in the energies of all things luminous to gain great magical power. As your physical body becomes more insubstantial, though, the laws of physics come bearing down upon you ever more harshly."/>
+	</ability>
+
+<!-- Human form version of Light Dart. -->
+
+<ability name="Light Dart" icon="skills/spells/curse_of_midas64.png" skill="751" level="0" >
+	<spell name="Light Dart"/>
+	<description text="Blast your ememies with a concentrated burst of luminance from your fingertip! Are you sure your hand's supposed to be see-through, though, or is that a trick of the light?" />
+		<primarybuff id="1" amount="1"/> <!-- sagacity -->
+		<secondarybuff id="6" amount="-1"/> <!-- dodge -->
+		<secondarybuff id="7" amount="-1"/> <!-- block -->
+		<secondarybuff id="8" amount="-1"/> <!-- counter -->
+		<secondarybuff id="11" amount="3" /> <!-- magic resist -->
+		<secondarybuff id="22" amount="3" /> <!-- magic reflect -->
+	</ability>
+
+<!-- EDF version of Light Dart. -->
+
+<ability name="Light Dart" icon="skills/spells/curse_of_midas64.png" skill="751" level="0" polymorphedOnly="1" polymorphTag="Flamer" >
+	<spell name="Light Dart"/>
+	<description text="Blast your ememies with a concentrated burst of luminance from your fingertip! Are you sure your hand's supposed to be see-through, though, or is that a trick of the light?" />
+		<primarybuff id="1" amount="1"/> <!-- sagacity -->
+		<secondarybuff id="6" amount="-1"/> <!-- dodge -->
+		<secondarybuff id="7" amount="-1"/> <!-- block -->
+		<secondarybuff id="8" amount="-1"/> <!-- counter -->
+		<secondarybuff id="11" amount="3" /> <!-- magic resist -->
+		<secondarybuff id="22" amount="3" /> <!-- magic reflect -->
+	</ability>
+
+<!-- Human form version of Dazzling Blast. -->
+
+<ability name="Dazzling Blast" icon="skills/spells/blinding_light64.png" skill="751" level="1" >
+	<spell name="Dazzling Blast"/>
+	<description text="Your heart has started pumping out haywire energies, which augment your magical powers and can be released in stunning bursts. This, however, makes it less effective at pumping blood around your body, sapping your strength--physical contact should always be a last resort." />
+		<primarybuff id="1" amount="1"/> <!-- sagacity -->
+		<secondarybuff id="3" amount="2"/> <!-- magic power -->
+		<secondarybuff id="5" amount="2"/> <!-- haywire -->
+		<secondarybuff id="6" amount="-3"/> <!-- dodge -->
+		<secondarybuff id="7" amount="-3"/> <!-- block -->
+		<secondarybuff id="8" amount="-3"/> <!-- counter -->
+		<secondarybuff id="11" amount="5"/> <!-- magic resist -->
+		<secondarybuff id="22" amount="5"/> <!-- magic reflect -->
+	</ability>
+
+<!-- EDF version of Dazzling Blast. -->
+
+<ability name="Dazzling Blast" icon="skills/spells/blinding_light64.png" skill="751" level="1" polymorphedOnly="1" polymorphTag="Flamer" >
+	<spell name="Dazzling Blast"/>
+	<description text="Your heart has started pumping out haywire energies, which augment your magical powers and can be released in stunning bursts. This, however, makes it less effective at pumping blood around your body, sapping your strength--physical contact should always be a last resort." />
+		<primarybuff id="1" amount="1"/> <!-- sagacity -->
+		<secondarybuff id="3" amount="2"/> <!-- magic power -->
+		<secondarybuff id="5" amount="2"/> <!-- haywire -->
+		<secondarybuff id="6" amount="-3"/> <!-- dodge -->
+		<secondarybuff id="7" amount="-3"/> <!-- block -->
+		<secondarybuff id="8" amount="-3"/> <!-- counter -->
+		<secondarybuff id="11" amount="5"/> <!-- magic resist -->
+		<secondarybuff id="22" amount="5"/> <!-- magic reflect -->
+	</ability>
+
+<!-- Human form version of Realignment. -->
+
+<ability name="Realignment" icon="skills/spells/zephyric_transport64.png" skill="751" level="2" >
+	<spell name="Realignment"/>
+	<description text="Wary of the fact that your body is falling apart atom by atom and becoming prone to breaching and highly dangerous meltdown, you learn to pull together the new form you are assuming into a shape more suited to repelling physical threats. This also drains your energies faster than college frat boys can conduct blood alcohol experiments." />
+		<primarybuff id="1" amount="1"/> <!-- sagacity -->
+		<primarybuff id="5" amount="1"/> <!-- savvy -->
+		<secondarybuff id="2" amount="-4"/> <!-- melee power -->
+		<secondarybuff id="3" amount="4"/> <!-- magic power -->
+		<secondarybuff id="4" amount="-8"/> <!-- crit -->
+		<secondarybuff id="5" amount="4"/> <!-- haywire -->
+		<secondarybuff id="11" amount="5"/> <!-- magic resist -->
+		<secondarybuff id="22" amount="5"/> <!-- magic reflect -->
+		<playerHitEffectBuff percentage="100" name="Breached"/>
+	</ability>
+
+<!-- EDF version of Realignment. -->
+
+<ability name="Realignment" icon="skills/spells/zephyric_transport64.png" skill="751" level="2" polymorphedOnly="1" polymorphTag="Flamer" >
+	<spell name="Realignment"/>
+	<description text="Wary of the fact that your body is falling apart atom by atom and becoming prone to breaching and highly dangerous meltdown, you learn to pull together the new form you are assuming into a shape more suited to repelling physical threats. This also drains your energies faster than college frat boys can conduct blood alcohol experiments." />
+		<primarybuff id="1" amount="1"/> <!-- sagacity -->
+		<primarybuff id="5" amount="1"/> <!-- savvy -->
+		<secondarybuff id="2" amount="-4"/> <!-- melee power -->
+		<secondarybuff id="3" amount="4"/> <!-- magic power -->
+		<secondarybuff id="4" amount="-8"/> <!-- crit -->
+		<secondarybuff id="5" amount="4"/> <!-- haywire -->
+		<secondarybuff id="11" amount="5"/> <!-- magic resist -->
+		<secondarybuff id="22" amount="5"/> <!-- magic reflect -->
+	</ability>
+
+<!-- Human form version of Charged Beam. -->
+
+<ability name="Charged Beam" icon="skills/spells/phlogistonic_oil64.png" skill="751" level="3" >
+	<spell name="Charged Beam"/>
+	<description text="As you draw closer to transcending to your new energy-based form, you gain the ability to fire a short-range beam that has a chance to siphon the energies of your enemies. This comes at the price of said energies spraying everywhere if those monsters rip apart your fleshy shell." />
+		<primarybuff id="1" amount="2"/> <!-- sagacity -->
+		<primarybuff id="5" amount="2"/> <!-- savvy -->
+		<secondarybuff id="3" amount="4"/> <!-- magic power -->
+		<secondarybuff id="5" amount="4"/> <!-- haywire -->
+		<secondarybuff id="6" amount="-4"/> <!-- dodge -->
+		<secondarybuff id="7" amount="-4"/> <!-- block -->
+		<secondarybuff id="8" amount="-4"/> <!-- counter -->
+		<secondarybuff id="10" amount="-1"/> <!-- armor_absorption -->
+		<secondarybuff id="11" amount="5"/> <!-- magic resist -->
+		<secondarybuff id="22" amount="5"/> <!-- magic reflect -->
+		<playerHitEffectBuff percentage="33" name="Meltdown"/>
+	</ability>
+
+
+<!-- EDF version of Charged Beam. -->
+
+<ability name="Charged Beam" icon="skills/spells/phlogistonic_oil64.png" skill="751" level="3" polymorphedOnly="1" polymorphTag="Flamer" >
+	<spell name="Charged Beam"/>
+	<description text="As you draw closer to transcending to your new energy-based form, you gain the ability to fire a short-range beam that has a chance to siphon the energies of your enemies. This comes at the price of said energies spraying everywhere if those monsters rip apart your fleshy shell." />
+		<primarybuff id="1" amount="2"/> <!-- sagacity -->
+		<primarybuff id="5" amount="2"/> <!-- savvy -->
+		<secondarybuff id="3" amount="4"/> <!-- magic power -->
+		<secondarybuff id="5" amount="4"/> <!-- haywire -->
+		<secondarybuff id="6" amount="-4"/> <!-- dodge -->
+		<secondarybuff id="7" amount="-4"/> <!-- block -->
+		<secondarybuff id="8" amount="-4"/> <!-- counter -->
+		<secondarybuff id="10" amount="-1"/> <!-- armor_absorption -->
+		<secondarybuff id="11" amount="5"/> <!-- magic resist -->
+		<secondarybuff id="22" amount="5"/> <!-- magic reflect -->
+	</ability>
+
+<!-- Human form version of Light Bending. -->
+
+<ability name="Light Bending" icon="skills/spells/the_word64.png" skill="751" level="4" >
+	<spell name="Light Bending"/>
+	<description text="You're not much more than atoms held together by pure thought now; electromagnetic waves of all wavelengths acknowledge you as their master. You direct them where you please, revealing the hidden and weakening those nasty monsters to your spells. Of course, you're concentrating on defying the laws of thermodynamics, and if that concentration is broken..." />
+		<primarybuff id="1" amount="2"/> <!-- sagacity -->
+		<secondarybuff id="1" amount="5"/> <!-- spellpoints -->
+		<secondarybuff id="2" amount="-5"/> <!-- melee power -->
+		<secondarybuff id="3" amount="5"/> <!-- magic power -->
+		<secondarybuff id="4" amount="-12"/> <!-- crit -->
+		<secondarybuff id="5" amount="5"/> <!-- haywire -->
+		<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+		<secondarybuff id="7" amount="-5"/> <!-- block -->
+		<secondarybuff id="8" amount="-5"/> <!-- counter -->
+		<secondarybuff id="11" amount="5"/> <!-- magic resist -->
+		<secondarybuff id="12" amount="-15"/> <!-- sneak -->
+		<secondarybuff id="22" amount="5"/> <!-- magic reflect -->
+		<playerHitEffectBuff percentage="100" name="Disrupted"/>
+	</ability>
+
+<!-- EDF version of Light Bending. -->
+
+<ability name="Light Bending" icon="skills/spells/the_word64.png" skill="751" level="4" polymorphedOnly="1" polymorphTag="Flamer" >
+	<spell name="Light Bending"/>
+	<description text="You're not much more than atoms held together by pure thought now; electromagnetic waves of all wavelengths acknowledge you as their master. You direct them where you please, revealing the hidden and weakening those nasty monsters to your spells. Of course, you're concentrating on defying the laws of thermodynamics, and if that concentration is broken..." />
+		<primarybuff id="1" amount="2"/> <!-- sagacity -->
+		<secondarybuff id="1" amount="5"/> <!-- spellpoints -->
+		<secondarybuff id="2" amount="-5"/> <!-- melee power -->
+		<secondarybuff id="3" amount="5"/> <!-- magic power -->
+		<secondarybuff id="4" amount="-12"/> <!-- crit -->
+		<secondarybuff id="5" amount="5"/> <!-- haywire -->
+		<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+		<secondarybuff id="7" amount="-5"/> <!-- block -->
+		<secondarybuff id="8" amount="-5"/> <!-- counter -->
+		<secondarybuff id="11" amount="5"/> <!-- magic resist -->
+		<secondarybuff id="12" amount="-15"/> <!-- sneak -->
+		<secondarybuff id="22" amount="5"/> <!-- magic reflect -->
+	</ability>
+
+<!-- Human form version of Prismatic Spray. -->
+
+<ability name="Prismatic Spray" icon="skills/rainbow_spray64.png" skill="751" level="5" >
+	<spell name="Prismatic Spray"/>
+	<description text="You have almost transcended into a being of pure energy, and hence are able to blast your enemies with the essence of the universe. Watch out for the increased energies roiling within you, though." />
+		<primarybuff id="1" amount="4"/> <!-- sagacity -->
+		<secondarybuff id="1" amount="6"/> <!-- spellpoints -->
+		<secondarybuff id="3" amount="6"/> <!-- magic power -->
+		<secondarybuff id="5" amount="6"/> <!-- haywire -->
+		<secondarybuff id="6" amount="-6"/> <!-- dodge -->
+		<secondarybuff id="7" amount="-6"/> <!-- block -->
+		<secondarybuff id="8" amount="-6"/> <!-- counter -->
+		<secondarybuff id="10" amount="-1"/> <!-- armor_absorption -->
+		<secondarybuff id="11" amount="6"/> <!-- magic resist -->
+		<secondarybuff id="12" amount="-25"/> <!-- sneak -->
+		<secondarybuff id="22" amount="6"/> <!-- magic reflect -->
+		<playerHitEffectBuff percentage="33" name="Severe Meltdown"/>
+	</ability>
+
+<!--EDF version of Prismatic Spray. -->
+
+<ability name="Prismatic Spray" icon="skills/rainbow_spray64.png" skill="751" level="5" polymorphedOnly="1" polymorphTag="Flamer" >
+	<spell name="Prismatic Spray"/>
+	<description text="You have almost transcended into a being of pure energy, and hence are able to blast your enemies with the essence of the universe. Watch out for the increased energies roiling within you, though." />
+		<primarybuff id="1" amount="4"/> <!-- sagacity -->
+		<secondarybuff id="1" amount="6"/> <!-- spellpoints -->
+		<secondarybuff id="3" amount="6"/> <!-- magic power -->
+		<secondarybuff id="5" amount="6"/> <!-- haywire -->
+		<secondarybuff id="6" amount="-6"/> <!-- dodge -->
+		<secondarybuff id="7" amount="-6"/> <!-- block -->
+		<secondarybuff id="8" amount="-6"/> <!-- counter -->
+		<secondarybuff id="10" amount="-1"/> <!-- armor_absorption -->
+		<secondarybuff id="11" amount="6"/> <!-- magic resist -->
+		<secondarybuff id="12" amount="-25"/> <!-- sneak -->
+		<secondarybuff id="22" amount="6"/> <!-- magic reflect -->
+	</ability>
+
+<!-- Enables Ascendant's Wrath when polymorphed. However, this makes transcendance not appear in the skill hotbar automatically; you'll have to manually add this. -->
+
+<ability name="Ascendant's Wrath" icon="skills/superlight_dragon64.png" skill="751" level="6" polymorphedOnly="1" polymorphTag="Flamer" >
+	<spell name="Ascendant's Wrath"/>
+	<description text="The energies of the cosmos rage within your heart; you must release them! Rend reality and make these mortals cower with the sheer power of your voice!"/>
+	</ability>
+
+<!-- Transcendence skill. -->
+
+<ability name="Transcendence" icon="skills/light_dragon64.png" skill="751" level="6">
+	<spell name="Entropic Dragon Form"/>
+	<description text="You have finally shed your material shell for good and emerged in your true form, a dragon of radiant energy. Well, you could have been a glowing ball of gas or something, but you wouldn't have an excuse to destroy stuff."/>
+	</ability>
+
+</radiantwizardskills>
+
+</skillDB>

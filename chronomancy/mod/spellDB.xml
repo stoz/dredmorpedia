@@ -1,0 +1,529 @@
+<spellDB>
+	<!-- Daydream ************************************************************************************************* -->
+	
+	<!-- Main Spell -->
+	<spell name="Daydream" type="self" downtime="5" icon="skills/spells/daydream_32.png">
+		<!-- Paralyze -->
+		<effect type="paralyze" resistable="0" turns="5" affectsCaster="1" />
+		
+		<!-- Refresh-->
+		<buff useTimer="1" time="4" bad="0" icon="skills/spells/daydream_64.png" smallicon="skills/spells/daydream_32.png">
+		</buff>
+		<effect type="dot" resistable="0" spell="Daydream Refreshing" amount="5" />
+		
+		<!-- SFX for when the player can interact again  -->
+		<effect type="trigger" spell="Time Awaken FX" amount="5" resistable="0" />
+		
+		<!-- Animate & Description -->
+		<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="80" sfx="wait" centerEffect="0"/>
+		<description text="Years of study have taught you how to bypass the normal flow of time... or it would have if you spent less time daydreaming. Refreshes you, but beware of being disturbed." monsterText="starts daydreaming" />
+	</spell>
+	
+	<!-- Polymorph Spell -->
+	<spell name="Daydream " type="self" downtime="5" icon="skills/spells/daydream_32.png">
+		<effect type="trigger" spell="Daydream" />
+		
+		<!-- Animate & Description -->
+		<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="80" sfx="wait" centerEffect="0"/>
+		<description text="Years of study have taught you how to bypass the normal flow of time... or it would have if you spent less time daydreaming. Refreshes you, but beware of being disturbed." monsterText="starts daydreaming" />
+	</spell>
+
+	<spell name="Daydream Refreshing" type="target" >
+		<!-- Minor refreshing -->
+		<effect percent="50" type="heal" amount="1" amountF="0.05" />
+		<effect percent="25" type="spellpoints" amount="1" amountF="0.05" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/sleep/sleep" frames="6" framerate="80" sfx="wait" sync="1" />
+	</spell>
+	
+	<!-- Precognition ********************************************************************************************* -->
+	
+	<!-- Main Spell -->
+	<spell name="Precognition" type="target" downtime="15" icon="skills/spells/precognition_32.png">
+		<!-- Make something horrible happen in 10 turns -->
+		<buff useTimer="1" time="10" self="1" icon="skills/spells/precognition_64.png" smallicon="skills/spells/precognition_32.png" bad="0">
+		</buff>
+		<effect type="trigger" spell="Something Horrible" amount="11" affectsCorpses="0" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="80" sfx="magic_open" centerEffect="0"/>
+		<description text="You can see the future! Something terrible is going to happen to that monster... probably. Time will tell!" />
+	</spell>
+	
+	<!-- Polymorph Spell -->
+	<spell name="Precognition " type="targetfloor" downtime="0" icon="skills/spells/precognition_32.png">
+		<effect type="trigger" spell="Precognition" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="80" sfx="magic_open" centerEffect="0"/>
+		<description text="You can see the future! Something terrible is going to happen to that monster... probably. Time will tell!" />
+	</spell>
+	
+	<spell name="Something Horrible" type="target" icon="skills/spells/precognition_32.png">
+		<!-- Randomly pick how horrible this should be -->
+		
+		<!-- 90% chance of slightly horrible, 10% chance of quite horrible -->
+		<effect type="triggerfromlist">
+			<option name="Something Slightly Horrible" />
+			<option name="Something Slightly Horrible" />
+			<option name="Something Slightly Horrible" />
+			<option name="Something Slightly Horrible" />
+			<option name="Something Slightly Horrible" />
+			<option name="Something Slightly Horrible" />
+			<option name="Something Slightly Horrible" />
+			<option name="Something Slightly Horrible" />
+			<option name="Something Slightly Horrible" />
+			<option name="Something Quite Horrible" />
+		</effect>
+		
+		<!-- 1% chance of something very horrible indeed -->
+		<effect type="trigger" percent="1" spell="Something Very Horrible Indeed" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="80" sfx="tutorialrespond" centerEffect="0"/>
+		<description text="Something horrible has happened! (Probably)" />
+	</spell>
+	
+	<spell name="Something Slightly Horrible" type="target" icon="skills/spells/precognition_32.png">
+		<!-- Pick something that's slightly horrible -->
+		<effect type="triggerfromlist">
+			<option name="Mage's Circle Effect" />
+			<option name="Curse of the Golden Ratio" />
+			<option name="Unliving Wall" />
+			<option name="Unconditional Love" />
+			<option name="Thaumite Infection" />
+			<option name="Thermite Center" />
+			<option name="Thor's Fulminaric Bolt" />
+			<option name="Acid Cloud" />
+			<option name="Vile Poison" />
+		</effect>
+	</spell>
+	
+	<spell name="Something Quite Horrible" type="target" icon="skills/spells/eldritch_pillar32.png" >
+		<!-- Pick something that's quite horrible -->
+		<effect type="triggerfromlist">
+			<option name="Horrible Eldritch Inhabitation" />
+			<option name="Inevitable Doom" />
+			<option name="Strong Brimstone Cloud" />
+		</effect>
+	</spell>
+	
+	<spell name="Something Very Horrible Indeed" type="target">
+		<!-- Pick something that's very horrible indeed -->
+		<effect type="triggerfromlist">
+			<option name="Mass Destruction" />
+			<option name="Generic Tentacular Doom" />
+		</effect>
+	</spell>
+	
+	<spell name="Horrible Eldritch Inhabitation" type="target">
+		<effect type="bleed" affectsCaster="1" />
+		<buff useTimer="1" time="4" stacksize="3" allowstacking="1" self="0" icon="skills/spells/eldritch_pillar64.png" smallicon="skills/spells/eldritch_pillar32.png" bad="1" >
+			<halo name="sprites/sfx/zalgoA/zalgoA" first="0" num="10" frameRate="100" centereffect="1"/>
+			<primarybuff id="2" amount="-5"/> <!-- Nimbleness -->
+		</buff>
+		<effect type="dot" amount="3" spell="Zalgohit1" affectsCaster="1" />
+		<effect type="confuse" amount="7"/>
+		<effect type="trigger" spell="Thermite Center" amount="5" />
+		<effect type="trigger" spell="Blast Effect A" amount="5" />
+		<effect type="trigger" spell="Zalgo Blast1" amount="4" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/hex_orb/hex_orb" frames="6" framerate="100" sfx="naughty" />
+		<impact sprite="sprites/sfx/curse_hit/curse_hit" frames="6" framerate="100" sfx="magic" centerEffect="1"/>
+		<description text="This spell possesses the target with tentacular beings which do not belong in this reality; they will tear their way back to whence they came with destructive results." />
+	</spell>
+	
+	<!-- Bolt Time ************************************************************************************************ -->
+	
+	<!-- Main Spell -->
+	<spell name="Bolt Time" type="self" downtime="30" icon="skills/spells/bolt_time_32.png">
+		<!-- Start slowing time around us -->
+		<buff useTimer="1" time="6" self="0" allowstacking="0" bad="0" icon="skills/spells/bolt_time_64.png" smallicon="skills/spells/bolt_time_32.png">
+		</buff>
+		<effect type="dot" spell="Slowed Time" amount="6" resistable="0" />
+		<effect type="trigger" spell="Slowed Time" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/null" frames="1" framerate="1" />
+		<description text="Slow down time! Allows both you and nearby enemies to dodge attacks with ease." />
+	</spell>
+	
+	<!-- Polymorph Spell -->
+	<spell name="Bolt Time " type="self" downtime="0" icon="skills/spells/bolt_time_32.png">
+		<effect type="trigger" spell="Bolt Time" />
+		
+		<!-- FX -->
+		<description text="Slow down time! Allows both you and nearby enemies to dodge attacks with ease." />
+	</spell>
+	
+	<spell name="Slowed Time" type="template" templateId="10" icon="skills/spells/bolt_time_32.png">
+		<!-- Buff -->
+		<buff useTimer="1" time="0" self="0" allowstacking="0" icon="skills/spells/slowed_time_64.png" smallicon="skills/spells/slowed_time_32.png" bad="0">
+			<secondarybuff id="6" amount="100" />  <!-- Dodge -->
+			
+			<halo name="sprites/sfx/time_slow/time_slow" first="0" num="6" frameRate="100" />
+		</buff>
+		
+		<!-- Dummy effect equired to prevent the game interpreting this as a melee spell -->
+		<effect type="trigger" spell="Waste Time" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/time_invis/time_invis" frames="2" framerate="1" sfx="wait" />
+		<description text="Time around you has slowed, drastically increasing your evasiveness. Your voice also sounds funny slowed down." />
+	</spell>
+	
+	<!-- Time Flux ************************************************************************************************ -->
+	
+	<!-- Main Spell -->
+	<spell name="Time Flux" type="self" self="1" downtime="40" icon="skills/spells/time_flux_32.png">
+		<!-- Paralyze ourselves -->
+		<effect type="paralyze" resistable="0" turns="24" affectsCaster="1" />
+		
+		<!-- Enter the Flux of Time -->
+		<effect type="trigger" spell="Within the Flux of Time" />
+		<effect type="trigger" spell="Within the Flux of Time End" amount="25" />
+		
+		<!-- Ravages of Time -->
+		<effect type="dot" resistable="0" spell="Ravages of Time" amount="24" self="1" />
+		
+		<!-- SFX for when the player can interact again  -->
+		<effect type="trigger" spell="Time Awaken FX" amount="24" resistable="0" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/null" frames="1" framerate="10" sfx="wait" />
+		<description text="Sacrifice all of your mana to project yourself into the future! You are mostly invulnerable while in the flux of time and those around you are ravaged by the passing ages." />
+	</spell>
+	
+	<!-- Polymorph Spell -->
+	<spell name="Time Flux " type="self" downtime="1" icon="skills/spells/time_flux_32.png">
+		<effect type="trigger" spell="Time Flux" affectsCorpses="0" />
+		
+		<!-- FX -->
+		<description text="Sacrifice all of your mana to project yourself into the future! You are mostly invulnerable while in the flux of time and those around you are ravaged by the passing ages." />
+	</spell>
+	
+	<spell name="Ravages of Time" type="template" templateID="101" icon="skills/spells/time_flux_32.png">
+		<!-- Pacify -->
+		<effect type="pacify" resistable="0" amount="1" turns="1" />
+		
+		<!-- FX -->
+		<effect type="trigger" spell="Time Drip FX" percent="5" />
+		<anim sprite="sprites/sfx/null" frames="1" framerate="10" sfx="wait" />
+		<description text="The passing of time ravages all." />
+	</spell>
+	
+	<!-- Summon Past Self ***************************************************************************************** -->
+	
+	<!-- Main Spell -->
+	<spell name="Summon Past Self" type="targetemptyfloor" downtime="30" icon="skills/spells/summon_past_self_32.png">
+		<!-- Summon our past self! -->
+		<effect type="triggerfromlist">
+			<option name="Summon Past Self M" />
+			<option name="Summon Past Self F" />
+		</effect>
+		
+		<!-- Setup our summon to be invulnerable and stationary -->
+		<effect type="trigger" spell="Frozen in Time" />
+		
+		<!-- Distract monsters with the paradoxical impossibility -->
+		<effect type="trigger" spell="Past Self Initial Shock Area" />
+		<effect type="trigger" spell="Past Self Distraction Area" />
+		<effect type="dot" spell="Past Self Distraction Area" amount="10" resistable="0" />
+
+		<!-- Your past self is doomed! -->
+		<effect type="trigger" spell="Past Self Doom" amount="10" affectsCorpses="0" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/fulminaric_bolt/fulminaric_bolt" frames="10" framerate="60" sync="1" sfx="tutorialquery" />
+		<description text="Reach back through time and summon yourself to your aid! Just try not to think about it too much or you'll do your head in." />
+	</spell>
+	
+	<!-- Polymorph Spell -->
+	<spell name="Summon Past Self " type="targetemptyfloor" downtime="0" icon="skills/spells/summon_past_self_32.png">
+		<effect type="trigger" spell="Summon Past Self" affectsCorpses="0" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/fulminaric_bolt/fulminaric_bolt" frames="10" framerate="60" sync="1" sfx="tutorialquery" />
+		<description text="Reach back through time and summon yourself to your aid! Just try not to think about it too much or you'll do your head in." />
+	</spell>
+	
+	<!-- Equal opportunity summoning -->
+	<spell name="Summon Past Self M" type="targetfloor">
+		<effect type="summonhostile" monsterType="Past Self M" />
+	</spell>
+	
+	<!-- Summon Female Past Self -->
+	<spell name="Summon Past Self F" type="targetfloor">
+		<effect type="summonhostile" monsterType="Past Self F" />
+	</spell>
+	
+	<!-- Paradoxes are distracting -->
+	<spell name="Past Self Initial Shock Area" type="template" templateId="09">
+		<effect type="pacify" turns="1" resistable="0" />
+		
+		<anim sprite="sprites/sfx/null" frames="1" framerate="1" />
+	</spell>
+	
+	<spell name="Past Self Distraction Area" type="template" templateId="09">
+		<effect type="trigger" spell="Past Self Distraction" />
+		
+		<anim sprite="sprites/sfx/null" frames="1" framerate="1" />
+	</spell>
+	
+	<spell name="Past Self Distraction" type="targetmonster">
+		<effect type="lockdown" amount="2" resistable="0" />
+		
+		<anim sprite="sprites/sfx/question_mark/question_mark" frames="16" framerate="30" sfx="magic" />
+	</spell>
+	
+	<!-- You can't live forever, even if you're from the past -->
+	<spell name="Past Self Doom" type="target" icon="skills/spells/paradox_32.png">
+		<!-- Kill your past self -->
+		<effect type="trigger" spell="Kill Time" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/time_invis/time_invis" frames="2" framerate="1" sfx="disintegrate" />
+		<description text="The universe is correcting itself." />
+	</spell>
+	
+	<!-- The Darkest Timeline ************************************************************************************* -->
+	
+	<!-- Main Spell -->
+	<spell name="The Darkest Timeline" type="self" downtime="20" icon="skills/spells/the_darkest_timeline_32.png">
+		<!-- Invulnerability for 1 turn -->
+		<effect type="trigger" spell="Within the Flux of Time" />
+		<effect type="trigger" spell="Within the Flux of Time End" amount="1" />
+	
+		<!-- Teleport -->
+		<effect type="blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		<effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" /><effect type="trigger" spell="Timeline Blink" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/time_invis/time_invis" frames="2" framerate="1" sfx="zenziz" />
+		<description text="Sacrifice all of your mana to project yourself into the future! You are mostly invulnerable while in the flux of time and those around you are ravaged by the passing ages." />
+	</spell>
+	
+	<spell name="The Darkest Timeline " type="self" downtime="0" icon="skills/spells/the_darkest_timeline_32.png">
+		<effect type="trigger" spell="The Darkest Timeline" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/time_invis/time_invis" frames="2" framerate="1" sfx="zenziz" />
+		<description text="Sacrifice all of your mana to project yourself into the future! You are mostly invulnerable while in the flux of time and those around you are ravaged by the passing ages." />
+	</spell>
+	
+	<spell name="Timeline Blink" type="target" icon="skills/spells/blink32.png" >
+		<effect type="targetblink" />
+		
+		<effect type="triggerfromlist">
+			<option name="Timeline 1 FX" />
+			<option name="Timeline 2 FX" />
+			<option name="Timeline 3 FX" />
+			<option name="Timeline 4 FX" />
+			<option name="Timeline 5 FX" />
+			<option name="Timeline 6 FX" />
+			<option name="Timeline 7 FX" />
+			<option name="Timeline 8 FX" />
+			<option name="Timeline 9 FX" />
+			<option name="Timeline 10 FX" />
+			<option name="Timeline 11 FX" />
+			<option name="Timeline 12 FX" />
+		</effect>
+	</spell>
+	
+	<spell name="Timeline 1 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line1" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 2 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line2" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 3 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line3" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 4 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line4" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 5 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line5" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 6 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line6" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 7 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line7" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 8 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line8" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 9 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line9" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 10 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line10" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 11 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line11" frames="1" sync="1" framerate="60" /></spell>
+	<spell name="Timeline 12 FX" type="target"><anim sprite="sprites/sfx/time_line/time_line12" frames="1" sync="1" framerate="60" /></spell>
+	
+	<!-- Grandfather Clock Paradox ******************************************************************************** -->
+	
+	<!-- Main Spell -->
+	<spell name="Grandfather Clock Paradox" type="targetemptyfloor" downtime="50" icon="skills/spells/grandfather_clock_paradox_32.png">
+		<!-- Find and activate any existing Grandfather Clocks -->
+		<effect type="trigger" spell="Find Grandfather Clock" />
+		
+		<!-- Summon a Grandfather Clock -->
+		<effect type="summonhostile" monsterType="Grandfather Clock" />
+		
+		<!-- Setup our summon to be invulnerable and stationary -->
+		<effect type="trigger" spell="Frozen in Time" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" centerEffect="1" sync="1" sfx="bampf" />
+		<description text="First discovered by the great Doc Brown, Brownian Motion forces your body into the gap between space and time. As long as this is maintained your physical form will periodically realign itself." />
+	</spell>
+	
+	<!-- Polymorph Spell -->
+	<spell name="Grandfather Clock Paradox " type="targetemptyfloor" downtime="0" icon="skills/spells/grandfather_clock_paradox_32.png">
+		<effect type="trigger" spell="Grandfather Clock Paradox" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" centerEffect="1" sync="1" sfx="bampf" />
+		<description text="First discovered by the great Doc Brown, Brownian Motion forces your body into the gap between space and time. As long as this is maintained your physical form will periodically realign itself." />
+	</spell>
+	
+	<spell name="Find Grandfather Clock" type="area" radius="100">
+		<effect type="trigger" spell="Activate Grandfather Clock" amount="1" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/time_invis/time_invis" frames="2" framerate="1" />
+		<description text="First discovered by the great Doc Brown, Brownian Motion forces your body into the gap between space and time. As long as this is maintained your physical form will periodically realign itself." />
+	</spell>
+	
+	<spell name="Activate Grandfather Clock" type="target">
+		<!-- Must use damage instead of 'Kill Time' as we need this to be taxa specific -->
+		<effect type="damage" existential="9999" taxa="Grandfather Clock" />
+	</spell>
+	
+	<spell name="Thinking With Portals" type="targetcorpse">
+		<effect type="teleport" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/digging_ray_hit/digging_ray_hit" frames="9" framerate="60" centerEffect="0" sfx="teleport_short" />
+	</spell>
+	
+	<!-- Lease of Time ******************************************************************************************** -->
+	
+	<!-- Main Spell -->
+	<spell name="Lease of Time" type="self" downtime="70" icon="skills/spells/lease_of_time_32.png">
+		<!-- Polymorph to give us access to spells before they've cooled down -->
+		<buff useTimer="1" time="3" icon="skills/spells/lease_of_time_64.png" smallicon="skills/spells/lease_of_time_32.png" bad="0">    
+			<polymorph name="Time Skeleton" />
+			
+			<!-- Prevent melee -->
+			<multibuff amount="-1" />
+			
+			<!-- FX -->
+			<halo name="sprites/sfx/voltaic_loop/voltaic_loop" first="0" num="5" frameRate="90" />
+		</buff>
+		
+		<!-- Invulnerability for 2 turns -->
+		<effect type="trigger" spell="Within the Flux of Time" />
+		<effect type="trigger" spell="Within the Flux of Time End" amount="4" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" centerEffect="1" sync="1" sfx="ice" />
+		<description text="Lease yourself some time allowing you to use any of your Chronomancy abilities before they've cooled down." />
+	</spell>
+	
+	<!-- Common Spells ******************************************************************************************** -->
+	
+	<!-- Invulnerability buff -->
+	<spell name="Within the Flux of Time" type="target" self="0">
+		<buff useTimer="0" self="0" allowstacking="1" bad="0" icon="skills/spells/time_flux_64.png" smallicon="skills/spells/time_flux_32.png">
+			<!-- Invulnerability! -->
+			<resistbuff acidic="99" />
+			<resistbuff aethereal="99" />
+			<resistbuff asphyxiative="99" />
+			<resistbuff blasting="99" />
+			<resistbuff conflagratory="99" />
+			<resistbuff crushing="99" />
+			<resistbuff existential="99" />
+			<resistbuff hyperborean="99" />
+			<resistbuff necromantic="99" />
+			<resistbuff piercing="99" />
+			<resistbuff putrefying="99" />
+			<resistbuff righteous="99" />
+			<resistbuff slashing="99" />
+			<resistbuff toxic="99" />
+			<resistbuff transmutative="99" />
+			<resistbuff voltaic="99" />
+			<secondarybuff id="10" amount="100" /> <!-- Armour -->
+			
+			<!-- Prevent corruption and other nasty effects -->
+			<secondarybuff id="11" amount="100" /> <!-- Resist -->
+			
+			<!-- Prevent ourselves from doing anything combat-related -->
+			<secondarybuff id="5" amount="-200" /> <!-- Haywire -->
+			<secondarybuff id="6" amount="-200" /> <!-- Dodge -->
+			<secondarybuff id="7" amount="-200" /> <!-- Block -->
+			<secondarybuff id="8" amount="-200" /> <!-- Counter -->
+			
+			<!-- Ultra sneaky to make monsters leave us alone -->
+			<secondarybuff id="12" amount="100" /> <!-- Sneaky -->
+			
+			<!-- FX -->
+			<halo name="sprites/sfx/time_flux/time_flux" first="0" num="6" frameRate="100" />
+		</buff>
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/voltaic_hit/voltaic_hit" frames="8" framerate="60" />
+		<description text="You are within the flux of time and are mostly invulnerable." />
+	</spell>
+	
+	<!-- Removes 'Within the Flux of Time' buff -->
+	<spell name="Within the Flux of Time End" type="target">
+		<effect type="removebuffbyname" name="Within the Flux of Time" amount="1" />
+		
+		<!-- FX -->
+		<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" centerEffect="0" sfx="teleport_short" />
+	</spell>
+	
+	<!-- Wastes the time of whoever casts this -->
+	<spell name="Waste Time" type="self">
+	</spell>
+	
+	<!-- Kills the given target. Cannot be resisted -->
+	<spell name="Kill Time" type="target">
+		<buff useTimer="1" time="0" self="0" icon="skills/spells/kill_time_64.png" smallicon="skills/spells/kill_time_32.png">
+			<secondarybuff id="0" amount="-9999" />
+		</buff>
+	</spell>
+	
+	<!-- Gives invulnerability and freezes the target monster -->
+	<spell name="Frozen in Time" type="targetmonster">
+		<effect type="trigger" spell="Within the Flux of Time" />
+		<effect type="dot" spell="Time Heals All Wounds" amount="-1" resistable="0" />
+		<effect type="trigger" spell="Locked in Time" />
+	</spell>
+	
+	<!-- Massive healing for improved invulnerability -->
+	<spell name="Time Heals All Wounds" type="target">
+		<effect type="heal" amount="500" />
+	</spell>
+	
+	<!-- Infinite lockdown for summons that shouldn't move -->
+	<spell name="Locked in Time" type="target">
+		<effect type="lockdown" amount="-1" resistable="0" />
+	</spell>
+	
+	<!-- Special FX *********************************************************************************************** -->
+	
+	<spell name="Time Awaken FX" type="self" >
+		<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="80" sfx="tutorialquery" />
+	</spell>
+	
+	<spell name="Time Drip FX" type="targetfloor">
+		<anim sprite="sprites/sfx/time_drip/time_drip" frames="6" framerate="60" centerEffect="0" />
+	</spell>
+
+</spellDB>

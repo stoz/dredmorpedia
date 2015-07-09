@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="80">hero_die_disintegrated_r_00.png</frame>
+  <frame delay="80">hero_die_disintegrated_r_01.png</frame>
+  <frame delay="40">hero_die_disintegrated_r_02.png</frame>
+  <frame delay="80">hero_die_disintegrated_r_03.png</frame>
+  <frame delay="80">hero_die_disintegrated_r_04.png</frame>
+  <frame delay="80">hero_die_disintegrated_r_05.png</frame>
+  <frame delay="80">hero_die_disintegrated_r_06.png</frame>
+  <frame delay="80">hero_die_disintegrated_r_07.png</frame>
+  <frame delay="80">hero_die_disintegrated_r_08.png</frame>
+  <frame delay="80">hero_die_disintegrated_r_09.png</frame>
+  <frame delay="80">hero_die_disintegrated_r_10.png</frame>
+  <frame delay="80">hero_die_disintegrated_r_11.png</frame>
+</sprite>
