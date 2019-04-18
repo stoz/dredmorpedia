@@ -43,6 +43,7 @@
 		<script src="js/stat.js?foible" type="text/javascript"></script>
 		<script src="js/item.js?foible" type="text/javascript"></script>
 		<script src="js/craft.js?foible" type="text/javascript"></script>
+		<script src="js/encrust.js?foible" type="text/javascript"></script>
 		<script src="js/skill.js?foible" type="text/javascript"></script>
 		<script src="js/spell.js?foible" type="text/javascript"></script>
 		<script src="js/monster.js?foible" type="text/javascript"></script>
@@ -62,6 +63,7 @@
 			<ul>
 				<li><a href="#item">Items</a></li>
 				<li><a href="#craft">Crafts</a></li>
+				<li><a href="#encrust">Encrusts</a></li>
 				<li><a href="#skill">Skills</a></li>
 				<li><a href="#spell">Spells</a></li>
 				<li><a href="#monster">Monsters</a></li>
@@ -318,6 +320,81 @@
 									<tr id="{{:id}}" class="dataRow">
 										<td class="linkTag">
 											{{renderLinkTag #data /}}
+										</td>
+										<td class="craftHiddenColumn">
+											{{renderCheckbox hidden /}}
+										</td>
+										<td class="craftInputsColumn">
+											<div class="craftInputs">
+												{{for inputs}}
+													{{renderItem item /}}
+												{{/for}}
+											</div>
+										</td>
+										<td class="craftOutputsColumn">
+											<table class="innerTable">
+												{{for outputs}}
+													<tr>
+														<td class="craftStatsColumn">{{renderStats stats /}}</td>
+														<td class="craftOutputColumn">
+															<div class="craftOutput">
+																{{:amount}} &times; {{renderItem item /}}
+															</div>
+														</td>
+													</tr>
+												{{/for}}
+											</table>
+										</td>
+										<td class="sourceTag">
+											{{renderDataSourceTag source /}}
+										</td>
+									</tr>
+								{{/for}}
+							</tbody>
+						</table>
+					</div>
+				</script>
+				<ul class="tabs">
+				</ul>
+				<div class="content">
+				</div>
+			</div>
+			
+			<!-- Encrust *********************************************************************************************-->
+			<div id="encrust" class="section">
+				<script id="encrustTabsTemplate" type="text/x-jquery-tmpl">
+					<li>
+						<a href="#{{:tool.id}}" title="{{:tool.name}}">
+							{{if tool.toolIcon}}
+								<img src="data/items/{{:tool.toolIcon}}.png" class="tabIcon" />
+							{{else}}
+								{{:tool.name}}
+							{{/if}}
+						</a>
+					</li>
+				</script>
+				
+				<script id="encrustContentTemplate" type="text/x-jquery-tmpl">
+					<div id="{{:tool.id}}" class="subSection">
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th>Description</th>
+									<th>Hidden Recipe?</th>
+									<th>Inputs</th>
+									<th>Output</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								{{for encrusts}}
+									<tr id="{{:id}}" class="dataRow">
+										<td class="linkTag">
+											{{renderLinkTag #data /}}
+										</td>
+										<td class="skillDescriptionColumn">
+											{{renderNameDesc name description /}}
 										</td>
 										<td class="craftHiddenColumn">
 											{{renderCheckbox hidden /}}
@@ -809,6 +886,19 @@
 						</tr>
 					</thead>
 					<tbody>
+						<tr>
+							<td class="linkTag">
+							</td>
+							<td class="aboutDateColumn">18/4/19</td>
+							<td class="aboutNotesColumn">
+								<ul>
+									<li>Added 'Encrusts' section</li>
+								</ul>
+							</td>
+							<td class="sourceTag">
+							</td>
+						</tr>
+						<tr>
 						<tr>
 							<td class="linkTag">
 							</td>

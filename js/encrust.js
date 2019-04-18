@@ -12,14 +12,16 @@ Dredmor.Encrust = {};
 ** An array of [Encrust Entry]
 **
 ** A [Encrust Entry] is of the form:
+**     name:		(String)					Name
+**     description:	(String)					Description
 **     tool:		(Dredmor.Craft.Tool)		Encrusting tool
 **     encrusts:	(Array<[Parsed Encrust]>)	Array of encrusts for the given tool
 **
 ** A [Parsed Encrust] is of the form:
 **     tool:		(Dredmor.Craft.Tool)				Tool for this craft
-**     inputs:		(Array<[Parsed Encrust Component]>)	Array of input crafting components for this craft 
+**     inputs:		(Array<[Parsed Encrust Component]>)	Array of input crafting components for this craft
 **     outputs:		(Array<[Parsed Encrust Component]>)	Array of output crafting components for this craft
-** 
+**
 ** A [Parsed Encrust Component] is of the form:
 **     craft:		([Parsed Encrust])				The craft that this component belongs to
 **     item:		(String)						Name of Item that is an output
@@ -38,14 +40,14 @@ Dredmor.Encrust.Section = Dredmor.Section.Add({
 
 	Parse: function(source, callback)
 	{
-		// Get the craft data
+		// Get the encrust data
 		$.ajax({
 			type: 'GET',
 			url: Dredmor.Helper.GetXMLPath(source, 'encrustDB.xml'),
 			cache: false,
 			dataType: 'xml',
 			success: function(xml) {
-				// Parse craft XML
+				// Parse encrust XML
 				Dredmor.Encrust.Parse(source, xml);
 				
 				// Parsing complete!
@@ -70,18 +72,18 @@ Dredmor.Encrust.Section = Dredmor.Section.Add({
 		var indexMap = {};
 		
 		for (var i = 0; i < Dredmor.Encrust.Data.length; i++) {
-			var craft = Dredmor.Encrust.Data[i];
+			var encrust = Dredmor.Encrust.Data[i];
 
 			// Find the index for our data
-			var j = craft.tool.id;
+			var j = encrust.tool.id;
 			indexMap[j] = indexMap[j] || data.length + 1;
 			var index = indexMap[j] - 1;
 
 			// Store in display data
 			data[index] = data[index] || {};
-			data[index].tool = data[index].tool || craft.tool;
+			data[index].tool = data[index].tool || encrust.tool;
 			data[index].encrusts = data[index].encrusts || [];
-			data[index].encrusts.push(craft);
+			data[index].encrusts.push(encrust);
 		}
 
 		// Sort the display data
@@ -91,17 +93,17 @@ Dredmor.Encrust.Section = Dredmor.Section.Add({
 		}
 
 		// Render the encrusts types to build the tabs
-		$('#craft').find('.tabs').html(
-			$('#craftTabsTemplate').render(data)
+		$('#encrust').find('.tabs').html(
+			$('#encrustTabsTemplate').render(data)
 		);
 		
 		// Render items to build the content
-		$('#craft').find('.content').empty();
+		$('#encrust').find('.content').empty();
 
 		for (var i = 0; i < data.length; i++) {
 			Dredmor.Helper.Queue(i, function(i) {
-				$('#craft').find('.content').append(
-					$('#craftContentTemplate').render(data[i])
+				$('#encrust').find('.content').append(
+					$('#encrustContentTemplate').render(data[i])
 				);
 			});
 			
@@ -109,7 +111,7 @@ Dredmor.Encrust.Section = Dredmor.Section.Add({
 		
 		// Apply Tabs (with queuing)
 		Dredmor.Helper.Queue(null, function() {
-			$('#craft').tabs();
+			$('#encrust').tabs();
 		});
 	}
 });
@@ -124,65 +126,67 @@ Dredmor.Encrust.Parse = function(source, xml)
 	// Wrap xml object in jQuery
 	xml = $(xml);
 	
-	// Find each craft entry and parse it
-	xml.find('craft').each(function(xmlIndex, xmlItem) {
+	// Find each encrust entry and parse it
+	xml.find('encrust').each(function(xmlIndex, xmlItem) {
 		// Wrap xml object in jQuery
 		xmlItem = $(xmlItem);
 		
-		// Parse craft and build object
-		var craft = new Dredmor.Object(source);
+		// Parse encrust and build object
+		var encrust = new Dredmor.Object(source);
+		
+		// General
+		encrust.name = xmlItem.attr('name');
+		encrust.description = xmlItem.find('description').attr('text');
 		
 		// Tool
 		var tag = xmlItem.children('tool').attr('tag');
-		craft.tool = Dredmor.Encrust.LookupTool(tag);
+		encrust.tool = Dredmor.Encrust.LookupTool(tag);
 
 		// Hidden
-		craft.hidden = (xmlItem.attr('hidden') == 1);
+		encrust.hidden = (xmlItem.attr('hidden') == 1);
 		
 		// Inputs ----------------------------------------------------------
-		craft.inputs = [];
+		encrust.inputs = [];
 		
 		xmlItem.children('input').each(function() {
 			// Build input
 			var input = {};
 
-			input.craft = craft;
+			input.encrust = encrust;
 			input.item = $(this).attr('name');
 
 			// Add to inputs
-			craft.inputs.push(input);
+			encrust.inputs.push(input);
 		});
 		
 		// Outputs ---------------------------------------------------------
-		craft.outputs = [];
+		encrust.outputs = [];
 		
-		xmlItem.children('output').each(function() {
+		xmlItem.children('skill').each(function() {
 			// Build output
 			var output = {};
 			
-			output.craft = craft;
-			output.item = $(this).attr('name');
-			output.amount = parseInt($(this).attr('amount')) || 1;
+			output.encrust = encrust;
 
 			// Stats
 			output.stats = [];
 
-			for (var i in craft.tool.statTypes) {
+			for (var i in encrust.tool.statTypes) {
 				// Build stat
 				var stat = {};
 
-				stat.type = craft.tool.statTypes[i];
-				stat.amount = parseInt($(this).attr('skill'));
+				stat.type = encrust.tool.statTypes[i];
+				stat.amount = parseInt($(this).attr('level'));
 				
 				output.stats.push(stat);
 			}
 			
 			// Add to outputs
-			craft.outputs.push(output);
+			encrust.outputs.push(output);
 		});
 
 		// Insert into data
-		Dredmor.Encrust.Data.push(craft);
+		Dredmor.Encrust.Data.push(encrust);
 	});
 }
 
@@ -225,7 +229,7 @@ Dredmor.Encrust.Tool =
 		id: genId(),
 		name: 'n-Dimensional Lathe',
 		tag: 'lathe',
-		statTypes: [Dredmor.Stat.Data.WandEncrusting],
+		statTypes: [Dredmor.Stat.Data.WandCrafting],
 		toolIcon: 'tool_n-dimensional_lathe'
 	},
 
@@ -279,7 +283,7 @@ Dredmor.Encrust.Tool =
 		id: genId(),
 		name: 'Tinkerer Parts',
 		tag: 'tinkerer',
-		statTypes: [Dredmor.Stat.Data.Tinkering],	
+		statTypes: [Dredmor.Stat.Data.Tinkering],
 		toolIcon: 'tool_tinkerer_kit'
 	}
 };
