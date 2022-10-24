@@ -50,7 +50,7 @@ Dredmor.Search.InitText = function()
 		Dredmor.Helper.BlockUI('Searching');
 
 		// Get our search value
-		var search = $('#searchText').val();
+		var search = $('#searchText').val().toLowerCase();
 
 		// Item ----------------------------------------------------------------
 		$('#searchResultItem').empty();
