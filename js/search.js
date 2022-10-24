@@ -17,7 +17,7 @@ Dredmor.Search.Init = function()
 	Dredmor.Search.InitText();
 
 	// Stats
-	Dredmor.Search.InitStats(); 
+	Dredmor.Search.InitStats();
 
 	// Results
 	$('#searchResults').tabs();
